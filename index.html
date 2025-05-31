@@ -34,6 +34,33 @@
             border-top-left-radius: 0.75rem;
             border-top-right-radius: 0.75rem;
         }
+         /* Highlighted Google Review Button for Mobile */
+        @media (max-width: 768px) {
+            #google-review-btn {
+                position: fixed;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1000;
+                background: #38bdf8; /* Sky blue */
+                color: #fff;
+                padding: 18px 36px;
+                font-size: 1.15em;
+                border-radius: 999px;
+                box-shadow: 0 4px 24px rgba(56,189,248,0.35);
+                border: none;
+                font-weight: bold;
+                text-align: center;
+                animation: pulse 1.5s infinite;
+                text-decoration: none;
+                display: block;
+            }
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #38bdf877; }
+            70% { box-shadow: 0 0 0 18px #38bdf800; }
+            100% { box-shadow: 0 0 0 0 #38bdf877; }
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
