@@ -36,31 +36,35 @@
         }
          /* Highlighted Google Review Button for Mobile */
         @media (max-width: 768px) {
-            #google-review-btn {
-                position: fixed;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 1000;
-                background: #38bdf8; /* Sky blue */
-                color: #fff;
-                padding: 18px 36px;
-                font-size: 1.15em;
-                border-radius: 999px;
-                box-shadow: 0 4px 24px rgba(56,189,248,0.35);
-                border: none;
-                font-weight: bold;
-                text-align: center;
-                animation: pulse 1.5s infinite;
-                text-decoration: none;
-                display: block;
-            }
-        }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 #38bdf877; }
-            70% { box-shadow: 0 0 0 18px #38bdf800; }
-            100% { box-shadow: 0 0 0 0 #38bdf877; }
-        }
+         #google-review-btn {
+    background: #2563eb; /* Softer blue */
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 1.05em;
+    border-radius: 2rem;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.15);
+    border: none;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, transform 0.2s;
+}
+#google-review-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px) scale(1.02);
+}
+@media (max-width: 768px) {
+    #google-review-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        width: 90%;
+        max-width: 350px;
+    }
+}
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -239,7 +243,7 @@
         <section class="mt-10 text-center">
             <h2 class="text-3xl font-semibold text-blue-600 section-title mb-6">Rate Your Experience</h2>
             <p class="text-lg text-gray-700 mb-6">We'd love to hear your feedback about your experience at Saigon Authentic Alley Hostel & Tours!</p>
-            <a id="google-review-btn" href="https://search.google.com/local/writereview?placeid=ChIJpQF6gbIvdTER8BAcGQwA21M" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition">Write a Google Review Now!</a>
+            <a id="google-review-btn" href="https://search.google.com/local/writereview?placeid=ChIJpQF6gbIvdTER8BAcGQwA21M" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition">Share Your Feedback on Google!</a>
         </section>
 
         <footer class="text-center mt-10 text-gray-500 text-sm">
