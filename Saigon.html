@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saigon - City Exploration Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .section-title {
+            border-bottom: 2px solid #e5e7eb; /* Light gray border */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container py-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-700 mb-2">Welcome to Saigon!</h1>
+            <p class="text-lg text-gray-600">Discover the best of food, culture, and exciting activities.</p>
+        </header>
+
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold text-blue-600 section-title mb-6">Food & Drink</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card">
+                    <img src="https://placehold.co/400x200/ADD8E6/000000?text=Vietnamese+Pho" alt="Pho" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Pho</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Vietnam's national dish, featuring rich broth, soft rice noodles, and fragrant beef/chicken.</p>
+                        <p class="text-gray-600 text-sm mb-3">Suggested Address: 10 Ly Chinh Thang, District 3, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example1" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/F0E68C/000000?text=Saigon+Banh+Mi" alt="Banh Mi" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Banh Mi</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Crispy baguette filled with various ingredients like cold cuts, pate, Vietnamese sausage, and fresh herbs.</p>
+                        <p class="text-gray-600 text-sm mb-3">Suggested Address: 19 Huynh Thuc Khang, District 1, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example2" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/DDA0DD/000000?text=Iced+Milk+Coffee" alt="Iced Milk Coffee" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Iced Milk Coffee (Cà Phê Sữa Đá)</h3>
+                        <p class="text-gray-700 mb-3 text-sm">A refreshing Vietnamese specialty, strong coffee mixed with condensed milk and ice.</p>
+                        <p class="text-gray-600 text-sm mb-3">Suggested Address: 42 Nguyen Hue, District 1, HCMC (Apartment building)</p>
+                        <a href="https://maps.app.goo.gl/example3" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/AFEEEE/000000?text=Bun+Cha+Gio" alt="Bun Cha Gio" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Bun Cha Gio (Vermicelli with Spring Rolls)</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Rice vermicelli served with crispy spring rolls, fresh vegetables, and sweet and sour fish sauce.</p>
+                        <p class="text-gray-600 text-sm mb-3">Suggested Address: 123 Nguyen Thi Minh Khai, District 1, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example4" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                 <div class="card">
+                    <img src="https://placehold.co/400x200/FFDAB9/000000?text=Hu+Tieu+Nam+Vang" alt="Hu Tieu Nam Vang" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Hu Tieu Nam Vang (Phnom Penh Noodle Soup)</h3>
+                        <p class="text-gray-700 mb-3 text-sm">A clear, sweet noodle soup served with shrimp, pork, quail eggs, and fresh herbs.</p>
+                        <p class="text-gray-600 text-sm mb-3">Suggested Address: 288 An Duong Vuong, District 5, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example5" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                 <div class="card">
+                    <img src="https://placehold.co/400x200/B0E0E6/000000?text=Goi+Cuon" alt="Goi Cuon" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Goi Cuon (Fresh Spring Rolls)</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Fresh, light rolls with shrimp, pork, vermicelli, and fresh vegetables, served with peanut sauce or fish sauce.</p>
+                        <p class="text-gray-600 text-sm mb-3">Suggested Address: 359 Nguyen Trai, District 5, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example6" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold text-blue-600 section-title mb-6">Attractions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card">
+                    <img src="https://placehold.co/400x200/FFB6C1/000000?text=Notre+Dame+Cathedral" alt="Notre Dame Cathedral" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Notre Dame Cathedral</h3>
+                        <p class="text-gray-700 mb-3 text-sm">An iconic French colonial architectural landmark in the city center.</p>
+                        <p class="text-gray-600 text-sm mb-3">Address: 01 Cong Xa Paris, Ben Nghe, District 1, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example7" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/87CEEB/000000?text=Central+Post+Office" alt="Central Post Office" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Central Post Office</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Unique Gothic architecture, next to Notre Dame Cathedral, one of Vietnam's oldest post offices.</p>
+                        <p class="text-gray-600 text-sm mb-3">Address: 02 Cong Xa Paris, Ben Nghe, District 1, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example8" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/98FB98/000000?text=Ben+Thanh+Market" alt="Ben Thanh Market" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Ben Thanh Market</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Saigon's largest traditional market, where you can shop, eat, and experience local culture.</p>
+                        <p class="text-gray-600 text-sm mb-3">Address: Le Loi, Ben Thanh, District 1, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example9" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/FFD700/000000?text=Independence+Palace" alt="Independence Palace" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Independence Palace</h3>
+                        <p class="text-gray-700 mb-3 text-sm">An important historical site, once the home and workplace of the President of South Vietnam.</p>
+                        <p class="text-gray-600 text-sm mb-3">Address: 135 Nam Ky Khoi Nghia, Ben Thanh, District 1, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example10" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/D3D3D3/000000?text=War+Remnants+Museum" alt="War Remnants Museum" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">War Remnants Museum</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Exhibits artifacts and images from the Vietnam War.</p>
+                        <p class="text-gray-600 text-sm mb-3">Address: 28 Vo Van Tan, Ward 6, District 3, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example11" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/ADD8E6/000000?text=Nguyen+Hue+Walking+Street" alt="Nguyen Hue Walking Street" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Nguyen Hue Walking Street</h3>
+                        <p class="text-gray-700 mb-3 text-sm">A central square with entertainment, restaurants, and cafes.</p>
+                        <p class="text-gray-600 text-sm mb-3">Address: Nguyen Hue, Ben Nghe, District 1, HCMC</p>
+                        <a href="https://maps.app.goo.gl/example12" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/C0C0C0/000000?text=Saigon+Authentic+Alley" alt="Saigon Authentic Alley Hostel & Tours" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Saigon Authentic Alley Hostel & Tours</h3>
+                        <p class="text-gray-700 mb-3 text-sm">A great choice for travelers wanting to experience local life and join Saigon exploration tours.</p>
+                        <p class="text-gray-600 text-sm mb-3">Address: 26 Street 41, Ward 6, District 4, HCMC</p>
+                        <a href="https://www.google.com/travel/search?q=Saigon%20Authentic%20Alley%20Hostel%20%26%20Tours%2C%2026%20Street%2041%2C%20Ward%206%2C%20Qu%E1%BA%ADn%204%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2070000&g2lb=4965990%2C4969803%2C72277293%2C72302247%2C72317059%2C72414906%2C72471280%2C72472051%2C72481459%2C72485658%2C72560029%2C72573224%2C72616120%2C72647020%2C72648289%2C72686036%2C72760082%2C72803964%2C72832976%2C72882230%2C72885032%2C72941410%2C72946003%2C72948010%2C72958594%2C72958624%2C72959982%2C72969407&hl=vi-VN&gl=vn&ssta=1&ts=CAEaRwopEicyJTB4MzE3NTJmYjI4MTdhMDFhNToweDUzZGIwMDBjMTkxYzEwZjASGhIUCgcI6Q8QBhgEEgcI6Q8QBhgFGAEyAhAA&qs=CAEyE0Nnb0k4S0h3eU1HQndPMVRFQUU4AkIJCfAQHBkMANtTQgkJ8BAcGQwA21M&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwiokID89syNAxUAAAAAHQAAAAAQDQ" target="_blank" class="text-blue-500 hover:underline text-sm font-medium">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-10 mb-10">
+            <h2 class="text-3xl font-semibold text-blue-600 section-title mb-6">Our Activities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card">
+                    <img src="https://placehold.co/400x200/90EE90/000000?text=Walking+City+Tour" alt="Walking City Tour" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Walking City Tour (Tips-Based)</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Explore the city's hidden gems and iconic landmarks with our knowledgeable local guides. Pay what you feel it's worth!</p>
+                        <p class="text-gray-600 text-sm mb-3 font-semibold">Price: Tips-based model</p>
+                        <a href="#" class="text-blue-500 hover:underline text-sm font-medium">Learn More / Book Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/FFC0CB/000000?text=Cooking+Class" alt="Cooking Class" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cooking Class on Hostel Rooftop</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Learn to cook authentic Vietnamese dishes with a stunning rooftop view. A fun and delicious experience!</p>
+                        <p class="text-gray-600 text-sm mb-3 font-semibold">Price: $20</p>
+                        <a href="#" class="text-blue-500 hover:underline text-sm font-medium">Learn More / Book Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/400x200/D8BFD8/000000?text=District+4+Tour" alt="District 4 Walking Tour" class="card-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Walking City Tour in District 4</h3>
+                        <p class="text-gray-700 mb-3 text-sm">Dive deep into the vibrant local life and street food scene of District 4, a true hidden gem of Saigon.</p>
+                        <p class="text-gray-600 text-sm mb-3 font-semibold">Price: $20</p>
+                        <a href="#" class="text-blue-500 hover:underline text-sm font-medium">Learn More / Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-10 text-center">
+            <h2 class="text-3xl font-semibold text-blue-600 section-title mb-6">Rate Your Experience</h2>
+            <p class="text-lg text-gray-700 mb-6">We'd love to hear your feedback about your experience at Saigon Authentic Alley Hostel & Tours!</p>
+            <a href="https://search.google.com/local/writereview?placeid=ChIJpQF6gbIvdTER8BAcGQwA21M" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Write a Google Review Now!
+            </a>
+        </section>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>© 2025 Saigon City Guide. Have a wonderful trip!</p>
+        </footer>
+    </div>
+</body>
+</html>
