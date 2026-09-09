@@ -1,45 +1,18 @@
-# OG Saigon Website
+# OG Saigon Website V4 — UX Polished
 
-Official website for OG Saigon Experience & Transport.
+Static GitHub Pages package for https://ogsaigon.com.
 
-Website:
-https://ogsaigon.com
+This version keeps the OG Saigon visual identity while improving conversion UX, mobile spacing, brand-first navigation, accessibility states, and the founder positioning.
 
-## Current structure
+## Deploy
+1. Back up the current repository.
+2. Keep the `CNAME` file in the repository root.
+3. Upload the full contents of this folder to the root of `DSG2025.github.io` on the `main` branch.
+4. Commit the changes.
+5. Wait for GitHub Pages to deploy, then test `https://ogsaigon.com` and `https://www.ogsaigon.com`.
 
-- Home
-- Experiences
-- Cu Chi Tunnels
-- Cu Chi + War Remnants Museum
-- Hidden Saigon
-- Custom Trip
-- About
-- Meet Duy
-- Transport
-
-## Hosting
-
-Hosted with GitHub Pages.
-
-Custom domain:
-ogsaigon.com
-
-Main branch:
-main
-
-Publishing folder:
-root
-
-## Important
-
-Do not delete the `CNAME` file.
-
-The `CNAME` file must contain:
-
-ogsaigon.com
-
-## SEO
-
-- sitemap.xml
-- robots.txt
-- canonical URLs use https://ogsaigon.com
+## Before final public launch
+- Replace or add a real Toyota Innova photo on `/transport/` when available.
+- Add social profile links after the handles are claimed.
+- Confirm all experience wording and current inclusions/pricing before publishing prices.
+- Consider Google Search Console after launch and submit `/sitemap.xml`.
