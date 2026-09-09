@@ -33,6 +33,7 @@
     </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="topbar">
       <div class="wrap nav">
         <a class="brand" href="../../">OG SAIGON<small>Experiences &amp; Transport</small></a>
@@ -44,20 +45,21 @@
           <a
             class="btn primary small"
             href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon."
+            data-whatsapp-link
             target="_blank"
             rel="noopener"
           >Chat with us</a>
         </nav>
-        <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open navigation menu">Menu</button>
+        <button class="menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu">Menu</button>
       </div>
-      <div class="wrap mobile-menu" data-mobile-menu>
+      <div class="wrap mobile-menu" id="mobileMenu" data-mobile-menu>
         <a href="../../experiences/">Experiences</a>
         <a href="../../custom-trip/">Custom Trip</a>
         <a href="../../about/">About</a>
         <a href="../../transport/">Transport</a>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <section class="page-hero">
         <div class="wrap page-hero-grid">
           <div>
@@ -71,7 +73,7 @@
               <span class="fact">Hotel pickup options</span>
             </div>
           </div>
-          <img src="/assets/images/duy-guiding.webp" alt="Cu Chi Through Saigonese Eyes">
+          <img src="/assets/images/duy-guiding.webp" alt="Cu Chi Through Saigonese Eyes" decoding="async" loading="eager" fetchpriority="high">
         </div>
       </section>
       <section class="section paper">
@@ -134,6 +136,7 @@
             <a
               class="btn primary"
               href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20interested%20in%20Cu%20Chi%20Through%20Saigonese%20Eyes."
+              data-whatsapp-link
               target="_blank"
               rel="noopener"
             >Ask on WhatsApp</a>
@@ -171,15 +174,32 @@
           <p>
             <a
               href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html"
+              data-platform-link="tripadvisor"
               target="_blank"
               rel="noopener"
             >Tripadvisor reviews</a>
+          </p>
+          <p>
+            <a
+              href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/"
+              data-platform-link="getyourguide"
+              target="_blank"
+              rel="noopener"
+            >GetYourGuide profile</a>
+          </p>
+          <p>
+            <a
+              href="https://www.airbnb.com/experiences/7046435"
+              data-platform-link="airbnb"
+              target="_blank"
+              rel="noopener"
+            >Airbnb experience</a>
           </p>
         </div>
         <div>
           <h4>Contact</h4>
           <p>
-            <a href="tel:+84938033395">+84 938 033 395</a>
+            <a href="tel:+84938033395" data-phone-link>+84 938 033 395</a>
           </p>
           <p>
             <a href="https://wa.me/84938033395" target="_blank" rel="noopener">Chat with us</a>
@@ -192,9 +212,11 @@
     <a
       class="btn primary wa-float"
       href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon."
+      data-whatsapp-link
       target="_blank"
       rel="noopener"
     >Chat with us</a>
+    <script src="../../assets/js/site-data.js"></script>
     <script src="../../assets/js/main.js"></script>
   </body>
 </html>

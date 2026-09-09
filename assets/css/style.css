@@ -1516,3 +1516,257 @@ footer {
     font-size: 0.88rem;
   }
 }
+
+/* =========================
+   V5 TRUST-FIRST UX
+   Social proof, accessibility, clearer feedback, less duplicate CTA noise
+========================= */
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--forest);
+  font-weight: 900;
+  box-shadow: var(--shadow);
+  transform: translateY(-160%);
+  transition: transform 0.18s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.navlinks a[aria-current="page"],
+.mobile-menu a[aria-current="page"] {
+  color: var(--rust);
+}
+
+.review-strip {
+  padding: 34px 0;
+  background: var(--forest);
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.review-strip-grid {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.72fr) minmax(0, 1.8fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.review-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-intro .eyebrow {
+  color: #efb18e;
+}
+
+.review-intro h2 {
+  max-width: 390px;
+  margin-bottom: 10px;
+  font-size: clamp(1.55rem, 2.7vw, 2.35rem);
+}
+
+.review-intro p {
+  max-width: 430px;
+  margin: 0;
+  color: #cfddd7;
+  font-size: 0.94rem;
+}
+
+.review-platforms {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.review-card {
+  min-height: 190px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.055);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.review-card.featured {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: transparent;
+}
+
+.review-platform-name {
+  margin-bottom: 18px;
+  font-size: 0.82rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.review-card strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #f0b367;
+  font-size: clamp(1.3rem, 2.1vw, 1.75rem);
+  letter-spacing: -0.02em;
+}
+
+.review-card.featured strong {
+  color: var(--rust);
+}
+
+.review-count {
+  color: #cfddd7;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.review-card.featured .review-count {
+  color: var(--muted);
+}
+
+.review-cta {
+  margin-top: auto;
+  padding-top: 18px;
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.form-status {
+  min-height: 1.5em;
+  margin: 10px 0 0;
+  color: var(--forest2);
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
+.btn:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
+/* Desktop already has a persistent header CTA; avoid a duplicate floating CTA. */
+@media (min-width: 921px) {
+  .wa-float {
+    display: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .review-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(239, 177, 142, 0.5);
+  }
+
+  .review-card:not(.featured):hover {
+    background: rgba(255, 255, 255, 0.09);
+  }
+}
+
+@media (max-width: 920px) {
+  .review-strip-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .review-strip {
+    padding: 28px 0;
+  }
+
+  .review-platforms {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    min-height: 142px;
+    padding: 18px;
+  }
+
+  .review-platform-name {
+    margin-bottom: 10px;
+  }
+
+  .review-cta {
+    padding-top: 12px;
+  }
+}
+
+/* Review proof appears inside the hero so mobile visitors see trust before the photo mosaic. */
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 12px 16px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.hero-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid rgba(24, 48, 42, 0.13);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.82);
+  font-size: 0.86rem;
+}
+
+.hero-stars {
+  color: var(--rust);
+  letter-spacing: 0.04em;
+}
+
+.hero-rating strong {
+  color: var(--forest);
+}
+
+.hero-rating > span:last-child {
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.hero-trust-note {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero-rating:hover {
+    border-color: rgba(184, 93, 62, 0.32);
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-trust {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .hero-rating {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-trust-note {
+    width: 100%;
+    text-align: center;
+  }
+}

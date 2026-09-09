@@ -33,6 +33,7 @@
     </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="topbar">
       <div class="wrap nav">
         <a class="brand" href="../../">OG SAIGON<small>Experiences &amp; Transport</small></a>
@@ -44,20 +45,21 @@
           <a
             class="btn primary small"
             href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon."
+            data-whatsapp-link
             target="_blank"
             rel="noopener"
           >Chat with us</a>
         </nav>
-        <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open navigation menu">Menu</button>
+        <button class="menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu">Menu</button>
       </div>
-      <div class="wrap mobile-menu" data-mobile-menu>
+      <div class="wrap mobile-menu" id="mobileMenu" data-mobile-menu>
         <a href="../../experiences/">Experiences</a>
         <a href="../../custom-trip/">Custom Trip</a>
         <a href="../../about/">About</a>
         <a href="../../transport/">Transport</a>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <section class="page-hero">
         <div class="wrap page-hero-grid">
           <div>
@@ -74,7 +76,7 @@
           <img
             src="/assets/images/dessert-group.webp"
             alt="Hidden Saigon: Local Life, History &amp; Food"
-          >
+           decoding="async" loading="eager" fetchpriority="high">
         </div>
       </section>
       <section class="section paper">
@@ -130,16 +132,16 @@
               <li>Direct interaction with your local host</li>
             </ul>
             <div class="gallery">
-              <img class="g1" src="/assets/images/hidden-alley.webp" alt="Saigon alley walk">
-              <img class="g2" src="/assets/images/sugarcane.webp" alt="Local drinks">
-              <img class="g3" src="/assets/images/grilled-seafood.webp" alt="Local grilled food">
-              <img class="g4" src="/assets/images/local-toast.webp" alt="Meeting local diners">
-              <img class="g5" src="/assets/images/food-bowl.webp" alt="Local noodle dish">
+              <img class="g1" src="/assets/images/hidden-alley.webp" alt="Saigon alley walk" decoding="async" loading="lazy">
+              <img class="g2" src="/assets/images/sugarcane.webp" alt="Local drinks" decoding="async" loading="lazy">
+              <img class="g3" src="/assets/images/grilled-seafood.webp" alt="Local grilled food" decoding="async" loading="lazy">
+              <img class="g4" src="/assets/images/local-toast.webp" alt="Meeting local diners" decoding="async" loading="lazy">
+              <img class="g5" src="/assets/images/food-bowl.webp" alt="Local noodle dish" decoding="async" loading="lazy">
               <img
                 class="g6"
                 src="/assets/images/dessert-group.webp"
                 alt="Dessert stop with guests"
-              >
+               decoding="async" loading="lazy">
             </div>
           </article>
           <aside class="side-card">
@@ -149,6 +151,7 @@
             <a
               class="btn primary"
               href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20interested%20in%20Hidden%20Saigon%3A%20Local%20Life%2C%20History%20%26%20Food."
+              data-whatsapp-link
               target="_blank"
               rel="noopener"
             >Ask on WhatsApp</a>
@@ -186,15 +189,32 @@
           <p>
             <a
               href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html"
+              data-platform-link="tripadvisor"
               target="_blank"
               rel="noopener"
             >Tripadvisor reviews</a>
+          </p>
+          <p>
+            <a
+              href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/"
+              data-platform-link="getyourguide"
+              target="_blank"
+              rel="noopener"
+            >GetYourGuide profile</a>
+          </p>
+          <p>
+            <a
+              href="https://www.airbnb.com/experiences/7046435"
+              data-platform-link="airbnb"
+              target="_blank"
+              rel="noopener"
+            >Airbnb experience</a>
           </p>
         </div>
         <div>
           <h4>Contact</h4>
           <p>
-            <a href="tel:+84938033395">+84 938 033 395</a>
+            <a href="tel:+84938033395" data-phone-link>+84 938 033 395</a>
           </p>
           <p>
             <a href="https://wa.me/84938033395" target="_blank" rel="noopener">Chat with us</a>
@@ -207,9 +227,11 @@
     <a
       class="btn primary wa-float"
       href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon."
+      data-whatsapp-link
       target="_blank"
       rel="noopener"
     >Chat with us</a>
+    <script src="../../assets/js/site-data.js"></script>
     <script src="../../assets/js/main.js"></script>
   </body>
 </html>
