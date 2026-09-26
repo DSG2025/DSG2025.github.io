@@ -154,7 +154,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
 // Help visitors stay oriented by marking the current primary navigation item.
 const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
 document
-  .querySelectorAll(".navlinks a:not(.btn), .mobile-menu a")
+  .querySelectorAll(".navlinks a:not(.btn), .mobile-menu a:not(.btn)")
   .forEach((link) => {
     const linkPath =
       new URL(link.href, window.location.href).pathname.replace(/\/$/, "") || "/";
