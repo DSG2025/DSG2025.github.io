@@ -97,3 +97,8 @@ Do not repeatedly request the same URL. Give Google time to recrawl and accumula
 ## Rollback
 
 Before replacing production, create a Git tag or branch from the current live commit. If a deployment issue appears, revert to that commit rather than trying to patch production manually.
+
+
+## Mobile hero correction
+- Mobile homepage now uses the same people-and-food hero story as desktop instead of the rain-shelter portrait.
+- Mobile hero media is cropped to 4:3 to reduce scroll length and keep food, guests and conversation visible.

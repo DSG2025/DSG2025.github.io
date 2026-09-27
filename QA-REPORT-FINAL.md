@@ -120,3 +120,12 @@ After GitHub Pages finishes deploying:
 7. Request indexing for the priority URLs in `RELEASE-NOTES-FINAL.md`.
 
 A search ranking or booking increase cannot be guaranteed by code. Evaluate the release against Search Console, direct enquiries and deposits over time.
+
+
+## Final mobile hero correction
+- Removed the old mobile-only rain-shelter hero source.
+- Mobile and desktop now use the same people-and-food hero image for stronger visual consistency.
+- Hero media now uses an explicit container aspect ratio so HTML image dimensions cannot make the image excessively tall.
+- Desktop hero ratio: 1600:934. Mobile hero ratio: 4:3.
+- Re-rendered at 1440x900 and 390x844: no horizontal overflow; mobile hero renders at 358x268.5 CSS px.
+- Final static audit after this correction: 15 HTML pages, 14 sitemap URLs, 0 errors, 0 warnings.

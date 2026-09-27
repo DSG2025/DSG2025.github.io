@@ -101,6 +101,7 @@ body.home-v2 .hero-media {
 body.home-v2 .hero-picture {
   display: block;
   overflow: hidden;
+  aspect-ratio: 1600 / 934;
   border-radius: 30px;
   background: #d7d3c9;
   box-shadow: 0 24px 70px rgba(24, 48, 42, 0.15);
@@ -108,7 +109,7 @@ body.home-v2 .hero-picture {
 
 body.home-v2 .hero-picture img {
   width: 100%;
-  aspect-ratio: 1600 / 934;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -804,11 +805,12 @@ body.home-v2 .footer-contact {
   }
 
   body.home-v2 .hero-picture {
+    aspect-ratio: 4 / 3;
     border-radius: 20px;
   }
 
   body.home-v2 .hero-picture img {
-    aspect-ratio: 900 / 1155;
+    object-position: 52% 54%;
   }
 
   body.home-v2 .trust-grid,

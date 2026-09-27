@@ -53,3 +53,10 @@ This is a very small data set. V6 is designed to improve crawlability, search-in
    - the three new story URLs
 4. Check the Pages report to identify the 3 URLs currently shown as not indexed. The supplied screenshots show the count but not the URL/reason list.
 5. Watch impressions and queries for at least 4-8 weeks before making large SEO conclusions.
+
+## V6.2 Mobile story parity
+- The “One night in Saigon” section now shows all five story images on mobile, matching desktop content parity.
+- Mobile crops are intentionally mixed (4:5, 1:1, 4:3, 3:4, 4:3) so adding the fifth image does not make the section materially longer.
+- Food and street images use shorter crops; people-focused images keep taller portrait crops.
+- No homepage copy, SEO metadata, URLs, or desktop content were changed in this patch.
+
