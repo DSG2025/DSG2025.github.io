@@ -170,3 +170,107 @@
     margin: 32px 0;
   }
 }
+
+/* Chợ Lớn field guide and final mobile reading pass */
+.story-index-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cholon-hero .page-hero-grid > img {
+  object-position: center 44%;
+}
+
+.cholon-photo-pair,
+.cholon-photo-grid {
+  display: grid;
+  gap: 14px;
+  margin: 42px 0;
+}
+
+.cholon-photo-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cholon-photo-grid--temples {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cholon-photo-pair figure,
+.cholon-photo-grid figure,
+.cholon-wide-figure {
+  margin: 0;
+}
+
+.cholon-photo-pair img,
+.cholon-photo-grid img,
+.cholon-wide-figure img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.cholon-photo-pair--food img {
+  height: 390px;
+}
+
+.cholon-wide-figure {
+  margin: 42px 0;
+}
+
+.cholon-wide-figure img {
+  height: min(700px, 68vw);
+  object-position: center 42%;
+}
+
+.cholon-photo-pair figcaption,
+.cholon-photo-grid figcaption,
+.cholon-wide-figure figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 650px) {
+  .story-article > p,
+  .story-article li {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  .story-index-grid,
+  .cholon-photo-pair,
+  .cholon-photo-grid--temples {
+    grid-template-columns: 1fr;
+  }
+
+  .cholon-photo-pair,
+  .cholon-photo-grid,
+  .cholon-wide-figure {
+    margin: 30px 0;
+  }
+
+  .cholon-photo-pair img,
+  .cholon-photo-grid img,
+  .cholon-photo-pair--food img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .cholon-photo-grid--temples figure:nth-child(2) img,
+  .cholon-photo-grid--temples figure:nth-child(3) img,
+  .cholon-photo-grid--temples figure:nth-child(4) img {
+    aspect-ratio: 3 / 4;
+  }
+
+  .cholon-wide-figure img {
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+}
+@media (min-width: 651px) and (max-width: 920px) {
+  .story-index-grid > :last-child {
+    grid-column: auto;
+  }
+}

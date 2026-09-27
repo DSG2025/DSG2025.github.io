@@ -13,7 +13,7 @@
 // ============================================================
 
 window.OG_SAIGON_SITE_DATA = {
-  reviewsLastChecked: "2026-09-26",
+  reviewsLastChecked: "2026-09-27",
 
   reviews: {
     tripadvisor: {

@@ -1,42 +1,59 @@
-# OG Saigon Website V6 - Search + UX
+# OG Saigon Website FINAL - Search, UX & Chợ Lớn
 
-Static GitHub Pages package for https://ogsaigon.com.
+Production-ready static GitHub Pages package for **https://ogsaigon.com/**.
+Prepared: **2026-09-27**.
 
-V6 keeps the existing lightweight static-site architecture while upgrading the homepage UX, search-intent coverage, real photography, internal linking and crawlable planning content.
+This final build consolidates the original V5.1 codebase, V6 search/UX work, the food-photo balance update, mobile five-image story parity, the final responsive UX pass, restored Airbnb trust signals, and the selected Chợ Lớn photography from the 27 September field scout.
 
-## Main changes
+## What is final in this package
 
-- New conversion-focused homepage for Western travellers who value private, personal experiences.
-- Private-first wording for direct bookings across the site.
-- Real OG Saigon rainy food-tour photography optimized to WebP.
-- Founder-first trust section featuring Duy.
-- Updated search titles and descriptions on key commercial pages.
-- New `/stories/` content hub with three practical search-focused guides.
-- Expanded sitemap and improved structured data.
-- Explicit OAI-SearchBot access for ChatGPT Search discovery.
-- Central review/contact data remains in `/assets/js/site-data.js`.
+- Conversion-focused homepage for Western travellers, especially ages 30-60.
+- Global primary CTA changed to **Check My Date**; product-specific CTAs remain more specific where appropriate.
+- Private-first positioning for direct bookings.
+- Shorter, more conversational founder copy.
+- Clearer, more scannable airport-pickup copy.
+- Compact mobile WhatsApp button that no longer competes with the main CTA.
+- Mobile menu behaves as an overlay sheet instead of pushing the page down.
+- Mobile typography tuned for readability; normal body content is not reduced below a comfortable reading size.
+- Desktop editorial rain grid fixed; all five story beats remain visible on mobile with mixed aspect ratios.
+- Tripadvisor, GetYourGuide and Airbnb restored as visible trust signals.
+- Review data centralized in `/assets/js/site-data.js`.
+- New first-hand Chợ Lớn story at `/stories/cholon-saigon-chinatown/` using the selected field-scout photographs, plus the approved Chợ Lớn shortlist integrated into the homepage and Hidden Saigon page.
+- Sitemap expanded to 14 canonical URLs.
+- OAI-SearchBot explicitly allowed in `robots.txt` for ChatGPT Search eligibility.
+- Structured data, canonicals, internal links, image dimensions and metadata checked.
+- Unused duplicate hero assets removed from production.
 
-See `RELEASE-NOTES-V6.md` for deployment and Search Console follow-up.
+## Routine data updates
 
-## Owner-friendly data file
+Edit `/assets/js/site-data.js` when verified review counts or contact details change.
 
-Edit `/assets/js/site-data.js` for routine operational updates such as review counts, OTA profile URLs, WhatsApp number and phone number.
+As of 2026-09-27 the verified platform values used by this release are:
 
-See `SITE-DATA-GUIDE.md` for the update workflow.
+- Tripadvisor: 5.0, 63 reviews
+- GetYourGuide: 5.0, 50 reviews
+- Airbnb: 5.0, 5 reviews
 
-## Deploy
+Do not change review counts based on memory. Recheck the live platform before updating.
 
-1. Back up the current repository or create a Git branch/tag before replacing production.
-2. Keep the `CNAME` file in the repository root.
-3. Upload the full contents of this folder to the root of `DSG2025.github.io` on the `main` branch.
-4. Commit the changes.
-5. Wait for GitHub Pages to deploy.
-6. Test homepage, experience pages, custom trip, transport and the new Stories pages on both desktop and mobile.
-7. Resubmit `https://ogsaigon.com/sitemap.xml` in Google Search Console.
+## Deployment
+
+1. Back up the current GitHub repository or create a tag/branch.
+2. Extract the release ZIP locally.
+3. Upload **the contents inside the final folder** to the root of `DSG2025.github.io` on `main`.
+4. Keep `CNAME` in the repository root.
+5. Suggested commit message: `Deploy OG Saigon final UX + Search + Cholon release`.
+6. Wait for GitHub Pages deployment.
+7. Check homepage, Hidden Saigon, Meet Duy, Transport, Stories and the new Chợ Lớn article on desktop and mobile.
+8. Resubmit `https://ogsaigon.com/sitemap.xml` in Google Search Console.
+9. Request indexing for the key updated/new URLs listed in `RELEASE-NOTES-FINAL.md`.
 
 ## Important operating notes
 
-- Direct website positioning is private-first. OTA products may have different formats depending on the listing.
-- Transport vehicle type may vary by availability, group size and luggage. The vehicle photos on `/transport/` are examples, not a fixed vehicle guarantee.
-- Do not publish prices or inclusions unless they match current operating reality.
-- Review counts change over time. Update `site-data.js` when verified.
+- Direct website experiences are positioned as private-first. OTA products can use different formats depending on the live listing.
+- Vehicle photographs on `/transport/` are examples. Vehicle type may vary with availability, group size and luggage.
+- Do not publish prices, timings or inclusions unless they match current operating reality.
+- Chợ Lớn operational details can change. The new article clearly dates field observations to September 2026 where relevant.
+- Search visibility and bookings cannot be guaranteed by code changes; evaluate real Search Console and enquiry data over time.
+
+See `RELEASE-NOTES-FINAL.md` for the full audit and post-deployment checklist.

@@ -125,6 +125,7 @@ function setMobileMenu(open) {
   if (!menuButton || !mobileMenu) return;
 
   mobileMenu.classList.toggle("open", open);
+  document.body.classList.toggle("menu-open", open);
   menuButton.setAttribute("aria-expanded", String(open));
   menuButton.setAttribute(
     "aria-label",
@@ -219,3 +220,9 @@ Could you suggest an itinerary and price?`;
     }, 1200);
   });
 }
+
+
+// Keep the mobile sheet from lingering when the viewport changes.
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 920) setMobileMenu(false);
+});
