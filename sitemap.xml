@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ogsaigon.com/</loc><lastmod>2026-09-27</lastmod></url>
@@ -9,9 +13,7 @@
   <url><loc>https://ogsaigon.com/transport/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://ogsaigon.com/about/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://ogsaigon.com/meet-duy/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://ogsaigon.com/stories/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://ogsaigon.com/stories/cu-chi-without-crawling/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://ogsaigon.com/stories/cu-chi-or-war-remnants-museum/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://ogsaigon.com/stories/first-day-in-saigon/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://ogsaigon.com/stories/cholon-saigon-chinatown/</loc><lastmod>2026-09-27</lastmod></url>
-</urlset>
+  <url><loc>https://ogsaigon.com/stories/</loc><lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod></url>
+{% assign sorted_stories = site.stories | where: "published", true | sort: "date" | reverse %}
+{% for story in sorted_stories %}  <url><loc>{{ site.url }}{{ story.url }}</loc><lastmod>{{ story.modified | default: story.date | date: "%Y-%m-%d" }}</lastmod></url>
+{% endfor %}</urlset>

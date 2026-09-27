@@ -1,0 +1,34 @@
+title: OG Saigon Experience & Transport
+description: Private local experiences, custom days and transport in Ho Chi Minh City.
+url: https://ogsaigon.com
+baseurl: ''
+timezone: Asia/Ho_Chi_Minh
+encoding: UTF-8
+future: false
+markdown: kramdown
+collections:
+  stories:
+    output: true
+    permalink: /stories/:name/
+defaults:
+- scope:
+    path: ''
+    type: stories
+  values:
+    layout: story
+    author: OG Saigon
+    lang: en
+    homepage: false
+exclude:
+- README.md
+- QA-REPORT-FINAL.md
+- QA-REPORT-R4.md
+- RELEASE-NOTES-FINAL.md
+- RELEASE-NOTES-V6.md
+- SITE-DATA-GUIDE.md
+- UX-NOTES.md
+- STORIES-GUIDE.md
+- RELEASE-NOTES-JEKYLL-STORIES.md
+- RELEASE-NOTES-R4.md
+- QA-REPORT-R5.md
+- RELEASE-NOTES-R5.md

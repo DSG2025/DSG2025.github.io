@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.seo_title | default: page.title }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta name="theme-color" content="#16382f">
+  <meta property="og:title" content="{{ page.seo_title | default: page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ page.hero_image }}">
+  <meta property="og:image:alt" content="{{ page.hero_alt | escape }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.seo_title | default: page.title | escape }}">
+  <meta name="twitter:description" content="{{ page.description | escape }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ page.hero_image }}">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/stories.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Article",
+        "headline":{{ page.title | jsonify }},
+        "description":{{ page.description | jsonify }},
+        "mainEntityOfPage":{{ site.url | append: page.url | jsonify }},
+        "image":[{{ site.url | append: page.hero_image | jsonify }}],
+        "datePublished":{{ page.date | date: "%Y-%m-%d" | jsonify }},
+        "dateModified":{{ page.modified | default: page.date | date: "%Y-%m-%d" | jsonify }},
+        "author":{"@type":"Organization","name":"OG Saigon"},
+        "publisher":{"@id":"https://ogsaigon.com/#organization"},
+        "inLanguage":"en"
+      },
+      {
+        "@type":"Organization",
+        "@id":"https://ogsaigon.com/#organization",
+        "name":"OG Saigon Experience & Transport",
+        "url":"https://ogsaigon.com/",
+        "logo":{"@type":"ImageObject","url":"https://ogsaigon.com/favicon-512x512.png"},
+        "sameAs":[
+          "https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html",
+          "https://www.getyourguide.com/og-saigon-experience--transport-s695288/",
+          "https://www.airbnb.com/experiences/7046435"
+        ]
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://ogsaigon.com/"},
+          {"@type":"ListItem","position":2,"name":"Stories","item":"https://ogsaigon.com/stories/"},
+          {"@type":"ListItem","position":3,"name":{{ page.breadcrumb | default: page.title | jsonify }},"item":{{ site.url | append: page.url | jsonify }}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+{% include site-header.html %}
+<main id="main-content">
+  <section class="page-hero story-article-hero{% if page.hero_class %} {{ page.hero_class }}{% endif %}">
+    <div class="wrap page-hero-grid">
+      <div>
+        <div class="breadcrumbs"><a href="/">Home</a> / <a href="/stories/">Stories</a> / {{ page.breadcrumb | default: page.category }}</div>
+        <div class="eyebrow">{{ page.eyebrow | default: page.category }}</div>
+        <h1>{{ page.title }}</h1>
+        <p class="lead">{{ page.lead | default: page.description }}</p>
+      </div>
+      <img src="{{ page.hero_image }}" width="{{ page.hero_width }}" height="{{ page.hero_height }}" alt="{{ page.hero_alt | escape }}" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+  </section>
+  <section class="section paper">
+    <div class="wrap story-article-layout">
+      <article class="story-article">
+        {{ content }}
+      </article>
+      <aside class="side-card story-side-card">
+        <div class="eyebrow">{{ page.side_eyebrow | default: "Plan with a local" }}</div>
+        <h3>{{ page.side_title | default: "Not sure what fits your trip?" }}</h3>
+        <p class="muted">{{ page.side_text }}</p>
+        {% if page.side_primary_label and page.side_primary_url %}<a class="btn primary" href="{{ page.side_primary_url }}">{{ page.side_primary_label }}</a>{% endif %}
+        {% if page.side_secondary_label and page.side_secondary_url %}<a class="btn outline" href="{{ page.side_secondary_url }}"{% if page.side_secondary_whatsapp %} data-whatsapp-link target="_blank" rel="noopener"{% endif %}>{{ page.side_secondary_label }}</a>{% endif %}
+      </aside>
+    </div>
+  </section>
+</main>
+{% include site-footer.html %}
+<script src="/assets/js/site-data.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

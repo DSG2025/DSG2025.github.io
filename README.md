@@ -57,3 +57,36 @@ Do not change review counts based on memory. Recheck the live platform before up
 - Search visibility and bookings cannot be guaranteed by code changes; evaluate real Search Console and enquiry data over time.
 
 See `RELEASE-NOTES-FINAL.md` for the full audit and post-deployment checklist.
+
+## Stories publishing system (Jekyll)
+
+Stories are now managed with a Jekyll collection instead of one hand-built HTML folder per article.
+
+- Existing article sources: `_stories/*.md`
+- Reusable article layout: `_layouts/story.html`
+- Shared Stories header/footer: `_includes/`
+- Stories index: `stories/index.html` (automatic)
+- Homepage Stories block: `index.html` (automatic latest 4 where `homepage: true`)
+- Sitemap: `sitemap.xml` (automatic Story URLs)
+- Copy-ready example: `_stories/TEMPLATE-NEW-STORY.md`
+- Full instructions: `STORIES-GUIDE.md`
+
+### Add a new Story
+
+1. Copy `_stories/TEMPLATE-NEW-STORY.md`.
+2. Rename the copy to a short URL-friendly filename, such as `_stories/saigon-coffee-morning.md`.
+3. Update the title, SEO description, date, images and article text.
+4. Change `published: false` to `published: true` when the article is ready.
+5. Set `homepage: true` only if you want it eligible for the homepage Story block.
+6. Upload any new WebP images to `assets/images/`.
+7. Commit to GitHub. The filename automatically becomes the `/stories/.../` URL, so normal new Stories do not need a `permalink:` field.
+
+GitHub Pages will build the new Story automatically with the existing OG Saigon design.
+
+## R5 maintenance notes
+
+- Header and footer are shared through `_includes/site-header.html` and `_includes/site-footer.html` across the homepage, static pages, Stories index and Story layout. Edit the shared include instead of changing 10 pages separately.
+- The homepage keeps its richer footer automatically via `footer_variant: home`.
+- Every published Story should use `published: true`; drafts use `published: false`. The homepage, Stories index and sitemap only list explicitly published Stories.
+- A real GitHub Pages Jekyll build check is included at `.github/workflows/jekyll-build-check.yml`. After a push to `main`, open the **Actions** tab and confirm **Jekyll build check** is green. This workflow checks the build only; it does not replace your existing Pages deployment source.
+- If the build check fails, do not change DNS or the custom domain. Open the failed Actions run and inspect the Jekyll error first.

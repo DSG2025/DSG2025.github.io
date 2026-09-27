@@ -1154,8 +1154,8 @@ body.home-v2 .story-cards {
   }
 
   body.home-v2 .wa-float {
-    padding: 10px 15px !important;
-    font-size: 0.82rem !important;
+    padding: 10px 15px;
+    font-size: 0.82rem;
   }
 }
 

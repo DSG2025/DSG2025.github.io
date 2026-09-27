@@ -1,3 +1,7 @@
+---
+layout: null
+footer_variant: home
+---
 <!DOCTYPE html>
 
 <html lang="en">
@@ -67,28 +71,7 @@
 </head>
 <body class="home-v2">
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="topbar site-header" id="site-header">
-<div class="wrap nav">
-<a class="brand" href="/">OG SAIGON<small>Experiences &amp; Transport</small></a>
-<nav aria-label="Primary navigation" class="navlinks">
-<a href="/experiences/">Experiences</a>
-<a href="/custom-trip/">Custom Trips</a>
-<a href="/transport/">Transport</a>
-<a href="/stories/">Stories</a>
-<a href="/about/">About</a>
-<a class="btn primary small header-cta" href="/custom-trip/">Check My Date</a>
-</nav>
-<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation menu" class="menu-btn" data-menu-btn="">Menu</button>
-</div>
-<div class="wrap mobile-menu" data-mobile-menu="" id="mobileMenu">
-<a href="/experiences/">Experiences</a>
-<a href="/custom-trip/">Custom Trips</a>
-<a href="/transport/">Transport</a>
-<a href="/stories/">Stories</a>
-<a href="/about/">About</a>
-<a class="btn primary mobile-menu-cta" href="/custom-trip/">Check My Date</a>
-</div>
-</header>
+{% include site-header.html %}
 <main id="main-content">
 <!-- 01 HERO -->
 <section class="hero hero-v2" id="home-hero">
@@ -312,7 +295,7 @@
 <p class="testimonial-meta">Casandra L · September 2026</p>
 <a class="testimonial-source text-link" data-platform-link="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank">Verified on Tripadvisor →</a>
 </article>
-</div><div aria-label="OG Saigon review platforms" class="review-platform-row"><a class="review-platform-pill" data-platform-link="tripadvisor" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank"><strong>★★★★★ <span data-review-rating="">5.0</span></strong><span class="review-platform-name">Tripadvisor · <span data-review-count="">63 reviews</span></span></a><a class="review-platform-pill" data-platform-link="getyourguide" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank"><strong>★★★★★ <span data-review-rating="">5.0</span></strong><span class="review-platform-name">GetYourGuide · <span data-review-count="">50 reviews</span></span></a><a class="review-platform-pill" data-platform-link="airbnb" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="airbnb" href="https://www.airbnb.com/experiences/7046435" rel="noopener" target="_blank"><strong>★★★★★ <span data-review-rating="">5.0</span></strong><span class="review-platform-name">Airbnb · <span data-review-count="">3 reviews</span></span></a></div>
+</div><div aria-label="OG Saigon review platforms" class="review-platform-row"><a class="review-platform-pill" data-platform-link="tripadvisor" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank"><strong>★★★★★ <span data-review-rating="">5.0</span></strong><span class="review-platform-name">Tripadvisor · <span data-review-count="">63 reviews</span></span></a><a class="review-platform-pill" data-platform-link="getyourguide" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank"><strong>★★★★★ <span data-review-rating="">5.0</span></strong><span class="review-platform-name">GetYourGuide · <span data-review-count="">50 reviews</span></span></a><a class="review-platform-pill" data-platform-link="airbnb" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="airbnb" href="https://www.airbnb.com/experiences/7046435" rel="noopener" target="_blank"><strong>★★★★★ <span data-review-rating="">5.0</span></strong><span class="review-platform-name">Airbnb · <span data-review-count="">5 reviews</span></span></a></div>
 <div class="reviews-footer">
 <a class="text-link" data-platform-link="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank">Read more traveller reviews →</a>
 </div>
@@ -453,37 +436,21 @@
 <p class="lead">Practical local guides for planning Saigon before you book anything.</p>
 </div>
 <div class="story-cards">
+{% assign home_stories = site.stories | where: "published", true | where: "homepage", true | sort: "date" | reverse %}
+{% for story in home_stories limit:4 %}
 <article class="story-card">
-<a class="story-card-media" href="/stories/cu-chi-without-crawling/">
-<img alt="Guest trying the concealed entrance at the Cu Chi Tunnels" decoding="async" height="1086" loading="lazy" src="/assets/images/cu-chi-trapdoor.webp" width="1448"/>
+<a class="story-card-media" href="{{ story.url }}">
+<img alt="{{ story.hero_alt | escape }}" decoding="async" height="{{ story.hero_height }}" loading="lazy" src="{{ story.hero_image }}" width="{{ story.hero_width }}">
 </a>
 <div class="story-card-body">
-<h3><a href="/stories/cu-chi-without-crawling/">Is Cu Chi worth visiting if you don’t want to crawl through tunnels?</a></h3>
-<p class="story-card-excerpt">What you can still experience at Cu Chi, how physical the visit is and what the tunnel crawl actually adds.</p>
-<a class="text-link" href="/stories/cu-chi-without-crawling/">Read the guide →</a>
+{% if story.home_show_category %}<div class="eyebrow">{{ story.category }}</div>{% endif %}
+<h3><a href="{{ story.url }}">{{ story.title }}</a></h3>
+<p class="story-card-excerpt">{{ story.home_excerpt | default: story.index_excerpt | default: story.description }}</p>
+<a class="text-link" href="{{ story.url }}">Read the guide →</a>
 </div>
 </article>
-<article class="story-card">
-<a class="story-card-media" href="/stories/cu-chi-or-war-remnants-museum/">
-<img alt="War Remnants Museum in Ho Chi Minh City" decoding="async" height="990" loading="lazy" src="/assets/images/war-museum.webp" width="1280"/>
-</a>
-<div class="story-card-body">
-<h3><a href="/stories/cu-chi-or-war-remnants-museum/">Cu Chi or the War Remnants Museum first?</a></h3>
-<p class="story-card-excerpt">They tell different parts of the same history. Here’s how the two visits differ and how they can fit together.</p>
-<a class="text-link" href="/stories/cu-chi-or-war-remnants-museum/">Read the guide →</a>
+{% endfor %}
 </div>
-</article>
-<article class="story-card">
-<a class="story-card-media" href="/stories/first-day-in-saigon/">
-<img alt="A rain-soaked Saigon street at night" decoding="async" height="1200" loading="lazy" src="/assets/images/saigon-rainy-night-street-reflections.webp" width="900"/>
-</a>
-<div class="story-card-body">
-<h3><a href="/stories/first-day-in-saigon/">Your first day in Saigon: what to expect</a></h3>
-<p class="story-card-excerpt">Traffic, rain, heat, transport and why a little space in your schedule makes the city easier to enjoy.</p>
-<a class="text-link" href="/stories/first-day-in-saigon/">Read the guide →</a>
-</div>
-</article>
-<article class="story-card"><a class="story-card-media" href="/stories/cholon-saigon-chinatown/"><img alt="Bình Tây Market in Chợ Lớn, Ho Chi Minh City" decoding="async" height="1500" loading="lazy" src="/assets/images/cholon-binh-tay-market-exterior.webp" width="1229"/></a><div class="story-card-body"><div class="eyebrow">Chợ Lớn</div><h3><a href="/stories/cholon-saigon-chinatown/">Chợ Lớn beyond the landmarks: market, temples and old lanes</a></h3><p class="story-card-excerpt">A first-hand look at Bình Tây Market, Chinese-Vietnamese temple life, street food and the old neighbourhood texture of Chợ Lớn.</p><a class="text-link" href="/stories/cholon-saigon-chinatown/">Read the guide →</a></div></article></div>
 </div>
 </section>
 <!-- 13 FINAL CTA -->
@@ -502,42 +469,7 @@
 </div>
 </section>
 </main>
-<footer class="site-footer">
-<div class="wrap footer-grid footer-grid-v2">
-<div>
-<a class="brand footer-brand" href="/">OG SAIGON<small>Experiences &amp; Transport</small></a>
-<p class="footer-muted">Private local experiences, custom days and comfortable transport in Ho Chi Minh City and nearby destinations.</p>
-</div>
-<div>
-<h2>Experiences</h2>
-<p><a href="/experiences/cu-chi-tunnels/">Cu Chi Tunnels</a></p>
-<p><a href="/experiences/hidden-saigon/">Hidden Saigon</a></p>
-<p><a href="/experiences/cu-chi-war-museum/">War History Day</a></p>
-<p><a href="/custom-trip/">Custom Private Day</a></p>
-</div>
-<div>
-<h2>Services</h2>
-<p><a href="/transport/">Airport Pickup</a></p>
-<p><a href="/transport/">Private Transport</a></p>
-<p><a href="/stories/">Travel Stories</a></p>
-</div>
-<div>
-<h2>OG Saigon</h2>
-<p><a href="/meet-duy/">Meet Duy</a></p>
-<p><a href="/about/">About</a></p>
-<p><a data-platform-link="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank">Tripadvisor</a></p>
-<p><a data-platform-link="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank">GetYourGuide</a></p><p><a data-platform-link="airbnb" href="https://www.airbnb.com/experiences/7046435" rel="noopener" target="_blank">Airbnb Experience</a></p>
-</div>
-<div class="footer-contact">
-<h2>Contact</h2>
-<p><a data-phone-link="" href="tel:+84938033395">+84 938 033 395</a></p>
-<p><a data-whatsapp-link="" href="https://wa.me/84938033395" rel="noopener" target="_blank">WhatsApp</a></p>
-<p class="footer-muted">Ho Chi Minh City, Vietnam</p>
-</div>
-</div>
-<div class="wrap footer-bottom">© <span data-year=""></span> OG Saigon Experience &amp; Transport. All rights reserved.</div>
-</footer>
-<a aria-label="Message OG Saigon on WhatsApp" class="btn primary wa-float" data-whatsapp-link="" href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon." rel="noopener" target="_blank">WhatsApp</a>
+{% include site-footer.html %}
 <script src="/assets/js/site-data.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
