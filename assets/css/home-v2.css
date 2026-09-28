@@ -1,3 +1,8 @@
+
+/* Homepage-only desktop nav spacing retained from the pre-shared-header design. */
+body.home-v2 .header-cta {
+  margin-left: 4px;
+}
 /* ============================================================
    OG Saigon Homepage V2
    Homepage-only layer. Shared pages continue to use style.css.
@@ -39,16 +44,6 @@ body.home-v2 .text-link:hover {
 /* Header */
 body.home-v2 .site-header {
   background: rgba(245, 239, 229, 0.94);
-}
-
-body.home-v2 .header-cta {
-  margin-left: 4px;
-}
-
-body.home-v2 .mobile-menu-cta {
-  width: 100%;
-  justify-content: center;
-  margin-top: 6px;
 }
 
 /* Hero */
@@ -770,7 +765,7 @@ body.home-v2 .footer-contact {
     padding: 68px 0;
   }
 
-  body.home-v2 .wrap {
+  body.home-v2 .wrap:not(.mobile-menu) {
     width: min(var(--max), calc(100% - 32px));
   }
 

@@ -251,26 +251,24 @@
     margin: 30px 0;
   }
 
-  .cholon-photo-pair img,
-  .cholon-photo-grid img,
-  .cholon-photo-pair--food img {
-    height: auto;
-    aspect-ratio: 4 / 3;
-  }
-
-  .cholon-photo-grid--temples figure:nth-child(2) img,
-  .cholon-photo-grid--temples figure:nth-child(3) img,
-  .cholon-photo-grid--temples figure:nth-child(4) img {
-    aspect-ratio: 3 / 4;
-  }
-
-  .cholon-wide-figure img {
-    height: auto;
-    aspect-ratio: 4 / 5;
-  }
 }
 @media (min-width: 651px) and (max-width: 920px) {
   .story-index-grid > :last-child {
     grid-column: auto;
+  }
+}
+
+/* R9 mobile Story image consistency
+   One square viewport for all Story hero and article photography on phones.
+   Source files are unchanged; object-fit crops only the displayed viewport. */
+@media (max-width: 650px) {
+  .story-article-hero .page-hero-grid > img,
+  .story-article figure > img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
   }
 }
