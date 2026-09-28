@@ -90,3 +90,10 @@ GitHub Pages will build the new Story automatically with the existing OG Saigon 
 - Every published Story should use `published: true`; drafts use `published: false`. The homepage, Stories index and sitemap only list explicitly published Stories.
 - A real GitHub Pages Jekyll build check is included at `.github/workflows/jekyll-build-check.yml`. After a push to `main`, open the **Actions** tab and confirm **Jekyll build check** is green. This workflow checks the build only; it does not replace your existing Pages deployment source.
 - If the build check fails, do not change DNS or the custom domain. Open the failed Actions run and inspect the Jekyll error first.
+
+## Jekyll build check (R6)
+
+The repository includes `.github/workflows/jekyll-build-check.yml`. It runs on pushes to `main`, pull requests targeting `main`, and manual dispatch. It only builds the site and does not deploy it.
+
+Important: make sure the hidden `.github/` directory is uploaded to the repository root. If the Actions sidebar does not show **Jekyll build check**, create/upload that workflow path explicitly.
+
