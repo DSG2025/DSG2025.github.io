@@ -1,0 +1,405 @@
+/* ============================================================
+   OG Saigon Custom Trip V2
+   Page-only layer. Shared site tokens and components live in style.css.
+   ============================================================ */
+
+body.custom-trip-page {
+  background: var(--cream);
+}
+
+body.custom-trip-page .custom-hero {
+  padding: 70px 0 76px;
+}
+
+body.custom-trip-page .custom-hero .page-hero-grid {
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 56px;
+}
+
+body.custom-trip-page .custom-hero h1 {
+  max-width: 710px;
+  font-size: clamp(3.35rem, 5.5vw, 5.65rem);
+}
+
+body.custom-trip-page .custom-hero .lead {
+  max-width: 690px;
+  margin: 22px 0 0;
+}
+
+body.custom-trip-page .custom-hero-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-weight: 760;
+}
+
+body.custom-trip-page .custom-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+}
+
+body.custom-trip-page .custom-hero-media {
+  overflow: hidden;
+  min-height: 520px;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  background: #d7d3c9;
+}
+
+body.custom-trip-page .custom-hero-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+
+/* Rooted in Saigon */
+body.custom-trip-page .rooted-section {
+  background: linear-gradient(180deg, var(--cream) 0%, #f1eadf 100%);
+}
+
+body.custom-trip-page .rooted-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 58px;
+  align-items: center;
+}
+
+body.custom-trip-page .rooted-media {
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  background: #d7d3c9;
+}
+
+body.custom-trip-page .rooted-media img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+body.custom-trip-page .rooted-copy {
+  max-width: 650px;
+}
+
+body.custom-trip-page .rooted-copy > p:not(.lead) {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+/* Destination direction cards */
+body.custom-trip-page .direction-head {
+  align-items: end;
+}
+
+body.custom-trip-page .direction-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 18px;
+}
+
+body.custom-trip-page .direction-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--paper);
+  box-shadow: 0 14px 42px rgba(24, 48, 42, 0.07);
+}
+
+body.custom-trip-page .direction-card--half {
+  grid-column: span 3;
+}
+
+body.custom-trip-page .direction-card--third {
+  grid-column: span 2;
+}
+
+body.custom-trip-page .direction-media {
+  height: 248px;
+  overflow: hidden;
+  background: #d6ddd8;
+}
+
+body.custom-trip-page .direction-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+body.custom-trip-page .asset-saigon {
+  object-position: center 48%;
+}
+
+body.custom-trip-page .asset-cu-chi {
+  object-position: center;
+}
+
+body.custom-trip-page .asset-tay-ninh {
+  object-position: center 50%;
+}
+
+body.custom-trip-page .asset-vung-tau {
+  object-position: center 62%;
+}
+
+body.custom-trip-page .asset-mekong {
+  object-position: center 52%;
+}
+
+body.custom-trip-page .direction-body {
+  flex: 1;
+  padding: 24px;
+}
+
+body.custom-trip-page .direction-body .eyebrow {
+  margin-bottom: 8px;
+}
+
+body.custom-trip-page .direction-body h3 {
+  margin-bottom: 9px;
+}
+
+body.custom-trip-page .direction-body p {
+  margin: 0;
+  color: var(--muted);
+}
+
+body.custom-trip-page .direction-footnote {
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body.custom-trip-page .direction-card:hover .direction-media img {
+    transform: scale(1.025);
+  }
+}
+
+/* How we shape it */
+body.custom-trip-page .custom-how-section .section-head {
+  margin-bottom: 34px;
+}
+
+/* Homework */
+body.custom-trip-page .homework-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+body.custom-trip-page .homework-panel {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.28fr);
+  gap: 48px;
+  align-items: start;
+  padding: 38px 42px;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--rust);
+  border-radius: 24px;
+  background: rgba(255, 253, 248, 0.72);
+}
+
+body.custom-trip-page .homework-heading h2 {
+  font-size: clamp(2rem, 3.3vw, 3rem);
+}
+
+body.custom-trip-page .homework-copy .lead {
+  margin: 0 0 10px;
+  color: var(--forest);
+}
+
+body.custom-trip-page .homework-copy p {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+body.custom-trip-page .homework-copy .homework-line {
+  margin-bottom: 0;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+/* Builder */
+body.custom-trip-page .builder-wrap {
+  width: min(900px, 100%);
+}
+
+body.custom-trip-page .builder-intro {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+body.custom-trip-page .builder-intro .lead {
+  margin-inline: auto;
+}
+
+body.custom-trip-page .custom-builder-form {
+  padding: 32px;
+}
+
+body.custom-trip-page .builder-fieldset {
+  margin: 0 0 18px;
+  padding: 0;
+  border: 0;
+}
+
+body.custom-trip-page .builder-fieldset legend {
+  margin-bottom: 8px;
+  font-size: 0.84rem;
+  font-weight: 900;
+}
+
+body.custom-trip-page .builder-checks {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 0;
+}
+
+body.custom-trip-page .builder-checks .check {
+  min-height: 48px;
+}
+
+body.custom-trip-page .custom-builder-form .note {
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+body.custom-trip-page .custom-builder-form .form-status {
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 920px) {
+  body.custom-trip-page .custom-hero .page-hero-grid,
+  body.custom-trip-page .rooted-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  body.custom-trip-page .custom-hero-media,
+  body.custom-trip-page .custom-hero-media img {
+    min-height: 420px;
+  }
+
+  body.custom-trip-page .rooted-media img {
+    height: 460px;
+  }
+
+  body.custom-trip-page .direction-card--half,
+  body.custom-trip-page .direction-card--third {
+    grid-column: span 3;
+  }
+
+  body.custom-trip-page .direction-card:last-child {
+    grid-column: 2 / span 4;
+  }
+
+  body.custom-trip-page .homework-panel {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  body.custom-trip-page .builder-checks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  body.custom-trip-page .custom-hero {
+    padding: 36px 0 54px;
+  }
+
+  body.custom-trip-page .custom-hero h1 {
+    font-size: clamp(2.65rem, 12vw, 3.55rem);
+    line-height: 0.98;
+  }
+
+  body.custom-trip-page .custom-hero .lead {
+    font-size: 1.08rem;
+    line-height: 1.62;
+  }
+
+  body.custom-trip-page .custom-secondary-link {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  body.custom-trip-page .custom-hero-media,
+  body.custom-trip-page .custom-hero-media img {
+    min-height: 310px;
+  }
+
+  body.custom-trip-page .custom-hero-media {
+    border-radius: 22px;
+  }
+
+  body.custom-trip-page .rooted-grid {
+    gap: 28px;
+  }
+
+  body.custom-trip-page .rooted-media img {
+    height: 330px;
+  }
+
+  body.custom-trip-page .direction-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  body.custom-trip-page .direction-card--half,
+  body.custom-trip-page .direction-card--third,
+  body.custom-trip-page .direction-card:last-child {
+    grid-column: auto;
+  }
+
+  body.custom-trip-page .direction-media {
+    height: 220px;
+  }
+
+  body.custom-trip-page .asset-tay-ninh {
+    object-position: center 48%;
+  }
+
+  body.custom-trip-page .asset-vung-tau {
+    object-position: center 64%;
+  }
+
+
+  body.custom-trip-page .direction-body {
+    padding: 21px;
+  }
+
+  body.custom-trip-page .direction-footnote {
+    text-align: left;
+  }
+
+  body.custom-trip-page .homework-section {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  body.custom-trip-page .homework-panel {
+    padding: 27px 22px;
+    border-left-width: 4px;
+  }
+
+  body.custom-trip-page .builder-intro {
+    text-align: left;
+  }
+
+  body.custom-trip-page .custom-builder-form {
+    padding: 22px;
+  }
+
+  body.custom-trip-page .builder-checks {
+    grid-template-columns: 1fr;
+  }
+}

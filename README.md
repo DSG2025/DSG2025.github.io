@@ -1,99 +1,70 @@
-# OG Saigon Website FINAL - Search, UX & Chợ Lớn
+# OG Saigon Custom Trip - Final Fixed Patch
 
-Production-ready static GitHub Pages package for **https://ogsaigon.com/**.
-Prepared: **2026-09-27**.
+This patch is designed to overlay the current R7 + R8 + R9 site tree. It keeps the agreed six-section UX and fixes the integration regressions found in the previous package.
 
-This final build consolidates the original V5.1 codebase, V6 search/UX work, the food-photo balance update, mobile five-image story parity, the final responsive UX pass, restored Airbnb trust signals, and the selected Chợ Lớn photography from the 27 September field scout.
+## Page structure
 
-## What is final in this package
+1. Hero: `Build your own experience` + `Your interests first. The itinerary second.`
+2. Rooted in Saigon: short founder / five-generation District 4 story
+3. Choose your direction: Saigon, Cu Chi, Tay Ninh, Vung Tau, Mekong
+4. How we shape it: three short steps
+5. We do our homework: compact preparation / care signal
+6. Trip builder: short form that prepares one WhatsApp message
 
-- Conversion-focused homepage for Western travellers, especially ages 30-60.
-- Global primary CTA changed to **Check My Date**; product-specific CTAs remain more specific where appropriate.
-- Private-first positioning for direct bookings.
-- Shorter, more conversational founder copy.
-- Clearer, more scannable airport-pickup copy.
-- Compact mobile WhatsApp button that no longer competes with the main CTA.
-- Mobile menu behaves as an overlay sheet instead of pushing the page down.
-- Mobile typography tuned for readability; normal body content is not reduced below a comfortable reading size.
-- Desktop editorial rain grid fixed; all five story beats remain visible on mobile with mixed aspect ratios.
-- Tripadvisor, GetYourGuide and Airbnb restored as visible trust signals.
-- Review data centralized in `/assets/js/site-data.js`.
-- New first-hand Chợ Lớn story at `/stories/cholon-saigon-chinatown/` using the selected field-scout photographs, plus the approved Chợ Lớn shortlist integrated into the homepage and Hidden Saigon page.
-- Sitemap expanded to 14 canonical URLs.
-- OAI-SearchBot explicitly allowed in `robots.txt` for ChatGPT Search eligibility.
-- Structured data, canonicals, internal links, image dimensions and metadata checked.
-- Unused duplicate hero assets removed from production.
+## Files to deploy
 
-## Routine data updates
+Replace / add:
 
-Edit `/assets/js/site-data.js` when verified review counts or contact details change.
+- `custom-trip/index.html`
+- `assets/css/custom-trip.css`
+- `assets/js/custom-trip.js`
+- `assets/images/custom-trip/tay-ninh-cao-dai-holy-see.webp`
+- `assets/images/custom-trip/tay-ninh-ba-den-mountain.webp`
+- `assets/images/custom-trip/vung-tau-coast.webp`
+- `assets/images/custom-trip/vung-tau-christ-statue-guests.webp`
+- `assets/images/custom-trip/vung-tau-sea-stairs.webp`
+- `assets/images/custom-trip/vung-tau-white-columns-guests.webp`
 
-As of 2026-09-27 the verified platform values used by this release are:
+Do not replace shared R7 + R8 + R9 files. This page intentionally reuses:
 
-- Tripadvisor: 5.0, 63 reviews
-- GetYourGuide: 5.0, 50 reviews
-- Airbnb: 5.0, 5 reviews
+- `_includes/site-header.html`
+- `_includes/site-footer.html`
+- `/assets/css/style.css`
+- `/assets/js/site-data.js`
+- `/assets/js/main.js`
+- existing OG Saigon image assets listed in `ASSET-MAP-CUSTOM-TRIP.md`
 
-Do not change review counts based on memory. Recheck the live platform before updating.
+## Integration fixes in this build
 
-## Deployment
+- Added Jekyll front matter so Liquid includes are processed.
+- Uses `{% include site-header.html %}` and `{% include site-footer.html %}` instead of handwritten header / footer markup.
+- Removed all `../` internal paths from the page. CSS, JS and internal links are root-relative.
+- Added `BreadcrumbList` JSON-LD alongside Service and Organization schema.
+- Removed the nonexistent `/assets/images/post-office-group.webp` reference. The Saigon card now uses `/assets/images/duy-og-saigon-guests-central-post-office.webp`, which is already used by the site.
+- Renamed the builder form from `#customTripForm` to `#customExperienceForm`. The page-specific JS uses only the new ID, so the legacy `#customTripForm` listener in shared `main.js` cannot bind to this form.
+- The page-specific submit handler also calls `stopImmediatePropagation()` before opening WhatsApp.
+- Header / footer labels and the floating WhatsApp accessibility markup now come from the standard site includes, so `Custom Trips` and the include-standard `aria-label` stay consistent automatically.
 
-1. Back up the current GitHub repository or create a tag/branch.
-2. Extract the release ZIP locally.
-3. Upload **the contents inside the final folder** to the root of `DSG2025.github.io` on `main`.
-4. Keep `CNAME` in the repository root.
-5. Suggested commit message: `Deploy OG Saigon final UX + Search + Cholon release`.
-6. Wait for GitHub Pages deployment.
-7. Check homepage, Hidden Saigon, Meet Duy, Transport, Stories and the new Chợ Lớn article on desktop and mobile.
-8. Resubmit `https://ogsaigon.com/sitemap.xml` in Google Search Console.
-9. Request indexing for the key updated/new URLs listed in `RELEASE-NOTES-FINAL.md`.
+## Important deployment note
 
-## Important operating notes
+Do not add a second handwritten WhatsApp floating button to this page. The standard site footer include owns the shared footer / floating WhatsApp UI.
 
-- Direct website experiences are positioned as private-first. OTA products can use different formats depending on the live listing.
-- Vehicle photographs on `/transport/` are examples. Vehicle type may vary with availability, group size and luggage.
-- Do not publish prices, timings or inclusions unless they match current operating reality.
-- Chợ Lớn operational details can change. The new article clearly dates field observations to September 2026 where relevant.
-- Search visibility and bookings cannot be guaranteed by code changes; evaluate real Search Console and enquiry data over time.
+## Regression verification
 
-See `RELEASE-NOTES-FINAL.md` for the full audit and post-deployment checklist.
+Run from the repository root after overlaying this patch:
 
-## Stories publishing system (Jekyll)
+```bash
+bash verify-custom-trip.sh .
+```
 
-Stories are now managed with a Jekyll collection instead of one hand-built HTML folder per article.
+The script specifically checks the regressions from the prior audit, including duplicate-form isolation, missing image references, Jekyll includes, root-relative links and BreadcrumbList schema.
 
-- Existing article sources: `_stories/*.md`
-- Reusable article layout: `_layouts/story.html`
-- Shared Stories header/footer: `_includes/`
-- Stories index: `stories/index.html` (automatic)
-- Homepage Stories block: `index.html` (automatic latest 4 where `homepage: true`)
-- Sitemap: `sitemap.xml` (automatic Story URLs)
-- Copy-ready example: `_stories/TEMPLATE-NEW-STORY.md`
-- Full instructions: `STORIES-GUIDE.md`
+## Suggested commit
 
-### Add a new Story
+`Fix Custom Trip integration and finalize destination assets`
 
-1. Copy `_stories/TEMPLATE-NEW-STORY.md`.
-2. Rename the copy to a short URL-friendly filename, such as `_stories/saigon-coffee-morning.md`.
-3. Update the title, SEO description, date, images and article text.
-4. Change `published: false` to `published: true` when the article is ready.
-5. Set `homepage: true` only if you want it eligible for the homepage Story block.
-6. Upload any new WebP images to `assets/images/`.
-7. Commit to GitHub. The filename automatically becomes the `/stories/.../` URL, so normal new Stories do not need a `permalink:` field.
+## Final pre-PR image cleanup
 
-GitHub Pages will build the new Story automatically with the existing OG Saigon design.
-
-## R5 maintenance notes
-
-- Header and footer are shared through `_includes/site-header.html` and `_includes/site-footer.html` across the homepage, static pages, Stories index and Story layout. Edit the shared include instead of changing 10 pages separately.
-- The homepage keeps its richer footer automatically via `footer_variant: home`.
-- Every published Story should use `published: true`; drafts use `published: false`. The homepage, Stories index and sitemap only list explicitly published Stories.
-- A real GitHub Pages Jekyll build check is included at `.github/workflows/jekyll-build-check.yml`. After a push to `main`, open the **Actions** tab and confirm **Jekyll build check** is green. This workflow checks the build only; it does not replace your existing Pages deployment source.
-- If the build check fails, do not change DNS or the custom domain. Open the failed Actions run and inspect the Jekyll error first.
-
-## Jekyll build check (R6)
-
-The repository includes `.github/workflows/jekyll-build-check.yml`. It runs on pushes to `main`, pull requests targeting `main`, and manual dispatch. It only builds the site and does not deploy it.
-
-Important: make sure the hidden `.github/` directory is uploaded to the repository root. If the Actions sidebar does not show **Jekyll build check**, create/upload that workflow path explicitly.
-
+- Corrected the declared intrinsic dimensions for `mekong-meal.webp`, `duy-og-saigon-guests-central-post-office.webp`, `cu-chi-trapdoor.webp`, and `mekong-boat.webp`.
+- Replaced the duplicate Central Post Office image on the Saigon destination card with `hidden-alley.webp`.
+- `hidden-alley.webp` is bundled in this patch at `1600x1577` so the destination card has a verified asset.

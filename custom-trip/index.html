@@ -1,125 +1,416 @@
 ---
 layout: null
+permalink: /custom-trip/
+title: "Build Your Own Experience from Saigon | OG Saigon"
+description: "Build a private experience around Saigon, Cu Chi, Tay Ninh, Vung Tau or the Mekong. Tell OG Saigon what interests you and we will help shape a realistic plan."
 ---
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Build Your Own Private Saigon Day | OG Saigon</title>
-<meta content="Create a custom private Saigon day around history, food, Cu Chi, city highlights, Cao Dai, Mekong Delta and your own interests." name="description"/>
-<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><link href="https://ogsaigon.com/custom-trip/" rel="canonical"/>
-<meta content="#16382f" name="theme-color"/>
-<meta content="Build Your Own Private Saigon Day | OG Saigon" property="og:title"/>
-<meta content="Create a custom private Saigon day around history, food, Cu Chi, city highlights, Cao Dai, Mekong Delta and your own interests." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://ogsaigon.com/custom-trip/" property="og:url"/>
-<meta content="https://ogsaigon.com/assets/images/duy-guiding-guests-cu-chi-tunnels.webp" property="og:image"/><meta content="OG Saigon guests exploring Ho Chi Minh City with a local host" property="og:image:alt"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<!-- OG Saigon favicon -->
-<link href="/favicon.ico" rel="icon" sizes="any"/>
-<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="/site.webmanifest" rel="manifest"/>
-<link href="/assets/css/style.css" rel="stylesheet"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ogsaigon.com/#organization","name":"OG Saigon Experience & Transport","alternateName":"OG Saigon","url":"https://ogsaigon.com/","telephone":"+84938033395","areaServed":{"@type":"City","name":"Ho Chi Minh City"},"founder":{"@type":"Person","name":"Duy Nguyen"},"sameAs":["https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html","https://www.getyourguide.com/og-saigon-experience--transport-s695288/","https://www.airbnb.com/experiences/7046435"],"logo":{"@type":"ImageObject","url":"https://ogsaigon.com/favicon-512x512.png"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ogsaigon.com/"},{"@type":"ListItem","position":2,"name":"Custom Trips","item":"https://ogsaigon.com/custom-trip/"}]}]}</script>
-<meta content="Build Your Own Private Saigon Day | OG Saigon" name="twitter:title"/><meta content="Create a custom private Saigon day around history, food, Cu Chi, city highlights, Cao Dai, Mekong Delta and your own interests." name="twitter:description"/><meta content="https://ogsaigon.com/assets/images/duy-guiding-guests-cu-chi-tunnels.webp" name="twitter:image"/></head>
-<body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-{% include site-header.html %}
-<main id="main-content">
-<section class="page-hero">
-<div class="wrap page-hero-grid">
-<div>
-<div class="breadcrumbs"><a href="/">Home</a> / Custom Trip</div>
-<div class="eyebrow">Build your own experience</div>
-<h1>Your interests first. The itinerary second.</h1>
-<p class="lead">Tell us what kind of day you want. We’ll combine the places that make sense together, keep the pace realistic and send a suggested route on WhatsApp.</p>
-</div>
-<img alt="Travelers sharing a meal on a custom OG Saigon day" decoding="async" fetchpriority="high" height="1484" loading="eager" src="/assets/images/mekong-meal.webp" width="1600"/>
-</div>
-</section>
-<section class="section paper">
-<div class="wrap content-grid">
-<article>
-<div class="eyebrow">Possible building blocks</div>
-<h2>Mix the parts that matter to you.</h2>
-<div class="option-chips option-chips-paper">
-<span>Cu Chi Tunnels</span>
-<span>War Remnants Museum</span>
-<span>City highlights</span>
-<span>Hidden local food</span>
-<span>Neighborhood life</span>
-<span>Cao Dai</span>
-<span>Mekong Delta</span>
-<span>Relaxed evening</span>
-</div>
-<div class="gallery">
-<img alt="Saigon city highlights" class="g1" decoding="async" height="1181" loading="lazy" src="/assets/images/duy-og-saigon-guests-central-post-office.webp" width="1200"/>
-<img alt="Cu Chi Tunnels" class="g2" decoding="async" height="1086" loading="lazy" src="/assets/images/cu-chi-trapdoor.webp" width="1448"/>
-<img alt="Mekong Delta boat" class="g3" decoding="async" height="1600" loading="lazy" src="/assets/images/mekong-boat.webp" width="1200"/>
-<img alt="War Remnants Museum" class="g4" decoding="async" height="990" loading="lazy" src="/assets/images/war-museum.webp" width="1280"/>
-<img alt="Saigon food" class="g5" decoding="async" height="1200" loading="lazy" src="/assets/images/grilled-seafood.webp" width="1600"/>
-<img alt="Saigon local neighborhood" class="g6" decoding="async" height="1577" loading="lazy" src="/assets/images/hidden-alley.webp" width="1600"/>
-</div>
-</article>
-<aside class="form-card">
-<div class="eyebrow">Send your idea</div>
-<h3>Build my Saigon day</h3>
-<form id="customTripForm">
-<div class="form-grid">
-<div class="field">
-<label for="date">Travel date</label>
-<input id="date" name="date" type="date"/>
-</div>
-<div class="field">
-<label for="guests">Travelers</label>
-<input id="guests" max="12" min="1" name="guests" placeholder="2" type="number"/>
-</div>
-</div>
-<div class="form-grid">
-<div class="field">
-<label for="duration">Preferred duration</label>
-<select id="duration" name="duration">
-<option>Half day</option>
-<option selected="">Full day</option>
-<option>2 days</option>
-<option>3 days</option>
-<option>Not sure</option>
-</select>
-</div>
-<div class="field">
-<label for="pickup">Hotel / pickup area</label>
-<input id="pickup" name="pickup" placeholder="District 1, HCMC" type="text"/>
-</div>
-</div>
-<div class="field">
-<label>What interests you?</label>
-<div class="checks">
-<label class="check"><input name="interest" type="checkbox" value="History"/> History</label>
-<label class="check"><input name="interest" type="checkbox" value="Food"/> Food</label>
-<label class="check"><input name="interest" type="checkbox" value="Cu Chi"/> Cu Chi</label>
-<label class="check"><input name="interest" type="checkbox" value="Local life"/> Local life</label>
-<label class="check"><input name="interest" type="checkbox" value="City highlights"/> City highlights</label>
-<label class="check"><input name="interest" type="checkbox" value="Mekong Delta"/> Mekong Delta</label>
-</div>
-</div>
-<div class="field">
-<label for="notes">Anything you definitely want to include or avoid?</label>
-<textarea id="notes" name="notes" placeholder="Example: Cu Chi + War Museum, relaxed pace, no shooting range..."></textarea>
-</div>
-<button class="btn primary full-width" data-submit-label="Send My Request on WhatsApp" type="submit">Send My Request on WhatsApp</button>
-<p aria-live="polite" class="form-status" data-form-status="" role="status"></p>
-<p class="note">No payment is taken here. This only prepares a WhatsApp message for the OG Saigon team; nothing is booked until we confirm with you.</p>
-</form>
-</aside>
-</div>
-</section>
-</main>
-{% include site-footer.html %}
-<script src="/assets/js/site-data.js"></script>
-<script src="/assets/js/main.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Build Your Own Experience from Saigon | OG Saigon</title>
+    <meta
+      name="description"
+      content="Build a private experience around Saigon, Cu Chi, Tay Ninh, Vung Tau or the Mekong. Tell OG Saigon what interests you and we’ll help shape a realistic plan."
+    >
+    <link rel="canonical" href="https://ogsaigon.com/custom-trip/">
+    <meta name="theme-color" content="#16382f">
+    <meta property="og:title" content="Build Your Own Experience from Saigon | OG Saigon">
+    <meta
+      property="og:description"
+      content="Start with what interests you. OG Saigon will help shape a private experience through Saigon and nearby Southern Vietnam destinations."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ogsaigon.com/custom-trip/">
+    <meta
+      property="og:image"
+      content="https://ogsaigon.com/assets/images/mekong-meal.webp"
+    >
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom-trip.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Service",
+            "@id": "https://ogsaigon.com/custom-trip/#service",
+            "name": "OG Saigon Custom Experience Planning",
+            "url": "https://ogsaigon.com/custom-trip/",
+            "provider": { "@id": "https://ogsaigon.com/#organization" },
+            "areaServed": [
+              "Saigon, Vietnam",
+              "Cu Chi, Vietnam",
+              "Tay Ninh, Vietnam",
+              "Vung Tau, Vietnam",
+              "Mekong Delta, Vietnam"
+            ],
+            "serviceType": "Private custom travel experience planning"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://ogsaigon.com/#organization",
+            "name": "OG Saigon Experience & Transport",
+            "alternateName": "OG Saigon",
+            "url": "https://ogsaigon.com/",
+            "telephone": "+84938033395",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ogsaigon.com/favicon-512x512.png"
+            },
+            "sameAs": [
+              "https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html",
+              "https://www.getyourguide.com/og-saigon-experience--transport-s695288/",
+              "https://www.airbnb.com/experiences/7046435"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ogsaigon.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Custom Trips",
+                "item": "https://ogsaigon.com/custom-trip/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="custom-trip-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    {% include site-header.html %}
+
+    <main id="main-content">
+      <!-- 1. HERO -->
+      <section class="page-hero custom-hero">
+        <div class="wrap page-hero-grid">
+          <div class="custom-hero-copy">
+            <div class="eyebrow">Build your own experience</div>
+            <h1>Your interests first.<br>The itinerary second.</h1>
+            <p class="lead">
+              Tell us what interests you and how much time you have. We’ll help shape a private experience through Saigon and, if you want to go further, Cu Chi, Tay Ninh, Vung Tau or the Mekong.
+            </p>
+            <p class="custom-hero-note">One day or a few. Keep it simple, or take it further.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#trip-builder">Check My Date</a>
+              <a
+                class="text-link custom-secondary-link"
+                href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27d%20like%20to%20build%20a%20custom%20experience."
+                data-whatsapp-link
+                target="_blank"
+                rel="noopener"
+              >Or tell us your idea on WhatsApp →</a>
+            </div>
+          </div>
+
+          <div class="custom-hero-media">
+            <img
+              src="/assets/images/mekong-meal.webp"
+              alt="Travelers sharing a meal during an OG Saigon custom experience"
+              width="1600"
+              height="1484"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. ROOTED IN SAIGON -->
+      <section class="section rooted-section">
+        <div class="wrap rooted-grid">
+          <div class="rooted-media">
+            <img
+              src="/assets/images/duy-og-saigon-guests-central-post-office.webp"
+              alt="Duy, founder of OG Saigon, with guests in Saigon"
+              width="1200"
+              height="1181"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <div class="rooted-copy">
+            <div class="eyebrow">Rooted in Saigon</div>
+            <h2>This is home, not just where we run tours.</h2>
+            <p class="lead">
+              I was born and raised in Saigon, in District 4, where my family has lived for five generations.
+            </p>
+            <p>
+              OG Saigon grew from the way I know this city: through its streets, food, history, neighborhoods and the people behind them. So when we build a custom experience, Saigon is usually where the story begins.
+            </p>
+            <a class="text-link" href="/meet-duy/">Meet Duy →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. CHOOSE YOUR DIRECTION -->
+      <section class="section paper direction-section">
+        <div class="wrap">
+          <div class="section-head direction-head">
+            <div>
+              <div class="eyebrow">Choose your direction</div>
+              <h2>Start in Saigon. Take it where it feels right.</h2>
+            </div>
+            <p class="lead">
+              Pick one, combine a few, or tell us you’re not sure yet. These are starting points, not fixed packages.
+            </p>
+          </div>
+
+          <div class="direction-grid">
+            <article class="direction-card direction-card--half">
+              <div class="direction-media">
+                <img
+                  class="asset-saigon"
+                  src="/assets/images/hidden-alley.webp"
+                  alt="Guests walking through a local Saigon alley at night"
+                  width="1600"
+                  height="1577"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="direction-body">
+                <div class="eyebrow">Saigon</div>
+                <h3>The city we call home.</h3>
+                <p>History, Cholon, District 4, local food, old neighborhoods and everyday Saigon.</p>
+              </div>
+            </article>
+
+            <article class="direction-card direction-card--half">
+              <div class="direction-media">
+                <img
+                  class="asset-cu-chi"
+                  src="/assets/images/cu-chi-trapdoor.webp"
+                  alt="Guest exploring the Cu Chi Tunnels"
+                  width="1448"
+                  height="1086"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="direction-body">
+                <div class="eyebrow">Cu Chi</div>
+                <h3>History beyond the tunnels.</h3>
+                <p>Go deeper into the people, landscape and history behind Cu Chi.</p>
+              </div>
+            </article>
+
+            <article class="direction-card direction-card--third">
+              <div class="direction-media">
+                <img
+                  class="asset-tay-ninh"
+                  src="/assets/images/custom-trip/tay-ninh-cao-dai-holy-see.webp"
+                  alt="Cao Dai Holy See in Tay Ninh"
+                  width="1000"
+                  height="562"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="direction-body">
+                <div class="eyebrow">Tay Ninh</div>
+                <h3>Belief, history and landscape.</h3>
+                <p>Cao Dai culture, local stories and Ba Den Mountain beyond Saigon.</p>
+              </div>
+            </article>
+
+            <article class="direction-card direction-card--third">
+              <div class="direction-media">
+                <img
+                  class="asset-vung-tau"
+                  src="/assets/images/custom-trip/vung-tau-coast.webp"
+                  alt="Coastal view in Vung Tau photographed during an OG Saigon trip"
+                  width="1600"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="direction-body">
+                <div class="eyebrow">Vung Tau</div>
+                <h3>A slower day by the coast.</h3>
+                <p>Sea air, seafood, local history and a different rhythm from Saigon.</p>
+              </div>
+            </article>
+
+            <article class="direction-card direction-card--third">
+              <div class="direction-media">
+                <img
+                  class="asset-mekong"
+                  src="/assets/images/mekong-boat.webp"
+                  alt="Boat journey in the Mekong Delta"
+                  width="1200"
+                  height="1600"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <div class="direction-body">
+                <div class="eyebrow">Mekong</div>
+                <h3>Follow the city south.</h3>
+                <p>River life, countryside, food and a slower look at Southern Vietnam.</p>
+              </div>
+            </article>
+          </div>
+
+          <p class="direction-footnote">Pick one, combine a few, or tell us you’re not sure yet.</p>
+        </div>
+      </section>
+
+      <!-- 4. HOW WE SHAPE IT -->
+      <section class="section how-section custom-how-section">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">How we shape it</div>
+              <h2>Simple before it becomes detailed.</h2>
+            </div>
+            <p class="lead">You don’t need a finished itinerary before you contact us.</p>
+          </div>
+
+          <div class="how-grid">
+            <article class="how-card">
+              <span class="how-num">01</span>
+              <h3>Tell us what interests you</h3>
+              <p>Dates, places, food, history, local life, or even just a rough idea.</p>
+            </article>
+
+            <article class="how-card">
+              <span class="how-num">02</span>
+              <h3>We make it realistic</h3>
+              <p>We look at the route, timing and pace instead of simply adding more stops.</p>
+            </article>
+
+            <article class="how-card">
+              <span class="how-num">03</span>
+              <h3>We talk it through</h3>
+              <p>You receive a clear suggestion and continue directly with us on WhatsApp.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. WE DO OUR HOMEWORK -->
+      <section class="section homework-section">
+        <div class="wrap">
+          <div class="homework-panel">
+            <div class="homework-heading">
+              <div class="eyebrow">A little more care</div>
+              <h2>We do our homework.</h2>
+            </div>
+            <div class="homework-copy">
+              <p class="lead">Some custom experiences need a little more preparation.</p>
+              <p>
+                If your plan involves unusual places, complicated timing or something we haven’t arranged before, we may check the route, opening hours or local conditions before the day.
+              </p>
+              <p class="homework-line">We’d rather do the homework properly than simply say yes to everything.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. TRIP BUILDER -->
+      <section class="section paper builder-section" id="trip-builder">
+        <div class="wrap builder-wrap">
+          <div class="builder-intro">
+            <div class="eyebrow">Build your own experience</div>
+            <h2>Tell us what you have in mind.</h2>
+            <p class="lead">You don’t need to have everything figured out. Send what you know and we’ll continue from there.</p>
+          </div>
+
+          <form class="form-card custom-builder-form" id="customExperienceForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="tripDate">Travel date</label>
+                <input id="tripDate" name="tripDate" type="date">
+              </div>
+
+              <div class="field">
+                <label for="travelers">Travelers</label>
+                <input id="travelers" name="travelers" type="number" min="1" max="30" inputmode="numeric" value="2">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="duration">How much time do you have?</label>
+              <select id="duration" name="duration">
+                <option value="Not sure yet">Not sure yet</option>
+                <option value="Half day">Half day</option>
+                <option value="1 day">1 day</option>
+                <option value="2 days">2 days</option>
+                <option value="3 days">3 days</option>
+                <option value="4+ days">4+ days</option>
+              </select>
+            </div>
+
+            <fieldset class="builder-fieldset">
+              <legend>Where are you interested in?</legend>
+              <div class="checks builder-checks">
+                <label class="check"><input type="checkbox" name="destination" value="Saigon"> <span>Saigon</span></label>
+                <label class="check"><input type="checkbox" name="destination" value="Cu Chi"> <span>Cu Chi</span></label>
+                <label class="check"><input type="checkbox" name="destination" value="Tay Ninh"> <span>Tay Ninh</span></label>
+                <label class="check"><input type="checkbox" name="destination" value="Vung Tau"> <span>Vung Tau</span></label>
+                <label class="check"><input type="checkbox" name="destination" value="Mekong"> <span>Mekong</span></label>
+                <label class="check"><input type="checkbox" name="destination" value="Not sure yet"> <span>Not sure yet</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="builder-fieldset">
+              <legend>What are you into?</legend>
+              <div class="checks builder-checks">
+                <label class="check"><input type="checkbox" name="interest" value="History"> <span>History</span></label>
+                <label class="check"><input type="checkbox" name="interest" value="Food"> <span>Food</span></label>
+                <label class="check"><input type="checkbox" name="interest" value="Local life"> <span>Local life</span></label>
+                <label class="check"><input type="checkbox" name="interest" value="Culture"> <span>Culture</span></label>
+                <label class="check"><input type="checkbox" name="interest" value="Photography"> <span>Photography</span></label>
+                <label class="check"><input type="checkbox" name="interest" value="Something unusual"> <span>Something unusual</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="tripIdea">Anything you already have in mind?</label>
+              <textarea
+                id="tripIdea"
+                name="tripIdea"
+                placeholder="Places you saved, something you want to understand, food you want to try, or just the kind of day you enjoy when you travel."
+              ></textarea>
+            </div>
+
+            <button class="btn primary full-width" type="submit">Send My Experience Idea on WhatsApp</button>
+            <p class="form-status" id="customExperienceStatus" aria-live="polite"></p>
+            <p class="note">No payment is taken here. Nothing is booked until we confirm the details with you.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    {% include site-footer.html %}
+
+    <script src="/assets/js/site-data.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/custom-trip.js"></script>
+  </body>
 </html>
