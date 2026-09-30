@@ -19,3 +19,10 @@ Target integration workflow:
 3. Push to a feature branch and open a PR.
 4. Require the Jekyll / Pages build check to pass.
 5. On preview, test desktop and mobile, then submit the form once and confirm exactly one WhatsApp tab opens with the correct fields.
+
+## Mobile builder gutter fix
+
+- Fixed the mobile heading block above the trip form touching the left viewport edge.
+- Root cause: `.builder-wrap { width: min(900px, 100%); }` overrode the shared `.wrap` width and removed the standard mobile gutter.
+- Fix: `.builder-wrap` now sets only `max-width: 900px`, allowing the shared `.wrap` rule to retain its `calc(100% - 26px)` mobile gutter.
+- This keeps the intro heading and form aligned to the same site-wide content container.

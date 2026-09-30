@@ -227,7 +227,7 @@ body.custom-trip-page .homework-copy .homework-line {
 
 /* Builder */
 body.custom-trip-page .builder-wrap {
-  width: min(900px, 100%);
+  max-width: 900px;
 }
 
 body.custom-trip-page .builder-intro {

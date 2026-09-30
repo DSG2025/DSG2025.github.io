@@ -27,3 +27,16 @@ The page now declares the real intrinsic dimensions for the four previously mism
 - `mekong-boat.webp`: `1200x1600`
 
 The Saigon card uses `hidden-alley.webp` at `1600x1577`, avoiding duplicate imagery on the same page.
+
+## Mobile builder gutter regression
+
+The Custom Trip stylesheet must not override the shared `.wrap` width on `.builder-wrap`.
+Expected rule:
+
+```css
+body.custom-trip-page .builder-wrap {
+  max-width: 900px;
+}
+```
+
+Do not reintroduce `width: 100%` or `width: min(900px, 100%)` here, because that removes the shared mobile page gutter.

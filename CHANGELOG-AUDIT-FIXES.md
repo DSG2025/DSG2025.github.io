@@ -44,3 +44,9 @@ This build addresses the integration issues identified after applying the previo
    - Tay Ninh primary card: Cao Dai Holy See.
    - Vung Tau primary card: coastal view.
    - Supporting Tay Ninh / Vung Tau assets remain reserved and are not added as mini-galleries.
+
+9. Mobile builder intro gutter
+   - Removed the custom width declaration from `.builder-wrap`.
+   - `.builder-wrap` now uses `max-width: 900px` only.
+   - Shared `.wrap` controls horizontal gutters, including the 13px-per-side mobile gutter from `calc(100% - 26px)`.
+   - Fixes the `Build your own experience / Tell us what you have in mind` block touching the left edge on mobile.
