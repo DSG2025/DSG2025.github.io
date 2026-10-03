@@ -19,7 +19,7 @@ window.OG_SAIGON_SITE_DATA = {
     tripadvisor: {
       name: "Tripadvisor",
       rating: 5.0,
-      count: 63,
+      count: 70,
       url: "https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html",
     },
 
@@ -33,7 +33,7 @@ window.OG_SAIGON_SITE_DATA = {
     airbnb: {
       name: "Airbnb",
       rating: 5.0,
-      count: 5,
+      count: 6,
       url: "https://www.airbnb.com/experiences/7046435",
     },
   },
