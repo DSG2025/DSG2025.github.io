@@ -47,6 +47,7 @@ side_secondary_whatsapp: true
 <p>If you plan a historical site such as Cu Chi, remember that much of the visit is outdoors. If you plan a city day, alternating between streets, cafés, museums and transport can make the pace easier.</p>
 <h2>Airport arrival: keep your first hour simple</h2>
 <p>After landing at Tan Son Nhat Airport, immigration, bags and traffic can make exact timing difficult. If you arrange a pickup, send the flight number and keep a working contact method available after landing. If you arrange your own transport, use an official service or a reputable ride-hailing option and confirm the destination before leaving.</p>
+<p>If you prefer to have your arrival arranged in advance, see our <a class="text-link" href="/transport/">private Saigon airport pickup service</a>.</p>
 <p>Do not schedule something important immediately after an international arrival unless you have enough buffer for delays.</p>
 <h2>Cash, cards and your phone</h2>
 <p>Cards are common in many hotels, restaurants and larger businesses, while small food stalls and local purchases may be easier with Vietnamese cash. Keep smaller notes available rather than relying on a large denomination for every purchase.</p>
