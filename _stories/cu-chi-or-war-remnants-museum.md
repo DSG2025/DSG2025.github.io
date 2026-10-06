@@ -19,7 +19,7 @@ index_excerpt: How a field site and a museum differ, what each adds, and how to 
   a race.
 home_excerpt: They tell different parts of the same history. Here’s how the two visits differ and how they can fit together.
 home_show_category: false
-homepage: true
+homepage: false
 breadcrumb: Cu Chi or the War Remnants Museum first?
 side_eyebrow: Plan with a local
 side_title: Not sure what fits your trip?

@@ -274,6 +274,54 @@ body.custom-trip-page .custom-builder-form .form-status {
   text-align: center;
 }
 
+body.custom-trip-page .prefill-note {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border-left: 4px solid var(--rust);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 760;
+}
+
+body.custom-trip-page .form-fallback {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--cream);
+}
+
+body.custom-trip-page .form-fallback[hidden],
+body.custom-trip-page .prefill-note[hidden] {
+  display: none;
+}
+
+body.custom-trip-page .form-fallback textarea {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+body.custom-trip-page .form-fallback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+body.custom-trip-page .form-fallback-actions .btn {
+  flex: 1 1 180px;
+  justify-content: center;
+}
+
+body.custom-trip-page .form-fallback-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 /* Tablet */
 @media (max-width: 920px) {
   body.custom-trip-page .custom-hero .page-hero-grid,
@@ -402,4 +450,10 @@ body.custom-trip-page .custom-builder-form .form-status {
   body.custom-trip-page .builder-checks {
     grid-template-columns: 1fr;
   }
+}
+
+/* The form already offers WhatsApp and calling, so avoid covering its fallback. */
+@media (max-width: 920px) {
+  body.custom-trip-page.form-message-ready .wa-float { display: none; }
+  body.custom-trip-page .form-fallback-actions .btn { min-width: 0; white-space: normal; }
 }

@@ -339,6 +339,7 @@ description: "Build a private experience around Saigon, Cu Chi, Tay Ninh, Vung T
             <div class="eyebrow">Build your own experience</div>
             <h2>Tell us what you have in mind.</h2>
             <p class="lead">You don’t need to have everything figured out. Send what you know and we’ll continue from there.</p>
+            <p class="prefill-note" id="customExperiencePrefill" hidden></p>
           </div>
 
           <form class="form-card custom-builder-form" id="customExperienceForm">
@@ -399,9 +400,26 @@ description: "Build a private experience around Saigon, Cu Chi, Tay Ninh, Vung T
               ></textarea>
             </div>
 
-            <button class="btn primary full-width" type="submit">Send My Experience Idea on WhatsApp</button>
-            <p class="form-status" id="customExperienceStatus" aria-live="polite"></p>
-            <p class="note">No payment is taken here. Nothing is booked until we confirm the details with you.</p>
+            <button class="btn primary full-width" type="submit">Continue on WhatsApp</button>
+            <p class="form-status" id="customExperienceStatus" role="status" aria-live="polite"></p>
+
+            <div class="form-fallback" id="customExperienceFallback" hidden>
+              <div class="field">
+                <label for="customExperienceMessage">Your message</label>
+                <textarea id="customExperienceMessage" readonly rows="8"></textarea>
+              </div>
+              <div class="form-fallback-actions">
+                <a class="btn primary" id="customExperienceReopen" href="#" target="_blank" rel="noopener">Open WhatsApp again</a>
+                <button class="btn outline" id="customExperienceCopy" type="button">Copy message</button>
+              </div>
+              <p class="form-fallback-note">
+                Prefer to call?
+                <a data-phone-link="" href="tel:+84938033395">+84 938 033 395</a>
+                to talk through your plans.
+              </p>
+            </div>
+
+            <p class="note">WhatsApp opens with your message ready. Tap Send there to deliver it. No payment is taken here, and nothing is booked until we confirm the details with you.</p>
           </form>
         </div>
       </section>

@@ -18,7 +18,7 @@ hero_height: 1200
 index_excerpt: A practical guide to traffic, rain, heat, transport and leaving enough room to enjoy your first day.
 home_excerpt: Traffic, rain, heat, transport and why a little space in your schedule makes the city easier to enjoy.
 home_show_category: false
-homepage: true
+homepage: false
 breadcrumb: 'Your first day in Saigon: what to expect'
 side_eyebrow: Plan with a local
 side_title: Not sure what fits your trip?

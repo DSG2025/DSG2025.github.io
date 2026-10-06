@@ -58,7 +58,7 @@ body.home-v2 .hero-v2 .hero-grid {
   align-items: center;
 }
 
-body.home-v2 .hero-v2 .hero-copy h1 {
+body.home-v2 .hero-v2 .hero-intro h1 {
   max-width: 680px;
   font-size: clamp(3.7rem, 6.4vw, 6.35rem);
 }
@@ -83,12 +83,6 @@ body.home-v2 .hero-secondary-link {
   color: var(--ink);
 }
 
-body.home-v2 .hero-note {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
 body.home-v2 .hero-media {
   min-width: 0;
 }
@@ -96,7 +90,7 @@ body.home-v2 .hero-media {
 body.home-v2 .hero-picture {
   display: block;
   overflow: hidden;
-  aspect-ratio: 1600 / 934;
+  aspect-ratio: 4 / 3;
   border-radius: 30px;
   background: #d7d3c9;
   box-shadow: 0 24px 70px rgba(24, 48, 42, 0.15);
@@ -117,15 +111,15 @@ body.home-v2 .trust-strip {
 
 body.home-v2 .trust-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 body.home-v2 .trust-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 116px;
-  padding: 24px 22px;
+  min-height: 80px;
+  padding: 16px 22px;
   border-right: 1px solid rgba(255, 255, 255, 0.13);
 }
 
@@ -164,22 +158,14 @@ body.home-v2 .intent-grid {
 body.home-v2 .intent-card {
   position: relative;
   display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 22px;
-  min-height: 228px;
-  padding: 34px;
+  min-height: 0;
+  padding: 24px;
   border: 1px solid var(--line);
-  border-radius: 24px;
-  background: rgba(255, 253, 248, 0.54);
+  border-radius: 0;
+  background: transparent;
   transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
-}
-
-body.home-v2 .intent-num,
-body.home-v2 .approach-num {
-  color: var(--rust);
-  font-size: 0.78rem;
-  font-weight: 950;
-  letter-spacing: 0.08em;
 }
 
 body.home-v2 .intent-card h3 {
@@ -189,19 +175,13 @@ body.home-v2 .intent-card h3 {
 
 body.home-v2 .intent-card p {
   max-width: 480px;
-  margin: 0 0 18px;
+  margin: 0;
   color: var(--muted);
-}
-
-body.home-v2 .intent-link {
-  color: var(--rust);
-  font-size: 0.92rem;
-  font-weight: 900;
 }
 
 /* Featured experiences */
 body.home-v2 .featured-cards {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
 }
 
@@ -211,21 +191,20 @@ body.home-v2 .experience-card {
 }
 
 body.home-v2 .experience-card .card-media {
-  height: 290px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
 }
 
 body.home-v2 .experience-card:nth-child(2) .card-media img {
   object-position: center 32%;
 }
 
-body.home-v2 .experience-card:nth-child(3) .card-media img {
-  object-position: center 30%;
-}
-
 body.home-v2 .experience-card .card-body {
   display: flex;
   flex: 1;
   flex-direction: column;
+  padding: 24px 0 0;
 }
 
 body.home-v2 .experience-card .card-footer {
@@ -240,54 +219,10 @@ body.home-v2 .experience-meta {
   letter-spacing: 0.015em;
 }
 
-/* OG approach */
-body.home-v2 .approach-section {
-  background: var(--forest);
-  color: #fff;
-}
-
-body.home-v2 .approach-section .eyebrow {
-  color: #efb18e;
-}
-
-body.home-v2 .approach-section .lead {
-  color: #cfddd7;
-}
-
-body.home-v2 .approach-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-  border-left: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-body.home-v2 .approach-item {
-  min-height: 250px;
-  padding: 34px;
-  border-right: 1px solid rgba(255, 255, 255, 0.14);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-body.home-v2 .approach-item .approach-num {
-  display: block;
-  margin-bottom: 40px;
-  color: #efb18e;
-}
-
-body.home-v2 .approach-item h3 {
-  color: #fff;
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
-}
-
-body.home-v2 .approach-item p {
-  max-width: 500px;
-  margin: 0;
-  color: #cad9d3;
-}
-
 /* Founder */
 body.home-v2 .founder-v2 {
-  background: linear-gradient(180deg, var(--cream) 0%, #f1eadf 100%);
+  background: var(--forest);
+  color: #fff;
 }
 
 body.home-v2 .founder-grid-v2 {
@@ -298,11 +233,10 @@ body.home-v2 .founder-grid-v2 {
 
 body.home-v2 .founder-media {
   position: relative;
-  min-height: 620px;
+  min-height: 0;
 }
 
-body.home-v2 .founder-main,
-body.home-v2 .founder-secondary {
+body.home-v2 .founder-main {
   width: 100%;
   object-fit: cover;
   border-radius: 26px;
@@ -310,18 +244,9 @@ body.home-v2 .founder-secondary {
 }
 
 body.home-v2 .founder-main {
-  width: 78%;
-  height: 570px;
-  object-position: center 30%;
-}
-
-body.home-v2 .founder-secondary {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 45%;
-  height: 250px;
-  border: 7px solid var(--cream);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
   object-position: center;
 }
 
@@ -329,25 +254,15 @@ body.home-v2 .founder-copy p:not(.lead) {
   max-width: 610px;
 }
 
-body.home-v2 .founder-meta {
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.88rem;
-  font-weight: 800;
-}
-
 /* Reviews */
 body.home-v2 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
 body.home-v2 .testimonial-card {
   display: flex;
-  min-height: 320px;
   flex-direction: column;
   padding: 30px;
   border: 1px solid var(--line);
@@ -357,7 +272,7 @@ body.home-v2 .testimonial-card {
 }
 
 body.home-v2 .testimonial-stars {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   color: var(--rust);
   letter-spacing: 0.08em;
 }
@@ -381,86 +296,13 @@ body.home-v2 .testimonial-source {
   font-size: 0.86rem;
 }
 
-body.home-v2 .reviews-footer {
-  margin-top: 28px;
-}
-
-/* Editorial rain story */
-body.home-v2 .editorial-story {
-  overflow: hidden;
-  background: #111c19;
-  color: #fff;
-}
-
-body.home-v2 .editorial-story .eyebrow {
-  color: #efb18e;
-}
-
-body.home-v2 .editorial-story .lead {
-  color: #cad7d2;
-}
-
-body.home-v2 .editorial-story-head {
-  max-width: 820px;
-  margin-bottom: 48px;
-}
-
-body.home-v2 .story-gallery {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr 0.85fr;
-  grid-template-rows: 310px 310px;
-  gap: 14px;
-}
-
-body.home-v2 .story-shot {
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  border-radius: 22px;
-  background: #1f2c28;
-}
-
-body.home-v2 .story-shot--lead {
-  grid-row: 1 / 3;
-}
-
-body.home-v2 .story-shot--wide {
-  grid-column: 2 / 4;
-}
-
-body.home-v2 .story-shot img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.35s ease;
-}
-
-body.home-v2 .story-shot::after {
-  content: "";
-  position: absolute;
-  inset: 45% 0 0;
-  background: linear-gradient(180deg, transparent, rgba(7, 14, 12, 0.78));
-  pointer-events: none;
-}
-
-body.home-v2 .story-caption {
-  position: absolute;
-  z-index: 1;
-  left: 20px;
-  right: 20px;
-  bottom: 18px;
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 800;
-}
-
 /* Custom trip */
 body.home-v2 .custom-trip-copy {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
   gap: 60px;
   align-items: end;
-  padding: 56px;
+  padding: 40px;
 }
 
 body.home-v2 .custom-trip-copy p {
@@ -472,35 +314,6 @@ body.home-v2 .custom-trip-action {
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
-}
-
-body.home-v2 .custom-trip-note {
-  margin: 0;
-  color: #d9e5e0;
-  font-size: 0.84rem;
-}
-
-/* Booking steps */
-body.home-v2 .how-grid-v2 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-body.home-v2 .how-grid-v2 .how-card {
-  min-height: 260px;
-}
-
-body.home-v2 .section-actions {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-top: 34px;
-}
-
-body.home-v2 .action-note {
-  margin: 0;
-  color: #cbd9d3;
-  font-size: 0.88rem;
 }
 
 /* FAQ */
@@ -573,7 +386,7 @@ body.home-v2 .story-card {
 
 body.home-v2 .story-card-media {
   display: block;
-  height: 238px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
@@ -634,12 +447,6 @@ body.home-v2 .final-cta-actions .text-link {
   color: #fff;
 }
 
-body.home-v2 .final-cta-note {
-  margin: 0;
-  color: #aebfba;
-  font-size: 0.84rem;
-}
-
 /* Footer */
 body.home-v2 .site-footer {
   padding-top: 72px;
@@ -656,14 +463,13 @@ body.home-v2 .footer-contact {
 /* Hover */
 @media (hover: hover) and (pointer: fine) {
   body.home-v2 .intent-card:hover {
-    transform: translateY(-4px);
+    transform: none;
     border-color: rgba(184, 93, 62, 0.30);
     background: var(--paper);
-    box-shadow: 0 18px 44px rgba(24, 48, 42, 0.08);
+    box-shadow: none;
   }
 
-  body.home-v2 .story-shot:hover img,
-  body.home-v2 .story-card:hover .story-card-media img {
+body.home-v2 .story-card:hover .story-card-media img {
     transform: scale(1.025);
   }
 }
@@ -677,19 +483,6 @@ body.home-v2 .footer-contact {
   body.home-v2 .featured-cards,
   body.home-v2 .testimonial-grid,
   body.home-v2 .story-cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  body.home-v2 .featured-cards > :last-child,
-  body.home-v2 .story-cards > :last-child {
-    grid-column: 1 / -1;
-  }
-
-  body.home-v2 .testimonial-grid > :last-child {
-    grid-column: 1 / -1;
-  }
-
-  body.home-v2 .how-grid-v2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -719,7 +512,7 @@ body.home-v2 .footer-contact {
     padding-top: 52px;
   }
 
-  body.home-v2 .hero-v2 .hero-copy {
+  body.home-v2 .hero-v2 .hero-intro {
     max-width: 760px;
   }
 
@@ -743,20 +536,6 @@ body.home-v2 .footer-contact {
     gap: 28px;
   }
 
-  body.home-v2 .story-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: 420px 260px 320px;
-  }
-
-  body.home-v2 .story-shot--lead {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-  }
-
-  body.home-v2 .story-shot--wide {
-    grid-column: 1 / 3;
-    grid-row: 3;
-  }
 }
 
 /* Mobile */
@@ -777,7 +556,7 @@ body.home-v2 .footer-contact {
     gap: 30px;
   }
 
-  body.home-v2 .hero-v2 .hero-copy h1 {
+  body.home-v2 .hero-v2 .hero-intro h1 {
     font-size: clamp(2.7rem, 13vw, 4rem);
   }
 
@@ -808,14 +587,12 @@ body.home-v2 .footer-contact {
     object-position: 52% 54%;
   }
 
-  body.home-v2 .trust-grid,
-  body.home-v2 .intent-grid,
-  body.home-v2 .featured-cards,
-  body.home-v2 .approach-grid,
-  body.home-v2 .testimonial-grid,
-  body.home-v2 .how-grid-v2,
-  body.home-v2 .story-cards,
-  body.home-v2 .footer-grid-v2 {
+body.home-v2 .trust-grid,
+body.home-v2 .intent-grid,
+body.home-v2 .featured-cards,
+body.home-v2 .testimonial-grid,
+body.home-v2 .story-cards,
+body.home-v2 .footer-grid-v2 {
     grid-template-columns: 1fr;
   }
 
@@ -833,10 +610,12 @@ body.home-v2 .footer-contact {
   }
 
   body.home-v2 .intent-card {
-    grid-template-columns: 38px 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
     min-height: 0;
-    padding: 26px 22px;
-    border-radius: 19px;
+    padding: 22px 0;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
   }
 
   body.home-v2 .featured-cards > :last-child,
@@ -846,36 +625,16 @@ body.home-v2 .footer-contact {
   }
 
   body.home-v2 .experience-card .card-media {
-    height: 252px;
-  }
-
-  body.home-v2 .approach-grid {
-    border-left: 0;
-  }
-
-  body.home-v2 .approach-item {
-    min-height: 0;
-    padding: 28px 4px;
-    border-right: 0;
-  }
-
-  body.home-v2 .approach-item .approach-num {
-    margin-bottom: 24px;
+    height: auto;
   }
 
   body.home-v2 .founder-media {
-    min-height: 510px;
+    min-height: 0;
   }
 
   body.home-v2 .founder-main {
-    width: 88%;
-    height: 460px;
-  }
-
-  body.home-v2 .founder-secondary {
-    width: 48%;
-    height: 195px;
-    border-width: 5px;
+    width: 100%;
+    height: auto;
   }
 
   body.home-v2 .testimonial-card {
@@ -883,73 +642,13 @@ body.home-v2 .footer-contact {
     padding: 24px;
   }
 
-  body.home-v2 .editorial-story-head {
-    margin-bottom: 32px;
-  }
-
-  body.home-v2 .story-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 12px;
-  }
-
-  body.home-v2 .story-shot,
-  body.home-v2 .story-shot--lead,
-  body.home-v2 .story-shot--wide {
-    grid-column: auto;
-    grid-row: auto;
-    min-height: 0;
-    border-radius: 18px;
-  }
-
-  /* Keep all five story beats on mobile, but vary the crop so the
-     section stays close to the previous four-image scroll length. */
-  body.home-v2 .story-shot:nth-child(1) {
-    aspect-ratio: 4 / 5;
-  }
-
-  body.home-v2 .story-shot:nth-child(2) {
-    aspect-ratio: 1 / 1;
-  }
-
-  body.home-v2 .story-shot:nth-child(3) {
-    aspect-ratio: 4 / 3;
-  }
-
-  body.home-v2 .story-shot:nth-child(4) {
-    display: block;
-    aspect-ratio: 3 / 4;
-  }
-
-  body.home-v2 .story-shot:nth-child(5) {
-    aspect-ratio: 4 / 3;
-  }
-
-  body.home-v2 .story-shot:nth-child(3) img {
-    object-position: center 48%;
-  }
-
-  body.home-v2 .story-shot:nth-child(4) img {
-    object-position: center 38%;
-  }
-
-  body.home-v2 .story-shot:nth-child(5) img {
-    object-position: center 58%;
-  }
-
   body.home-v2 .custom-trip-copy {
     padding: 30px 22px;
   }
 
-  body.home-v2 .custom-trip-action .btn,
-  body.home-v2 .section-actions .btn,
-  body.home-v2 .final-cta-actions .btn {
+body.home-v2 .custom-trip-action .btn,
+body.home-v2 .final-cta-actions .btn {
     width: 100%;
-  }
-
-  body.home-v2 .section-actions {
-    display: grid;
   }
 
   body.home-v2 .faq-wrap {
@@ -966,7 +665,8 @@ body.home-v2 .footer-contact {
   }
 
   body.home-v2 .story-card-media {
-    height: 230px;
+    height: auto;
+  aspect-ratio: 16 / 9;
   }
 
   body.home-v2 .final-cta {
@@ -980,17 +680,16 @@ body.home-v2 .footer-contact {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body.home-v2 .intent-card,
-  body.home-v2 .story-shot img,
-  body.home-v2 .story-card-media img {
+body.home-v2 .intent-card,
+body.home-v2 .story-card-media img {
     transition: none !important;
   }
 }
 
 /* ============================================================
    FINAL HOMEPAGE UX PASS
-   Keeps the first desktop CTA above the fold, fixes editorial grid,
-   restores multi-platform trust, and preserves all five mobile story beats.
+   Retained late cascade for compact hero type and review proof.
+   The approved surgery rules below define hero choreography and compact layouts.
    ============================================================ */
 body.home-v2 .hero-v2 {
   padding: 56px 0 68px;
@@ -1000,7 +699,7 @@ body.home-v2 .hero-v2 .hero-grid {
   gap: 48px;
 }
 
-body.home-v2 .hero-v2 .hero-copy h1 {
+body.home-v2 .hero-v2 .hero-intro h1 {
   max-width: 620px;
   font-size: clamp(3.35rem, 5vw, 5.2rem);
   line-height: 0.97;
@@ -1013,54 +712,33 @@ body.home-v2 .review-platform-row {
   margin-top: 22px;
 }
 
-body.home-v2 .review-platform-pill {
-  display: grid;
-  gap: 2px;
-  padding: 16px 18px;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: #fff;
+body.home-v2 .review-platform-proof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  min-height: 44px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
 }
 
-body.home-v2 .review-platform-pill strong {
+body.home-v2 .review-platform-proof strong {
   color: var(--forest);
-  font-size: 0.93rem;
+  font-size: inherit;
+  vertical-align: baseline;
 }
 
-body.home-v2 .review-platform-name {
+body.home-v2 .review-platform-summary {
+  margin: 0;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
-body.home-v2 .story-gallery {
-  grid-template-columns: 1.08fr 0.92fr;
-  grid-template-rows: 300px 300px 360px;
-  gap: 14px;
-}
-
-body.home-v2 .story-shot--lead {
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
-
-body.home-v2 .story-shot:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-body.home-v2 .story-shot:nth-child(3) {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-body.home-v2 .story-shot:nth-child(4) {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-body.home-v2 .story-shot--wide {
-  grid-column: 2;
-  grid-row: 3;
+body.home-v2 .review-platform-proof [data-review-rating]:not(:empty)::before {
+  content: " · ";
 }
 
 body.home-v2 .story-cards {
@@ -1077,44 +755,12 @@ body.home-v2 .story-cards {
   }
 }
 
-@media (max-width: 920px) {
-  body.home-v2 .story-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: 390px 250px 300px;
-  }
-
-  body.home-v2 .story-shot--lead {
-    grid-column: 1;
-    grid-row: 1 / 3;
-  }
-
-  body.home-v2 .story-shot:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  body.home-v2 .story-shot:nth-child(3) {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  body.home-v2 .story-shot:nth-child(4) {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  body.home-v2 .story-shot--wide {
-    grid-column: 2;
-    grid-row: 3;
-  }
-}
-
 @media (max-width: 650px) {
   body.home-v2 .hero-v2 {
     padding: 34px 0 54px;
   }
 
-  body.home-v2 .hero-v2 .hero-copy h1 {
+  body.home-v2 .hero-v2 .hero-intro h1 {
     font-size: clamp(2.75rem, 11.5vw, 3.55rem);
     line-height: 0.98;
   }
@@ -1129,21 +775,6 @@ body.home-v2 .story-cards {
     gap: 8px;
   }
 
-  body.home-v2 .story-gallery {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-  }
-
-  body.home-v2 .story-shot,
-  body.home-v2 .story-shot--lead,
-  body.home-v2 .story-shot--wide,
-  body.home-v2 .story-shot:nth-child(2),
-  body.home-v2 .story-shot:nth-child(3),
-  body.home-v2 .story-shot:nth-child(4) {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
   body.home-v2 .story-cards {
     grid-template-columns: 1fr;
   }
@@ -1154,16 +785,64 @@ body.home-v2 .story-cards {
   }
 }
 
-/* Approved Chợ Lớn homepage image set, compact 2x2 inside one story card. */
-body.home-v2 .story-card-mosaic {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  gap: 3px;
-  background: var(--line);
+/* Approved homepage surgery: scoped layout changes, after the retained late cascade. */
+body.home-v2 .hero-v2 .hero-grid {
+  grid-template-areas: "intro media" "body media";
+  row-gap: 20px;
 }
-body.home-v2 .story-card-mosaic img {
-  min-width: 0;
-  min-height: 0;
-  object-fit: cover;
+body.home-v2 .hero-intro { grid-area: intro; align-self: end; min-width: 0; }
+body.home-v2 .hero-media { grid-area: media; }
+body.home-v2 .hero-body { grid-area: body; align-self: start; min-width: 0; }
+body.home-v2 .hero-intro h1 { margin-bottom: 0; }
+body.home-v2 .hero-lead { margin-top: 0; }
+body.home-v2 .hero-actions { margin-bottom: 0; }
+body.home-v2 .trust-grid { gap: 0; }
+body.home-v2 .trust-review [data-review-rating] { color: inherit; font-size: inherit; }
+body.home-v2 .intent-card { align-items: center; }
+body.home-v2 .intent-arrow { color: var(--rust); font-size: 1.5rem; }
+body.home-v2 .experience-card { min-width: 0; background: transparent; border: 0; box-shadow: none; }
+body.home-v2 .experience-card .card-body > p:not(.experience-meta) { color: var(--muted); }
+body.home-v2 .founder-copy .eyebrow,
+body.home-v2 .founder-actions .text-link { color: #efb18e; }
+body.home-v2 .founder-copy p { color: #cfddd7; }
+body.home-v2 .founder-principles { margin: 24px 0 14px; }
+body.home-v2 .founder-principles > div { padding: 16px 0; border-top: 1px solid rgba(255,255,255,.18); }
+body.home-v2 .founder-principles h3 { margin-bottom: 6px; font-size: 1.15rem; }
+body.home-v2 .founder-principles p { margin: 0; }
+body.home-v2 .custom-trip-copy .lead { margin-bottom: 0; }
+body.home-v2 .stories-all { margin-top: 24px; }
+body.home-v2 .final-cta { grid-template-areas: "copy actions" "steps steps"; row-gap: 30px; }
+body.home-v2 .final-cta-copy { grid-area: copy; }
+body.home-v2 .final-cta-actions { grid-area: actions; }
+body.home-v2 .booking-steps {
+  grid-area: steps;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body.home-v2 .booking-steps li { padding-top: 16px; border-top: 1px solid rgba(255,255,255,.2); }
+body.home-v2 .booking-steps span { margin-right: 8px; color: #efb18e; font-weight: 800; }
+@media (max-width: 920px) {
+  body.home-v2 .hero-v2 .hero-grid { grid-template-areas: "intro" "media" "body"; gap: 24px; }
+  body.home-v2 .trust-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  body.home-v2 .trust-item:nth-child(2) { border-right: 1px solid rgba(255,255,255,.13); }
+  body.home-v2 .trust-item:nth-child(-n + 2) { border-bottom: 0; }
+  body.home-v2 .final-cta { grid-template-areas: "copy" "steps" "actions"; }
+}
+@media (max-width: 650px) {
+  body.home-v2 .hero-picture { aspect-ratio: 3 / 2; }
+  body.home-v2 .hero-v2 { padding: 28px 0 38px; }
+  body.home-v2 .trust-grid { grid-template-columns: 1fr; }
+  body.home-v2 .trust-item,
+  body.home-v2 .trust-item:nth-child(2),
+  body.home-v2 .trust-item:nth-child(-n + 2) { padding: 14px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
+  body.home-v2 .trust-item:last-child { border-bottom: 0; }
+  body.home-v2 .intent-grid { gap: 0; border-top: 1px solid var(--line); }
+  body.home-v2 .founder-grid-v2 { gap: 30px; }
+  body.home-v2 .custom-trip-action { align-items: stretch; }
+  body.home-v2 .booking-steps { grid-template-columns: 1fr; gap: 12px; }
+  body.home-v2.home-intro-active .wa-float { visibility: hidden; pointer-events: none; }
 }

@@ -34,3 +34,20 @@ exclude:
 - RELEASE-NOTES-R5.md
 - RELEASE-NOTES-R6.md
 - QA-REPORT-R6.md
+
+# Preview tooling and internal notes are not public Jekyll content.
+- dist
+- node_modules
+- package.json
+- package-lock.json
+- build-preview.mjs
+- vite.config.mjs
+- scripts
+- QA-MERGED.md
+- QA-REPORT-R9.md
+- REGRESSION-CHECKS.md
+- CHANGELOG-AUDIT-FIXES.md
+- PRE-PR-FINAL-NOTES.md
+- ASSET-MAP-CUSTOM-TRIP.md
+- RELEASE-NOTES-R9.md
+- verify-custom-trip.sh

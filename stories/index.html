@@ -1,0 +1,62 @@
+---
+layout: null
+permalink: /stories/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<title>Saigon Travel Stories &amp; Local Guides | OG Saigon</title>
+<meta content="Practical local guides for Cu Chi, Chợ Lớn, Ho Chi Minh City and private travel planning from OG Saigon." name="description">
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots">
+<link href="https://ogsaigon.com/stories/" rel="canonical">
+<meta content="#16382f" name="theme-color">
+<meta content="Saigon Travel Stories &amp; Local Guides | OG Saigon" property="og:title">
+<meta content="Practical local guides for Cu Chi, Chợ Lớn, Ho Chi Minh City and private travel planning from OG Saigon." property="og:description">
+<meta content="website" property="og:type">
+<meta content="https://ogsaigon.com/stories/" property="og:url">
+<meta content="https://ogsaigon.com/assets/images/saigon-rainy-night-street-reflections.webp" property="og:image">
+<meta content="Rainy Saigon street at night" property="og:image:alt">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Saigon Travel Stories &amp; Local Guides | OG Saigon" name="twitter:title">
+<meta content="Practical local guides for Cu Chi, Chợ Lớn, Ho Chi Minh City and private travel planning from OG Saigon." name="twitter:description">
+<meta content="https://ogsaigon.com/assets/images/saigon-rainy-night-street-reflections.webp" name="twitter:image">
+<link href="/favicon.ico" rel="icon" sizes="any">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/site.webmanifest" rel="manifest">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link href="/assets/css/stories.css" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"OG Saigon Stories","url":"https://ogsaigon.com/stories/","description":"Practical local guides for Cu Chi, Chợ Lớn, Ho Chi Minh City and private travel planning from OG Saigon.","inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ogsaigon.com/"},{"@type":"ListItem","position":2,"name":"Stories","item":"https://ogsaigon.com/stories/"}]}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+{% include site-header.html %}
+<main id="main-content">
+<section class="page-hero story-index-hero">
+<div class="wrap">
+<div class="breadcrumbs"><a href="/">Home</a> / Stories</div>
+<div class="eyebrow">OG Saigon stories</div>
+<h1>Useful context before you come.</h1>
+<p class="lead">Practical guides built around the questions travellers actually ask us about Cu Chi, Saigon and planning a day that does not feel rushed.</p>
+</div>
+</section>
+<section class="section paper">
+<div class="wrap story-index-grid">
+{% assign sorted_stories = site.stories | where: "published", true | sort: "date" | reverse %}
+{% for story in sorted_stories %}
+<article class="story-index-card">
+<a href="{{ story.url }}"><img alt="{{ story.hero_alt | escape }}" decoding="async"{% if forloop.first %} fetchpriority="high" loading="eager"{% else %} loading="lazy"{% endif %} height="{{ story.hero_height }}" src="{{ story.hero_image }}" width="{{ story.hero_width }}"></a>
+<div class="story-index-card-body"><div class="eyebrow">{{ story.category }}</div><h2><a href="{{ story.url }}">{{ story.title }}</a></h2><p>{{ story.index_excerpt | default: story.description }}</p><a class="text-link" href="{{ story.url }}">Read the guide →</a></div>
+</article>
+{% endfor %}
+</div>
+</section>
+</main>
+{% include site-footer.html %}
+<script src="/assets/js/site-data.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

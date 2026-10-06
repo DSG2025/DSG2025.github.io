@@ -21,7 +21,7 @@ index_excerpt: A first-hand visual guide to Bình Tây Market, temple life, stre
 home_excerpt: A first-hand look at Bình Tây Market, Chinese-Vietnamese temple life, street food and the old neighbourhood
   texture of Chợ Lớn.
 home_show_category: true
-homepage: true
+homepage: false
 breadcrumb: Chợ Lớn beyond the landmarks.
 side_eyebrow: Private Chợ Lớn planning
 side_title: Already have a wishlist?

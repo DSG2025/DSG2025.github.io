@@ -154,7 +154,7 @@ h3 {
   font-weight: 800;
 }
 
-.navlinks a:hover {
+.navlinks > a:not(.btn):hover {
   color: var(--rust);
 }
 
@@ -1915,5 +1915,30 @@ footer {
 @media (max-width: 650px) {
   .cholon-teaser-grid img {
     height: 120px;
+  }
+}
+
+/* Phase 1: clear service introductions and earlier enquiry actions. */
+.page-hero.service-hero h1 {
+  font-size: clamp(2.4rem, 4.5vw, 3.75rem);
+  line-height: 1.08;
+}
+
+.service-hero .hero-actions {
+  margin: 22px 0;
+}
+
+#trip-builder {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 650px) {
+  .page-hero.service-hero h1 {
+    font-size: clamp(2.2rem, 9vw, 2.65rem);
+  }
+
+  .page-hero.service-hero .lead {
+    font-size: 1.08rem;
+    line-height: 1.55;
   }
 }
