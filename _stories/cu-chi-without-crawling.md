@@ -49,7 +49,7 @@ side_secondary_whatsapp: true
 <h2>How long should you allow?</h2>
 <p>Cu Chi is outside central Ho Chi Minh City, so travel time matters as much as time at the site. Rather than packing the same day with too many unrelated stops, think about what you want from the visit. If war history is a major interest, combining Cu Chi with the War Remnants Museum can create a stronger narrative. If you prefer a lighter day, Cu Chi on its own leaves more space for questions, breaks and the drive back to Saigon.</p>
 <h2>The OG Saigon approach</h2>
-<p>On a private direct booking, we treat the crawl as optional from the beginning. The goal is to help you understand the place, not pressure you into doing something uncomfortable. Tell us about mobility, heat tolerance or any concerns when you enquire, and we can plan the pacing accordingly.</p>
+<p>On a private Cu Chi tour, we treat the crawl as optional from the beginning. The goal is to help you understand the place, not pressure you into doing something uncomfortable. Tell us about mobility, heat tolerance or any concerns when you enquire, and we can plan the pacing accordingly.</p>
 <div class="story-related">
 <div class="eyebrow">Keep planning</div>
 <h2>Related OG Saigon pages</h2>
