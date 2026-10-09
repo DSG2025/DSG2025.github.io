@@ -10,6 +10,7 @@
   --gold: #d7a54b;
   --muted: #617069;
   --line: rgba(24, 48, 42, 0.14);
+  --control-border: var(--muted);
   --shadow: 0 18px 55px rgba(24, 48, 42, 0.10);
   --radius: 24px;
   --max: 1180px;
@@ -410,6 +411,15 @@ h3 {
   color: var(--rust);
 }
 
+/* Identify links within prose without changing navigation, cards or buttons. */
+.card-body p a:not(.text-link):not(.btn),
+.story-article p a:not(.btn),
+.story-article li a:not(.text-link):not(.btn),
+.form-fallback-note a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .story-grid {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
@@ -665,7 +675,7 @@ h3 {
 
 .field input, .field select, .field textarea {
   width: 100%;
-  border: 1px solid var(--line);
+  border: 1px solid var(--control-border);
   background: #fff;
   border-radius: 13px;
   padding: 12px 13px;
