@@ -1078,8 +1078,15 @@ footer {
 /* V4 UX polish: brand-first, clearer conversion paths, calmer mobile rhythm */
 
 :where(a, button, input, select, textarea):focus-visible {
-  outline: 3px solid rgba(184, 93, 62, 0.28);
+  outline: 3px solid var(--rust);
   outline-offset: 3px;
+}
+
+/* Keep the focus ring contrasting on the site's dark surfaces too. */
+:where(.dark, .cta-panel, .how-section, .trust-strip, .founder-v2, .final-cta-section, footer)
+  :where(a, button, input, select, textarea):focus-visible,
+:where(a.trust-item):focus-visible {
+  outline-color: var(--gold);
 }
 
 .topbar {

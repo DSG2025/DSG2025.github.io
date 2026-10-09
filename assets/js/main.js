@@ -144,7 +144,11 @@ if (menuButton && mobileMenu) {
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") setMobileMenu(false);
+    if (event.key === "Escape") {
+      const focusInMenu = mobileMenu.contains(document.activeElement);
+      setMobileMenu(false);
+      if (focusInMenu) menuButton.focus();
+    }
   });
 }
 
