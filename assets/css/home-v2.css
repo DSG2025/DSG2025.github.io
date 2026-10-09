@@ -846,3 +846,144 @@ body.home-v2 .booking-steps span { margin-right: 8px; color: #efb18e; font-weigh
   body.home-v2 .booking-steps { grid-template-columns: 1fr; gap: 12px; }
   body.home-v2.home-intro-active .wa-float { visibility: hidden; pointer-events: none; }
 }
+
+/* ============================================================
+   District 4 Soul V1.1
+   Scoped to the homepage. Existing OG CTA/accent color is not
+   redefined because the original logo color is unverified.
+   ============================================================ */
+body.home-v2 {
+  --cream: #efeadf;
+  --forest: #243a35;
+  --district4-shutter: #a9b9ae;
+  --district4-terracotta: #b65d42;
+  --district4-accent-ink: #a74a30;
+  --muted: #56645d;
+  font-family: "Be Vietnam Pro", Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body.home-v2 .site-header {
+  background: rgba(239, 234, 223, 0.96);
+}
+
+body.home-v2 .eyebrow,
+body.home-v2 .experience-meta,
+body.home-v2 .booking-steps span {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: 0.07em;
+}
+
+body.home-v2 .hero-v2 .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--forest);
+}
+
+body.home-v2 .hero-v2 .eyebrow::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+  background: var(--district4-shutter);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+body.home-v2 .intent-section .eyebrow,
+body.home-v2 .featured-section .eyebrow,
+body.home-v2 .reviews-section .eyebrow,
+body.home-v2 .custom-trip-section .eyebrow,
+body.home-v2 .faq-section .eyebrow,
+body.home-v2 .stories-section .eyebrow,
+body.home-v2 .featured-section .experience-meta,
+body.home-v2 .paper .text-link,
+body.home-v2 .stories-section .text-link {
+  color: var(--district4-accent-ink) !important;
+}
+
+body.home-v2 .founder-v2 {
+  background: var(--forest);
+}
+
+body.home-v2 .district4-fieldnote {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 72px;
+  margin-top: 14px;
+  padding: 12px 18px;
+  border: 1px solid rgba(169, 185, 174, 0.65);
+  background: var(--district4-shutter);
+  color: var(--forest);
+  text-decoration: none;
+}
+
+body.home-v2 .district4-fieldnote-angle {
+  display: block;
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  background: var(--forest);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+body.home-v2 .district4-fieldnote-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+body.home-v2 .district4-fieldnote-kicker,
+body.home-v2 .district4-fieldnote-arrow {
+  font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+body.home-v2 .district4-fieldnote-text {
+  font-size: 0.93rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+body.home-v2 .district4-fieldnote-arrow {
+  align-self: center;
+  font-size: 1.1rem;
+}
+
+body.home-v2 .district4-fieldnote:hover .district4-fieldnote-text,
+body.home-v2 .district4-fieldnote:focus-visible .district4-fieldnote-text {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+body.home-v2 .district4-fieldnote:focus-visible {
+  outline: 3px solid #efeadf;
+  outline-offset: 3px;
+}
+
+body.home-v2 .stories-section .story-card {
+  border-top: 3px solid var(--district4-shutter);
+  border-radius: 12px;
+}
+
+@media (max-width: 650px) {
+  body.home-v2 .district4-fieldnote {
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  body.home-v2 .district4-fieldnote-text {
+    font-size: 0.84rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.home-v2 .district4-fieldnote {
+    transition: none;
+  }
+}
