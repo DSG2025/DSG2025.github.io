@@ -1,0 +1,3326 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<base href="https://ogsaigon.com/"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="referrer" content="no-referrer"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>District 4 Soul V1.1 - Local Preview of OG Saigon</title>
+<meta content="Private Saigon tours and local experiences in Ho Chi Minh City, from Cu Chi and street food to custom days, airport pickup and private transport." name="description"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
+<link href="https://ogsaigon.com/" rel="canonical"/>
+<meta content="#16382f" name="theme-color"/>
+<meta content="Private Saigon Tours &amp; Local Experiences | OG Saigon" property="og:title"/>
+<meta content="See Saigon through local eyes with private experiences built around real places, local stories and conversation." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://ogsaigon.com/" property="og:url"/>
+<meta content="https://ogsaigon.com/assets/images/saigon-rainy-night-food-tour-guests.webp" property="og:image"/>
+<meta content="OG Saigon guests sharing food and conversation during a rainy evening in Saigon" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Private Saigon Tours &amp; Local Experiences | OG Saigon" name="twitter:title"/>
+<meta content="Private local experiences in Ho Chi Minh City, built around stories, conversation and a pace that feels personal." name="twitter:description"/>
+<meta content="https://ogsaigon.com/assets/images/saigon-rainy-night-food-tour-guests.webp" name="twitter:image"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<style id="original-and-district4-css">
+/* OG Saigon V3 */
+
+:root {
+  --ink: #18302a;
+  --forest: #16382f;
+  --forest2: #225044;
+  --cream: #f5efe5;
+  --paper: #fffdf8;
+  --rust: #ad4f32;
+  --gold: #d7a54b;
+  --muted: #617069;
+  --line: rgba(24, 48, 42, 0.14);
+  --shadow: 0 18px 55px rgba(24, 48, 42, 0.10);
+  --radius: 24px;
+  --max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+.wrap {
+  width: min(var(--max), calc(100% - 36px));
+  margin: auto;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.section.paper {
+  background: var(--paper);
+}
+
+.section.dark {
+  background: var(--forest);
+  color: #fff;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.76rem;
+  font-weight: 900;
+  color: var(--rust);
+  margin-bottom: 10px;
+}
+
+.dark .eyebrow {
+  color: #efb18e;
+}
+
+h1, h2, h3 {
+  line-height: 1.08;
+  margin: 0 0 14px;
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 6.5vw, 5.7rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4.2vw, 3.55rem);
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+.lead {
+  font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+  color: var(--muted);
+  max-width: 760px;
+}
+
+.dark .lead {
+  color: #d8e4df;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.kicker {
+  font-weight: 800;
+  color: var(--rust);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgba(245, 239, 229, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  font-weight: 950;
+  font-size: 1.28rem;
+  letter-spacing: -0.035em;
+}
+
+.brand small {
+  display: block;
+  font-size: 0.66rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.navlinks > a:not(.btn):hover {
+  color: var(--rust);
+}
+
+
+.menu-btn {
+  display: none;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 900;
+}
+
+.mobile-menu {
+  display: none;
+  padding: 0 0 16px;
+}
+
+.mobile-menu.open {
+  display: grid;
+  gap: 8px;
+}
+
+.mobile-menu a {
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  font-weight: 800;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 19px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.primary {
+  background: var(--rust);
+  color: #fff;
+}
+
+.btn.secondary {
+  background: var(--paper);
+  color: var(--forest);
+}
+
+.btn.outline {
+  border-color: var(--line);
+  background: transparent;
+}
+
+.dark .btn.outline {
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #fff;
+}
+
+.btn.small {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+}
+
+.hero {
+  padding: 56px 0 76px;
+  background: linear-gradient(180deg, #f5efe5 0%, #f9f6ef 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-copy p {
+  font-size: 1.17rem;
+  color: var(--muted);
+  max-width: 680px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}
+
+.proof-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-weight: 850;
+  color: #43564e;
+}
+
+.proof-row span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.proof-row span:before {
+  content: "•";
+  color: var(--rust);
+}
+
+.hero-mosaic {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  min-height: 610px;
+}
+
+.hero-mosaic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.hero-mosaic .main {
+  grid-row: 1/3;
+  object-position: 64% center;
+}
+
+.hero-mosaic .food {
+  object-position: center;
+}
+
+.hero-mosaic .city {
+  object-position: center 55%;
+}
+
+.trust-strip {
+  background: var(--forest);
+  color: #fff;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.trust-item {
+  background: var(--forest);
+  padding: 26px 22px;
+}
+
+.trust-item b {
+  display: block;
+  font-size: 1.02rem;
+  margin-bottom: 5px;
+}
+
+.trust-item span {
+  color: #c9d6d0;
+  font-size: 0.9rem;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 28px;
+  margin-bottom: 34px;
+}
+
+.section-head .lead {
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-media {
+  height: 300px;
+  overflow: hidden;
+  background: #d8ded9;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 11px;
+}
+
+.tag {
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  background: #ece5d9;
+  padding: 6px 9px;
+  border-radius: 999px;
+}
+
+.card-body p {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.text-link {
+  font-weight: 900;
+  color: var(--rust);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.story-photo {
+  position: relative;
+}
+
+.story-photo img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  object-position: 60% center;
+}
+
+.story-note {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  background: rgba(22, 56, 47, 0.90);
+  color: #fff;
+  padding: 18px 20px;
+  border-radius: 17px;
+  backdrop-filter: blur(8px);
+}
+
+.bullets {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  display: grid;
+  gap: 10px;
+}
+
+.bullets li:before {
+  content: "✓";
+  color: var(--rust);
+  font-weight: 950;
+  margin-right: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.gallery .g1 {
+  grid-column: span 5;
+  height: 350px;
+}
+
+.gallery .g2 {
+  grid-column: span 3;
+  height: 350px;
+}
+
+.gallery .g3 {
+  grid-column: span 4;
+  height: 350px;
+}
+
+.gallery .g4 {
+  grid-column: span 4;
+  height: 270px;
+}
+
+.gallery .g5 {
+  grid-column: span 4;
+  height: 270px;
+}
+
+.gallery .g6 {
+  grid-column: span 4;
+  height: 270px;
+}
+
+.cta-panel {
+  border-radius: 30px;
+  padding: 45px;
+  background: linear-gradient(135deg, var(--forest), #0e2a22);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.cta-panel p {
+  color: #d4e0db;
+}
+
+.option-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.option-chips span {
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.88rem;
+}
+
+.page-hero {
+  padding: 74px 0 50px;
+  background: linear-gradient(180deg, #f5efe5, #fffdf8);
+}
+
+.breadcrumbs {
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.breadcrumbs a {
+  color: var(--rust);
+}
+
+.page-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.page-hero-grid img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.page-hero-grid .portrait {
+  object-position: 65% center;
+}
+
+.facts {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.fact {
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: #ece5d9;
+  font-weight: 850;
+  font-size: 0.86rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 44px;
+  align-items: start;
+}
+
+.content-grid h2 {
+  font-size: 2.15rem;
+}
+
+.side-card {
+  position: sticky;
+  top: 96px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.side-card h3 {
+  font-size: 1.2rem;
+}
+
+.side-card .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.timeline {
+  display: grid;
+  gap: 16px;
+  margin: 26px 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+}
+
+.timeline-num {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--forest);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+}
+
+.timeline-item p {
+  margin: 3px 0 0;
+  color: var(--muted);
+}
+
+.form-card {
+  background: var(--paper);
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.field input, .field select, .field textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 13px;
+  padding: 12px 13px;
+  color: var(--ink);
+}
+
+.field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.checks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+  margin: 8px 0 18px;
+}
+
+.check {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid var(--line);
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.check input {
+  accent-color: var(--rust);
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.transport-hero {
+  background: linear-gradient(135deg, #e9dfd0, #f7f2e8);
+  border-radius: 30px;
+  padding: 44px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.car-visual {
+  min-height: 320px;
+  border-radius: 24px;
+  background: linear-gradient(160deg, #17382f, #3b6256);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.car-visual:before {
+  content: "TOYOTA INNOVA G";
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 950;
+  opacity: 0.12;
+  position: absolute;
+  transform: rotate(-8deg);
+  white-space: nowrap;
+}
+
+.car-visual .car-copy {
+  position: relative;
+  text-align: center;
+  padding: 25px;
+}
+
+.car-visual strong {
+  display: block;
+  font-size: 1.7rem;
+}
+
+.car-visual span {
+  color: #cadbd4;
+}
+
+footer {
+  background: #102a23;
+  color: #dbe5e0;
+  padding: 46px 0 92px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr 0.65fr 0.75fr;
+  gap: 30px;
+}
+
+.footer-grid h2 {
+  margin: 0 0 13px;
+  color: #fff;
+}
+
+.footer-grid p {
+  margin: 8px 0;
+}
+
+.footer-grid a {
+  color: #fff;
+}
+
+.footer-muted {
+  color: #9eb1a9;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 30px;
+  padding-top: 18px;
+  font-size: 0.82rem;
+  color: #9eb1a9;
+}
+
+.wa-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 70;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.20);
+}
+
+@media (max-width: 920px) {
+  .navlinks {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .hero-grid, .story-grid, .page-hero-grid, .content-grid, .cta-panel, .transport-hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-mosaic {
+    min-height: 500px;
+  }
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .side-card {
+    position: static;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery .g1, .gallery .g2, .gallery .g3, .gallery .g4, .gallery .g5, .gallery .g6 {
+    grid-column: span 6;
+    height: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrap {
+    width: min(var(--max), calc(100% - 26px));
+  }
+  .section {
+    padding: 66px 0;
+  }
+  .hero {
+    padding: 36px 0 58px;
+  }
+  .hero-mosaic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 330px 190px;
+    min-height: auto;
+  }
+  .hero-mosaic .main {
+    grid-column: 1/3;
+    grid-row: auto;
+    object-position: 64% center;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-head {
+    align-items: start;
+    flex-direction: column;
+  }
+  .story-photo img {
+    height: 430px;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery .g1, .gallery .g2, .gallery .g3, .gallery .g4, .gallery .g5, .gallery .g6 {
+    grid-column: auto;
+    height: 220px;
+  }
+  .gallery .g1 {
+    grid-column: 1/3;
+    height: 300px;
+  }
+  .form-grid, .checks {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-hero-grid img {
+    height: 360px;
+  }
+  .wa-float {
+    left: 13px;
+    right: 13px;
+    bottom: 12px;
+    width: auto;
+  }
+  .card-media {
+    height: 255px;
+  }
+}
+
+/* V3 privacy-first founder visuals + real vehicle photography */
+
+.host-visual {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 230px 210px;
+  gap: 12px;
+}
+
+.host-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.host-visual .hv1 {
+  grid-row: 1/3;
+}
+
+.host-visual .hv2 {
+  object-position: center 58%;
+}
+
+.host-visual .hv3 {
+  object-position: center;
+}
+
+.host-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.host-values>div {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.host-values span {
+  display: block;
+  font-weight: 900;
+  color: var(--rust);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.host-values strong {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.host-values p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.founder-collage {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 240px 210px;
+  gap: 12px;
+}
+
+.founder-collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.founder-collage .fc1 {
+  grid-row: 1/3;
+}
+
+.founder-collage .fc2 {
+  object-position: center 60%;
+}
+
+.founder-collage .fc3 {
+  object-position: center;
+}
+
+.transport-gallery {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  min-height: 320px;
+}
+
+.transport-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.transport-gallery .tg-main {
+  object-position: center;
+}
+
+.transport-gallery .tg-detail {
+  object-position: center;
+}
+
+@media (max-width: 920px) {
+  .host-values {
+    grid-template-columns: 1fr;
+  }
+  .host-visual, .founder-collage, .transport-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 220px;
+  }
+  .host-visual .hv1, .founder-collage .fc1, .transport-gallery .tg-main {
+    grid-column: 1/3;
+    grid-row: auto;
+  }
+  .transport-gallery .tg-detail {
+    grid-column: 1/3;
+  }
+}
+
+@media (max-width: 650px) {
+  .host-visual, .founder-collage, .transport-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .host-visual .hv1,
+  .host-visual .hv2,
+  .host-visual .hv3,
+  .founder-collage .fc1,
+  .founder-collage .fc2,
+  .founder-collage .fc3,
+  .transport-gallery .tg-main,
+  .transport-gallery .tg-detail {
+    grid-column: auto;
+    grid-row: auto;
+    height: 240px;
+  }
+  .host-visual .hv1, .founder-collage .fc1, .transport-gallery .tg-main {
+    height: 300px;
+  }
+}
+
+/* Reusable presentation helpers extracted from inline HTML styles */
+
+.footer-brand {
+  color: #fff;
+}
+
+.footer-brand small {
+  color: #9eb1a9;
+}
+
+.section-subheading {
+  margin-top: 42px;
+}
+
+.option-chips-paper {
+  margin-bottom: 35px;
+}
+
+.option-chips-paper span {
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 760px;
+}
+
+.not-found-lead {
+  margin: auto auto 24px;
+}
+
+/* V4 UX polish: brand-first, clearer conversion paths, calmer mobile rhythm */
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid rgba(184, 93, 62, 0.28);
+  outline-offset: 3px;
+}
+
+.topbar {
+  box-shadow: 0 1px 0 rgba(24, 48, 42, 0.04);
+}
+
+.nav {
+  min-height: 76px;
+}
+
+.navlinks {
+  gap: 20px;
+}
+
+.navlinks > a:not(.btn) {
+  position: relative;
+  padding: 8px 0;
+}
+
+.navlinks > a:not(.btn)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 2px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--rust);
+  transition: right 0.2s ease;
+}
+
+.navlinks > a:not(.btn):hover::after {
+  right: 0;
+}
+
+.btn {
+  min-height: 46px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn.primary {
+  box-shadow: 0 10px 24px rgba(184, 93, 62, 0.20);
+}
+
+.btn.primary:hover {
+  box-shadow: 0 14px 30px rgba(184, 93, 62, 0.27);
+}
+
+.hero {
+  padding: 64px 0 78px;
+}
+
+.hero-grid {
+  gap: 56px;
+}
+
+.hero-copy h1 {
+  max-width: 680px;
+}
+
+.hero-copy p {
+  max-width: 640px;
+}
+
+.hero-actions {
+  margin: 30px 0 24px;
+}
+
+.proof-row {
+  gap: 9px;
+}
+
+.proof-row span {
+  border: 1px solid rgba(24, 48, 42, 0.10);
+  background: rgba(255, 253, 248, 0.72);
+  padding: 8px 11px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+}
+
+.proof-row span::before {
+  content: "✓";
+  font-size: 0.78rem;
+}
+
+.hero-mosaic {
+  gap: 14px;
+}
+
+.hero-mosaic img,
+.founder-collage img,
+.gallery img {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.trust-strip {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.trust-item {
+  padding: 28px 24px;
+}
+
+.trust-item b::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  margin-right: 9px;
+  border-radius: 999px;
+  background: #efb18e;
+  vertical-align: middle;
+}
+
+.section-head {
+  margin-bottom: 38px;
+}
+
+.card {
+  box-shadow: 0 14px 42px rgba(24, 48, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card-body {
+  padding: 28px;
+}
+
+.card h3 {
+  max-width: 520px;
+}
+
+.card .text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+.founder-section {
+  background: linear-gradient(180deg, var(--cream) 0%, #f1eadf 100%);
+}
+
+.founder-copy .lead {
+  margin-bottom: 10px;
+}
+
+.founder-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 24px 0 26px;
+}
+
+.founder-points span {
+  padding: 8px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.68);
+  font-size: 0.84rem;
+  font-weight: 850;
+}
+
+.founder-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.how-section {
+  background: var(--forest);
+  color: #fff;
+}
+
+.how-section .eyebrow {
+  color: #efb18e;
+}
+
+.how-section .lead {
+  color: #cfddd7;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.how-card {
+  min-height: 230px;
+  padding: 28px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.how-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+  background: #f1b18e;
+  color: var(--forest);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.05em;
+}
+
+.how-card h3 {
+  color: #fff;
+  margin-bottom: 9px;
+}
+
+.how-card p {
+  margin: 0;
+  color: #cbd9d3;
+}
+
+.cta-section {
+  background: var(--paper);
+}
+
+.cta-panel {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(16, 42, 35, 0.16);
+}
+
+.cta-panel::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  right: -110px;
+  top: -120px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.cta-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.wa-float {
+  min-height: 48px;
+  padding-inline: 20px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(184, 93, 62, 0.22);
+    box-shadow: 0 22px 54px rgba(24, 48, 42, 0.13);
+  }
+
+  .card:hover .card-media img {
+    transform: scale(1.025);
+  }
+
+  .gallery img:hover,
+  .founder-collage img:hover {
+    transform: translateY(-3px);
+  }
+}
+
+@media (max-width: 920px) {
+  .mobile-menu.open {
+    padding-bottom: 18px;
+  }
+
+  .mobile-menu a {
+    padding: 12px 0;
+  }
+
+  .hero-grid {
+    gap: 40px;
+  }
+
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .section {
+    padding: 58px 0;
+  }
+
+  .nav {
+    min-height: 68px;
+  }
+
+  .brand {
+    font-size: 1.18rem;
+  }
+
+  .brand small {
+    font-size: 0.59rem;
+  }
+
+  .hero {
+    padding: 34px 0 52px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.55rem, 13.5vw, 4rem);
+  }
+
+  .hero-copy p {
+    font-size: 1.04rem;
+    line-height: 1.58;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 24px 0 20px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .proof-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .proof-row span {
+    width: fit-content;
+  }
+
+  .hero-mosaic {
+    grid-template-rows: 290px 150px;
+    gap: 10px;
+  }
+
+  .hero-mosaic img {
+    border-radius: 18px;
+  }
+
+  .trust-item {
+    padding: 20px 18px;
+  }
+
+  .section-head {
+    margin-bottom: 26px;
+  }
+
+  .card-body {
+    padding: 22px;
+  }
+
+  .card-media {
+    height: 238px;
+  }
+
+  .founder-points {
+    margin: 20px 0 24px;
+  }
+
+  .founder-points span {
+    width: 100%;
+    border-radius: 13px;
+  }
+
+  .founder-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .founder-actions .btn {
+    width: 100%;
+  }
+
+  .how-card {
+    padding: 22px;
+  }
+
+  .how-num {
+    margin-bottom: 20px;
+  }
+
+  .cta-panel {
+    padding: 28px 22px;
+    border-radius: 24px;
+    gap: 24px;
+  }
+
+  .cta-panel .btn {
+    width: 100%;
+  }
+
+  .option-chips {
+    gap: 7px;
+  }
+
+  .option-chips span {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .wa-float {
+    left: auto;
+    right: 12px;
+    bottom: 12px;
+    width: auto;
+    min-height: 44px;
+    padding: 11px 16px;
+    font-size: 0.88rem;
+  }
+}
+
+/* =========================
+   V5 TRUST-FIRST UX
+   Social proof, accessibility, clearer feedback, less duplicate CTA noise
+========================= */
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--forest);
+  font-weight: 900;
+  box-shadow: var(--shadow);
+  transform: translateY(-160%);
+  transition: transform 0.18s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.navlinks a[aria-current="page"],
+.mobile-menu a[aria-current="page"] {
+  color: var(--rust);
+}
+
+.review-strip {
+  padding: 34px 0;
+  background: var(--forest);
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.review-strip-grid {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.72fr) minmax(0, 1.8fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.review-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-intro .eyebrow {
+  color: #efb18e;
+}
+
+.review-intro h2 {
+  max-width: 390px;
+  margin-bottom: 10px;
+  font-size: clamp(1.55rem, 2.7vw, 2.35rem);
+}
+
+.review-intro p {
+  max-width: 430px;
+  margin: 0;
+  color: #cfddd7;
+  font-size: 0.94rem;
+}
+
+.review-platforms {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.review-card {
+  min-height: 190px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.055);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.review-card.featured {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: transparent;
+}
+
+.review-platform-name {
+  margin-bottom: 18px;
+  font-size: 0.82rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.review-card strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #f0b367;
+  font-size: clamp(1.3rem, 2.1vw, 1.75rem);
+  letter-spacing: -0.02em;
+}
+
+.review-card.featured strong {
+  color: var(--rust);
+}
+
+.review-count {
+  color: #cfddd7;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.review-card.featured .review-count {
+  color: var(--muted);
+}
+
+.review-cta {
+  margin-top: auto;
+  padding-top: 18px;
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.form-status {
+  min-height: 1.5em;
+  margin: 10px 0 0;
+  color: var(--forest2);
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
+.btn:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
+/* Desktop already has a persistent header CTA; avoid a duplicate floating CTA. */
+@media (min-width: 921px) {
+  .wa-float {
+    display: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .review-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(239, 177, 142, 0.5);
+  }
+
+  .review-card:not(.featured):hover {
+    background: rgba(255, 255, 255, 0.09);
+  }
+}
+
+@media (max-width: 920px) {
+  .review-strip-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .review-strip {
+    padding: 28px 0;
+  }
+
+  .review-platforms {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    min-height: 142px;
+    padding: 18px;
+  }
+
+  .review-platform-name {
+    margin-bottom: 10px;
+  }
+
+  .review-cta {
+    padding-top: 12px;
+  }
+}
+
+/* Review proof appears inside the hero so mobile visitors see trust before the photo mosaic. */
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 12px 16px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.hero-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid rgba(24, 48, 42, 0.13);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.82);
+  font-size: 0.86rem;
+}
+
+.hero-stars {
+  color: var(--rust);
+  letter-spacing: 0.04em;
+}
+
+.hero-rating strong {
+  color: var(--forest);
+}
+
+.hero-rating > span:last-child {
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.hero-trust-note {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero-rating:hover {
+    border-color: rgba(184, 93, 62, 0.32);
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-trust {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .hero-rating {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-trust-note {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ============================================================
+   FINAL 2026 UX PASS
+   Shared responsive behavior for navigation, readable mobile type,
+   and a lower-noise WhatsApp helper.
+   ============================================================ */
+.menu-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  color: var(--forest);
+}
+
+@media (max-width: 920px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .site-header {
+    position: sticky;
+  }
+
+  .site-header .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    max-height: calc(100vh - 68px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    margin: 0;
+    padding: 6px max(18px, calc((100vw - var(--max)) / 2)) 20px;
+    background: rgba(245, 239, 229, 0.99);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 20px 44px rgba(24, 48, 42, 0.14);
+  }
+
+  .site-header .mobile-menu.open {
+    display: grid;
+    gap: 0;
+  }
+
+  .site-header .mobile-menu a:not(.btn) {
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    border-top: 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.08rem;
+  }
+
+  .site-header .mobile-menu .btn {
+    width: 100%;
+    min-height: 52px;
+    margin-top: 16px;
+  }
+
+  body.menu-open .wa-float {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    font-size: 17px;
+  }
+
+  .eyebrow {
+    font-size: 0.76rem;
+    line-height: 1.45;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.4rem, 10.5vw, 3.1rem);
+  }
+
+  .page-hero .lead,
+  .content-grid .lead {
+    font-size: 1.16rem;
+    line-height: 1.62;
+  }
+
+  .content-grid article > p:not(.lead),
+  .content-grid article li,
+  .timeline-item p {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  .wa-float {
+    left: auto;
+    right: 14px;
+    bottom: calc(14px + env(safe-area-inset-bottom));
+    width: auto;
+    min-width: 0;
+    min-height: 46px;
+    padding: 10px 15px;
+    font-size: 0.82rem;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+  }
+}
+
+/* FINAL semantic footer headings and compact Chợ Lớn teaser. */
+.footer-grid h2 {
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+.cholon-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0 14px;
+}
+.cholon-teaser-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.cholon-teaser-link {
+  margin-top: 12px;
+}
+@media (max-width: 650px) {
+  .cholon-teaser-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .cholon-teaser-grid img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* Keep the Chợ Lớn teaser deliberately compact despite source-image dimensions. */
+.cholon-teaser-grid img {
+  height: 150px;
+  aspect-ratio: auto;
+}
+@media (max-width: 650px) {
+  .cholon-teaser-grid img {
+    height: 120px;
+  }
+}
+
+/* Phase 1: clear service introductions and earlier enquiry actions. */
+.page-hero.service-hero h1 {
+  font-size: clamp(2.4rem, 4.5vw, 3.75rem);
+  line-height: 1.08;
+}
+
+.service-hero .hero-actions {
+  margin: 22px 0;
+}
+
+#trip-builder {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 650px) {
+  .page-hero.service-hero h1 {
+    font-size: clamp(2.2rem, 9vw, 2.65rem);
+  }
+
+  .page-hero.service-hero .lead {
+    font-size: 1.08rem;
+    line-height: 1.55;
+  }
+}
+
+
+
+/* Homepage-only desktop nav spacing retained from the pre-shared-header design. */
+body.home-v2 .header-cta {
+  margin-left: 4px;
+}
+/* ============================================================
+   OG Saigon Homepage V2
+   Homepage-only layer. Shared pages continue to use style.css.
+   ============================================================ */
+
+body.home-v2 {
+  background: var(--cream);
+}
+
+body.home-v2 .section {
+  padding: 108px 0;
+}
+
+body.home-v2 .section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr);
+  gap: 48px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+body.home-v2 .section-head .lead {
+  margin: 0;
+}
+
+body.home-v2 .text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--rust);
+  font-weight: 900;
+}
+
+body.home-v2 .text-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Header */
+body.home-v2 .site-header {
+  background: rgba(245, 239, 229, 0.94);
+}
+
+/* Hero */
+body.home-v2 .hero-v2 {
+  padding: 74px 0 84px;
+}
+
+body.home-v2 .hero-v2 .hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 64px;
+  align-items: center;
+}
+
+body.home-v2 .hero-v2 .hero-intro h1 {
+  max-width: 680px;
+  font-size: clamp(3.7rem, 6.4vw, 6.35rem);
+}
+
+body.home-v2 .hero-lead {
+  max-width: 610px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+  line-height: 1.66;
+}
+
+body.home-v2 .hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 32px 0 14px;
+}
+
+body.home-v2 .hero-secondary-link {
+  color: var(--ink);
+}
+
+body.home-v2 .hero-media {
+  min-width: 0;
+}
+
+body.home-v2 .hero-picture {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border-radius: 30px;
+  background: #d7d3c9;
+  box-shadow: 0 24px 70px rgba(24, 48, 42, 0.15);
+}
+
+body.home-v2 .hero-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Trust strip */
+body.home-v2 .trust-strip {
+  background: var(--forest);
+  color: #fff;
+  border: 0;
+}
+
+body.home-v2 .trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.home-v2 .trust-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80px;
+  padding: 16px 22px;
+  border-right: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+body.home-v2 .trust-item:last-child {
+  border-right: 0;
+}
+
+body.home-v2 .trust-item strong {
+  color: #fff;
+  font-size: 0.97rem;
+  line-height: 1.3;
+}
+
+body.home-v2 .trust-item span {
+  margin-top: 5px;
+  color: #cbd9d3;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+body.home-v2 a.trust-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Intent chooser */
+body.home-v2 .intent-section {
+  background: var(--cream);
+}
+
+body.home-v2 .intent-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+body.home-v2 .intent-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 22px;
+  min-height: 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+}
+
+body.home-v2 .intent-card h3 {
+  margin-bottom: 10px;
+  font-size: clamp(1.38rem, 2vw, 1.75rem);
+}
+
+body.home-v2 .intent-card p {
+  max-width: 480px;
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Featured experiences */
+body.home-v2 .featured-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+body.home-v2 .experience-card {
+  display: flex;
+  flex-direction: column;
+}
+
+body.home-v2 .experience-card .card-media {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+}
+
+body.home-v2 .experience-card:nth-child(2) .card-media img {
+  object-position: center 32%;
+}
+
+body.home-v2 .experience-card .card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px 0 0;
+}
+
+body.home-v2 .experience-card .card-footer {
+  margin-top: auto;
+}
+
+body.home-v2 .experience-meta {
+  margin: 0 0 13px !important;
+  color: var(--rust) !important;
+  font-size: 0.79rem;
+  font-weight: 900;
+  letter-spacing: 0.015em;
+}
+
+/* Founder */
+body.home-v2 .founder-v2 {
+  background: var(--forest);
+  color: #fff;
+}
+
+body.home-v2 .founder-grid-v2 {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 72px;
+  align-items: center;
+}
+
+body.home-v2 .founder-media {
+  position: relative;
+  min-height: 0;
+}
+
+body.home-v2 .founder-main {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+
+body.home-v2 .founder-main {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-position: center;
+}
+
+body.home-v2 .founder-copy p:not(.lead) {
+  max-width: 610px;
+}
+
+/* Reviews */
+body.home-v2 .testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+body.home-v2 .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 38px rgba(24, 48, 42, 0.06);
+}
+
+body.home-v2 .testimonial-stars {
+  margin-bottom: 18px;
+  color: var(--rust);
+  letter-spacing: 0.08em;
+}
+
+body.home-v2 .testimonial-quote {
+  margin: 0 0 26px;
+  color: var(--ink);
+  font-size: clamp(1.12rem, 1.6vw, 1.35rem);
+  font-weight: 750;
+  line-height: 1.46;
+}
+
+body.home-v2 .testimonial-meta {
+  margin: auto 0 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+body.home-v2 .testimonial-source {
+  min-height: 36px;
+  font-size: 0.86rem;
+}
+
+/* Custom trip */
+body.home-v2 .custom-trip-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+  gap: 60px;
+  align-items: end;
+  padding: 40px;
+}
+
+body.home-v2 .custom-trip-copy p {
+  max-width: 760px;
+}
+
+body.home-v2 .custom-trip-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* FAQ */
+body.home-v2 .faq-wrap {
+  width: min(900px, calc(100% - 36px));
+}
+
+body.home-v2 .faq-list {
+  border-top: 1px solid var(--line);
+}
+
+body.home-v2 .faq-item {
+  border-bottom: 1px solid var(--line);
+}
+
+body.home-v2 .faq-item summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  padding: 24px 48px 24px 0;
+  font-size: 1.08rem;
+  font-weight: 850;
+}
+
+body.home-v2 .faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+body.home-v2 .faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 18px;
+  color: var(--rust);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+body.home-v2 .faq-item[open] summary::after {
+  content: "−";
+}
+
+body.home-v2 .faq-answer {
+  max-width: 760px;
+  padding: 0 48px 22px 0;
+  color: var(--muted);
+}
+
+body.home-v2 .faq-answer p {
+  margin: 0;
+}
+
+/* Stories */
+body.home-v2 .stories-section {
+  background: var(--cream);
+}
+
+body.home-v2 .story-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+body.home-v2 .story-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--paper);
+}
+
+body.home-v2 .story-card-media {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+body.home-v2 .story-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+body.home-v2 .story-card-body {
+  padding: 26px;
+}
+
+body.home-v2 .story-card-body h3 a:hover {
+  color: var(--rust);
+}
+
+body.home-v2 .story-card-excerpt {
+  color: var(--muted);
+}
+
+/* Final CTA */
+body.home-v2 .final-cta-section {
+  background: var(--forest);
+  color: #fff;
+}
+
+body.home-v2 .final-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.65fr);
+  gap: 68px;
+  align-items: center;
+}
+
+body.home-v2 .final-cta .eyebrow {
+  color: #efb18e;
+}
+
+body.home-v2 .final-cta-copy h2 {
+  max-width: 800px;
+}
+
+body.home-v2 .final-cta-copy p {
+  max-width: 700px;
+  color: #cbd9d3;
+  font-size: 1.08rem;
+}
+
+body.home-v2 .final-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+body.home-v2 .final-cta-actions .text-link {
+  color: #fff;
+}
+
+/* Footer */
+body.home-v2 .site-footer {
+  padding-top: 72px;
+}
+
+body.home-v2 .footer-grid-v2 {
+  grid-template-columns: 1.35fr repeat(4, minmax(0, 0.72fr));
+}
+
+body.home-v2 .footer-contact {
+  min-width: 0;
+}
+
+/* Hover */
+@media (hover: hover) and (pointer: fine) {
+  body.home-v2 .intent-card:hover {
+    transform: none;
+    border-color: rgba(184, 93, 62, 0.30);
+    background: var(--paper);
+    box-shadow: none;
+  }
+
+body.home-v2 .story-card:hover .story-card-media img {
+    transform: scale(1.025);
+  }
+}
+
+/* Tablet */
+@media (max-width: 1040px) {
+  body.home-v2 .hero-v2 .hero-grid {
+    gap: 40px;
+  }
+
+  body.home-v2 .featured-cards,
+  body.home-v2 .testimonial-grid,
+  body.home-v2 .story-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.home-v2 .footer-grid-v2 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  body.home-v2 .section {
+    padding: 82px 0;
+  }
+
+  body.home-v2 .section-head,
+  body.home-v2 .hero-v2 .hero-grid,
+  body.home-v2 .founder-grid-v2,
+  body.home-v2 .custom-trip-copy,
+  body.home-v2 .final-cta {
+    grid-template-columns: 1fr;
+  }
+
+  body.home-v2 .section-head {
+    gap: 14px;
+  }
+
+  body.home-v2 .hero-v2 {
+    padding-top: 52px;
+  }
+
+  body.home-v2 .hero-v2 .hero-intro {
+    max-width: 760px;
+  }
+
+  body.home-v2 .trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.home-v2 .trust-item:nth-child(2) {
+    border-right: 0;
+  }
+
+  body.home-v2 .trust-item:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  }
+
+  body.home-v2 .founder-media {
+    width: min(680px, 100%);
+  }
+
+  body.home-v2 .custom-trip-copy {
+    gap: 28px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  body.home-v2 .section {
+    padding: 68px 0;
+  }
+
+  body.home-v2 .wrap:not(.mobile-menu) {
+    width: min(var(--max), calc(100% - 32px));
+  }
+
+  body.home-v2 .hero-v2 {
+    padding: 38px 0 58px;
+  }
+
+  body.home-v2 .hero-v2 .hero-grid {
+    gap: 30px;
+  }
+
+  body.home-v2 .hero-v2 .hero-intro h1 {
+    font-size: clamp(2.7rem, 13vw, 4rem);
+  }
+
+  body.home-v2 .hero-lead {
+    font-size: 1.05rem;
+  }
+
+  body.home-v2 .hero-actions {
+    display: grid;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  body.home-v2 .hero-actions .btn {
+    width: 100%;
+  }
+
+  body.home-v2 .hero-secondary-link {
+    justify-content: center;
+  }
+
+  body.home-v2 .hero-picture {
+    aspect-ratio: 4 / 3;
+    border-radius: 20px;
+  }
+
+  body.home-v2 .hero-picture img {
+    object-position: 52% 54%;
+  }
+
+body.home-v2 .trust-grid,
+body.home-v2 .intent-grid,
+body.home-v2 .featured-cards,
+body.home-v2 .testimonial-grid,
+body.home-v2 .story-cards,
+body.home-v2 .footer-grid-v2 {
+    grid-template-columns: 1fr;
+  }
+
+  body.home-v2 .trust-item,
+  body.home-v2 .trust-item:nth-child(2),
+  body.home-v2 .trust-item:nth-child(-n + 2) {
+    min-height: 0;
+    padding: 17px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  }
+
+  body.home-v2 .trust-item:last-child {
+    border-bottom: 0;
+  }
+
+  body.home-v2 .intent-card {
+    grid-template-columns: minmax(0, 1fr) auto;
+    min-height: 0;
+    padding: 22px 0;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+  }
+
+  body.home-v2 .featured-cards > :last-child,
+  body.home-v2 .testimonial-grid > :last-child,
+  body.home-v2 .story-cards > :last-child {
+    grid-column: auto;
+  }
+
+  body.home-v2 .experience-card .card-media {
+    height: auto;
+  }
+
+  body.home-v2 .founder-media {
+    min-height: 0;
+  }
+
+  body.home-v2 .founder-main {
+    width: 100%;
+    height: auto;
+  }
+
+  body.home-v2 .testimonial-card {
+    min-height: 0;
+    padding: 24px;
+  }
+
+  body.home-v2 .custom-trip-copy {
+    padding: 30px 22px;
+  }
+
+body.home-v2 .custom-trip-action .btn,
+body.home-v2 .final-cta-actions .btn {
+    width: 100%;
+  }
+
+  body.home-v2 .faq-wrap {
+    width: min(900px, calc(100% - 32px));
+  }
+
+  body.home-v2 .faq-item summary {
+    padding: 21px 42px 21px 0;
+    font-size: 1rem;
+  }
+
+  body.home-v2 .faq-answer {
+    padding-right: 20px;
+  }
+
+  body.home-v2 .story-card-media {
+    height: auto;
+  aspect-ratio: 16 / 9;
+  }
+
+  body.home-v2 .final-cta {
+    gap: 28px;
+  }
+
+  body.home-v2 .wa-float {
+    padding-inline: 16px;
+    font-size: 0.86rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+body.home-v2 .intent-card,
+body.home-v2 .story-card-media img {
+    transition: none !important;
+  }
+}
+
+/* ============================================================
+   FINAL HOMEPAGE UX PASS
+   Retained late cascade for compact hero type and review proof.
+   The approved surgery rules below define hero choreography and compact layouts.
+   ============================================================ */
+body.home-v2 .hero-v2 {
+  padding: 56px 0 68px;
+}
+
+body.home-v2 .hero-v2 .hero-grid {
+  gap: 48px;
+}
+
+body.home-v2 .hero-v2 .hero-intro h1 {
+  max-width: 620px;
+  font-size: clamp(3.35rem, 5vw, 5.2rem);
+  line-height: 0.97;
+}
+
+body.home-v2 .review-platform-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+body.home-v2 .review-platform-proof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  min-height: 44px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+body.home-v2 .review-platform-proof strong {
+  color: var(--forest);
+  font-size: inherit;
+  vertical-align: baseline;
+}
+
+body.home-v2 .review-platform-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+body.home-v2 .review-platform-proof [data-review-rating]:not(:empty)::before {
+  content: " · ";
+}
+
+body.home-v2 .story-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 1040px) {
+  body.home-v2 .story-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.home-v2 .story-cards > :last-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  body.home-v2 .hero-v2 {
+    padding: 34px 0 54px;
+  }
+
+  body.home-v2 .hero-v2 .hero-intro h1 {
+    font-size: clamp(2.75rem, 11.5vw, 3.55rem);
+    line-height: 0.98;
+  }
+
+  body.home-v2 .hero-lead {
+    font-size: 1.08rem;
+    line-height: 1.62;
+  }
+
+  body.home-v2 .review-platform-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  body.home-v2 .story-cards {
+    grid-template-columns: 1fr;
+  }
+
+  body.home-v2 .wa-float {
+    padding: 10px 15px;
+    font-size: 0.82rem;
+  }
+}
+
+/* Approved homepage surgery: scoped layout changes, after the retained late cascade. */
+body.home-v2 .hero-v2 .hero-grid {
+  grid-template-areas: "intro media" "body media";
+  row-gap: 20px;
+}
+body.home-v2 .hero-intro { grid-area: intro; align-self: end; min-width: 0; }
+body.home-v2 .hero-media { grid-area: media; }
+body.home-v2 .hero-body { grid-area: body; align-self: start; min-width: 0; }
+body.home-v2 .hero-intro h1 { margin-bottom: 0; }
+body.home-v2 .hero-lead { margin-top: 0; }
+body.home-v2 .hero-actions { margin-bottom: 0; }
+body.home-v2 .trust-grid { gap: 0; }
+body.home-v2 .trust-review [data-review-rating] { color: inherit; font-size: inherit; }
+body.home-v2 .intent-card { align-items: center; }
+body.home-v2 .intent-arrow { color: var(--rust); font-size: 1.5rem; }
+body.home-v2 .experience-card { min-width: 0; background: transparent; border: 0; box-shadow: none; }
+body.home-v2 .experience-card .card-body > p:not(.experience-meta) { color: var(--muted); }
+body.home-v2 .founder-copy .eyebrow,
+body.home-v2 .founder-actions .text-link { color: #efb18e; }
+body.home-v2 .founder-copy p { color: #cfddd7; }
+body.home-v2 .founder-principles { margin: 24px 0 14px; }
+body.home-v2 .founder-principles > div { padding: 16px 0; border-top: 1px solid rgba(255,255,255,.18); }
+body.home-v2 .founder-principles h3 { margin-bottom: 6px; font-size: 1.15rem; }
+body.home-v2 .founder-principles p { margin: 0; }
+body.home-v2 .custom-trip-copy .lead { margin-bottom: 0; }
+body.home-v2 .stories-all { margin-top: 24px; }
+body.home-v2 .final-cta { grid-template-areas: "copy actions" "steps steps"; row-gap: 30px; }
+body.home-v2 .final-cta-copy { grid-area: copy; }
+body.home-v2 .final-cta-actions { grid-area: actions; }
+body.home-v2 .booking-steps {
+  grid-area: steps;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body.home-v2 .booking-steps li { padding-top: 16px; border-top: 1px solid rgba(255,255,255,.2); }
+body.home-v2 .booking-steps span { margin-right: 8px; color: #efb18e; font-weight: 800; }
+@media (max-width: 920px) {
+  body.home-v2 .hero-v2 .hero-grid { grid-template-areas: "intro" "media" "body"; gap: 24px; }
+  body.home-v2 .trust-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  body.home-v2 .trust-item:nth-child(2) { border-right: 1px solid rgba(255,255,255,.13); }
+  body.home-v2 .trust-item:nth-child(-n + 2) { border-bottom: 0; }
+  body.home-v2 .final-cta { grid-template-areas: "copy" "steps" "actions"; }
+}
+@media (max-width: 650px) {
+  body.home-v2 .hero-picture { aspect-ratio: 3 / 2; }
+  body.home-v2 .hero-v2 { padding: 28px 0 38px; }
+  body.home-v2 .trust-grid { grid-template-columns: 1fr; }
+  body.home-v2 .trust-item,
+  body.home-v2 .trust-item:nth-child(2),
+  body.home-v2 .trust-item:nth-child(-n + 2) { padding: 14px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
+  body.home-v2 .trust-item:last-child { border-bottom: 0; }
+  body.home-v2 .intent-grid { gap: 0; border-top: 1px solid var(--line); }
+  body.home-v2 .founder-grid-v2 { gap: 30px; }
+  body.home-v2 .custom-trip-action { align-items: stretch; }
+  body.home-v2 .booking-steps { grid-template-columns: 1fr; gap: 12px; }
+  body.home-v2.home-intro-active .wa-float { visibility: hidden; pointer-events: none; }
+}
+
+/* ============================================================
+   District 4 Soul V1.1
+   Scoped to the homepage. Existing OG CTA/accent color is not
+   redefined because the original logo color is unverified.
+   ============================================================ */
+body.home-v2 {
+  --cream: #efeadf;
+  --forest: #243a35;
+  --district4-shutter: #a9b9ae;
+  --district4-terracotta: #b65d42;
+  --district4-accent-ink: #a74a30;
+  --muted: #56645d;
+  font-family: "Be Vietnam Pro", Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body.home-v2 .site-header {
+  background: rgba(239, 234, 223, 0.96);
+}
+
+body.home-v2 .eyebrow,
+body.home-v2 .experience-meta,
+body.home-v2 .booking-steps span {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: 0.07em;
+}
+
+body.home-v2 .hero-v2 .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--forest);
+}
+
+body.home-v2 .hero-v2 .eyebrow::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+  background: var(--district4-shutter);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+body.home-v2 .intent-section .eyebrow,
+body.home-v2 .featured-section .eyebrow,
+body.home-v2 .reviews-section .eyebrow,
+body.home-v2 .custom-trip-section .eyebrow,
+body.home-v2 .faq-section .eyebrow,
+body.home-v2 .stories-section .eyebrow,
+body.home-v2 .featured-section .experience-meta,
+body.home-v2 .paper .text-link,
+body.home-v2 .stories-section .text-link {
+  color: var(--district4-accent-ink) !important;
+}
+
+body.home-v2 .founder-v2 {
+  background: var(--forest);
+}
+
+body.home-v2 .district4-fieldnote {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 72px;
+  margin-top: 14px;
+  padding: 12px 18px;
+  border: 1px solid rgba(169, 185, 174, 0.65);
+  background: var(--district4-shutter);
+  color: var(--forest);
+  text-decoration: none;
+}
+
+body.home-v2 .district4-fieldnote-angle {
+  display: block;
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  background: var(--forest);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+body.home-v2 .district4-fieldnote-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+body.home-v2 .district4-fieldnote-kicker,
+body.home-v2 .district4-fieldnote-arrow {
+  font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+body.home-v2 .district4-fieldnote-text {
+  font-size: 0.93rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+body.home-v2 .district4-fieldnote-arrow {
+  align-self: center;
+  font-size: 1.1rem;
+}
+
+body.home-v2 .district4-fieldnote:hover .district4-fieldnote-text,
+body.home-v2 .district4-fieldnote:focus-visible .district4-fieldnote-text {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+body.home-v2 .district4-fieldnote:focus-visible {
+  outline: 3px solid #efeadf;
+  outline-offset: 3px;
+}
+
+body.home-v2 .stories-section .story-card {
+  border-top: 3px solid var(--district4-shutter);
+  border-radius: 12px;
+}
+
+@media (max-width: 650px) {
+  body.home-v2 .district4-fieldnote {
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  body.home-v2 .district4-fieldnote-text {
+    font-size: 0.84rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.home-v2 .district4-fieldnote {
+    transition: none;
+  }
+}
+
+</style>
+<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://ogsaigon.com/#organization",
+            "name": "OG Saigon Experience & Transport",
+            "alternateName": "OG Saigon",
+            "url": "https://ogsaigon.com/",
+            "logo": "https://ogsaigon.com/favicon-512x512.png",
+            "description": "Private local experiences, custom tours and transport in Ho Chi Minh City, Vietnam.",
+            "telephone": "+84938033395",
+            "areaServed": {
+              "@type": "City",
+              "name": "Ho Chi Minh City"
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Duy Nguyen"
+            },
+            "sameAs": [
+              "https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html",
+              "https://www.getyourguide.com/og-saigon-experience--transport-s695288/",
+              "https://www.airbnb.com/experiences/7046435"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://ogsaigon.com/#website",
+            "url": "https://ogsaigon.com/",
+            "name": "OG Saigon",
+            "publisher": { "@id": "https://ogsaigon.com/#organization" },
+            "inLanguage": "en"
+          }
+        ]
+      }
+    </script>
+<style>
+.preview-ribbon{position:relative;z-index:80;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center;min-height:38px;padding:8px 16px;background:#243a35;color:#efeadf;font:500 12px/1.4 "Be Vietnam Pro",sans-serif;text-align:center}
+.preview-ribbon strong{font-family:"IBM Plex Mono",monospace;letter-spacing:.04em;font-size:11px;color:#a9b9ae}
+.preview-ribbon span{color:#efeadf}
+@media(max-width:650px){.preview-ribbon{gap:3px;flex-direction:column;padding:8px 12px}}
+</style>
+</head>
+<body class="home-v2">
+<div class="preview-ribbon" role="status"><strong>OG SAIGON · DESIGN PREVIEW V1.1</strong><span>Đây là bản xem trước, chưa triển khai lên website chính. Các liên kết khác mở website thật.</span></div>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="topbar site-header" id="site-header">
+<div class="wrap nav">
+<a class="brand" href="/">OG SAIGON<small>Experiences &amp; Transport</small></a>
+<nav aria-label="Primary navigation" class="navlinks">
+<a href="/experiences/">Experiences</a>
+<a href="/custom-trip/">Custom Trips</a>
+<a href="/transport/">Transport</a>
+<a href="/stories/">Stories</a>
+<a href="/about/">About</a>
+<a class="btn primary small header-cta" href="/custom-trip/#trip-builder">Check My Date</a>
+</nav>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation menu" class="menu-btn" data-menu-btn="">Menu</button>
+</div>
+<div class="wrap mobile-menu" data-mobile-menu="" id="mobileMenu">
+<a href="/experiences/">Experiences</a>
+<a href="/custom-trip/">Custom Trips</a>
+<a href="/transport/">Transport</a>
+<a href="/stories/">Stories</a>
+<a href="/about/">About</a>
+<a class="btn primary" href="/custom-trip/#trip-builder">Check My Date</a>
+</div>
+</header>
+
+<main id="main-content">
+<!-- 01 HERO + COMPACT TRUST -->
+<div id="home-intro">
+<section class="hero hero-v2" id="home-hero">
+<div class="wrap hero-grid">
+<div class="hero-intro">
+<div class="eyebrow">Private local experiences in Saigon</div>
+<h1>See Saigon through local eyes.</h1>
+</div>
+<div class="hero-media">
+<picture class="hero-picture">
+<img alt="OG Saigon guests enjoying a rainy street-food evening with their local host" decoding="async" fetchpriority="high" height="934" loading="eager" src="/assets/images/saigon-rainy-night-food-tour-guests.webp" width="1600"/>
+</picture>
+</div>
+<div class="hero-body">
+<p class="hero-lead">Private experiences shaped around your interests, with local insight and room to make the day your own.</p>
+<div class="hero-actions">
+<a class="btn primary" href="/custom-trip/#trip-builder">Check My Date</a>
+<a class="text-link hero-secondary-link" href="/experiences/">Explore Experiences →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Compact trust -->
+<section aria-label="Why choose OG Saigon" class="trust-strip" id="trust">
+<div class="wrap trust-grid">
+<div class="trust-item"><strong>Private, built around your group</strong></div>
+<div class="trust-item"><strong>Licensed local guiding</strong></div>
+<a class="trust-item trust-review" data-platform-link="tripadvisor" data-review-platform="tripadvisor" data-review-aria-action="Read OG Saigon reviews on" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank">
+<strong>Tripadvisor <span data-review-rating=""></span></strong>
+<span data-review-count="">Read traveller reviews</span>
+</a>
+</div>
+</section>
+</div>
+<!-- 02 INTENT ROUTER -->
+<section class="section intent-section" id="start-here">
+<div class="wrap">
+<div class="section-head intent-head">
+<div>
+<div class="eyebrow">Start here</div>
+<h2>What brings you to Saigon?</h2>
+</div>
+<p class="lead">Choose what interests you most. We’ll help with the rest.</p>
+</div>
+<div class="intent-grid">
+<a class="intent-card" href="/experiences/cu-chi-tunnels/">
+<div class="intent-card-copy">
+<h3>History &amp; Cu Chi</h3>
+<p>War history, context and the Cu Chi Tunnels.</p>
+
+</div>
+<span class="intent-arrow" aria-hidden="true">→</span>
+</a>
+<a class="intent-card" href="/experiences/hidden-saigon/">
+<div class="intent-card-copy">
+<h3>Local Life &amp; Food</h3>
+<p>Neighborhoods, street food and everyday Saigon.</p>
+
+</div>
+<span class="intent-arrow" aria-hidden="true">→</span>
+</a>
+<a class="intent-card" href="/custom-trip/#trip-builder">
+<div class="intent-card-copy">
+<h3>Build My Own Day</h3>
+<p>Turn your saved places and ideas into a private plan.</p>
+
+</div>
+<span class="intent-arrow" aria-hidden="true">→</span>
+</a>
+<a class="intent-card" href="/transport/">
+<div class="intent-card-copy">
+<h3>Airport &amp; Private Transport</h3>
+<p>Airport pickup and private travel beyond Saigon.</p>
+
+</div>
+<span class="intent-arrow" aria-hidden="true">→</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 03 SIGNATURE EXPERIENCES -->
+<section class="section paper featured-section" id="featured-experiences">
+<div class="wrap">
+<div class="section-head">
+<div><div class="eyebrow">SIGNATURE EXPERIENCES</div><h2>Start with what interests you most.</h2></div>
+<p class="lead">Go deeper into war history at Cu Chi, or spend an evening inside everyday Saigon.</p>
+</div>
+<div class="cards featured-cards">
+<article class="experience-card">
+<div class="card-media"><img alt="Guest trying a concealed tunnel entrance at the Cu Chi Tunnels" decoding="async" height="1086" loading="lazy" src="/assets/images/cu-chi-trapdoor.webp" width="1448"/></div>
+<div class="card-body">
+<p class="experience-meta">HISTORY · HALF DAY · PRIVATE</p>
+<h3>Cu Chi Through Saigonese Eyes</h3>
+<p>Go beyond the famous tunnels and understand how people lived, moved and survived at Cu Chi.</p>
+<div class="card-footer"><a class="text-link" href="/experiences/cu-chi-tunnels/">Explore Cu Chi →</a></div>
+</div>
+</article>
+<article class="experience-card">
+<div class="card-media"><img alt="Guests eating bánh mì during a rainy OG Saigon street-food evening" decoding="async" height="1200" loading="lazy" src="/assets/images/saigon-street-food-guests-banh-mi-rain.webp" width="900"/></div>
+<div class="card-body">
+<p class="experience-meta">LOCAL LIFE &amp; FOOD · EVENING · PRIVATE</p>
+<h3>Hidden Saigon: Local Life &amp; Food</h3>
+<p>Walk, eat and explore the neighbourhoods behind Saigon’s main streets.</p>
+<div class="card-footer"><a class="text-link" href="/experiences/hidden-saigon/">Explore Hidden Saigon →</a></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 04 MEET DUY + WHY OG SAIGON -->
+<section class="section founder-section founder-v2" id="meet-duy">
+<div class="wrap story-grid founder-grid-v2">
+<div class="founder-media">
+<img alt="Duy explaining the Cu Chi Tunnels to OG Saigon guests" class="founder-main" decoding="async" height="900" loading="lazy" src="/assets/images/duy-guiding-guests-cu-chi-tunnels.webp" width="1200"/>
+<a class="district4-fieldnote" href="/stories/district-4-saigon-alleys/" aria-label="Read our District 4 story: Five generations, one neighbourhood">
+<span class="district4-fieldnote-angle" aria-hidden="true"></span>
+<span class="district4-fieldnote-copy"><span class="district4-fieldnote-kicker">04 / QUẬN TƯ</span><span class="district4-fieldnote-text">Five generations, one neighbourhood</span></span>
+<span class="district4-fieldnote-arrow" aria-hidden="true">↗</span>
+</a>
+</div>
+<div class="founder-copy">
+<div class="eyebrow">WHY OG SAIGON</div>
+<h2>Meet the local behind OG Saigon.</h2>
+<p class="lead">I’m Duy, founder of OG Saigon and a licensed international tour guide. My family has called Saigon home for five generations. District 4 is where that connection is most personal: it’s the neighbourhood I call home.</p>
+<p>That connection shapes how we plan and host our private experiences.</p>
+<div class="founder-principles">
+<div><h3>Conversation, not scripts</h3><p>Your questions help shape the conversation.</p></div>
+<div><h3>Context, not checklists</h3><p>We connect the places you see with the stories behind them.</p></div>
+<div><h3>Your pace</h3><p>We leave room to slow down and adjust around your interests.</p></div>
+</div>
+<div class="founder-actions"><a class="text-link" href="/meet-duy/">Meet Duy →</a></div>
+</div>
+</div>
+</section>
+<!-- 05 REVIEWS -->
+<section aria-labelledby="traveler-reviews-title" class="section paper reviews-section" id="traveler-reviews">
+<div class="wrap">
+<div class="section-head reviews-head">
+<div>
+<div class="eyebrow">FROM TRAVELLERS</div>
+<h2 id="traveler-reviews-title">What people remember.</h2>
+</div>
+<p class="lead">The best reviews tell us less about what guests “saw” and more about how the day felt.</p>
+</div>
+<div class="testimonial-grid">
+<article class="testimonial-card">
+<div aria-label="5 out of 5 stars" class="testimonial-stars">★★★★★</div>
+<blockquote class="testimonial-quote">“Great tour. Loved it. Highly recommended and Duy is a great and knowledgeable guide.”</blockquote>
+<p class="testimonial-meta">John · United States · September 2026</p>
+<a class="testimonial-source text-link" data-platform-link="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank">Verified on GetYourGuide →</a>
+</article>
+<article class="testimonial-card">
+<div aria-label="5 out of 5 stars" class="testimonial-stars">★★★★★</div>
+<blockquote class="testimonial-quote">“Because it was private, the trip never felt rushed.”</blockquote>
+<p class="testimonial-meta">Bridget · September 2026</p>
+<a class="testimonial-source text-link" data-platform-link="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank">Verified on GetYourGuide →</a>
+</article>
+</div><div aria-label="OG Saigon review platforms" class="review-platform-row"><a class="review-platform-proof" data-platform-link="tripadvisor" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank"><span class="review-platform-summary">Tripadvisor · <span data-review-count="">Read reviews</span><strong data-review-rating=""></strong></span></a><a class="review-platform-proof" data-platform-link="getyourguide" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank"><span class="review-platform-summary">GetYourGuide · <span data-review-count="">Read reviews</span><strong data-review-rating=""></strong></span></a><a class="review-platform-proof" data-platform-link="airbnb" data-review-aria-action="Read OG Saigon reviews on" data-review-platform="airbnb" href="https://www.airbnb.com/experiences/7046435" rel="noopener" target="_blank"><span class="review-platform-summary">Airbnb · <span data-review-count="">Read reviews</span><strong data-review-rating=""></strong></span></a></div>
+<p><a class="text-link" href="https://maps.app.goo.gl/WbifDsGKfHmSeFuR7" rel="noopener" target="_blank">View OG Saigon on Google Maps →</a></p>
+</div>
+</section>
+<!-- 06 BUILD YOUR OWN EXPERIENCE -->
+<section class="section paper custom-trip-section" id="custom-trip">
+<div class="wrap">
+<div class="cta-panel custom-trip-copy">
+<div>
+<div class="eyebrow">YOUR TRIP, YOUR INTERESTS</div>
+<h2>Already have places saved?</h2>
+<p class="lead">Send us your ideas. We’ll help turn them into a realistic private day.</p>
+</div>
+<div class="custom-trip-action"><a class="btn primary" href="/custom-trip/#trip-builder">Build My Experience</a></div>
+</div>
+</div>
+</section>
+<!-- 07 FAQ + STORIES -->
+<section class="section paper faq-section" id="faq">
+<div class="wrap faq-wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">Good to know</div>
+<h2>A few practical questions.</h2>
+</div>
+</div>
+<div class="faq-list">
+<details class="faq-item">
+<summary>Are OG Saigon experiences private?</summary>
+<div class="faq-answer"><p>OG Saigon primarily focuses on private experiences, giving us more flexibility with timing, stops and the pace of your day.</p></div>
+</details>
+<details class="faq-item">
+<summary>Can you customize an itinerary?</summary>
+<div class="faq-answer"><p>Yes. Send us a list of places, interests or even a rough plan. We’ll help turn it into a realistic itinerary.</p></div>
+</details>
+<details class="faq-item">
+<summary>Do you provide hotel pickup?</summary>
+<div class="faq-answer"><p>Pickup is available for many experiences. Exact arrangements depend on the experience and your hotel location.</p></div>
+</details>
+<details class="faq-item">
+<summary>How do I arrange a private experience with OG Saigon?</summary>
+<div class="faq-answer"><p>Send your date, group size and what you are interested in. We’ll confirm availability, help shape the itinerary and provide a quote for your group before you decide.</p></div>
+</details>
+</div>
+</div>
+</section>
+<!-- Stories -->
+<section class="section stories-section" id="stories">
+<div class="wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">Before you come</div>
+<h2>A little context goes a long way.</h2>
+</div>
+<p class="lead">Local stories and practical guides from the places we know best.</p>
+</div>
+<div class="story-cards">
+<article class="story-card"><a class="story-card-media" href="/stories/district-4-saigon-alleys/"><img alt="A narrow residential alley in old District 4, Saigon, with scooters, homes and hanging decorations" decoding="async" height="900" loading="lazy" src="/assets/images/district-4-saigon-alley-local-life.webp" width="1200"></a><div class="story-card-body"><div class="eyebrow">Local Saigon</div><h3><a href="/stories/district-4-saigon-alleys/">Inside Saigon’s District 4 Alleys: Underworld Legends and the Neighborhood I Call Home</a></h3><p class="story-card-excerpt">The alleys of old District 4 carry underworld legends, family memories and a very different Saigon today.</p><a class="text-link" href="/stories/district-4-saigon-alleys/">Read more →</a></div></article>
+<article class="story-card"><a class="story-card-media" href="/stories/cu-chi-without-crawling/"><img alt="Guest trying a concealed entrance at the Cu Chi Tunnels" decoding="async" height="1086" loading="lazy" src="/assets/images/cu-chi-trapdoor.webp" width="1448"></a><div class="story-card-body"><h3><a href="/stories/cu-chi-without-crawling/">Is Cu Chi worth visiting if you don’t want to crawl through tunnels?</a></h3><p class="story-card-excerpt">What you can still experience at Cu Chi, how physical the visit is and what the tunnel crawl actually adds.</p><a class="text-link" href="/stories/cu-chi-without-crawling/">Read more →</a></div></article>
+</div>
+<a class="text-link stories-all" href="/stories/">Explore all Saigon stories →</a>
+</div>
+</section>
+<!-- 08 FINAL CTA -->
+<section class="section final-cta-section" id="plan-your-saigon">
+<div class="wrap final-cta">
+<div class="final-cta-copy">
+<div class="eyebrow">COMING TO SAIGON?</div>
+<h2>You don’t need to have the whole trip figured out.</h2>
+<p>Tell us your date and what interests you. We’ll help shape a clear plan together.</p>
+</div>
+<ol class="booking-steps" aria-label="How planning works">
+<li><span aria-hidden="true">01</span> Send your idea</li>
+<li><span aria-hidden="true">02</span> Get a clear plan &amp; quote for your group</li>
+<li><span aria-hidden="true">03</span> Confirm the final arrangements</li>
+</ol>
+<div class="final-cta-actions">
+<a class="btn primary" href="/custom-trip/#trip-builder">Check My Date</a>
+<a class="text-link" data-whatsapp-link="" href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon." rel="noopener" target="_blank">Message OG Saigon on WhatsApp →</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="wrap footer-grid footer-grid-v2">
+<div>
+<a class="brand footer-brand" href="/">OG SAIGON<small>Experiences &amp; Transport</small></a>
+<p class="footer-muted">Private local experiences, custom days and comfortable transport in Ho Chi Minh City and nearby destinations.</p>
+</div>
+<div>
+<h2>Experiences</h2>
+<p><a href="/experiences/cu-chi-tunnels/">Cu Chi Tunnels</a></p>
+<p><a href="/experiences/hidden-saigon/">Hidden Saigon</a></p>
+<p><a href="/experiences/cu-chi-war-museum/">War History Day</a></p>
+<p><a href="/custom-trip/">Custom Private Day</a></p>
+</div>
+<div>
+<h2>Services</h2>
+<p><a href="/transport/">Airport Pickup</a></p>
+<p><a href="/transport/">Private Transport</a></p>
+<p><a href="/stories/">Travel Stories</a></p>
+</div>
+<div>
+<h2>OG Saigon</h2>
+<p><a href="/meet-duy/">Meet Duy</a></p>
+<p><a href="/about/">About</a></p>
+<p><a data-platform-link="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank">Tripadvisor</a></p>
+<p><a data-platform-link="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank">GetYourGuide</a></p><p><a data-platform-link="airbnb" href="https://www.airbnb.com/experiences/7046435" rel="noopener" target="_blank">Airbnb Experience</a></p>
+</div>
+<div class="footer-contact">
+<h2>Contact</h2>
+<p><a data-phone-link="" href="tel:+84938033395">+84 938 033 395</a></p>
+<p><a data-whatsapp-link="" href="https://wa.me/84938033395" rel="noopener" target="_blank">WhatsApp</a></p>
+<p><a href="https://maps.app.goo.gl/WbifDsGKfHmSeFuR7" rel="noopener" target="_blank">Google Maps</a></p>
+<p class="footer-muted">Saigon, Vietnam</p>
+</div>
+</div>
+<div class="wrap footer-bottom">© <span data-year=""></span> OG Saigon Experience &amp; Transport. All rights reserved.</div>
+</footer>
+<a aria-label="Message OG Saigon on WhatsApp" class="btn primary wa-float" data-whatsapp-link="" href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon." rel="noopener" target="_blank">WhatsApp</a>
+
+<script src="/assets/js/site-data.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/home.js"></script>
+</body>
+</html>
