@@ -244,6 +244,17 @@ body.custom-trip-page .custom-builder-form {
   padding: 32px;
 }
 
+/* Allow native date controls to shrink within the builder's grid. */
+body.custom-trip-page .custom-builder-form .form-grid > .field {
+  min-width: 0;
+}
+
+body.custom-trip-page .custom-builder-form input[type="date"] {
+  width: -webkit-fill-available;
+  min-width: 0;
+  max-width: 100%;
+}
+
 body.custom-trip-page .builder-fieldset {
   margin: 0 0 18px;
   padding: 0;
