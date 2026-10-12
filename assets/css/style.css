@@ -1959,3 +1959,14 @@ footer {
     line-height: 1.55;
   }
 }
+
+/* Experiences listing: tighten gap below introductory hero only on this page. */
+.experiences-list {
+  padding-top: 24px;
+}
+
+@media (max-width: 650px) {
+  .experiences-list {
+    padding-top: 20px;
+  }
+}
