@@ -97,7 +97,7 @@ for doc in docs.values():
         assert a.attrs.get('target')=='_blank' and 'noopener' in a.attrs.get('rel','').split()
         assert not any(k.startswith('data-review') or k=='data-platform-link' for k in a.attrs)
 
-assert [n.text for n in one('faq').all('summary')]==['Are OG Saigon experiences private?','Can you customize an itinerary?','Do you provide hotel pickup?','How do I book?']
+assert [n.text for n in one('faq').all('summary')]==['Are OG Saigon experiences private?','Can you customize an itinerary?','Do you provide hotel pickup?','How do I arrange a private experience with OG Saigon?']
 assert len(one('plan-your-saigon').all('li'))==3
 cards=one('stories').all(cls='story-card')
 assert len(cards)==2
