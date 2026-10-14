@@ -72,8 +72,10 @@ assert hero.all('a')[0].attrs['href']=='/custom-trip/#trip-builder'
 assert len(one('home-intro').all('section'))==2
 assert len(one('trust').all(cls='trust-item'))==3
 proof=one('trust').all('a')[0]
-assert proof.attrs['data-review-platform']=='tripadvisor'
-assert not re.search(r'\d',proof.text),'Trust must not keep its own numeric rating/count'
+assert proof.attrs['href']=='#traveler-reviews'
+assert not any(k in proof.attrs for k in ('data-review-platform','data-platform-link'))
+assert proof.all('strong')[0].text=='100+ Guest Reviews'
+assert proof.all('span')[0].text=='Personal experiences, thoughtfully tailored to you.'
 assert len(one('start-here').all(cls='intent-card'))==4
 assert not home.all(cls='intent-num') and not home.all(cls='intent-link')
 assert [a.attrs['href'] for a in one('start-here').all(cls='intent-card')]==['/experiences/cu-chi-tunnels/','/experiences/hidden-saigon/','/custom-trip/#trip-builder','/transport/']
@@ -95,7 +97,7 @@ for doc in docs.values():
         assert a.attrs.get('target')=='_blank' and 'noopener' in a.attrs.get('rel','').split()
         assert not any(k.startswith('data-review') or k=='data-platform-link' for k in a.attrs)
 
-assert [n.text for n in one('faq').all('summary')]==['Are OG Saigon experiences private?','Can you customize an itinerary?','Do you provide hotel pickup?','How do I book?']
+assert [n.text for n in one('faq').all('summary')]==['Are OG Saigon experiences private?','Can you customize an itinerary?','Do you provide hotel pickup?','How do I arrange a private experience with OG Saigon?']
 assert len(one('plan-your-saigon').all('li'))==3
 cards=one('stories').all(cls='story-card')
 assert len(cards)==2
