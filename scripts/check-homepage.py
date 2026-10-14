@@ -71,11 +71,16 @@ assert len(hero.all('img'))==1 and len(hero.all('a'))==2
 assert hero.all('a')[0].attrs['href']=='/custom-trip/#trip-builder'
 assert len(one('home-intro').all('section'))==2
 assert len(one('trust').all(cls='trust-item'))==3
-proof=one('trust').all('a')[0]
-assert proof.attrs['href']=='#traveler-reviews'
-assert not any(k in proof.attrs for k in ('data-review-platform','data-platform-link'))
-assert proof.all('strong')[0].text=='100+ Guest Reviews'
+proof=one('trust').all(cls='trust-review')[0]
+heading=proof.all(cls='trust-review-heading')[0]
+assert heading.attrs['href']=='#traveler-reviews'
+assert heading.all('strong')[0].text=='100+ Guest Reviews'
 assert proof.all('span')[0].text=='Personal experiences, thoughtfully tailored to you.'
+platforms=proof.all(cls='trust-platforms')[0].all('a')
+assert len(platforms)==4
+assert [a.all('img')[0].attrs['alt'] for a in platforms]==['GetYourGuide','Airbnb','Tripadvisor','Google Maps']
+assert all(a.attrs['target']=='_blank' and 'noopener' in a.attrs['rel'] and a.attrs.get('aria-label') for a in platforms)
+assert platforms[3].attrs['href']=='https://maps.app.goo.gl/WbifDsGKfHmSeFuR7'
 assert len(one('start-here').all(cls='intent-card'))==4
 assert not home.all(cls='intent-num') and not home.all(cls='intent-link')
 assert [a.attrs['href'] for a in one('start-here').all(cls='intent-card')]==['/experiences/cu-chi-tunnels/','/experiences/hidden-saigon/','/custom-trip/#trip-builder','/transport/']
