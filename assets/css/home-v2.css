@@ -144,6 +144,16 @@ body.home-v2 a.trust-item:hover {
   background: rgba(255, 255, 255, 0.06);
 }
 
+/* Compact, independently clickable review platform logos */
+body.home-v2 .trust-review-heading { color: #fff; text-decoration: none; width: fit-content; }
+body.home-v2 .trust-review-heading:hover { text-decoration: underline; text-underline-offset: 3px; }
+body.home-v2 .trust-platforms { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 9px; }
+body.home-v2 .trust-platforms a { display: inline-flex; align-items: center; justify-content: center; width: 39px; height: 35px; border: 1px solid rgba(255,255,255,.22); border-radius: 8px; background: rgba(255,255,255,.08); transition: background .18s ease; }
+body.home-v2 .trust-platforms a:hover { background: rgba(255,255,255,.2); }
+body.home-v2 .trust-platforms a:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+body.home-v2 .trust-platforms img { display: block; width: 24px; height: 24px; object-fit: contain; filter: grayscale(1) brightness(0) invert(1); }
+@media (prefers-reduced-motion: reduce) { body.home-v2 .trust-platforms a { transition: none; } }
+
 /* Intent chooser */
 body.home-v2 .intent-section {
   background: var(--cream);
