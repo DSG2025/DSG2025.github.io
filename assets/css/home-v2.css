@@ -151,7 +151,7 @@ body.home-v2 .trust-platforms { display: flex; align-items: center; flex-wrap: w
 body.home-v2 .trust-platforms a { display: inline-flex; align-items: center; justify-content: center; width: 39px; height: 35px; border: 1px solid rgba(255,255,255,.22); border-radius: 8px; background: rgba(255,255,255,.08); transition: background .18s ease; }
 body.home-v2 .trust-platforms a:hover { background: rgba(255,255,255,.2); }
 body.home-v2 .trust-platforms a:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
-body.home-v2 .trust-platforms img { display: block; width: 24px; height: 24px; object-fit: contain; filter: grayscale(1) brightness(0) invert(1); }
+body.home-v2 .trust-platforms img { display: block; width: 24px; height: 24px; object-fit: contain; }
 @media (prefers-reduced-motion: reduce) { body.home-v2 .trust-platforms a { transition: none; } }
 
 /* Intent chooser */
