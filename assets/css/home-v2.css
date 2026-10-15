@@ -952,3 +952,18 @@ body.home-v2 .reviews-proof-note {
     font-size: 0.85rem;
   }
 }
+
+/* Reviews trust row: make all four platform links easier to recognize. */
+body.home-v2 .reviews-proof .review-platform-proof::after {
+  content: "↗";
+  margin-left: auto;
+  color: var(--rust);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+body.home-v2 .reviews-proof .review-platform-proof:hover span,
+body.home-v2 .reviews-proof .review-platform-proof:focus-visible span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
