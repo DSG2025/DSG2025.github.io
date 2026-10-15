@@ -967,3 +967,37 @@ body.home-v2 .reviews-proof .review-platform-proof:focus-visible span {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Mobile trust review link: make the in-page jump discoverable. */
+body.home-v2 .trust-review .trust-review-title-arrow,
+body.home-v2 .trust-review .trust-review-cue {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  body.home-v2 .trust-review .trust-review-heading {
+    display: block;
+    align-self: flex-start;
+    min-height: 48px;
+    padding: 4px 0;
+  }
+
+  body.home-v2 .trust-review .trust-review-title-arrow {
+    display: inline;
+    margin: 0 0 0 8px;
+    color: #efb18e;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  body.home-v2 .trust-review .trust-review-cue {
+    display: block;
+    margin-top: 4px;
+    color: #efb18e;
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.45;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
