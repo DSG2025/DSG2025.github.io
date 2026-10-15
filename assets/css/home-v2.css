@@ -856,3 +856,99 @@ body.home-v2 .booking-steps span { margin-right: 8px; color: #efb18e; font-weigh
   body.home-v2 .booking-steps { grid-template-columns: 1fr; gap: 12px; }
   body.home-v2.home-intro-active .wa-float { visibility: hidden; pointer-events: none; }
 }
+
+/* Reviews V1: verified personal experiences and official platform logos. */
+body.home-v2 .testimonial-quote--featured {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  overflow: hidden;
+}
+
+body.home-v2 .testimonial-source {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 8px;
+  min-height: 44px;
+  line-height: 1.4;
+}
+
+body.home-v2 .testimonial-source img,
+body.home-v2 .review-platform-proof img {
+  display: block;
+  flex: none;
+  object-fit: contain;
+}
+
+body.home-v2 .reviews-proof {
+  margin-top: 30px;
+}
+
+body.home-v2 .reviews-proof h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.16rem;
+  line-height: 1.35;
+}
+
+body.home-v2 .reviews-proof .review-platform-row {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+body.home-v2 .reviews-proof .review-platform-proof {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 56px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+body.home-v2 .reviews-proof .review-platform-proof:hover {
+  border-color: var(--rust);
+}
+
+body.home-v2 .reviews-proof .review-platform-proof:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: 3px;
+}
+
+body.home-v2 .reviews-proof .review-platform-proof span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+body.home-v2 .reviews-proof-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  body.home-v2 .testimonial-quote--featured {
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+  }
+
+  body.home-v2 .reviews-proof .review-platform-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.home-v2 .reviews-proof .review-platform-proof {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+}
