@@ -2,7 +2,7 @@
 .cu-chi-v2{--ink:#18302a;--deep:#243a35;--rust:#b65d42;--cream:#efeadd;--paper:#fffdf8;--muted:#60746c;--line:#dbdfd5;--soft:#f6f2e9;--radius:18px}
 .cu-chi-v2 *{box-sizing:border-box}
 .cu-chi-v2{scroll-behavior:smooth}
-.cu-chi-v2{margin:0;color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--paper)}
+.cu-chi-v2{margin:0;color:var(--ink);font:var(--type-body)/1.55 var(--type-font-family);background:var(--paper)}
 .cu-chi-v2 a{color:inherit}
 .cu-chi-v2 a:focus-visible, .cu-chi-v2 summary:focus-visible{outline:3px solid #d68361;outline-offset:4px}
 .cu-chi-v2 img{display:block;width:100%;height:100%;object-fit:cover}
@@ -156,3 +156,9 @@
   .cu-chi-v2 .related h2 {font-size:1.85rem}
   .cu-chi-v2 .itinerary-photo figcaption,.cu-chi-v2 .optional-photo figcaption {font-size:.9rem}
 }
+
+/* Typography Foundation V1: semantic sizes, Cu Chi layout remains page-scoped. */
+.cu-chi-v2 .lead {font-size:var(--type-lead)}
+.cu-chi-v2 .summary-item span,.cu-chi-v2 .photo-card p,.cu-chi-v2 .step p,.cu-chi-v2 .benefit p,.cu-chi-v2 .terms li,.cu-chi-v2 .terms p,.cu-chi-v2 .smallnote,.cu-chi-v2 .faq details p {font-size:var(--type-support)}
+.cu-chi-v2 .itinerary-photo figcaption,.cu-chi-v2 .optional-photo figcaption {font-size:var(--type-caption)}
+.cu-chi-v2 .eyebrow,.cu-chi-v2 .crumb,.cu-chi-v2 .hint,.cu-chi-v2 .pill {font-size:var(--type-label)}
