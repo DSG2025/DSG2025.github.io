@@ -1970,3 +1970,87 @@ footer {
     padding-top: 20px;
   }
 }
+
+/* Cu Chi booking clarity: compact details without turning enquiries into checkout. */
+.cu-chi-planning {
+  padding: 56px 0 62px;
+  background: var(--paper);
+}
+.cu-chi-planning h2 {
+  max-width: 760px;
+  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+}
+.cu-chi-planning-lead {
+  max-width: 710px;
+  margin: 0 0 24px;
+  color: var(--muted);
+}
+.cu-chi-quick-grid,
+.cu-chi-details-grid {
+  display: grid;
+  gap: 14px;
+}
+.cu-chi-quick-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.cu-chi-quick-item,
+.cu-chi-details-panel {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+.cu-chi-quick-item h3,
+.cu-chi-details-panel h3 {
+  font-size: 1.12rem;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.cu-chi-quick-item p,
+.cu-chi-details-panel p,
+.cu-chi-details-panel li {
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+.cu-chi-quick-item p {
+  color: var(--muted);
+  margin: 0;
+}
+.cu-chi-details-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 14px;
+}
+.cu-chi-details-panel .bullets {
+  margin: 10px 0 0;
+  gap: 8px;
+}
+.cu-chi-details-panel .bullets li {
+  padding-left: 0;
+}
+.cu-chi-details-panel > p {
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.cu-chi-details-panel .cu-chi-quote-note {
+  margin: 12px 0 0;
+  font-size: 0.88rem;
+}
+.cu-chi-direct-gift {
+  margin: 16px 0 0;
+  padding: 16px 20px;
+  border-left: 3px solid var(--rust);
+  border-radius: 0 12px 12px 0;
+  background: #f7f0e6;
+  line-height: 1.55;
+}
+@media (max-width: 920px) {
+  .cu-chi-quick-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 650px) {
+  .cu-chi-planning { padding: 38px 0 46px; }
+  .cu-chi-details-grid { grid-template-columns: 1fr; }
+  .cu-chi-quick-item,
+  .cu-chi-details-panel { padding: 18px; }
+  .cu-chi-direct-gift { padding: 15px; }
+}
