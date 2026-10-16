@@ -123,7 +123,7 @@ assert len(docs[OUT/'stories/index.html'].all(cls='story-index-card'))==6
 assert not list((ROOT/'stories').glob('*/index.html'))
 # Contract frozen by the user: compare against the reviewed CTA/form baseline.
 # The Cu Chi clarity, shared footer perk and scoped styles below are newly approved edits.
-approved_cu_chi_update={'_includes/site-footer.html','assets/css/style.css','experiences/cu-chi-tunnels/index.html'}
+approved_cu_chi_update={'_includes/site-footer.html','assets/css/style.css','experiences/cu-chi-tunnels/index.html','custom-trip/index.html'}
 base='9cca0cd841a176dad81fd6aa1006380f5f0cbe74'
 protected=['_includes/site-header.html','_includes/site-footer.html','_layouts/story.html','assets/css/style.css','assets/css/custom-trip.css','assets/css/stories.css','assets/js/main.js','assets/js/site-data.js','assets/js/custom-trip.js','custom-trip/index.html','experiences/index.html','experiences/cu-chi-tunnels/index.html','experiences/cu-chi-war-museum/index.html','experiences/hidden-saigon/index.html','transport/index.html','sitemap.xml','robots.txt']
 baseline_available=subprocess.run(['git','cat-file','-e',base],cwd=ROOT,capture_output=True).returncode==0
@@ -143,10 +143,14 @@ else:
 cu_chi=docs[OUT/'experiences/cu-chi-tunnels/index.html']
 assert len(cu_chi.all(id='cu-chi-planning-title'))==1
 assert 'about 6 to 7 hours' in cu_chi.text.lower()
-assert 'whether Cu Chi entrance tickets are included' in cu_chi.text
-assert 'complimentary Saigon coffee gift' in cu_chi.text
+assert 'Cu Chi Tunnels entrance tickets, included in the tour price' in cu_chi.text
+assert 'Yes. Cu Chi entrance tickets are included' in cu_chi.text
+assert len(cu_chi.all(cls='direct-booking-note'))==1
+custom=docs[OUT/'custom-trip/index.html']
+assert len(custom.all(cls='direct-booking-note'))==1
 for doc in docs.values():
-    assert 'complimentary Saigon coffee gift' in doc.all('footer')[0].text
+    assert len(doc.all('footer')[0].all(cls='footer-perk'))==1
+    assert 'A Saigon coffee gift with every direct website booking.' in doc.all('footer')[0].text
 
 print(f'PASS: {len(docs)} pages, {links} local links/assets/anchors, {images} image references, {schemas} JSON-LD blocks, unique IDs, one header/footer per page.')
 print('PASS: homepage structure, 2 selected stories, 6 index stories, 5 rain photos, no duplicate story sources.')
