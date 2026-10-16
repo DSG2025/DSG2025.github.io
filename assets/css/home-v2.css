@@ -968,9 +968,20 @@ body.home-v2 .reviews-proof .review-platform-proof:focus-visible span {
   text-underline-offset: 3px;
 }
 
-/* Mobile trust review link: make the in-page jump discoverable. */
+/* Consistent review-link affordance across desktop and mobile. */
 body.home-v2 .trust-review .trust-review-title-arrow {
-  display: none;
+  display: inline;
+  margin: 0 0 0 8px;
+  color: #efb18e;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+body.home-v2 .trust-review .trust-review-heading strong {
+  text-decoration: underline;
+  text-decoration-color: rgba(239, 177, 142, 0.6);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
 }
 
 @media (max-width: 650px) {
@@ -979,20 +990,5 @@ body.home-v2 .trust-review .trust-review-title-arrow {
     align-self: flex-start;
     min-height: 48px;
     padding: 4px 0;
-  }
-
-  body.home-v2 .trust-review .trust-review-title-arrow {
-    display: inline;
-    margin: 0 0 0 8px;
-    color: #efb18e;
-    font-size: 1rem;
-    font-weight: 800;
-  }
-
-  body.home-v2 .trust-review .trust-review-heading strong {
-    text-decoration: underline;
-    text-decoration-color: rgba(239, 177, 142, 0.6);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
   }
 }
