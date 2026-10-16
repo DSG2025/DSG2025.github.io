@@ -123,7 +123,7 @@ assert len(docs[OUT/'stories/index.html'].all(cls='story-index-card'))==6
 assert not list((ROOT/'stories').glob('*/index.html'))
 # Contract frozen by the user: compare against the reviewed CTA/form baseline.
 # The Cu Chi clarity, shared footer perk and scoped styles below are newly approved edits.
-approved_cu_chi_update={'_includes/site-footer.html','assets/css/style.css','experiences/cu-chi-tunnels/index.html','custom-trip/index.html'}
+approved_cu_chi_update={'_includes/site-footer.html','assets/css/style.css','experiences/cu-chi-tunnels/index.html','custom-trip/index.html','sitemap.xml'}
 base='9cca0cd841a176dad81fd6aa1006380f5f0cbe74'
 protected=['_includes/site-header.html','_includes/site-footer.html','_layouts/story.html','assets/css/style.css','assets/css/custom-trip.css','assets/css/stories.css','assets/js/main.js','assets/js/site-data.js','assets/js/custom-trip.js','custom-trip/index.html','experiences/index.html','experiences/cu-chi-tunnels/index.html','experiences/cu-chi-war-museum/index.html','experiences/hidden-saigon/index.html','transport/index.html','sitemap.xml','robots.txt']
 baseline_available=subprocess.run(['git','cat-file','-e',base],cwd=ROOT,capture_output=True).returncode==0
@@ -141,11 +141,25 @@ if baseline_available:
 else:
     print('NOT VERIFIED: protected-source comparison, baseline commit unavailable in this checkout.')
 cu_chi=docs[OUT/'experiences/cu-chi-tunnels/index.html']
-assert len(cu_chi.all(id='cu-chi-planning-title'))==1
-assert 'about 6 to 7 hours' in cu_chi.text.lower()
-assert 'Cu Chi Tunnels entrance tickets, included in the tour price' in cu_chi.text
-assert 'Yes. Cu Chi entrance tickets are included' in cu_chi.text
-assert len(cu_chi.all(cls='direct-booking-note'))==1
+cu_main=cu_chi.all(id='main-content')[0]
+assert 'cu-chi-v2' in cu_main.attrs.get('class','').split()
+assert len(cu_chi.all('h1'))==1 and cu_chi.all('h1')[0].text=='Cu Chi Tunnels Tour from Ho Chi Minh City'
+assert len(cu_main.all('img'))==8
+assert len(cu_main.all(cls='summary-item'))==4
+assert len(cu_main.all('details'))==5
+assert '6 to 7 hours' in cu_main.text.lower()
+assert 'Cu Chi Tunnels entrance tickets' in cu_main.text
+assert 'Private vehicle for the round trip' in cu_main.text
+assert 'Hotel pickup and drop-off in central Saigon' in cu_main.text
+assert 'Ben Dinh' in cu_main.text and 'Ben Duoc' in cu_main.text
+assert 'Optional shooting-range ammunition' in cu_main.text
+assert 'complimentary Saigon coffee gift' in cu_main.text
+assert len([a for a in cu_main.all('a') if 'data-whatsapp-link' in a.attrs and a.text=='Check My Cu Chi Date'])==2
+assert cu_chi.all('meta') and any(x.attrs.get('name')=='robots' and x.attrs.get('content','').startswith('index,follow') for x in cu_chi.all('meta'))
+assert any(x.attrs.get('href')=='/assets/css/cu-chi-v2.css' for x in cu_chi.all('link'))
+for target in ['/experiences/cu-chi-war-museum/','/stories/cu-chi-without-crawling/','/custom-trip/?from=cu-chi-tunnels#trip-builder']:
+    assert any(x.attrs.get('href')==target for x in cu_main.all('a')),target
+assert '<lastmod>2026-10-16</lastmod>' in (ROOT/'sitemap.xml').read_text(), 'Cu Chi sitemap lastmod not updated'
 custom=docs[OUT/'custom-trip/index.html']
 assert len(custom.all(cls='direct-booking-note'))==1
 for doc in docs.values():
