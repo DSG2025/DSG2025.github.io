@@ -123,7 +123,7 @@ assert len(docs[OUT/'stories/index.html'].all(cls='story-index-card'))==6
 assert not list((ROOT/'stories').glob('*/index.html'))
 # Contract frozen by the user: compare against the reviewed CTA/form baseline.
 # The Cu Chi clarity, shared footer perk and scoped styles below are newly approved edits.
-approved_cu_chi_update={'_includes/site-footer.html','assets/css/style.css','assets/css/stories.css','assets/css/custom-trip.css','experiences/cu-chi-tunnels/index.html','custom-trip/index.html','sitemap.xml'}
+approved_cu_chi_update={'_includes/site-footer.html','assets/css/style.css','assets/css/stories.css','assets/css/custom-trip.css','experiences/cu-chi-tunnels/index.html','custom-trip/index.html','transport/index.html','sitemap.xml'}
 base='9cca0cd841a176dad81fd6aa1006380f5f0cbe74'
 protected=['_includes/site-header.html','_includes/site-footer.html','_layouts/story.html','assets/css/style.css','assets/css/custom-trip.css','assets/css/stories.css','assets/js/main.js','assets/js/site-data.js','assets/js/custom-trip.js','custom-trip/index.html','experiences/index.html','experiences/cu-chi-tunnels/index.html','experiences/cu-chi-war-museum/index.html','experiences/hidden-saigon/index.html','transport/index.html','sitemap.xml','robots.txt']
 baseline_available=subprocess.run(['git','cat-file','-e',base],cwd=ROOT,capture_output=True).returncode==0
@@ -140,6 +140,27 @@ if baseline_available:
     assert re.search(r'<head>[\s\S]*?</head>',oldhome)[0]==re.search(r'<head>[\s\S]*?</head>',(ROOT/'index.html').read_text())[0]
 else:
     print('NOT VERIFIED: protected-source comparison, baseline commit unavailable in this checkout.')
+# Transport V2: structure, shared typography, search metadata and inquiry paths.
+transport=docs[OUT/'transport/index.html']
+transport_main=transport.all(id='main-content')[0]
+assert 'transport-v2' in transport_main.attrs.get('class','').split()
+assert len(transport.all('h1'))==1 and transport.all('h1')[0].text=='Private Airport Transfer in Ho Chi Minh City (SGN)'
+assert len(transport_main.all('img'))==2
+assert len(transport_main.all(cls='transport-summary-item'))==4
+assert len(transport_main.all(cls='transport-step'))==4
+assert len(transport_main.all('details'))==8
+assert 'Flight monitoring' in transport_main.text
+assert 'WhatsApp' in transport_main.text
+assert len([a for a in transport_main.all('a') if 'data-whatsapp-link' in a.attrs])==3
+assert any(x.attrs.get('name')=='robots' and x.attrs.get('content','').startswith('index,follow') for x in transport.all('meta'))
+assert any(x.attrs.get('href')=='/assets/css/transport-v2.css' for x in transport.all('link'))
+for target in ['/experiences/','/custom-trip/','/custom-trip/?from=transport#trip-builder','/stories/first-day-in-saigon/']:
+    assert any(x.attrs.get('href')==target for x in transport_main.all('a')), target
+transport_css=(ROOT/'assets/css/transport-v2.css').read_text()
+assert ':root' not in transport_css and '.transport-v2' in transport_css
+assert '<loc>https://ogsaigon.com/transport/</loc><lastmod>2026-10-17</lastmod>' in (ROOT/'sitemap.xml').read_text()
+assert 'var(--type-support)' in transport_css and 'var(--type-lead)' in transport_css
+
 cu_chi=docs[OUT/'experiences/cu-chi-tunnels/index.html']
 cu_main=cu_chi.all(id='main-content')[0]
 assert 'cu-chi-v2' in cu_main.attrs.get('class','').split()
