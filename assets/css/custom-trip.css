@@ -263,7 +263,7 @@ body.custom-trip-page .builder-fieldset {
 
 body.custom-trip-page .builder-fieldset legend {
   margin-bottom: 8px;
-  font-size: 0.84rem;
+  font-size: var(--type-label);
   font-weight: 900;
 }
 
@@ -330,7 +330,7 @@ body.custom-trip-page .form-fallback-actions .btn {
 body.custom-trip-page .form-fallback-note {
   margin: 12px 0 0;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: var(--type-caption);
 }
 
 /* Tablet */
