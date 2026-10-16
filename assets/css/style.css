@@ -2122,3 +2122,37 @@ footer {
 .site-footer .footer-contact-row.footer-muted > span {
   color: inherit;
 }
+
+/* Shared OG Saigon footer logo lockup, desktop and mobile. */
+.site-footer .footer-brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.site-footer .footer-brand-monogram {
+  display: block;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.site-footer .footer-brand-copy {
+  display: block;
+  min-width: 0;
+}
+
+@media (max-width: 650px) {
+  .site-footer .footer-brand-lockup {
+    gap: 8px;
+  }
+
+  .site-footer .footer-brand-monogram {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
