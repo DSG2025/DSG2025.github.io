@@ -158,6 +158,7 @@ for target in ['/experiences/','/custom-trip/','/custom-trip/?from=transport#tri
     assert any(x.attrs.get('href')==target for x in transport_main.all('a')), target
 transport_css=(ROOT/'assets/css/transport-v2.css').read_text()
 assert ':root' not in transport_css and '.transport-v2' in transport_css
+assert '<loc>https://ogsaigon.com/transport/</loc><lastmod>2026-10-17</lastmod>' in (ROOT/'sitemap.xml').read_text()
 assert 'var(--type-support)' in transport_css and 'var(--type-lead)' in transport_css
 
 cu_chi=docs[OUT/'experiences/cu-chi-tunnels/index.html']
