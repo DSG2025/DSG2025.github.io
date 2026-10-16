@@ -2085,3 +2085,40 @@ footer {
     --type-lead: 1.16rem;
   }
 }
+
+/* Shared Contact footer icons, used by both homepage and inner pages. */
+.footer-contact-symbols {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.site-footer .footer-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.site-footer .footer-contact-icon {
+  display: block;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  color: #e4b99e;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.site-footer .footer-contact-row a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.site-footer .footer-contact-row.footer-muted > span {
+  color: inherit;
+}
