@@ -136,7 +136,7 @@ body.home-v2 .trust-item strong {
 body.home-v2 .trust-item span {
   margin-top: 5px;
   color: #cbd9d3;
-  font-size: 0.82rem;
+  font-size: var(--type-label);
   line-height: 1.4;
 }
 
@@ -224,7 +224,7 @@ body.home-v2 .experience-card .card-footer {
 body.home-v2 .experience-meta {
   margin: 0 0 13px !important;
   color: var(--rust) !important;
-  font-size: 0.79rem;
+  font-size: var(--type-label);
   font-weight: 900;
   letter-spacing: 0.015em;
 }
@@ -298,12 +298,12 @@ body.home-v2 .testimonial-quote {
 body.home-v2 .testimonial-meta {
   margin: auto 0 12px;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: var(--type-caption);
 }
 
 body.home-v2 .testimonial-source {
   min-height: 36px;
-  font-size: 0.86rem;
+  font-size: var(--type-caption);
 }
 
 /* Custom trip */
@@ -685,7 +685,7 @@ body.home-v2 .final-cta-actions .btn {
 
   body.home-v2 .wa-float {
     padding-inline: 16px;
-    font-size: 0.86rem;
+    font-size: var(--type-caption);
   }
 }
 
@@ -791,7 +791,7 @@ body.home-v2 .story-cards {
 
   body.home-v2 .wa-float {
     padding: 10px 15px;
-    font-size: 0.82rem;
+    font-size: var(--type-label);
   }
 }
 
