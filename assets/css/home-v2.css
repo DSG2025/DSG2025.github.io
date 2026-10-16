@@ -969,8 +969,7 @@ body.home-v2 .reviews-proof .review-platform-proof:focus-visible span {
 }
 
 /* Mobile trust review link: make the in-page jump discoverable. */
-body.home-v2 .trust-review .trust-review-title-arrow,
-body.home-v2 .trust-review .trust-review-cue {
+body.home-v2 .trust-review .trust-review-title-arrow {
   display: none;
 }
 
@@ -990,14 +989,10 @@ body.home-v2 .trust-review .trust-review-cue {
     font-weight: 800;
   }
 
-  body.home-v2 .trust-review .trust-review-cue {
-    display: block;
-    margin-top: 4px;
-    color: #efb18e;
-    font-size: 0.86rem;
-    font-weight: 700;
-    line-height: 1.45;
+  body.home-v2 .trust-review .trust-review-heading strong {
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-decoration-color: rgba(239, 177, 142, 0.6);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
   }
 }
