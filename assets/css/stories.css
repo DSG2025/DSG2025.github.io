@@ -40,13 +40,14 @@
 }
 
 .story-article {
+  font-size: var(--type-reading);
   min-width: 0;
   max-width: 760px;
 }
 
 .story-article > p,
 .story-article li {
-  font-size: 1.04rem;
+  font-size: var(--type-reading);
 }
 
 .story-article h2 {
@@ -67,7 +68,7 @@
 
 .story-article .article-summary p {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: var(--type-reading);
 }
 
 .story-article figure {
@@ -84,7 +85,7 @@
 .story-article figcaption {
   margin-top: 10px;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: var(--type-caption);
 }
 
 .story-table-wrap {
@@ -229,14 +230,14 @@
 .cholon-wide-figure figcaption {
   margin-top: 9px;
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: var(--type-caption);
   line-height: 1.45;
 }
 
 @media (max-width: 650px) {
   .story-article > p,
   .story-article li {
-    font-size: 1rem;
+    font-size: var(--type-reading);
     line-height: 1.72;
   }
 
@@ -273,3 +274,8 @@
     object-position: center center;
   }
 }
+
+/* Semantic reading scale for all Stories, including story index cards. */
+.story-index-card-body p {font-size:var(--type-support);line-height:1.65}
+.story-index-card-body h2 {font-size:var(--type-card-title)}
+.story-article .story-table td,.story-article .story-table th {font-size:var(--type-support);line-height:1.6}
