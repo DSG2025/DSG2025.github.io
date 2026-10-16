@@ -129,3 +129,30 @@
 @media(max-width:650px){.cu-chi-v2 .itinerary-photo img{height:195px}
 .cu-chi-v2 .optional-photo img{height:165px}
 }
+
+/* Mobile readability and related-experience navigation, Cu Chi only. */
+.cu-chi-v2 .related {padding:48px 0 58px;text-align:left}
+.cu-chi-v2 .related h2 {font-size:clamp(1.65rem,3vw,2.25rem);margin:5px 0 22px}
+.cu-chi-v2 .related-links {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.cu-chi-v2 .related-links a {display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:94px;padding:19px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--deep);text-decoration:none;font-weight:800;line-height:1.45}
+.cu-chi-v2 .related-links a span {color:var(--rust);font-size:1.25rem}
+.cu-chi-v2 .related-links a:hover,.cu-chi-v2 .related-links a:focus-visible {border-color:var(--rust)}
+@media(max-width:650px) {
+  .cu-chi-v2 {font-size:17px;line-height:1.62}
+  .cu-chi-v2 .lead {font-size:1.1rem}
+  .cu-chi-v2 .crumb,.cu-chi-v2 .hint,.cu-chi-v2 .eyebrow {font-size:.88rem}
+  .cu-chi-v2 .pill {font-size:.9rem}
+  .cu-chi-v2 .gift-note {font-size:1rem}
+  .cu-chi-v2 .summary-item {padding:17px 12px!important}
+  .cu-chi-v2 .summary-item strong {font-size:1.04rem}
+  .cu-chi-v2 .summary-item span {font-size:1rem;line-height:1.55}
+  .cu-chi-v2 .photo-card p,.cu-chi-v2 .step p,.cu-chi-v2 .benefit p,.cu-chi-v2 .terms li,.cu-chi-v2 .terms p,.cu-chi-v2 .smallnote,.cu-chi-v2 .faq details p {font-size:1rem;line-height:1.65}
+  .cu-chi-v2 .step h3 {font-size:1.12rem}
+  .cu-chi-v2 .num {font-size:.95rem}
+  .cu-chi-v2 .terms {padding:22px}
+  .cu-chi-v2 .related {padding:42px 0 50px}
+  .cu-chi-v2 .related-links {grid-template-columns:1fr;gap:11px}
+  .cu-chi-v2 .related-links a {min-height:66px;padding:16px 18px;font-size:1rem}
+  .cu-chi-v2 .related h2 {font-size:1.85rem}
+  .cu-chi-v2 .itinerary-photo figcaption,.cu-chi-v2 .optional-photo figcaption {font-size:.9rem}
+}
