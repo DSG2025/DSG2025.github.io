@@ -11,3 +11,7 @@ body.meet-og-page .meet-og-story .host-values p{font-size:var(--type-support);li
  body.meet-og-page .meet-og-story article > p.lead,
  body.meet-og-page .meet-og-story article > ul.bullets li{font-size:var(--type-reading);line-height:1.7}
 }
+/* Keep all three founder-introduction paragraphs on one readable scale. */
+body.meet-og-page .meet-og-intro{max-width:680px;margin:18px 0 22px}
+body.meet-og-page .meet-og-intro p{font-size:var(--type-reading);line-height:1.7;margin:0 0 13px;color:var(--muted)}
+body.meet-og-page .meet-og-intro p:last-child{margin-bottom:0}
