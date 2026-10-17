@@ -203,6 +203,6 @@ The personal reflections in this article are mine. Historical details are based 
   <div class="story-related-links">
     <a class="text-link" href="/experiences/hidden-saigon/">Explore Hidden Saigon →</a>
     <a class="text-link" href="/custom-trip/">Build a private Saigon day →</a>
-    <a class="text-link" href="/meet-duy/">Meet Duy →</a>
+    <a class="text-link" href="/meet-duy/">Meet the OG →</a>
   </div>
 </div>
