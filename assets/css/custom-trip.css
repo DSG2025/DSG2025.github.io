@@ -85,7 +85,12 @@ body.custom-trip-page .rooted-copy {
 
 body.custom-trip-page .rooted-copy > p:not(.lead) {
   color: var(--muted);
-  font-size: 1.02rem;
+  font-size: var(--type-reading);
+}
+body.custom-trip-page .rooted-copy > p.lead,
+body.custom-trip-page .homework-copy > p {
+  font-size: var(--type-reading);
+  line-height: 1.7;
 }
 
 /* Destination direction cards */
