@@ -75,6 +75,6 @@ side_secondary_whatsapp: true
 <div class="story-related-links">
 <a class="text-link" href="/custom-trip/">Build a private Saigon day →</a>
 <a class="text-link" href="/experiences/hidden-saigon/">Explore local life &amp; food →</a>
-<a class="text-link" href="/meet-duy/">Meet Duy, founder of OG Saigon →</a>
+<a class="text-link" href="/meet-duy/">Meet the OG →</a>
 </div>
 </div>
