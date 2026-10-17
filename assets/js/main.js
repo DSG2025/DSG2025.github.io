@@ -121,8 +121,55 @@ applySiteData();
 const menuButton = document.querySelector("[data-menu-btn]");
 const mobileMenu = document.querySelector("[data-mobile-menu]");
 
+// A direct Experiences link and a separate disclosure button, for mouse, touch and keyboard.
+const experienceGroups = document.querySelectorAll("[data-exp-group]");
+function setExperienceGroupOpen(group, open, restoreFocus = false) {
+  const toggle = group.querySelector("[data-exp-toggle]");
+  const panel = group.querySelector("[data-exp-panel]");
+  if (!toggle || !panel) return;
+
+  panel.hidden = !open;
+  toggle.setAttribute("aria-expanded", String(open));
+  toggle.setAttribute("aria-label", open ? "Hide Experiences options" : "Show Experiences options");
+  if (!open && restoreFocus) toggle.focus();
+}
+
+function closeExperienceMenus(exceptGroup = null) {
+  experienceGroups.forEach((group) => {
+    if (group !== exceptGroup) setExperienceGroupOpen(group, false);
+  });
+}
+
+experienceGroups.forEach((group) => {
+  const toggle = group.querySelector("[data-exp-toggle]");
+  if (!toggle) return;
+  toggle.addEventListener("click", () => {
+    const next = toggle.getAttribute("aria-expanded") !== "true";
+    closeExperienceMenus(group);
+    setExperienceGroupOpen(group, next);
+  });
+});
+
+document.addEventListener("click", (event) => {
+  experienceGroups.forEach((group) => {
+    if (!group.contains(event.target)) setExperienceGroupOpen(group, false);
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  const openGroup = Array.from(experienceGroups).find(
+    (group) => group.querySelector("[data-exp-toggle]")?.getAttribute("aria-expanded") === "true",
+  );
+  if (openGroup) {
+    setExperienceGroupOpen(openGroup, false, openGroup.contains(document.activeElement));
+    event.stopImmediatePropagation(); // Collapse the submenu before closing the mobile sheet.
+  }
+});
+
 function setMobileMenu(open) {
   if (!menuButton || !mobileMenu) return;
+  if (!open) closeExperienceMenus();
 
   mobileMenu.classList.toggle("open", open);
   document.body.classList.toggle("menu-open", open);
@@ -164,8 +211,13 @@ document
     const linkPath =
       new URL(link.href, window.location.href).pathname.replace(/\/$/, "") || "/";
 
-    if (linkPath !== "/" && currentPath.startsWith(linkPath)) {
+    if (linkPath !== "/" && currentPath === linkPath) {
       link.setAttribute("aria-current", "page");
+    } else if (
+      linkPath === "/experiences" &&
+      currentPath.startsWith("/experiences/")
+    ) {
+      link.classList.add("is-section-current");
     }
   });
 
@@ -228,5 +280,6 @@ Could you suggest an itinerary and price?`;
 
 // Keep the mobile sheet from lingering when the viewport changes.
 window.addEventListener("resize", () => {
+  closeExperienceMenus();
   if (window.innerWidth > 920) setMobileMenu(false);
 });
