@@ -2,7 +2,16 @@
 <div class="wrap nav">
 <a class="brand" href="/">OG SAIGON<small>Experiences &amp; Transport</small></a>
 <nav aria-label="Primary navigation" class="navlinks">
-<a href="/experiences/">Experiences</a>
+<div class="nav-exp-group" data-exp-group>
+<a class="nav-exp-top" href="/experiences/">Experiences</a>
+<button type="button" class="nav-exp-toggle" data-exp-toggle aria-controls="desktopExperiencesMenu" aria-expanded="false" aria-label="Show Experiences options"><svg class="nav-exp-chevron" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="nav-exp-panel" id="desktopExperiencesMenu" data-exp-panel hidden>
+<a href="/experiences/" class="nav-exp-item"><span class="nav-exp-item-title">All Experiences</span><small>See all private experiences</small></a>
+<a href="/experiences/cu-chi-tunnels/" class="nav-exp-item"><span class="nav-exp-item-title">Cu Chi Tunnels</span><small>History with a local perspective</small></a>
+<a href="/experiences/cu-chi-war-museum/" class="nav-exp-item"><span class="nav-exp-item-title">Cu Chi + War Museum</span><small>A full day of war history</small></a>
+<a href="/experiences/hidden-saigon/" class="nav-exp-item"><span class="nav-exp-item-title">Hidden Saigon</span><small>Local life, history and food</small></a>
+</div>
+</div>
 <a href="/custom-trip/">Custom Trips</a>
 <a href="/transport/">Transport</a>
 <a href="/stories/">Stories</a>
@@ -11,8 +20,19 @@
 </nav>
 <button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation menu" class="menu-btn" data-menu-btn="">Menu</button>
 </div>
-<div class="wrap mobile-menu" data-mobile-menu="" id="mobileMenu">
-<a href="/experiences/">Experiences</a>
+<div class="wrap mobile-menu" data-mobile-menu="" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+<div class="mobile-exp-group" data-exp-group>
+<div class="mobile-exp-row">
+<a href="/experiences/" class="mobile-exp-top">Experiences</a>
+<button type="button" class="mobile-exp-toggle" data-exp-toggle aria-controls="mobileExperiencesMenu" aria-expanded="false" aria-label="Show Experiences options"><svg class="nav-exp-chevron" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="nav-exp-panel nav-exp-panel-mobile" id="mobileExperiencesMenu" data-exp-panel hidden>
+<a href="/experiences/" class="nav-exp-item"><span class="nav-exp-item-title">All Experiences</span><small>See all private experiences</small></a>
+<a href="/experiences/cu-chi-tunnels/" class="nav-exp-item"><span class="nav-exp-item-title">Cu Chi Tunnels</span><small>History with a local perspective</small></a>
+<a href="/experiences/cu-chi-war-museum/" class="nav-exp-item"><span class="nav-exp-item-title">Cu Chi + War Museum</span><small>A full day of war history</small></a>
+<a href="/experiences/hidden-saigon/" class="nav-exp-item"><span class="nav-exp-item-title">Hidden Saigon</span><small>Local life, history and food</small></a>
+</div>
+</div>
 <a href="/custom-trip/">Custom Trips</a>
 <a href="/transport/">Transport</a>
 <a href="/stories/">Stories</a>
