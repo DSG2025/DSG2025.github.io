@@ -1,0 +1,13 @@
+/* Meet the OG only: consistent reading size across lead, paragraphs and bullets. */
+body.meet-og-page .meet-og-story article > p,
+body.meet-og-page .meet-og-story article > p.lead,
+body.meet-og-page .meet-og-story article > ul.bullets li{font-size:var(--type-reading);line-height:1.72}
+body.meet-og-page .meet-og-story article > p{margin-bottom:20px}
+body.meet-og-page .meet-og-story article > h2{font-size:clamp(1.85rem,3vw,2.5rem);line-height:1.17}
+body.meet-og-page .meet-og-story .host-values p{font-size:var(--type-support);line-height:1.6}
+@media(max-width:650px){
+ body.meet-og-page .meet-og-story article > h2{font-size:clamp(1.8rem,7vw,2.1rem)}
+ body.meet-og-page .meet-og-story article > p,
+ body.meet-og-page .meet-og-story article > p.lead,
+ body.meet-og-page .meet-og-story article > ul.bullets li{font-size:var(--type-reading);line-height:1.7}
+}
