@@ -57,6 +57,6 @@ Finish with a useful planning takeaway rather than generic sales copy.
   <div class="story-related-links">
     <a class="text-link" href="/custom-trip/">Build a private Saigon day →</a>
     <a class="text-link" href="/experiences/">Explore OG Saigon experiences →</a>
-    <a class="text-link" href="/meet-duy/">Meet Duy →</a>
+    <a class="text-link" href="/meet-duy/">Meet the OG →</a>
   </div>
 </div>
