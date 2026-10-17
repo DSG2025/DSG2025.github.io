@@ -611,6 +611,24 @@ h3 {
   font-size: 2.15rem;
 }
 
+/* OG Saigon reading typography: experience article prose, steps and lists
+   share one reading size across desktop and mobile. Labels and sidebars stay distinct. */
+.content-grid article > p.lead,
+.content-grid article > p:not(.lead),
+.content-grid article > ul.bullets li,
+.content-grid article .timeline-item p {
+  font-size: var(--type-reading);
+  line-height: 1.7;
+}
+
+/* Opt-in shared reading rhythm for adjacent lead, body and bullets
+   in editorial sections, without affecting hero or card typography. */
+.reading-prose > div:first-child > p,
+.reading-prose > div:first-child > ul.bullets li {
+  font-size: var(--type-reading);
+  line-height: 1.7;
+}
+
 .side-card {
   position: sticky;
   top: 96px;
@@ -1877,17 +1895,21 @@ footer {
     font-size: clamp(2.4rem, 10.5vw, 3.1rem);
   }
 
-  .page-hero .lead,
-  .content-grid .lead {
+  .page-hero .lead {
     font-size: 1.16rem;
     line-height: 1.62;
+  }
+
+  .content-grid .lead {
+    font-size: var(--type-reading);
+    line-height: 1.7;
   }
 
   .content-grid article > p:not(.lead),
   .content-grid article li,
   .timeline-item p {
-    font-size: 1rem;
-    line-height: 1.72;
+    font-size: var(--type-reading);
+    line-height: 1.7;
   }
 
   .wa-float {
