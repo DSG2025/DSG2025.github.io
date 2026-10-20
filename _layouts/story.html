@@ -42,6 +42,13 @@
         "inLanguage":"en"
       },
       {
+        "@type":"ImageObject",
+        "@id":{{ site.url | append: page.hero_image | append: "#image" | jsonify }},
+        "contentUrl":{{ site.url | append: page.hero_image | jsonify }},
+        "caption":{{ page.hero_alt | jsonify }}{% if page.image_credit %},
+        "creditText":{{ page.image_credit | jsonify }}{% endif %}
+      },
+      {
         "@type":"Organization",
         "@id":"https://ogsaigon.com/#organization",
         "name":"OG Saigon Experience & Transport",
