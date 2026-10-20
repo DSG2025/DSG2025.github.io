@@ -48,6 +48,14 @@ img {
   max-width: 100%;
 }
 
+/* Photo-only download deterrent. Do not affect links, logos, or page scrolling. */
+main img[src*="/assets/images/"]:not([src*="/review-platforms/"]) {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
