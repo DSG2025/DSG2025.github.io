@@ -118,6 +118,27 @@ function applySiteData() {
 
 applySiteData();
 
+// Discourage casual saving of OG Saigon editorial photographs.
+// This is a UI deterrent, not DRM: public images remain retrievable via browser tools.
+const editorialPhotoSelector =
+  'main img[src*="/assets/images/"]:not([src*="/review-platforms/"])';
+
+document.querySelectorAll(editorialPhotoSelector).forEach((image) => {
+  image.draggable = false;
+});
+
+function isEditorialPhoto(target) {
+  return target?.matches?.(editorialPhotoSelector) === true;
+}
+
+document.addEventListener("contextmenu", (event) => {
+  if (isEditorialPhoto(event.target)) event.preventDefault();
+});
+
+document.addEventListener("dragstart", (event) => {
+  if (isEditorialPhoto(event.target)) event.preventDefault();
+});
+
 const menuButton = document.querySelector("[data-menu-btn]");
 const mobileMenu = document.querySelector("[data-mobile-menu]");
 
