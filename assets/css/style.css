@@ -814,17 +814,6 @@ footer {
   color: #9eb1a9;
 }
 
-.footer-bottom a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.footer-bottom a:hover,
-.footer-bottom a:focus-visible {
-  color: #fff;
-}
-
 .wa-float {
   position: fixed;
   right: 18px;
