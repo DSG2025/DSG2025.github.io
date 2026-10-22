@@ -1237,6 +1237,86 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
   body.home-v2.og-v2-stage1 #home-hero .hero-actions .primary {transition:none}
 }
 
+/* V2.6 approved responsive Hero QA (2026-10-22).
+   Tablet: photos first, then signboard and CTA, no overlay over subjects.
+   Mobile: retain TWO horizontal photos, but shorten imagery and spacing.
+   Desktop >=921px is unchanged. */
+@media (min-width:651px) and (max-width:920px) {
+  body.home-v2.og-v2-stage1 #home-hero .hero-scene {
+    display:flex; flex-direction:column; min-height:0;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-media {
+    position:relative; inset:auto; flex:0 0 auto;
+    width:100%; height:clamp(275px,37vw,345px);
+    grid-template-columns:minmax(0,42fr) minmax(0,58fr);
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-media::after {
+    background:linear-gradient(180deg,transparent 65%,rgba(15,29,26,.14));
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-grid {
+    display:flex; flex-direction:column; align-items:flex-start;
+    justify-content:flex-start; gap:18px;
+    width:min(780px,calc(100% - 48px));
+    min-height:0; margin:0 auto; padding:25px 0 35px;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-signboard {
+    width:min(650px,100%); margin-top:0;
+    padding:clamp(23px,3vw,34px);
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-body {
+    width:min(650px,100%);
+  }
+  body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
+    top:15px; right:20px; width:clamp(115px,15vw,145px);
+  }
+}
+@media (max-width:650px) {
+  body.home-v2.og-v2-stage1 #home-hero .hero-media {
+    /* Each image remains landscape, stacked one ABOVE the other. */
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:repeat(2,clamp(145px,42vw,174px));
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-grid {
+    gap:9px; margin:-33px auto 0; padding:0 0 13px;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-signboard {
+    padding:14px 17px 15px;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .og-v2-origin {
+    font-size:.76rem; line-height:1.2; margin-bottom:7px;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
+    font-size:clamp(1.78rem,7vw,2.25rem);
+    line-height:1.035;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-intro::after {
+    margin:7px 0 0; height:3px;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-body {
+    padding:12px 15px 14px;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-lead {
+    font-size:.96rem; line-height:1.43;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-actions {
+    gap:7px; margin-top:8px;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
+    top:9px; right:9px; width:min(116px,31vw);
+  }
+}
+@media (max-width:375px) {
+  body.home-v2.og-v2-stage1 #home-hero .hero-media {
+    grid-template-rows:repeat(2,140px);
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-signboard {
+    padding:12px 15px 13px;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
+    font-size:clamp(1.62rem,7.2vw,1.75rem);
+  }
+}
+
 /* V2.3: flex card anatomy. Avoid percentage min-height and 1fr copy rows,
    which created oversized blank areas on Signature Experiences. */
 body.home-v2 .featured-cards { align-items: stretch; }
