@@ -66,8 +66,11 @@ assert 'home-intro-active' not in home.all('body')[0].attrs.get('class','').spli
 def one(id):return home.all(id=id)[0]
 assert home.all('h1')[0].text=='See Saigon through fifth-generation Saigonese eyes'
 assert home.all('h1')[0].all(cls='og-v2-h1-accent')[0].text=='fifth-generation Saigonese'
-hero=one('home-hero');grid=hero.all(cls='hero-grid')[0]
-assert [n.attrs.get('class') for n in grid.children]==['hero-intro','hero-media','hero-body']
+hero=one('home-hero');scene=hero.all(cls='hero-scene')[0];grid=scene.all(cls='hero-grid')[0]
+assert [n.attrs.get('class') for n in scene.children]==['hero-media','wrap hero-grid']
+assert [n.attrs.get('class') for n in grid.children]==['hero-signboard']
+assert [n.attrs.get('class') for n in grid.children[0].children]==['hero-intro','hero-body']
+assert len(hero.all('h1'))==1
 assert len(hero.all('img'))==2 and len(hero.all('a'))==2
 assert [img.attrs['src'] for img in hero.all('img')]==[
     '/assets/images/og-saigon-district-4-hem-sinh-hoat-hero.webp',
@@ -75,6 +78,10 @@ assert [img.attrs['src'] for img in hero.all('img')]==[
 ]
 assert hero.all('img')[1].attrs['alt']=='Quận Tư, District 4'
 assert hero.all('a')[0].attrs['href']=='/custom-trip/#trip-builder'
+assert hero.all('a')[0].text=='Build My Own Day'
+assert hero.all('a')[1].attrs['href']=='/experiences/'
+assert '.hero-signboard' in (ROOT/'assets/css/home-v2.css').read_text()
+assert 'body.home-v2.og-v2-stage1 #home-hero .hero-scene' in (ROOT/'assets/css/home-v2.css').read_text()
 assert len(one('home-intro').all('section'))==2
 assert len(one('trust').all(cls='trust-item'))==3
 proof=one('trust').all(cls='trust-review')[0]
