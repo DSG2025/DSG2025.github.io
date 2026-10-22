@@ -1,21 +1,52 @@
 /* OG Saigon V3 */
+/* V2 typography preview. Google Fonts with local fallbacks; no private font assets. */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&family=Patrick+Hand&family=Saira+Stencil+One&display=swap");
+@font-face{font-family:"Barber Complete";src:url("/assets/fonts/barber-complete.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Barber Fill";src:url("/assets/fonts/barber-fill.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Barber Shadow";src:url("/assets/fonts/barber-shadow.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Barber Right";src:url("/assets/fonts/barber-right.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Barber Outline";src:url("/assets/fonts/barber-outline.woff2") format("woff2");font-display:swap}
 
 :root {
-  --ink: #18302a;
-  --forest: #16382f;
-  --forest2: #225044;
-  --cream: #f5efe5;
-  --paper: #fffdf8;
-  --rust: #ad4f32;
+  --ink: #1f2528;
+  --forest: #2e5e5a;
+  --forest2: #5e8e86;
+  --cream: #f1e6d0;
+  --paper: #fffaf0;
+  --rust: #b4492f;
+  --canal-green: #2e5e5a;
+  --tin-green: #5e8e86;
+  --brick-red: #b4492f;
+  --chili-red: #d63a2a;
+  --tube-yellow: #e9a93a;
+  /* V2 semantic CTA: warm mái-ngói orange, not the red editorial accent. */
+  --tile-orange: #b4532c;
+  --cta-bg: var(--tile-orange);
+  --cta-hover: #943f21;
+  --cta-text: #ffffff;
+  --cta-shadow: rgba(105, 43, 22, 0.30);
+  --accent-border-soft: rgba(180, 83, 44, 0.22);
+  --accent-border-strong: rgba(180, 83, 44, 0.32);
   --gold: #d7a54b;
-  --muted: #617069;
+  --muted: #5a6a63;
+  /* Accessibility: text uses darker/lighter semantic colors than decorative orange/CTA fill. */
+  --text-accent: #a8401f;
+  --text-accent-on-dark: #f7cdb0;
   --line: rgba(24, 48, 42, 0.14);
   --control-border: var(--muted);
   --shadow: 0 18px 55px rgba(24, 48, 42, 0.10);
   --radius: 24px;
   --max: 1180px;
-  /* OG Saigon Typography Foundation V1: semantic, shared text roles. */
-  --type-font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* Typography Foundation V2: one display font + one readable body/UI font. */
+  --type-font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
+  --type-display-font-family: "Oswald", "Be Vietnam Pro", sans-serif;
+  --type-poster-font-family: "Barber Complete", "Oswald", sans-serif;
+  --type-label-font-family: "Oswald", "Be Vietnam Pro", sans-serif;
+  --type-note-font-family: "Patrick Hand", cursive;
+  --type-stencil-font-family: "Saira Stencil One", "Oswald", sans-serif;
+  --heading-line-height: 1.17;
+  --heading-letter-spacing: .01em;
+  --heading-margin-bottom: 18px;
   --type-body: 1rem;
   --type-support: 1rem;
   --type-reading: 1.125rem;
@@ -23,6 +54,11 @@
   --type-label: 0.875rem;
   --type-lead: clamp(1.05rem, 1.8vw, 1.28rem);
   --type-card-title: clamp(1.35rem, 2vw, 1.6rem);
+  /* Shared semantic heading roles. Page-specific display styles remain scoped. */
+  --type-h1: clamp(2.75rem, 6.5vw, 5.7rem);
+  --type-h2: clamp(2rem, 4.2vw, 3.55rem);
+  --type-h3: 1.35rem;
+  --type-button: 1rem;
 }
 
 * {
@@ -39,7 +75,7 @@ body {
   color: var(--ink);
   font-family: var(--type-font-family);
   font-size: var(--type-body);
-  line-height: 1.62;
+  line-height: 1.68;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -88,30 +124,35 @@ button, input, select, textarea {
   letter-spacing: 0.16em;
   font-size: 0.76rem;
   font-weight: 900;
-  color: var(--rust);
+  color: var(--text-accent);
   margin-bottom: 10px;
 }
 
 .dark .eyebrow {
-  color: #efb18e;
+  color: var(--text-accent-on-dark);
 }
 
+/* All pages share the same heading family; individual page size scales stay intact. */
 h1, h2, h3 {
-  line-height: 1.08;
-  margin: 0 0 14px;
-  letter-spacing: -0.035em;
+  font-family: var(--type-display-font-family);
+  line-height: var(--heading-line-height);
+  margin: 0 0 var(--heading-margin-bottom);
+  letter-spacing: var(--heading-letter-spacing);
+  font-weight: 600;
+  overflow-wrap: break-word;
 }
 
 h1 {
-  font-size: clamp(2.75rem, 6.5vw, 5.7rem);
+  font-size: var(--type-h1);
+  font-weight: 700;
 }
 
 h2 {
-  font-size: clamp(2rem, 4.2vw, 3.55rem);
+  font-size: var(--type-h2);
 }
 
 h3 {
-  font-size: 1.35rem;
+  font-size: var(--type-h3);
 }
 
 .lead {
@@ -130,7 +171,7 @@ h3 {
 
 .kicker {
   font-weight: 800;
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .topbar {
@@ -174,7 +215,7 @@ h3 {
 }
 
 .navlinks > a:not(.btn):hover {
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 
@@ -209,6 +250,7 @@ h3 {
   justify-content: center;
   gap: 9px;
   padding: 13px 19px;
+  font-size: var(--type-button);
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 900;
@@ -221,8 +263,8 @@ h3 {
 }
 
 .btn.primary {
-  background: var(--rust);
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-text);
 }
 
 .btn.secondary {
@@ -287,7 +329,7 @@ h3 {
 
 .proof-row span:before {
   content: "•";
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .hero-mosaic {
@@ -426,7 +468,7 @@ h3 {
 
 .text-link {
   font-weight: 900;
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 /* Identify links within prose without changing navigation, cards or buttons. */
@@ -480,7 +522,7 @@ h3 {
 
 .bullets li:before {
   content: "✓";
-  color: var(--rust);
+  color: var(--text-accent);
   font-weight: 950;
   margin-right: 10px;
 }
@@ -571,7 +613,7 @@ h3 {
 }
 
 .breadcrumbs a {
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .page-hero-grid {
@@ -723,7 +765,7 @@ h3 {
 }
 
 .check input {
-  accent-color: var(--rust);
+  accent-color: var(--text-accent);
 }
 
 .note {
@@ -960,7 +1002,7 @@ footer {
 .host-values span {
   display: block;
   font-weight: 900;
-  color: var(--rust);
+  color: var(--text-accent);
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   margin-bottom: 8px;
@@ -1156,11 +1198,13 @@ footer {
 }
 
 .btn.primary {
-  box-shadow: 0 10px 24px rgba(184, 93, 62, 0.20);
+  box-shadow: 0 6px 0 var(--cta-shadow);
 }
 
 .btn.primary:hover {
-  box-shadow: 0 14px 30px rgba(184, 93, 62, 0.27);
+  background: var(--cta-hover);
+  box-shadow: 0 4px 0 var(--cta-shadow);
+  transform: translateY(2px);
 }
 
 .hero {
@@ -1290,7 +1334,7 @@ footer {
 }
 
 .how-section .eyebrow {
-  color: #efb18e;
+  color: var(--text-accent-on-dark);
 }
 
 .how-section .lead {
@@ -1371,7 +1415,7 @@ footer {
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     transform: translateY(-5px);
-    border-color: rgba(184, 93, 62, 0.22);
+    border-color: var(--accent-border-soft);
     box-shadow: 0 22px 54px rgba(24, 48, 42, 0.13);
   }
 
@@ -1579,7 +1623,7 @@ footer {
 
 .navlinks a[aria-current="page"],
 .mobile-menu a[aria-current="page"] {
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .review-strip {
@@ -1604,7 +1648,7 @@ footer {
 }
 
 .review-intro .eyebrow {
-  color: #efb18e;
+  color: var(--text-accent-on-dark);
 }
 
 .review-intro h2 {
@@ -1660,7 +1704,7 @@ footer {
 }
 
 .review-card.featured strong {
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .review-count {
@@ -1763,7 +1807,7 @@ footer {
 }
 
 .hero-stars {
-  color: var(--rust);
+  color: var(--text-accent);
   letter-spacing: 0.04em;
 }
 
@@ -1784,7 +1828,7 @@ footer {
 
 @media (hover: hover) and (pointer: fine) {
   .hero-rating:hover {
-    border-color: rgba(184, 93, 62, 0.32);
+    border-color: var(--accent-border-strong);
   }
 }
 
@@ -1819,9 +1863,7 @@ footer {
 }
 
 @media (max-width: 920px) {
-  body.menu-open {
-    overflow: hidden;
-  }
+  /* Mobile navigation stays open, but the page behind it can scroll. */
 
   .site-header {
     position: sticky;
@@ -1836,7 +1878,7 @@ footer {
     max-width: none;
     max-height: calc(100vh - 68px);
     overflow-y: auto;
-    overscroll-behavior: contain;
+    overscroll-behavior: auto;
     margin: 0;
     padding: 6px max(18px, calc((100vw - var(--max)) / 2)) 20px;
     background: rgba(245, 239, 229, 0.99);
@@ -2197,7 +2239,7 @@ footer {
 }
 .site-header .nav-exp-top:hover::after { right: 0; }
 .site-header .nav-exp-top:hover,
-.site-header .nav-exp-top.is-section-current { color: var(--rust); }
+.site-header .nav-exp-top.is-section-current { color: var(--text-accent); }
 
 .site-header .nav-exp-toggle,
 .site-header .mobile-exp-toggle {
@@ -2220,7 +2262,7 @@ footer {
 .site-header .nav-exp-toggle:hover,
 .site-header .mobile-exp-toggle:hover,
 .site-header [data-exp-toggle][aria-expanded="true"] {
-  color: var(--rust);
+  color: var(--text-accent);
   background: rgba(173, 79, 50, 0.07);
 }
 
@@ -2265,7 +2307,7 @@ footer {
 .site-header .nav-exp-panel .nav-exp-item:hover,
 .site-header .nav-exp-panel .nav-exp-item[aria-current="page"] {
   background: rgba(173, 79, 50, 0.08);
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .site-header .nav-exp-item-title { font-weight: 800; }
@@ -2297,7 +2339,7 @@ footer {
     font-size: 1.08rem;
     font-weight: 800;
   }
-  .site-header .mobile-exp-top.is-section-current { color: var(--rust); }
+  .site-header .mobile-exp-top.is-section-current { color: var(--text-accent); }
   .site-header .mobile-exp-toggle {
     flex: 0 0 52px;
     min-width: 52px;
@@ -2325,4 +2367,116 @@ footer {
 }
 @media (prefers-reduced-motion: reduce) {
   .site-header .nav-exp-chevron { transition: none; }
+}
+
+/* District 4 V2.1 shared semantic components */
+.eyebrow,.kicker{font-family:var(--type-label-font-family)}
+.btn.primary{background:var(--cta-bg);color:var(--cta-text);border-color:var(--cta-bg)}
+.btn.primary:hover{background:var(--cta-hover);border-color:var(--cta-hover)}
+.site-header .header-cta{background:var(--cta-bg)}
+:where(h1,h2,h3){text-wrap:pretty}
+@media(max-width:650px){:where(h1,h2,h3){line-height:1.2}}
+
+/* V2.2 typography: readable headings are the default. Barber is limited to explicit poster treatments. */
+:where(.story-index-card h2, .story-card h3, .experience-card h3, .direction-card h3) {
+  font-family: var(--type-display-font-family);
+  letter-spacing: .005em;
+  overflow-wrap: anywhere;
+}
+:where(.site-header, .site-footer) :where(h1, h2, h3),
+:where(.form-card, .faq-wrap) :where(h1, h2, h3) {
+  font-family: var(--type-display-font-family);
+}
+
+
+/* OG Saigon shared header & framed footer | V2.7
+   Reuses approved OG logo favicon, no new brand artwork, no new dependencies. */
+.site-header .brand-logo-lockup,
+.site-footer .brand-logo-lockup {
+  display:inline-flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  gap:2px;
+  min-width:0;
+  text-decoration:none;
+}
+.brand-logo-lockup .brand-name-line {
+  display:flex;
+  align-items:center;
+  gap:4px;
+  max-width:100%;
+  line-height:1;
+}
+.brand-logo-lockup .brand-og-mark {
+  display:block;
+  position:relative;
+  flex:0 0 64px;
+  width:64px;
+  height:34px;
+  overflow:hidden;
+}
+.brand-logo-lockup .brand-og-mark img {
+  position:absolute;
+  display:block;
+  width:64px;
+  height:64px;
+  max-width:none;
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+  object-fit:contain;
+}
+.brand-logo-lockup .brand-saigon {
+  display:block;
+  font-family:var(--type-font-family);
+  color:var(--ink);
+  font-size:clamp(1.25rem,1.75vw,1.48rem);
+  font-weight:950;
+  letter-spacing:-.058em;
+  line-height:1;
+  white-space:nowrap;
+}
+.brand-logo-lockup small {
+  display:block;
+  font-size:.57rem;
+  letter-spacing:.105em;
+  line-height:1.3;
+  font-weight:800;
+  text-transform:uppercase;
+}
+@media (max-width:650px) {
+  .brand-logo-lockup .brand-og-mark {flex-basis:53px;width:53px;height:28px}
+  .brand-logo-lockup .brand-og-mark img {width:53px;height:53px}
+  .brand-logo-lockup .brand-saigon {font-size:1.14rem}
+  .site-header .brand-logo-lockup small {font-size:.51rem;letter-spacing:.08em}
+}
+/* Footer V2.7.1: retain ORIGINAL footer content, grid, spacing and color;
+   only a thin OG orange divider between existing groups. */
+.site-footer .footer-grid > div {
+  position:relative;
+  min-width:0;
+}
+@media(min-width:921px) {
+  .site-footer .footer-grid > div + div::before {
+    content:"";
+    position:absolute;
+    top:0;bottom:0;left:-16px;
+    border-left:1px solid rgba(220,149,93,.55);
+    pointer-events:none;
+  }
+}
+@media(min-width:651px) and (max-width:920px) {
+  .site-footer .footer-grid > div {
+    outline:1px solid rgba(220,149,93,.38);
+    outline-offset:7px;
+  }
+}
+@media(max-width:650px) {
+  .site-footer .footer-grid > div + div::before {
+    content:"";
+    position:absolute;top:-16px;left:0;right:0;
+    border-top:1px solid rgba(220,149,93,.55);
+    pointer-events:none;
+  }
 }

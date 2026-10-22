@@ -279,3 +279,28 @@
 .story-index-card-body p {font-size:var(--type-support);line-height:1.65}
 .story-index-card-body h2 {font-size:var(--type-card-title)}
 .story-article .story-table td,.story-article .story-table th {font-size:var(--type-support);line-height:1.6}
+
+/* V2.3 Stories: cinematic editorial intro with flex cards that never stretch copy. */
+.story-index-hero, .story-article-hero { background: linear-gradient(135deg, #213e39 0%, #1b302d 68%, #273d35 100%); color: #f9f2e4; }
+.story-index-hero .breadcrumbs, .story-article-hero .breadcrumbs,
+.story-index-hero .lead, .story-article-hero .lead { color: #e1e9e2; }
+.story-index-hero .breadcrumbs a, .story-article-hero .breadcrumbs a,
+.story-index-hero .eyebrow, .story-article-hero .eyebrow { color: #f0b590; }
+.story-index-hero h1, .story-article-hero h1 { font-family: var(--type-display-font-family); font-size: clamp(2.4rem,4.45vw,4rem); line-height: 1.16; letter-spacing: .005em; }
+.story-index-card { display: flex; flex-direction: column; min-width: 0; }
+.story-index-card > a:first-child { display: block; flex-shrink: 0; overflow: hidden; }
+.story-index-card > a:first-child img { aspect-ratio: 16 / 10; height: auto; width: 100%; object-fit: cover; }
+.story-index-card-body { display: flex; flex-direction: column; gap: 12px; min-height: 0; flex: 1; }
+.story-index-card-body .eyebrow, .story-index-card-body h2 { margin: 0; }
+.story-index-card-body h2 {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+  min-height: 0; font-family: var(--type-display-font-family);
+  font-size: clamp(1.45rem,2vw,1.9rem); line-height: 1.24; overflow-wrap: anywhere;
+}
+.story-index-card-body p {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
+  overflow: hidden; margin: 0;
+}
+.story-index-card-body > .text-link { align-self: flex-start; margin-top: auto; padding-top: 8px; }
+.story-article h2, .story-article h3, .story-side-card h3 { font-family: var(--type-display-font-family); line-height: 1.23; }
+@media(max-width:650px){ .story-index-hero h1, .story-article-hero h1 { font-size: clamp(2.15rem,8vw,2.9rem); } }

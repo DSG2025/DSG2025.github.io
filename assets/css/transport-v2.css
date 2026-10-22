@@ -1,6 +1,6 @@
 /* OG Saigon Transport V2. Page-scoped layout on top of Typography Foundation V1. */
 .transport-v2{color:var(--ink);font-family:var(--type-font-family)}
-.transport-v2 h1,.transport-v2 h2,.transport-v2 h3{line-height:1.17;letter-spacing:-.028em}
+.transport-v2 h1,.transport-v2 h2,.transport-v2 h3{line-height:1.19;letter-spacing:.005em}
 .transport-v2 h1{font-size:clamp(2.4rem,4.4vw,3.75rem)}
 .transport-v2 h2{font-size:clamp(1.85rem,3.2vw,2.6rem)}
 .transport-v2 h3{font-size:clamp(1.17rem,1.8vw,1.38rem)}
