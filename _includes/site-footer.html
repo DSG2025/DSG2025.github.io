@@ -5,40 +5,78 @@
 <symbol id="og-footer-icon-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></symbol>
 <symbol id="og-footer-icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></symbol>
 </svg>
-<footer class="site-footer site-footer-framed">
-<div class="footer-grid footer-frame-grid">
-  <div class="footer-frame footer-frame-brand">
-    <a class="brand brand-logo-lockup footer-brand" href="/"><span class="brand-name-line"><span class="brand-og-mark"><img src="/favicon-512x512.png" width="512" height="512" alt="OG" decoding="async" /></span><span class="brand-saigon">SAIGON</span></span><small>Experiences &amp; Transport</small></a>
-    <p class="footer-muted">Private experiences, local stories and transport around Saigon.</p>
-    <p class="footer-perk"><span aria-hidden="true">☕</span> A Saigon coffee gift with every direct website booking.</p>
-  </div>
-  <div class="footer-frame footer-frame-explore">
-    <h2>Explore</h2>
-    <p><a href="/experiences/">Experiences</a></p>
-    <p><a href="/experiences/cu-chi-tunnels/">Cu Chi Tunnels</a></p>
-    <p><a href="/experiences/hidden-saigon/">Hidden Saigon</a></p>
-    <p><a href="/experiences/cu-chi-war-museum/">War History Day</a></p>
-    <p><a href="/custom-trip/">Custom Private Day</a></p>
-    <p><a href="/transport/">Airport Pickup &amp; Transport</a></p>
-    <p><a href="/stories/">Travel Stories</a></p>
-  </div>
-  <div class="footer-frame footer-frame-story">
-    <h2>OG Saigon</h2>
-    <p><a href="/about/">About OG Saigon</a></p>
-    <p><a href="/meet-duy/">Meet the OG</a></p>
-    <p><a data-platform-link="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener noreferrer" target="_blank">Tripadvisor</a></p>
-    <p><a data-platform-link="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener noreferrer" target="_blank">GetYourGuide</a></p>
-    <p><a data-platform-link="airbnb" href="https://www.airbnb.com/experiences/7046435" rel="noopener noreferrer" target="_blank">Airbnb Experience</a></p>
-  </div>
-  <div class="footer-frame footer-frame-contact">
-    <h2>Contact</h2>
-    <p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-phone"></use></svg><a data-phone-link="" href="tel:+84938033395">+84 938 033 395</a></p>
-    <p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-whatsapp"></use></svg><a data-whatsapp-link="" href="https://wa.me/84938033395" rel="noopener noreferrer" target="_blank">WhatsApp</a></p>
-    <p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-mail"></use></svg><a href="mailto:hello@ogsaigon.com">hello@ogsaigon.com</a></p>
-    <p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-map"></use></svg><a href="https://maps.app.goo.gl/WbifDsGKfHmSeFuR7" rel="noopener noreferrer" target="_blank">Google Maps</a></p>
-    <p class="footer-contact-row footer-muted"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-pin"></use></svg><span>Saigon, Vietnam</span></p>
-  </div>
+{% if page.footer_variant == "home" %}
+<footer class="site-footer">
+<div class="wrap footer-grid footer-grid-v2">
+<div>
+<a class="brand footer-brand footer-brand-lockup" href="/"><img class="footer-brand-monogram" src="/favicon-192x192.png" width="44" height="44" alt="" loading="lazy" decoding="async"/><span class="footer-brand-copy">SAIGON<small>Experiences &amp; Transport</small></span></a>
+<p class="footer-muted">Private local experiences, custom days and comfortable transport in Ho Chi Minh City and nearby destinations.</p>
+<p class="footer-perk"><span aria-hidden="true">☕</span> A Saigon coffee gift with every direct website booking.</p>
 </div>
-<div class="footer-bottom footer-framed-bottom"><div class="wrap">© <span data-year=""></span> OG Saigon Experience &amp; Transport. All rights reserved.</div></div>
+<div>
+<h2>Experiences</h2>
+<p><a href="/experiences/cu-chi-tunnels/">Cu Chi Tunnels</a></p>
+<p><a href="/experiences/hidden-saigon/">Hidden Saigon</a></p>
+<p><a href="/experiences/cu-chi-war-museum/">War History Day</a></p>
+<p><a href="/custom-trip/">Custom Private Day</a></p>
+</div>
+<div>
+<h2>Services</h2>
+<p><a href="/transport/">Airport Pickup</a></p>
+<p><a href="/transport/">Private Transport</a></p>
+<p><a href="/stories/">Travel Stories</a></p>
+</div>
+<div>
+<h2>OG Saigon</h2>
+<p><a href="/meet-duy/">Meet the OG</a></p>
+<p><a href="/about/">About</a></p>
+<p><a data-platform-link="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank">Tripadvisor</a></p>
+<p><a data-platform-link="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank">GetYourGuide</a></p><p><a data-platform-link="airbnb" href="https://www.airbnb.com/experiences/7046435" rel="noopener" target="_blank">Airbnb Experience</a></p>
+</div>
+<div class="footer-contact">
+<h2>Contact</h2>
+<p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-phone"></use></svg><a data-phone-link="" href="tel:+84938033395">+84 938 033 395</a></p>
+<p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-whatsapp"></use></svg><a data-whatsapp-link="" href="https://wa.me/84938033395" rel="noopener" target="_blank">WhatsApp</a></p>
+<p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-mail"></use></svg><a href="mailto:hello@ogsaigon.com">hello@ogsaigon.com</a></p>
+<p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-map"></use></svg><a href="https://maps.app.goo.gl/WbifDsGKfHmSeFuR7" rel="noopener" target="_blank">Google Maps</a></p>
+<p class="footer-contact-row footer-muted"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-pin"></use></svg><span>Saigon, Vietnam</span></p>
+</div>
+</div>
+<div class="wrap footer-bottom">© <span data-year=""></span> OG Saigon Experience &amp; Transport. All rights reserved.</div>
 </footer>
-<a aria-label="Message OG Saigon on WhatsApp" class="btn primary wa-float" data-whatsapp-link="" href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon." rel="noopener noreferrer" target="_blank">WhatsApp</a>
+<a aria-label="Message OG Saigon on WhatsApp" class="btn primary wa-float" data-whatsapp-link="" href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon." rel="noopener" target="_blank">WhatsApp</a>
+{% else %}
+<footer class="site-footer">
+<div class="wrap footer-grid">
+<div>
+<a class="brand footer-brand footer-brand-lockup" href="/"><img class="footer-brand-monogram" src="/favicon-192x192.png" width="44" height="44" alt="" loading="lazy" decoding="async"/><span class="footer-brand-copy">SAIGON<small>Experiences &amp; Transport</small></span></a>
+<p class="footer-muted">Private local experiences, custom days and comfortable transport in Ho Chi Minh City and nearby destinations.</p>
+<p class="footer-perk"><span aria-hidden="true">☕</span> A Saigon coffee gift with every direct website booking.</p>
+</div>
+<div>
+<h2>Explore</h2>
+<p><a href="/experiences/">Experiences</a></p>
+<p><a href="/custom-trip/">Custom Trips</a></p>
+<p><a href="/transport/">Transport</a></p>
+<p><a href="/stories/">Stories</a></p>
+</div>
+<div>
+<h2>Our story</h2>
+<p><a href="/about/">About OG Saigon</a></p>
+<p><a href="/meet-duy/">Meet the OG</a></p>
+<p><a data-platform-link="tripadvisor" href="https://www.tripadvisor.com/Attraction_Review-g293925-d34420172-Reviews-OG_Saigon_Experience_Transport-Ho_Chi_Minh_City.html" rel="noopener" target="_blank">Tripadvisor reviews</a></p>
+<p><a data-platform-link="getyourguide" href="https://www.getyourguide.com/og-saigon-experience--transport-s695288/" rel="noopener" target="_blank">GetYourGuide profile</a></p><p><a data-platform-link="airbnb" href="https://www.airbnb.com/experiences/7046435" rel="noopener" target="_blank">Airbnb Experience</a></p>
+</div>
+<div>
+<h2>Contact</h2>
+<p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-phone"></use></svg><a data-phone-link="" href="tel:+84938033395">+84 938 033 395</a></p>
+<p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-whatsapp"></use></svg><a data-whatsapp-link="" href="https://wa.me/84938033395" rel="noopener" target="_blank">WhatsApp</a></p>
+<p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-mail"></use></svg><a href="mailto:hello@ogsaigon.com">hello@ogsaigon.com</a></p>
+<p class="footer-contact-row"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-map"></use></svg><a href="https://maps.app.goo.gl/WbifDsGKfHmSeFuR7" rel="noopener" target="_blank">Google Maps</a></p>
+<p class="footer-contact-row footer-muted"><svg class="footer-contact-icon" aria-hidden="true" focusable="false"><use href="#og-footer-icon-pin"></use></svg><span>Saigon, Vietnam</span></p>
+</div>
+</div>
+<div class="wrap footer-bottom">© <span data-year=""></span> OG Saigon Experience &amp; Transport. All rights reserved.</div>
+</footer>
+<a aria-label="Message OG Saigon on WhatsApp" class="btn primary wa-float" data-whatsapp-link="" href="https://wa.me/84938033395?text=Hi%20OG%20Saigon%2C%20I%27m%20planning%20a%20trip%20to%20Saigon." rel="noopener" target="_blank">WhatsApp</a>
+{% endif %}
