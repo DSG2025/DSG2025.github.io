@@ -1863,9 +1863,7 @@ footer {
 }
 
 @media (max-width: 920px) {
-  body.menu-open {
-    overflow: hidden;
-  }
+  /* Mobile navigation stays open, but the page behind it can scroll. */
 
   .site-header {
     position: sticky;
@@ -1880,7 +1878,7 @@ footer {
     max-width: none;
     max-height: calc(100vh - 68px);
     overflow-y: auto;
-    overscroll-behavior: contain;
+    overscroll-behavior: auto;
     margin: 0;
     padding: 6px max(18px, calc((100vw - var(--max)) / 2)) 20px;
     background: rgba(245, 239, 229, 0.99);
@@ -2388,4 +2386,207 @@ footer {
 :where(.site-header, .site-footer) :where(h1, h2, h3),
 :where(.form-card, .faq-wrap) :where(h1, h2, h3) {
   font-family: var(--type-display-font-family);
+}
+
+
+/* OG Saigon shared header & framed footer | V2.7
+   Reuses approved OG logo favicon, no new brand artwork, no new dependencies. */
+.site-header .brand-logo-lockup,
+.site-footer .brand-logo-lockup {
+  display:inline-flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  gap:2px;
+  min-width:0;
+  text-decoration:none;
+}
+.brand-logo-lockup .brand-name-line {
+  display:flex;
+  align-items:center;
+  gap:4px;
+  max-width:100%;
+  line-height:1;
+}
+.brand-logo-lockup .brand-og-mark {
+  display:block;
+  position:relative;
+  flex:0 0 64px;
+  width:64px;
+  height:34px;
+  overflow:hidden;
+}
+.brand-logo-lockup .brand-og-mark img {
+  position:absolute;
+  display:block;
+  width:64px;
+  height:64px;
+  max-width:none;
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+  object-fit:contain;
+}
+.brand-logo-lockup .brand-saigon {
+  display:block;
+  font-family:var(--type-font-family);
+  color:var(--ink);
+  font-size:clamp(1.25rem,1.75vw,1.48rem);
+  font-weight:950;
+  letter-spacing:-.058em;
+  line-height:1;
+  white-space:nowrap;
+}
+.brand-logo-lockup small {
+  display:block;
+  font-size:.57rem;
+  letter-spacing:.105em;
+  line-height:1.3;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.site-footer.site-footer-framed {
+  background:#1c2c28;
+  color:#f0ece3;
+  padding:0;
+}
+.site-footer .footer-frame-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1.22fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.18fr);
+  width:100%;
+  max-width:none;
+  margin:0;
+  gap:0;
+}
+.site-footer .footer-frame {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  min-height:330px;
+  padding:clamp(24px,3.2vw,48px) clamp(18px,2.4vw,36px);
+  text-align:center;
+  border-right:1px solid rgba(220,149,93,.28);
+  border-bottom:1px solid rgba(220,149,93,.28);
+}
+.site-footer .footer-frame:last-child {border-right:0}
+.site-footer .footer-frame h2 {
+  color:#f5eee2;
+  font-size:1.06rem;
+  font-weight:800;
+  margin:0 0 19px;
+  letter-spacing:.015em;
+}
+.site-footer .footer-frame p {
+  margin:5px 0;
+  line-height:1.5;
+  font-size:.91rem;
+}
+.site-footer .footer-frame a {
+  color:#f3eee6;
+  text-decoration:none;
+  text-underline-offset:4px;
+}
+.site-footer .footer-frame a:not(.brand-logo-lockup):hover,
+.site-footer .footer-frame a:not(.brand-logo-lockup):focus-visible {
+  color:#f7cdb0;
+  text-decoration:underline;
+}
+.site-footer .footer-frame-brand {gap:12px}
+.site-footer .footer-frame-brand .brand-logo-lockup {
+  align-items:center;
+  gap:3px;
+}
+.site-footer .brand-logo-lockup .brand-saigon {color:#fff6e8}
+.site-footer .brand-logo-lockup small {color:#d2c9b8}
+.site-footer .footer-frame-brand .footer-muted {
+  max-width:270px;
+  color:#c8d0ca;
+  line-height:1.6;
+}
+.site-footer .footer-frame-brand .footer-perk {
+  max-width:270px;
+  color:#f7cdb0;
+  font-size:.85rem;
+  line-height:1.55;
+}
+.site-footer .footer-frame .footer-contact-row {
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px;
+  width:fit-content;
+  max-width:100%;
+  text-align:left;
+  margin:7px 0;
+}
+.site-footer .footer-frame .footer-contact-row .footer-contact-icon {
+  flex:0 0 18px;
+  width:18px;
+  height:18px;
+}
+.site-footer .footer-frame .footer-contact-row a {
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+.site-footer .footer-framed-bottom {
+  max-width:none;
+  width:100%;
+  margin:0;
+  padding:17px 18px 19px;
+  border-top:0;
+  text-align:center;
+  background:#172521;
+  color:#bbc6be;
+}
+@media (min-width:921px) and (max-width:1120px) {
+  .site-footer .footer-frame {padding-inline:15px}
+  .site-header .navlinks {gap:clamp(10px,1.4vw,21px)}
+}
+@media (max-width:920px) {
+  .site-footer .footer-frame-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+  .site-footer .footer-frame {min-height:280px}
+  .site-footer .footer-frame:nth-child(even) {border-right:0}
+}
+@media (max-width:650px) {
+  .brand-logo-lockup .brand-og-mark {flex-basis:53px;width:53px;height:28px}
+  .brand-logo-lockup .brand-og-mark img {width:53px;height:53px}
+  .brand-logo-lockup .brand-saigon {font-size:1.14rem}
+  .site-header .brand-logo-lockup small {font-size:.51rem;letter-spacing:.08em}
+  .site-footer .footer-frame-grid {
+    grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  }
+  .site-footer .footer-frame {
+    min-height:0;
+    padding:23px 15px;
+    align-items:center;
+    justify-content:center;
+  }
+  .site-footer .footer-frame-brand {
+    gap:8px;
+    border-right:1px solid rgba(220,149,93,.28);
+  }
+  .site-footer .footer-frame-brand .brand-logo-lockup {align-items:center}
+  .site-footer .footer-frame-brand .footer-muted,
+  .site-footer .footer-frame-brand .footer-perk {
+    max-width:190px;
+    font-size:.76rem;
+    line-height:1.48;
+  }
+  .site-footer .footer-frame-explore {border-right:0}
+  .site-footer .footer-frame-story,
+  .site-footer .footer-frame-contact {
+    grid-column:1/-1;
+    border-right:0;
+  }
+  .site-footer .footer-frame h2 {margin-bottom:11px;font-size:.96rem}
+  .site-footer .footer-frame p {font-size:.82rem;margin:4px 0}
+  .site-footer .footer-frame .footer-contact-row {font-size:.9rem}
+}
+@media (max-width:360px) {
+  .site-footer .footer-frame {padding-inline:9px}
+  .site-footer .footer-frame-brand .brand-og-mark {flex-basis:44px;width:44px;height:24px}
+  .site-footer .footer-frame-brand .brand-og-mark img {width:44px;height:44px}
+  .site-footer .footer-frame-brand .brand-saigon {font-size:1rem}
 }
