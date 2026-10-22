@@ -64,10 +64,16 @@ assert not errors,'\n'.join(errors)
 home=docs[OUT/'index.html']
 assert 'home-intro-active' not in home.all('body')[0].attrs.get('class','').split(), 'No-JS footer contact must stay visible'
 def one(id):return home.all(id=id)[0]
-assert home.all('h1')[0].text=='See Saigon through local eyes.'
+assert home.all('h1')[0].text=='See Saigon through the eyes of a fifth-generation Saigonese'
+assert home.all('h1')[0].all(cls='og-v2-h1-accent')[0].text=='fifth-generation Saigonese'
 hero=one('home-hero');grid=hero.all(cls='hero-grid')[0]
 assert [n.attrs.get('class') for n in grid.children]==['hero-intro','hero-media','hero-body']
-assert len(hero.all('img'))==1 and len(hero.all('a'))==2
+assert len(hero.all('img'))==2 and len(hero.all('a'))==2
+assert [img.attrs['src'] for img in hero.all('img')]==[
+    '/assets/images/og-saigon-district-4-hem-sinh-hoat-hero.webp',
+    '/assets/images/og-quan-tu-district-4-sticker.svg'
+]
+assert hero.all('img')[1].attrs['alt']=='Quận Tư, District 4'
 assert hero.all('a')[0].attrs['href']=='/custom-trip/#trip-builder'
 assert len(one('home-intro').all('section'))==2
 assert len(one('trust').all(cls='trust-item'))==3
@@ -193,7 +199,7 @@ story_css=(ROOT/'assets/css/stories.css').read_text()
 home_css=(ROOT/'assets/css/home-v2.css').read_text()
 custom_css=(ROOT/'assets/css/custom-trip.css').read_text()
 cuchi_css=(ROOT/'assets/css/cu-chi-v2.css').read_text()
-for token in ['--type-body:', '--type-support:', '--type-reading:', '--type-caption:', '--type-label:', '--type-lead:', '--type-card-title:', '--type-font-family:']:
+for token in ['--type-body:', '--type-support:', '--type-reading:', '--type-caption:', '--type-label:', '--type-lead:', '--type-card-title:', '--type-font-family:', '--type-display-font-family:']:
     assert token in shared_css, 'Missing typography token '+token
 for name,stylesheet in [('stories',story_css),('home',home_css),('custom-trip',custom_css),('cu-chi',cuchi_css)]:
     assert 'var(--type-' in stylesheet, 'Missing shared typography usage in '+name
@@ -201,6 +207,9 @@ assert '.story-article {' in story_css and 'font-size: var(--type-reading);' in 
 assert '.story-index-card-body p {font-size:var(--type-support);' in story_css
 assert 'font:var(--type-body)/1.55 var(--type-font-family)' in cuchi_css
 assert 'font-size: var(--type-body);' in shared_css
+assert 'family=Oswald:' in shared_css and 'family=Roboto:' in shared_css
+assert 'font-family: var(--type-display-font-family);' in shared_css
+assert 'font-family:var(--type-display-font-family);' in home_css
 
 print(f'PASS: {len(docs)} pages, {links} local links/assets/anchors, {images} image references, {schemas} JSON-LD blocks, unique IDs, one header/footer per page.')
 print('PASS: homepage structure, 2 selected stories, 6 index stories, 5 rain photos, no duplicate story sources.')
