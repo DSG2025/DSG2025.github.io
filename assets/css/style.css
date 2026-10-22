@@ -28,7 +28,10 @@
   --accent-border-soft: rgba(180, 83, 44, 0.22);
   --accent-border-strong: rgba(180, 83, 44, 0.32);
   --gold: #d7a54b;
-  --muted: #617069;
+  --muted: #5a6a63;
+  /* Accessibility: text uses darker/lighter semantic colors than decorative orange/CTA fill. */
+  --text-accent: #a8401f;
+  --text-accent-on-dark: #f7cdb0;
   --line: rgba(24, 48, 42, 0.14);
   --control-border: var(--muted);
   --shadow: 0 18px 55px rgba(24, 48, 42, 0.10);
@@ -121,12 +124,12 @@ button, input, select, textarea {
   letter-spacing: 0.16em;
   font-size: 0.76rem;
   font-weight: 900;
-  color: var(--rust);
+  color: var(--text-accent);
   margin-bottom: 10px;
 }
 
 .dark .eyebrow {
-  color: #efb18e;
+  color: var(--text-accent-on-dark);
 }
 
 /* All pages share the same heading family; individual page size scales stay intact. */
@@ -168,7 +171,7 @@ h3 {
 
 .kicker {
   font-weight: 800;
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .topbar {
@@ -212,7 +215,7 @@ h3 {
 }
 
 .navlinks > a:not(.btn):hover {
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 
@@ -326,7 +329,7 @@ h3 {
 
 .proof-row span:before {
   content: "•";
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .hero-mosaic {
@@ -465,7 +468,7 @@ h3 {
 
 .text-link {
   font-weight: 900;
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 /* Identify links within prose without changing navigation, cards or buttons. */
@@ -519,7 +522,7 @@ h3 {
 
 .bullets li:before {
   content: "✓";
-  color: var(--rust);
+  color: var(--text-accent);
   font-weight: 950;
   margin-right: 10px;
 }
@@ -610,7 +613,7 @@ h3 {
 }
 
 .breadcrumbs a {
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .page-hero-grid {
@@ -762,7 +765,7 @@ h3 {
 }
 
 .check input {
-  accent-color: var(--rust);
+  accent-color: var(--text-accent);
 }
 
 .note {
@@ -999,7 +1002,7 @@ footer {
 .host-values span {
   display: block;
   font-weight: 900;
-  color: var(--rust);
+  color: var(--text-accent);
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   margin-bottom: 8px;
@@ -1331,7 +1334,7 @@ footer {
 }
 
 .how-section .eyebrow {
-  color: #efb18e;
+  color: var(--text-accent-on-dark);
 }
 
 .how-section .lead {
@@ -1620,7 +1623,7 @@ footer {
 
 .navlinks a[aria-current="page"],
 .mobile-menu a[aria-current="page"] {
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .review-strip {
@@ -1645,7 +1648,7 @@ footer {
 }
 
 .review-intro .eyebrow {
-  color: #efb18e;
+  color: var(--text-accent-on-dark);
 }
 
 .review-intro h2 {
@@ -1701,7 +1704,7 @@ footer {
 }
 
 .review-card.featured strong {
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .review-count {
@@ -1804,7 +1807,7 @@ footer {
 }
 
 .hero-stars {
-  color: var(--rust);
+  color: var(--text-accent);
   letter-spacing: 0.04em;
 }
 
@@ -2238,7 +2241,7 @@ footer {
 }
 .site-header .nav-exp-top:hover::after { right: 0; }
 .site-header .nav-exp-top:hover,
-.site-header .nav-exp-top.is-section-current { color: var(--rust); }
+.site-header .nav-exp-top.is-section-current { color: var(--text-accent); }
 
 .site-header .nav-exp-toggle,
 .site-header .mobile-exp-toggle {
@@ -2261,7 +2264,7 @@ footer {
 .site-header .nav-exp-toggle:hover,
 .site-header .mobile-exp-toggle:hover,
 .site-header [data-exp-toggle][aria-expanded="true"] {
-  color: var(--rust);
+  color: var(--text-accent);
   background: rgba(173, 79, 50, 0.07);
 }
 
@@ -2306,7 +2309,7 @@ footer {
 .site-header .nav-exp-panel .nav-exp-item:hover,
 .site-header .nav-exp-panel .nav-exp-item[aria-current="page"] {
   background: rgba(173, 79, 50, 0.08);
-  color: var(--rust);
+  color: var(--text-accent);
 }
 
 .site-header .nav-exp-item-title { font-weight: 800; }
@@ -2338,7 +2341,7 @@ footer {
     font-size: 1.08rem;
     font-weight: 800;
   }
-  .site-header .mobile-exp-top.is-section-current { color: var(--rust); }
+  .site-header .mobile-exp-top.is-section-current { color: var(--text-accent); }
   .site-header .mobile-exp-toggle {
     flex: 0 0 52px;
     min-width: 52px;
