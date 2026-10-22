@@ -7,6 +7,14 @@
   --cream: #f5efe5;
   --paper: #fffdf8;
   --rust: #ad4f32;
+  /* V2 semantic CTA: warm mái-ngói orange, not the red editorial accent. */
+  --tile-orange: #b4532c;
+  --cta-bg: var(--tile-orange);
+  --cta-hover: #943f21;
+  --cta-text: #ffffff;
+  --cta-shadow: rgba(105, 43, 22, 0.30);
+  --accent-border-soft: rgba(180, 83, 44, 0.22);
+  --accent-border-strong: rgba(180, 83, 44, 0.32);
   --gold: #d7a54b;
   --muted: #617069;
   --line: rgba(24, 48, 42, 0.14);
@@ -23,6 +31,11 @@
   --type-label: 0.875rem;
   --type-lead: clamp(1.05rem, 1.8vw, 1.28rem);
   --type-card-title: clamp(1.35rem, 2vw, 1.6rem);
+  /* Shared semantic heading roles. Page-specific display styles remain scoped. */
+  --type-h1: clamp(2.75rem, 6.5vw, 5.7rem);
+  --type-h2: clamp(2rem, 4.2vw, 3.55rem);
+  --type-h3: 1.35rem;
+  --type-button: 1rem;
 }
 
 * {
@@ -103,15 +116,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: clamp(2.75rem, 6.5vw, 5.7rem);
+  font-size: var(--type-h1);
 }
 
 h2 {
-  font-size: clamp(2rem, 4.2vw, 3.55rem);
+  font-size: var(--type-h2);
 }
 
 h3 {
-  font-size: 1.35rem;
+  font-size: var(--type-h3);
 }
 
 .lead {
@@ -209,6 +222,7 @@ h3 {
   justify-content: center;
   gap: 9px;
   padding: 13px 19px;
+  font-size: var(--type-button);
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 900;
@@ -221,8 +235,8 @@ h3 {
 }
 
 .btn.primary {
-  background: var(--rust);
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-text);
 }
 
 .btn.secondary {
@@ -1156,11 +1170,13 @@ footer {
 }
 
 .btn.primary {
-  box-shadow: 0 10px 24px rgba(184, 93, 62, 0.20);
+  box-shadow: 0 6px 0 var(--cta-shadow);
 }
 
 .btn.primary:hover {
-  box-shadow: 0 14px 30px rgba(184, 93, 62, 0.27);
+  background: var(--cta-hover);
+  box-shadow: 0 4px 0 var(--cta-shadow);
+  transform: translateY(2px);
 }
 
 .hero {
@@ -1371,7 +1387,7 @@ footer {
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     transform: translateY(-5px);
-    border-color: rgba(184, 93, 62, 0.22);
+    border-color: var(--accent-border-soft);
     box-shadow: 0 22px 54px rgba(24, 48, 42, 0.13);
   }
 
@@ -1784,7 +1800,7 @@ footer {
 
 @media (hover: hover) and (pointer: fine) {
   .hero-rating:hover {
-    border-color: rgba(184, 93, 62, 0.32);
+    border-color: var(--accent-border-strong);
   }
 }
 
