@@ -7,7 +7,7 @@
 .cu-chi-v2 a:focus-visible, .cu-chi-v2 summary:focus-visible{outline:3px solid #d68361;outline-offset:4px}
 .cu-chi-v2 img{display:block;width:100%;height:100%;object-fit:cover}
 .cu-chi-v2 h1, .cu-chi-v2 h2, .cu-chi-v2 h3, .cu-chi-v2 p{margin-top:0}
-.cu-chi-v2 h1, .cu-chi-v2 h2, .cu-chi-v2 h3{line-height:1.12;letter-spacing:-.035em}
+.cu-chi-v2 h1, .cu-chi-v2 h2, .cu-chi-v2 h3{line-height:1.17;letter-spacing:.005em}
 .cu-chi-v2 h1{font-size:clamp(2.3rem,4.5vw,4.1rem)}
 .cu-chi-v2 h2{font-size:clamp(1.85rem,3.3vw,2.8rem)}
 .cu-chi-v2 h3{font-size:1.18rem}

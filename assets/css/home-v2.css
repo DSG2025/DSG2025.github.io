@@ -1012,10 +1012,10 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-origin {
  max-width:31ch;margin-bottom:24px
 }
 body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
- color:var(--ink);font-family:"Barber Complete",Impact,"Arial Narrow",sans-serif;
- font-size:clamp(2.85rem,4.15vw,4.35rem);line-height:1.01;letter-spacing:-.01em;
- text-wrap:balance;text-transform:uppercase;max-width:560px;margin:0;
- text-shadow:2px 3px 0 #c4af89
+ color:var(--ink);font-family:var(--type-display-font-family);
+ font-size:clamp(2.7rem,3.65vw,4rem);line-height:1.13;letter-spacing:.005em;
+ text-wrap:balance;text-transform:uppercase;max-width:100%;margin:0;
+ padding-block:.05em;text-shadow:1.5px 2px 0 #c4af89
 }
 body.home-v2.og-v2-stage1 #home-hero .og-v2-h1-accent {
  color:var(--cta-bg);text-shadow:2px 3px 0 #e0c4a4
@@ -1066,7 +1066,7 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
  body.home-v2.og-v2-stage1 #home-hero{padding:26px 0 42px}
  body.home-v2.og-v2-stage1 #home-hero .og-v2-origin{font-size:.82rem;margin-bottom:16px}
  body.home-v2.og-v2-stage1 #home-hero .hero-intro h1{
- font-size:clamp(2.05rem,8.5vw,3.05rem);line-height:1.02;overflow-wrap:normal
+ font-size:clamp(2rem,7.8vw,2.75rem);line-height:1.14;letter-spacing:.008em;overflow-wrap:break-word
  }
  body.home-v2.og-v2-stage1 #home-hero .hero-lead{font-size:1.06rem;margin-top:10px}
  body.home-v2.og-v2-stage1 #home-hero .hero-media{margin-top:14px}
