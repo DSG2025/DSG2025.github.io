@@ -5,6 +5,7 @@ body.about-og-page .about-og-hero h1 {font-family:var(--type-display-font-family
 body.about-og-page .about-og-hero .eyebrow {color:#a44d2e}
 body.about-og-page .about-hero-accent {color:var(--cta-bg);text-decoration:underline;text-underline-offset:.13em;text-decoration-color:rgba(180,83,44,.25);text-decoration-thickness:.06em}
 body.about-og-page .about-og-hero .lead {font-size:var(--type-lead);line-height:1.67;max-width:640px}
+body.about-og-page .about-neighborhood-greeting {max-width:540px;margin:16px 0 0;padding:12px 16px;border-left:3px solid #b4532c;background:rgba(255,250,240,.72);font-size:var(--type-support);line-height:1.65;color:#243a35}
 body.about-og-page .about-hero-actions {display:flex;gap:15px 22px;align-items:center;flex-wrap:wrap;margin-top:25px}
 body.about-og-page .about-hero-actions .text-link {color:#243a35;font-weight:800;text-decoration:underline;text-underline-offset:4px}
 body.about-og-page .about-hero-photo {position:relative;min-width:0;margin:0;padding:0 12px 12px 0}
