@@ -38,7 +38,9 @@ for (const [route, html] of documents) {
     route + ': preview noindex missing');
   for (const tag of html.match(/<img\b[^>]*>/gi) || []) {
     imageCount++;
-    assert(/\balt=["'][^"']+["']/i.test(tag), route + ': img missing useful alt');
+    // Empty alt is valid for decorative images (e.g., review icons and OG footer mark).
+    // Require an alt attribute on every image without requiring nonempty alternative text.
+    assert(/\s+alt=(["']).*?\1/i.test(tag), route + ': img missing alt attribute');
     assert(/\bwidth=["'][0-9]+["']/i.test(tag), route + ': img missing width');
     assert(/\bheight=["'][0-9]+["']/i.test(tag), route + ': img missing height');
   }
