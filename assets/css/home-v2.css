@@ -1317,6 +1317,22 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
   }
 }
 
+/* V2.6.1 preview | Mobile headline legibility.
+   Oswald 600 is already loaded globally; keep Barber poster typography on desktop/tablet.
+   No copy, layout geometry, CTA or color changes. */
+@media (max-width:650px) {
+  body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
+    font-family:var(--type-display-font-family);
+    font-weight:600;
+    letter-spacing:.015em;
+    line-height:1.12;
+    text-shadow:none;
+  }
+  body.home-v2.og-v2-stage1 #home-hero .og-v2-h1-accent {
+    text-shadow:none;
+  }
+}
+
 /* V2.3: flex card anatomy. Avoid percentage min-height and 1fr copy rows,
    which created oversized blank areas on Signature Experiences. */
 body.home-v2 .featured-cards { align-items: stretch; }
