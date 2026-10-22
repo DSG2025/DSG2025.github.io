@@ -1013,7 +1013,7 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-origin {
 }
 body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
  color:var(--ink);font-family:var(--type-poster-font-family);
- font-size:clamp(2.5rem,3.4vw,3.7rem);line-height:1.08;letter-spacing:.004em;
+ font-size:clamp(2.7rem,3.85vw,4.15rem);line-height:1.04;letter-spacing:.004em;
  text-wrap:balance;text-transform:uppercase;max-width:100%;margin:0;
  padding-block:.05em;text-shadow:1.5px 2px 0 #c4af89
 }
@@ -1050,7 +1050,7 @@ body.home-v2.og-v2-stage1 #home-hero .hero-picture::after {
 }
 body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
  position:absolute;top:7%;right:-3%;z-index:2;width:min(235px,48%);height:auto;
- transform:rotate(-7deg);filter:drop-shadow(5px 8px 0 rgba(25,45,38,.28));
+ transform:rotate(-6deg);filter:drop-shadow(3px 5px 0 rgba(25,45,38,.22));
  pointer-events:none
 }
 @media(max-width:920px){
@@ -1066,7 +1066,7 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
  body.home-v2.og-v2-stage1 #home-hero{padding:26px 0 42px}
  body.home-v2.og-v2-stage1 #home-hero .og-v2-origin{font-size:.82rem;margin-bottom:16px}
  body.home-v2.og-v2-stage1 #home-hero .hero-intro h1{
- font-size:clamp(1.94rem,7.45vw,2.65rem);line-height:1.12;letter-spacing:.006em;overflow-wrap:break-word
+ font-size:clamp(2.05rem,8vw,2.75rem);line-height:1.08;letter-spacing:.006em;overflow-wrap:break-word
  }
  body.home-v2.og-v2-stage1 #home-hero .hero-lead{font-size:1.06rem;margin-top:10px}
  body.home-v2.og-v2-stage1 #home-hero .hero-media{margin-top:14px}
@@ -1079,49 +1079,74 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
  body.home-v2.og-v2-stage1 #home-hero .hero-actions .primary{transition:none}
 }
 
-/* V2.2 card anatomy: align copy and links without forcing equal copy lengths. */
+/* V2.3: flex card anatomy. Avoid percentage min-height and 1fr copy rows,
+   which created oversized blank areas on Signature Experiences. */
 body.home-v2 .featured-cards { align-items: stretch; }
+body.home-v2 .experience-card { display: flex; flex-direction: column; min-width: 0; }
+body.home-v2 .experience-card .card-media { flex: 0 0 auto; aspect-ratio: 4 / 3; height: auto; }
 body.home-v2 .experience-card .card-body {
-  display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr) auto;
-  align-content: start;
-  row-gap: 10px;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 body.home-v2 .experience-card .experience-meta {
   margin: 0 !important;
-  min-height: 1.5em;
+  min-height: 0;
   line-height: 1.5;
 }
 body.home-v2 .experience-card .card-body h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   margin: 0;
-  min-height: 2.4em;
+  min-height: 0;
   font-size: clamp(1.55rem, 2.15vw, 2rem);
   line-height: 1.2;
 }
 body.home-v2 .experience-card .card-body > p:not(.experience-meta) {
-  margin: 0 0 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 0;
   line-height: 1.65;
 }
-body.home-v2 .experience-card .card-footer { align-self: end; margin: 0; }
+body.home-v2 .experience-card .card-footer {
+  margin-top: auto;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
 body.home-v2 .story-card { display: flex; flex-direction: column; min-width: 0; }
 body.home-v2 .story-card-body {
-  display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr) auto;
-  align-content: start;
-  row-gap: 10px;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 body.home-v2 .story-card-body .eyebrow { margin: 0; }
 body.home-v2 .story-card-body h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   margin: 0;
-  min-height: 2.4em;
+  min-height: 0;
   font-size: clamp(1.55rem, 2vw, 1.95rem);
   line-height: 1.2;
 }
-body.home-v2 .story-card-body .story-card-excerpt { margin: 0 0 10px; }
-body.home-v2 .story-card-body > .text-link { align-self: end; justify-self: start; }
-@media(max-width:650px){
-  body.home-v2 .experience-card .card-body h3,
-  body.home-v2 .story-card-body h3 { min-height: 0; }
+body.home-v2 .story-card-body .story-card-excerpt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 0;
+}
+body.home-v2 .story-card-body > .text-link {
+  margin-top: auto;
+  padding-top: 8px;
+  align-self: flex-start;
 }

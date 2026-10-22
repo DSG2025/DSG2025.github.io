@@ -64,7 +64,7 @@ assert not errors,'\n'.join(errors)
 home=docs[OUT/'index.html']
 assert 'home-intro-active' not in home.all('body')[0].attrs.get('class','').split(), 'No-JS footer contact must stay visible'
 def one(id):return home.all(id=id)[0]
-assert home.all('h1')[0].text=='See Saigon through the eyes of a fifth-generation Saigonese'
+assert home.all('h1')[0].text=='See Saigon through fifth-generation Saigonese eyes'
 assert home.all('h1')[0].all(cls='og-v2-h1-accent')[0].text=='fifth-generation Saigonese'
 hero=one('home-hero');grid=hero.all(cls='hero-grid')[0]
 assert [n.attrs.get('class') for n in grid.children]==['hero-intro','hero-media','hero-body']
@@ -205,6 +205,13 @@ for name,stylesheet in [('stories',story_css),('home',home_css),('custom-trip',c
     assert 'var(--type-' in stylesheet, 'Missing shared typography usage in '+name
 assert '.story-article {' in story_css and 'font-size: var(--type-reading);' in story_css
 assert '.story-index-card-body p {font-size:var(--type-support);' in story_css
+assert 'grid-template-rows: auto auto minmax(0, 1fr) auto;' not in home_css
+assert 'grid-template-rows: auto auto minmax(0,1fr) auto;' not in story_css
+assert home_css.count('-webkit-line-clamp: 2;') >= 2
+assert home_css.count('-webkit-line-clamp: 3;') >= 2
+assert story_css.count('-webkit-line-clamp: 2;') >= 1
+assert story_css.count('-webkit-line-clamp: 3;') >= 1
+assert (ROOT/'assets/images/og-quan-tu-district-4-sticker.svg').read_text().count('DISTRICT 4') >= 1
 assert 'font:var(--type-body)/1.55 var(--type-font-family)' in cuchi_css
 assert 'font-size: var(--type-body);' in shared_css
 assert 'family=Oswald:' in shared_css and 'family=Roboto:' in shared_css
