@@ -1317,15 +1317,16 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
   }
 }
 
-/* V2.6.1 preview | Mobile headline legibility.
-   Oswald 600 is already loaded globally; keep Barber poster typography on desktop/tablet.
-   No copy, layout geometry, CTA or color changes. */
+/* V2.6.2 preview | Same Barber Complete font on desktop and mobile.
+   Mobile only: prevent synthetic emboldening of the single-weight poster font,
+   remove heavy shadows and give letterforms breathing room. */
 @media (max-width:650px) {
   body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
-    font-family:var(--type-display-font-family);
-    font-weight:600;
-    letter-spacing:.015em;
-    line-height:1.12;
+    font-family:var(--type-poster-font-family);
+    font-weight:400;
+    font-synthesis:none;
+    letter-spacing:.012em;
+    line-height:1.10;
     text-shadow:none;
   }
   body.home-v2.og-v2-stage1 #home-hero .og-v2-h1-accent {
