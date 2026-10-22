@@ -21,8 +21,8 @@
   --tube-yellow: #e9a93a;
   /* V2 semantic CTA: warm mái-ngói orange, not the red editorial accent. */
   --tile-orange: #b4532c;
-  --cta-bg: var(--chili-red);
-  --cta-hover: #ad2c20;
+  --cta-bg: var(--tile-orange);
+  --cta-hover: #943f21;
   --cta-text: #ffffff;
   --cta-shadow: rgba(105, 43, 22, 0.30);
   --accent-border-soft: rgba(180, 83, 44, 0.22);
@@ -36,7 +36,8 @@
   --max: 1180px;
   /* Typography Foundation V2: one display font + one readable body/UI font. */
   --type-font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
-  --type-display-font-family: "Barber Complete", "Oswald", sans-serif;
+  --type-display-font-family: "Oswald", "Be Vietnam Pro", sans-serif;
+  --type-poster-font-family: "Barber Complete", "Oswald", sans-serif;
   --type-label-font-family: "Oswald", "Be Vietnam Pro", sans-serif;
   --type-note-font-family: "Patrick Hand", cursive;
   --type-stencil-font-family: "Saira Stencil One", "Oswald", sans-serif;
@@ -2374,3 +2375,14 @@ footer {
 .site-header .header-cta{background:var(--cta-bg)}
 :where(h1,h2,h3){text-wrap:pretty}
 @media(max-width:650px){:where(h1,h2,h3){line-height:1.2}}
+
+/* V2.2 typography: readable headings are the default. Barber is limited to explicit poster treatments. */
+:where(.story-index-card h2, .story-card h3, .experience-card h3, .direction-card h3) {
+  font-family: var(--type-display-font-family);
+  letter-spacing: .005em;
+  overflow-wrap: anywhere;
+}
+:where(.site-header, .site-footer) :where(h1, h2, h3),
+:where(.form-card, .faq-wrap) :where(h1, h2, h3) {
+  font-family: var(--type-display-font-family);
+}

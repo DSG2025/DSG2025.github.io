@@ -468,3 +468,23 @@ body.custom-trip-page .form-fallback-note {
   body.custom-trip-page.form-message-ready .wa-float { display: none; }
   body.custom-trip-page .form-fallback-actions .btn { min-width: 0; white-space: normal; }
 }
+
+/* V2.2: readable Custom Trip headline and equal-height direction card copy. */
+body.custom-trip-page .custom-hero h1 {
+  font-family: var(--type-display-font-family);
+  font-size: clamp(2.3rem, 4.2vw, 3.7rem);
+  line-height: 1.14;
+  letter-spacing: .005em;
+  max-width: 100%;
+  overflow-wrap: normal;
+}
+body.custom-trip-page .direction-card { height: 100%; }
+body.custom-trip-page .direction-body { display: grid; grid-template-rows: auto auto 1fr; align-content: start; gap: 10px; }
+body.custom-trip-page .direction-body .eyebrow,
+body.custom-trip-page .direction-body h3 { margin: 0; }
+body.custom-trip-page .direction-body h3 { min-height: 2.4em; font-size: clamp(1.5rem, 2vw, 1.9rem); line-height: 1.2; }
+body.custom-trip-page .direction-body p { line-height: 1.65; }
+@media (max-width:650px) {
+  body.custom-trip-page .custom-hero h1 { font-size: clamp(2.05rem, 8vw, 2.75rem); line-height: 1.16; }
+  body.custom-trip-page .direction-body h3 { min-height: 0; }
+}

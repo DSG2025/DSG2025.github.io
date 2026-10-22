@@ -15,3 +15,11 @@ body.meet-og-page .meet-og-story .host-values p{font-size:var(--type-support);li
 body.meet-og-page .meet-og-intro{max-width:680px;margin:18px 0 22px}
 body.meet-og-page .meet-og-intro p{font-size:var(--type-reading);line-height:1.7;margin:0 0 13px;color:var(--muted)}
 body.meet-og-page .meet-og-intro p:last-child{margin-bottom:0}
+
+/* V2.2 Meet the OG: neighborhood sign treatment, restrained for readability. */
+body.meet-og-page .page-hero { background: linear-gradient(128deg, #f3e7d3 0%, #f7f0e3 58%, #e9e1cf 100%); }
+body.meet-og-page .page-hero h1 { display: inline-block; font-family: var(--type-poster-font-family); font-size: clamp(3rem,5vw,5.5rem); line-height: 1.08; letter-spacing: .015em; color: #243a35; text-shadow: 2px 3px 0 #d6a47c; }
+body.meet-og-page .page-hero .eyebrow { color: var(--rust); }
+body.meet-og-page .facts .fact { background: #e9ddc8; border: 1px solid #d0c1a7; border-radius: 6px; }
+body.meet-og-page .meet-og-story article > h2, body.meet-og-page .side-card h3 { font-family: var(--type-display-font-family); }
+@media(max-width:650px){ body.meet-og-page .page-hero h1 { font-size: clamp(2.8rem,11vw,3.7rem); } }

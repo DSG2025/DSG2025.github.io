@@ -1012,13 +1012,13 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-origin {
  max-width:31ch;margin-bottom:24px
 }
 body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
- color:var(--ink);font-family:var(--type-display-font-family);
- font-size:clamp(2.7rem,3.65vw,4rem);line-height:1.13;letter-spacing:.005em;
+ color:var(--ink);font-family:var(--type-poster-font-family);
+ font-size:clamp(2.5rem,3.4vw,3.7rem);line-height:1.08;letter-spacing:.004em;
  text-wrap:balance;text-transform:uppercase;max-width:100%;margin:0;
  padding-block:.05em;text-shadow:1.5px 2px 0 #c4af89
 }
 body.home-v2.og-v2-stage1 #home-hero .og-v2-h1-accent {
- color:var(--brick-red);text-shadow:2px 3px 0 var(--tube-yellow)
+ color:var(--cta-bg);text-shadow:1.5px 2px 0 #e0bc8e
 }
 body.home-v2.og-v2-stage1 #home-hero .hero-lead {
  color:#33433e;font-size:clamp(1.05rem,1.55vw,1.22rem);max-width:540px;
@@ -1066,7 +1066,7 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
  body.home-v2.og-v2-stage1 #home-hero{padding:26px 0 42px}
  body.home-v2.og-v2-stage1 #home-hero .og-v2-origin{font-size:.82rem;margin-bottom:16px}
  body.home-v2.og-v2-stage1 #home-hero .hero-intro h1{
- font-size:clamp(2rem,7.8vw,2.75rem);line-height:1.14;letter-spacing:.008em;overflow-wrap:break-word
+ font-size:clamp(1.94rem,7.45vw,2.65rem);line-height:1.12;letter-spacing:.006em;overflow-wrap:break-word
  }
  body.home-v2.og-v2-stage1 #home-hero .hero-lead{font-size:1.06rem;margin-top:10px}
  body.home-v2.og-v2-stage1 #home-hero .hero-media{margin-top:14px}
@@ -1077,4 +1077,51 @@ body.home-v2.og-v2-stage1 #home-hero .og-v2-stamp {
 }
 @media(prefers-reduced-motion:reduce){
  body.home-v2.og-v2-stage1 #home-hero .hero-actions .primary{transition:none}
+}
+
+/* V2.2 card anatomy: align copy and links without forcing equal copy lengths. */
+body.home-v2 .featured-cards { align-items: stretch; }
+body.home-v2 .experience-card .card-body {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  align-content: start;
+  row-gap: 10px;
+  min-height: 100%;
+}
+body.home-v2 .experience-card .experience-meta {
+  margin: 0 !important;
+  min-height: 1.5em;
+  line-height: 1.5;
+}
+body.home-v2 .experience-card .card-body h3 {
+  margin: 0;
+  min-height: 2.4em;
+  font-size: clamp(1.55rem, 2.15vw, 2rem);
+  line-height: 1.2;
+}
+body.home-v2 .experience-card .card-body > p:not(.experience-meta) {
+  margin: 0 0 14px;
+  line-height: 1.65;
+}
+body.home-v2 .experience-card .card-footer { align-self: end; margin: 0; }
+body.home-v2 .story-card { display: flex; flex-direction: column; min-width: 0; }
+body.home-v2 .story-card-body {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  align-content: start;
+  row-gap: 10px;
+  flex: 1;
+}
+body.home-v2 .story-card-body .eyebrow { margin: 0; }
+body.home-v2 .story-card-body h3 {
+  margin: 0;
+  min-height: 2.4em;
+  font-size: clamp(1.55rem, 2vw, 1.95rem);
+  line-height: 1.2;
+}
+body.home-v2 .story-card-body .story-card-excerpt { margin: 0 0 10px; }
+body.home-v2 .story-card-body > .text-link { align-self: end; justify-self: start; }
+@media(max-width:650px){
+  body.home-v2 .experience-card .card-body h3,
+  body.home-v2 .story-card-body h3 { min-height: 0; }
 }
