@@ -1076,7 +1076,7 @@ body.home-v2.og-v2-stage1 #home-hero .hero-intro::after {
 body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
   display:block;max-width:100%;margin:0;padding:.03em 0 .06em;
   color:#203b35;font-family:var(--type-poster-font-family);
-  font-size:clamp(2.38rem,3.55vw,3.64rem);font-weight:900;
+  font-size:clamp(2.38rem,3.55vw,3.64rem);font-weight:400;font-synthesis:none;
   line-height:1.05;letter-spacing:-.008em;text-wrap:pretty;
   text-transform:uppercase;text-shadow:2px 3px 0 rgba(181,140,93,.56);
   overflow-wrap:normal;
