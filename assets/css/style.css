@@ -1,18 +1,28 @@
 /* OG Saigon V3 */
 /* V2 typography preview. Google Fonts with local fallbacks; no private font assets. */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&family=Patrick+Hand&family=Saira+Stencil+One&display=swap");
+@font-face{font-family:"Barber Complete";src:url("/assets/fonts/barber-complete.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Barber Fill";src:url("/assets/fonts/barber-fill.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Barber Shadow";src:url("/assets/fonts/barber-shadow.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Barber Right";src:url("/assets/fonts/barber-right.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Barber Outline";src:url("/assets/fonts/barber-outline.woff2") format("woff2");font-display:swap}
 
 :root {
-  --ink: #18302a;
-  --forest: #16382f;
-  --forest2: #225044;
-  --cream: #f5efe5;
-  --paper: #fffdf8;
-  --rust: #ad4f32;
+  --ink: #1f2528;
+  --forest: #2e5e5a;
+  --forest2: #5e8e86;
+  --cream: #f1e6d0;
+  --paper: #fffaf0;
+  --rust: #b4492f;
+  --canal-green: #2e5e5a;
+  --tin-green: #5e8e86;
+  --brick-red: #b4492f;
+  --chili-red: #d63a2a;
+  --tube-yellow: #e9a93a;
   /* V2 semantic CTA: warm mái-ngói orange, not the red editorial accent. */
   --tile-orange: #b4532c;
-  --cta-bg: var(--tile-orange);
-  --cta-hover: #943f21;
+  --cta-bg: var(--chili-red);
+  --cta-hover: #ad2c20;
   --cta-text: #ffffff;
   --cta-shadow: rgba(105, 43, 22, 0.30);
   --accent-border-soft: rgba(180, 83, 44, 0.22);
@@ -25,8 +35,14 @@
   --radius: 24px;
   --max: 1180px;
   /* Typography Foundation V2: one display font + one readable body/UI font. */
-  --type-font-family: "Roboto", "Segoe UI", Arial, sans-serif;
-  --type-display-font-family: "Oswald", "Arial Narrow", Impact, sans-serif;
+  --type-font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
+  --type-display-font-family: "Barber Complete", "Oswald", sans-serif;
+  --type-label-font-family: "Oswald", "Be Vietnam Pro", sans-serif;
+  --type-note-font-family: "Patrick Hand", cursive;
+  --type-stencil-font-family: "Saira Stencil One", "Oswald", sans-serif;
+  --heading-line-height: 1.17;
+  --heading-letter-spacing: .01em;
+  --heading-margin-bottom: 18px;
   --type-body: 1rem;
   --type-support: 1rem;
   --type-reading: 1.125rem;
@@ -115,9 +131,9 @@ button, input, select, textarea {
 /* All pages share the same heading family; individual page size scales stay intact. */
 h1, h2, h3 {
   font-family: var(--type-display-font-family);
-  line-height: 1.14;
-  margin: 0 0 16px;
-  letter-spacing: 0.005em;
+  line-height: var(--heading-line-height);
+  margin: 0 0 var(--heading-margin-bottom);
+  letter-spacing: var(--heading-letter-spacing);
   font-weight: 600;
   overflow-wrap: break-word;
 }
@@ -2350,3 +2366,11 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .site-header .nav-exp-chevron { transition: none; }
 }
+
+/* District 4 V2.1 shared semantic components */
+.eyebrow,.kicker{font-family:var(--type-label-font-family)}
+.btn.primary{background:var(--cta-bg);color:var(--cta-text);border-color:var(--cta-bg)}
+.btn.primary:hover{background:var(--cta-hover);border-color:var(--cta-hover)}
+.site-header .header-cta{background:var(--cta-bg)}
+:where(h1,h2,h3){text-wrap:pretty}
+@media(max-width:650px){:where(h1,h2,h3){line-height:1.2}}

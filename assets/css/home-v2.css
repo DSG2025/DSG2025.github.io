@@ -996,8 +996,8 @@ body.home-v2 .trust-review .trust-review-heading strong {
 
 /* OG SAIGON V2 STAGE 1 | Scoped homepage Hero A preview, no shared-site changes. */
 body.home-v2.og-v2-stage1 #home-intro {
- --cream:#f1e6d0; --paper:#f7edda; --ink:#1f2528; --forest:#243a35;
- --rust:#b65d42; --chili:#d63a2a; --signboard-blue:#2e6ba7; --muted:#394d49;
+ --cream:#f1e6d0; --paper:#fffaf0; --ink:#1f2528; --forest:#2e5e5a;
+ --rust:#b4492f; --chili:#d63a2a; --signboard-blue:#2e5e5a; --muted:#394d49;
  background:var(--cream);
 }
 body.home-v2.og-v2-stage1 #home-hero {padding:clamp(32px,4vw,58px) 0 clamp(40px,5vw,72px);background:var(--cream)}
@@ -1018,7 +1018,7 @@ body.home-v2.og-v2-stage1 #home-hero .hero-intro h1 {
  padding-block:.05em;text-shadow:1.5px 2px 0 #c4af89
 }
 body.home-v2.og-v2-stage1 #home-hero .og-v2-h1-accent {
- color:var(--cta-bg);text-shadow:2px 3px 0 #e0c4a4
+ color:var(--brick-red);text-shadow:2px 3px 0 var(--tube-yellow)
 }
 body.home-v2.og-v2-stage1 #home-hero .hero-lead {
  color:#33433e;font-size:clamp(1.05rem,1.55vw,1.22rem);max-width:540px;

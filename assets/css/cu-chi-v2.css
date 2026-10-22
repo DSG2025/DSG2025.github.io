@@ -1,5 +1,5 @@
 /* OG Saigon Cu Chi V2: all visual rules intentionally scoped to .cu-chi-v2. */
-.cu-chi-v2{--ink:#18302a;--deep:#243a35;--rust:#b65d42;--cream:#efeadd;--paper:#fffdf8;--muted:#60746c;--line:#dbdfd5;--soft:#f6f2e9;--radius:18px}
+.cu-chi-v2{--deep:var(--canal-green);--muted:#52645e;--soft:#f6f2e9;--radius:18px}
 .cu-chi-v2 *{box-sizing:border-box}
 .cu-chi-v2{scroll-behavior:smooth}
 .cu-chi-v2{margin:0;color:var(--ink);font:var(--type-body)/1.55 var(--type-font-family);background:var(--paper)}
@@ -27,7 +27,7 @@
 .cu-chi-v2 .lead{font-size:1.16rem;line-height:1.65;color:#4e655b;max-width:530px}
 .cu-chi-v2 .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .cu-chi-v2 .pill{border:1px solid #d8dacf;background:#fff;padding:8px 12px;border-radius:999px;font-weight:800;font-size:.82rem;line-height:1.25}
-.cu-chi-v2 .btn{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;padding:13px 22px;border-radius:100px;background:var(--rust);color:white;font-weight:850;margin-top:14px}
+.cu-chi-v2 .btn{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;padding:13px 22px;border-radius:100px;background:var(--cta-bg);color:white;font-weight:850;margin-top:14px}
 .cu-chi-v2 .hint{font-size:.78rem;color:var(--muted);margin:10px 0 0}
 .cu-chi-v2 .mosaic{display:grid;grid-template-columns:1.4fr .8fr;grid-template-rows:220px 220px;gap:10px}
 .cu-chi-v2 .mosaic img{border-radius:14px}
@@ -81,7 +81,7 @@
 .cu-chi-v2 .cta .eyebrow{color:#ffcbb5}
 .cu-chi-v2 .cta h2{max-width:680px}
 .cu-chi-v2 .cta p{color:#c9d6d0;max-width:650px}
-.cu-chi-v2 .cta .btn{background:#c77050}
+.cu-chi-v2 .cta .btn{background:var(--cta-bg)}
 .cu-chi-v2 .cta aside{font-size:.83rem;color:#c9d6d0;margin-top:10px}
 .cu-chi-v2 .related{padding:25px 0 55px;background:#f8f6f0;text-align:center}
 .cu-chi-v2 .related a{text-decoration:underline;text-underline-offset:3px;color:var(--rust);font-weight:800}
