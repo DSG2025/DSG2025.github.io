@@ -2480,3 +2480,33 @@ footer {
     pointer-events:none;
   }
 }
+
+/* OG Saigon shared breadcrumb: semantic, wrap-safe; page-specific colors and spacing stay intact. */
+body nav.og-breadcrumbs.og-breadcrumbs {
+  font-size: var(--type-label, .84rem);
+  font-weight: 800;
+  line-height: 1.6;
+}
+nav.og-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav.og-breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+}
+nav.og-breadcrumbs li + li::before {
+  content: "/";
+  margin: 0 .5rem;
+  color: inherit;
+  opacity: .65;
+}
+nav.og-breadcrumbs a:hover,
+nav.og-breadcrumbs a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
