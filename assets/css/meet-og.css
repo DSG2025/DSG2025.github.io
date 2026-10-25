@@ -142,3 +142,179 @@ body.meet-og-page .meetv1-hero h1{overflow-wrap:normal;}
 @media(max-width:760px){body.meet-og-page .meetv1-hero-copy p{font-size:1rem;} body.meet-og-page .meetv1-cta-actions .btn{width:100%;}}
 @media(max-width:360px){body.meet-og-page .meetv1-hero h1{font-size:clamp(3.6rem,19vw,4.2rem);}}
 @media(prefers-reduced-motion:reduce){body.meet-og-page .meetv1-button{transition:none;}}
+
+/* Meet the OG V2 | live-inspired street sign, compact photo collage and landscape moments.
+   All rules remain scoped to Meet the OG; shared OG Saigon typography/header are unchanged. */
+body.meet-og-page.meet-v2 .meetv1-hero {
+  overflow: hidden;
+  background: linear-gradient(126deg, #e9dfc9 0%, #f7eee0 60%, #e7e5da 100%);
+}
+body.meet-og-page.meet-v2 .meetv1-hero-grid {
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 1fr);
+  gap: clamp(24px, 3.8vw, 58px);
+  padding-block: clamp(45px, 5vw, 68px) clamp(65px, 6vw, 86px);
+  align-items: center;
+}
+body.meet-og-page.meet-v2 .meetv1-breadcrumbs { margin-bottom: 25px; }
+body.meet-og-page.meet-v2 .meetv2-sign {
+  position: relative;
+  max-width: 100%;
+  padding: clamp(20px, 2.8vw, 35px);
+  background: #eee0c6;
+  border: 3px solid #243a35;
+  box-shadow: 6px 7px 0 rgba(36, 58, 53, .23);
+  transform: rotate(-.7deg);
+}
+body.meet-og-page.meet-v2 .meetv2-sign::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 83%;
+  margin-top: 17px;
+  background: repeating-linear-gradient(90deg, #b4532c 0 60px, #d4aa7d 60px 66px, transparent 66px 72px);
+}
+body.meet-og-page.meet-v2 .meetv2-sign .meetv1-eyebrow {
+  margin: 0 0 16px;
+  color: #a8401f;
+  font-size: clamp(.73rem, 1vw, .92rem);
+  letter-spacing: .08em;
+  line-height: 1.4;
+}
+body.meet-og-page.meet-v2 .meetv2-sign .meetv1-eyebrow::before { display: none; }
+body.meet-og-page.meet-v2 .meetv2-sign h1 {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  color: #243a35;
+  font-family: var(--type-poster-font-family, "Oswald", sans-serif);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 4.6vw, 4.95rem);
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+  text-shadow: 2px 3px 0 rgba(181, 140, 93, .58);
+  font-synthesis: none;
+}
+body.meet-og-page.meet-v2 .meetv2-sign h1 span {
+  display: block;
+  white-space: nowrap;
+}
+body.meet-og-page.meet-v2 .meetv1-hero-intro {
+  margin-top: 30px;
+  padding-top: 0;
+  border-top: 0;
+}
+body.meet-og-page.meet-v2 .meetv1-hero-copy p {
+  max-width: 615px;
+  font-size: var(--type-reading, 1.125rem);
+  line-height: 1.7;
+}
+body.meet-og-page.meet-v2 .meetv2-collage {
+  display: grid;
+  position: relative;
+  min-width: 0;
+  height: clamp(330px, 39vw, 500px);
+  grid-template-columns: minmax(0, 1.22fr) minmax(0, .85fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  padding: 6px 9px 9px 0;
+}
+body.meet-og-page.meet-v2 .meetv2-collage > img:not(.meetv2-quan-tu-mark) {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 4px 4px 0 rgba(36, 58, 53, .22);
+}
+body.meet-og-page.meet-v2 .meetv2-collage-main {
+  grid-row: 1 / span 2;
+  object-position: 50% 52%;
+}
+body.meet-og-page.meet-v2 .meetv2-collage-food { object-position: 50% 48%; }
+body.meet-og-page.meet-v2 .meetv2-collage-alley { object-position: 50% 53%; }
+body.meet-og-page.meet-v2 .meetv2-quan-tu-mark {
+  position: absolute;
+  z-index: 2;
+  top: -21px;
+  right: -10px;
+  width: clamp(115px, 12vw, 170px);
+  height: auto;
+  transform: rotate(7deg);
+  filter: drop-shadow(3px 4px 0 rgba(36, 58, 53, .24));
+  pointer-events: none;
+}
+body.meet-og-page.meet-v2 .meetv1-roots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 465px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 50% 43%;
+}
+body.meet-og-page.meet-v2 .meetv1-host .meetv1-section-grid {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  align-items: center;
+}
+body.meet-og-page.meet-v2 .meetv2-host-media { min-width: 0; }
+body.meet-og-page.meet-v2 .meetv2-host-photo {
+  margin: 0 0 28px;
+  padding: 0 9px 9px 0;
+}
+body.meet-og-page.meet-v2 .meetv2-host-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 50% 43%;
+  border: 0;
+  box-shadow: 9px 9px 0 #52675d;
+}
+body.meet-og-page.meet-v2 .meetv1-host .meetv1-host-quote {
+  margin: 0;
+  padding-left: 21px;
+}
+body.meet-og-page.meet-v2 .meetv1-host-quote .meetv1-quote-mark {
+  left: 20px;
+  top: -30px;
+  font-size: 70px;
+}
+body.meet-og-page.meet-v2 .meetv1-host-quote p {
+  font-family: var(--type-display-font-family, "Oswald", sans-serif);
+  font-size: clamp(1.4rem, 1.7vw, 1.8rem);
+  line-height: 1.5;
+}
+@media (max-width: 920px) {
+  body.meet-og-page.meet-v2 .meetv1-hero-grid { grid-template-columns: 1fr; gap: 42px; }
+  body.meet-og-page.meet-v2 .meetv2-sign { width: min(680px, 100%); }
+  body.meet-og-page.meet-v2 .meetv2-sign h1 { font-size: clamp(3rem, 8vw, 5rem); }
+  body.meet-og-page.meet-v2 .meetv2-collage { width: min(700px, 100%); height: clamp(320px, 59vw, 460px); margin: 0 auto; }
+}
+@media (max-width: 760px) {
+  body.meet-og-page.meet-v2 .meetv1-hero-grid { padding-block: 30px 60px; gap: 35px; }
+  body.meet-og-page.meet-v2 .meetv1-breadcrumbs { margin-bottom: 22px; }
+  body.meet-og-page.meet-v2 .meetv2-sign { padding: 18px 16px; border-width: 2px; }
+  body.meet-og-page.meet-v2 .meetv2-sign h1 { font-size: clamp(2.5rem, 9.1vw, 4.65rem); line-height: 1.14; letter-spacing: 0; }
+  body.meet-og-page.meet-v2 .meetv2-sign .meetv1-eyebrow { font-size: .72rem; }
+  body.meet-og-page.meet-v2 .meetv1-hero-intro { margin-top: 24px; }
+  body.meet-og-page.meet-v2 .meetv1-hero-copy p { font-size: var(--type-reading, 1.125rem); line-height: 1.7; }
+  body.meet-og-page.meet-v2 .meetv2-collage { height: clamp(250px, 67vw, 400px); }
+  body.meet-og-page.meet-v2 .meetv2-quan-tu-mark { width: min(132px, 33vw); right: -3px; top: -17px; }
+  body.meet-og-page.meet-v2 .meetv1-roots img { max-height: 350px; aspect-ratio: 4 / 3; }
+  body.meet-og-page.meet-v2 .meetv1-host .meetv1-section-grid { grid-template-columns: 1fr; }
+  body.meet-og-page.meet-v2 .meetv2-host-photo img { max-height: 360px; }
+  body.meet-og-page.meet-v2 .meetv1-host-quote p { font-size: clamp(1.4rem, 5.6vw, 1.8rem); }
+}
+@media (max-width: 360px) {
+  body.meet-og-page.meet-v2 .meetv2-sign { padding: 16px 11px; }
+  body.meet-og-page.meet-v2 .meetv2-sign h1 { font-size: 2.35rem; }
+  body.meet-og-page.meet-v2 .meetv2-collage { height: 246px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.meet-og-page.meet-v2 .meetv2-sign { transform: none; }
+}
