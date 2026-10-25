@@ -1,23 +1,154 @@
-/* About V2 | warm brand bridge from Homepage A to founder story. */
-body.about-og-page .about-og-hero {background:linear-gradient(125deg,#f1e6d0,#fcf5e8 62%,#e8e4d5);border-bottom:1px solid rgba(36,58,53,.15)}
-body.about-og-page .about-og-hero .page-hero-grid {grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:clamp(26px,4vw,60px)}
-body.about-og-page .about-og-hero h1 {font-family:var(--type-display-font-family);font-size:clamp(2.65rem,4.5vw,4.6rem);line-height:1.08;letter-spacing:-.015em;text-wrap:balance;color:#243a35}
-body.about-og-page .about-og-hero .eyebrow {color:#a44d2e}
-body.about-og-page .about-hero-accent {color:var(--cta-bg);text-decoration:underline;text-underline-offset:.13em;text-decoration-color:rgba(180,83,44,.25);text-decoration-thickness:.06em}
-body.about-og-page .about-og-hero .lead {font-size:var(--type-lead);line-height:1.67;max-width:640px}
-body.about-og-page .about-neighborhood-greeting {max-width:540px;margin:16px 0 0;padding:12px 16px;border-left:3px solid #b4532c;background:rgba(255,250,240,.72);font-size:var(--type-support);line-height:1.65;color:#243a35}
-body.about-og-page .about-hero-actions {display:flex;gap:15px 22px;align-items:center;flex-wrap:wrap;margin-top:25px}
-body.about-og-page .about-hero-actions .text-link {color:#243a35;font-weight:800;text-decoration:underline;text-underline-offset:4px}
-body.about-og-page .about-hero-photo {position:relative;min-width:0;margin:0;padding:0 12px 12px 0}
-body.about-og-page .about-hero-photo img {display:block;width:100%;height:clamp(390px,40vw,520px);object-fit:cover;object-position:50% 43%;border-radius:3px;box-shadow:12px 12px 0 #243a35}
-body.about-og-page .about-hero-photo figcaption {position:absolute;bottom:12px;left:0;max-width:calc(100% - 12px);padding:11px 15px;color:#fffaf0;background:rgba(36,58,53,.94);font:800 .88rem/1.5 var(--type-font-family)}
-body.about-og-page .about-og-approach h2,body.about-og-page .about-og-vision h2 {font-family:var(--type-display-font-family);line-height:1.15;text-wrap:balance}
-body.about-og-page .about-og-approach .story-note {border-radius:6px;background:rgba(36,58,53,.94)}
-body.about-og-page .about-og-vision {background:#eae5d8;border-top:1px solid rgba(36,58,53,.12)}
-body.about-og-page .about-og-vision .story-grid {align-items:start;gap:clamp(34px,5vw,70px)}
-body.about-og-page .about-og-vision .lead {font-size:var(--type-reading);line-height:1.7}
-body.about-og-page .about-og-vision .bullets {list-style:none;counter-reset:vision;padding:0;margin:16px 0 0}
-body.about-og-page .about-og-vision .bullets li {counter-increment:vision;position:relative;margin:0 0 10px;padding:13px 15px 13px 53px;background:#fcf7ed;border-left:3px solid #b4532c;color:#243a35;line-height:1.67}
-body.about-og-page .about-og-vision .bullets li::before {content:counter(vision,decimal-leading-zero);position:absolute;left:14px;top:16px;font:800 .85rem/1.4 var(--type-font-family);color:#b4532c}
-@media(max-width:920px){body.about-og-page .about-og-hero .page-hero-grid{grid-template-columns:1fr}body.about-og-page .about-hero-photo img{height:clamp(300px,57vw,450px)}}
-@media(max-width:650px){body.about-og-page .about-og-hero h1{font-size:clamp(2.2rem,9.2vw,3.05rem)}body.about-og-page .about-hero-actions{flex-direction:column;align-items:stretch;gap:14px}body.about-og-page .about-hero-actions .btn{width:100%}body.about-og-page .about-hero-actions .text-link{text-align:center}body.about-og-page .about-hero-photo img{height:340px}body.about-og-page .about-og-vision .bullets li{padding-left:49px}}
+/* OG Saigon About V3, release candidate for 2026-11-01.
+   Page-scoped overrides only. Shared typography, CTAs, header, footer and JS
+   are inherited from assets/css/style.css, matching the existing Homepage. */
+body.about-og-page.about-v3 {
+  --forest:#243a35;
+  --ink:#243a35;
+  --cream:#efeadf;
+  --muted:#56675e;
+  --about-concrete:#e9e6dc;
+  --about-paper:#fffaf0;
+  --about-terracotta:#b4532c;
+  background:var(--cream);
+}
+body.about-v3 .about-v3-kicker,
+body.about-v3 .about-v3-chapter {
+  display:flex;align-items:center;gap:10px;color:#a44d2e;
+  font-family:var(--type-label-font-family);font-size:.82rem;
+  font-weight:600;text-transform:uppercase;letter-spacing:.085em;
+}
+body.about-v3 .about-v3-kicker::before {content:"";width:25px;height:2px;background:currentColor;flex:none}
+body.about-v3 .about-v3-lead {color:#445a50;font-size:var(--type-lead);line-height:1.67}
+body.about-v3 .about-v3-hero {
+  position:relative;background:#f1e6d0;border-bottom:1px solid var(--line);overflow:hidden;
+}
+body.about-v3 .about-v3-hero::before {content:"";position:absolute;inset:0 auto 0 0;width:8px;background:repeating-linear-gradient(180deg,#b4532c 0 45px,#e8bd94 45px 90px);opacity:.7}
+body.about-v3 .about-v3-hero-grid {
+  display:grid;grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr);
+  align-items:center;gap:clamp(30px,5vw,66px);padding-top:72px;padding-bottom:78px;
+}
+body.about-v3 .about-v3-hero-copy {min-width:0}
+body.about-v3 .about-v3-hero .breadcrumbs {margin-bottom:17px}
+body.about-v3 .about-v3-hero .about-v3-kicker {margin-bottom:17px}
+body.about-v3 .about-v3-hero h1 {
+  max-width:690px;margin:0 0 22px;font-family:var(--type-display-font-family);
+  font-weight:700;font-size:clamp(2.7rem,4.55vw,4.6rem);line-height:1.08;
+  letter-spacing:-.015em;text-wrap:balance;color:var(--forest);
+}
+body.about-v3 .about-v3-hero h1 span {color:var(--about-terracotta);text-decoration:underline;text-decoration-color:rgba(180,83,44,.29);text-underline-offset:.13em;text-decoration-thickness:.055em}
+body.about-v3 .about-v3-hero-copy>.about-v3-lead {max-width:600px;margin-bottom:20px}
+body.about-v3 .about-v3-greeting {
+  max-width:490px;margin:0 0 25px;padding:12px 16px;
+  border-left:3px solid var(--about-terracotta);background:rgba(255,250,240,.72);
+  font-size:var(--type-support);line-height:1.65;
+}
+body.about-v3 .about-v3-greeting strong {font-family:var(--type-note-font-family),var(--type-font-family);font-size:1.34rem;letter-spacing:.01em;color:var(--forest)}
+body.about-v3 .about-v3-actions {display:flex;align-items:center;flex-wrap:wrap;gap:15px 22px}
+body.about-v3 .about-v3-actions .text-link {color:var(--forest);text-decoration:underline;text-underline-offset:4px}
+body.about-v3 .about-v3-hero-photo {position:relative;min-width:0;margin:0;padding:0 12px 12px 0}
+body.about-v3 .about-v3-hero-photo>img:first-child {
+  width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center 46%;
+  border-radius:2px;box-shadow:12px 12px 0 var(--forest);
+}
+body.about-v3 .about-v3-hero-stamp {
+  position:absolute;top:-32px;right:-18px;z-index:2;
+  width:clamp(135px,15vw,190px);height:auto;transform:rotate(5deg);
+  filter:drop-shadow(3px 4px 0 rgba(36,58,53,.14));
+}
+body.about-v3 .about-v3-hero-photo figcaption {
+  position:absolute;left:0;bottom:12px;max-width:calc(100% - 12px);
+  padding:10px 15px;background:var(--forest);color:#fffaf0;
+  font-size:var(--type-caption);font-weight:800;line-height:1.5;
+}
+body.about-v3 .about-v3-ticket {background:#f7f2e8;border-bottom:1px solid var(--line)}
+body.about-v3 .about-v3-ticket>.wrap {display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:55px;flex-wrap:wrap;padding-block:9px}
+body.about-v3 .about-v3-ticket span {font-family:var(--type-label-font-family);font-size:.8rem;letter-spacing:.095em;color:#526158}
+body.about-v3 .about-v3-ticket span:first-child {color:var(--about-terracotta)}
+body.about-v3 .about-v3-section {padding:clamp(72px,8vw,112px) 0}
+body.about-v3 .about-v3-grid {
+  display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
+  gap:clamp(40px,6vw,90px);align-items:center;
+}
+body.about-v3 .about-v3-section h2 {
+  max-width:620px;margin:0 0 22px;font-family:var(--type-display-font-family);
+  font-size:clamp(2.4rem,4vw,3.95rem);font-weight:600;line-height:1.13;letter-spacing:-.012em;
+  text-wrap:balance;color:var(--forest);
+}
+body.about-v3 .about-v3-copy {min-width:0}
+body.about-v3 .about-v3-copy p {max-width:620px;font-size:var(--type-reading);line-height:1.73;margin:0 0 15px}
+body.about-v3 .about-v3-copy .about-v3-lead {font-size:var(--type-lead)}
+body.about-v3 .about-v3-chapter {margin-bottom:22px}
+body.about-v3 .about-v3-chapter span {
+  width:39px;height:35px;display:inline-flex;align-items:center;justify-content:center;
+  flex:none;border:1.5px solid currentColor;font-family:var(--type-label-font-family);
+  font-size:1.15rem;letter-spacing:0;transform:rotate(-2deg);
+}
+body.about-v3 .about-v3-media {position:relative;min-width:0;margin:0}
+body.about-v3 .about-v3-media img:not(.about-v3-hero-stamp) {display:block;width:100%;height:auto;object-fit:cover}
+body.about-v3 .about-v3-media figcaption {margin-top:13px;color:#5a6d60;font-size:.84rem;line-height:1.6}
+body.about-v3 .about-v3-roots {background:var(--about-paper)}
+body.about-v3 .about-v3-roots-media {grid-column:1;grid-row:1}
+body.about-v3 .about-v3-roots .about-v3-copy {grid-column:2;grid-row:1}
+body.about-v3 .about-v3-roots-media img {aspect-ratio:4/5;object-position:50% 36%}
+body.about-v3 .about-v3-roots-media::before {content:"";position:absolute;left:-13px;top:24%;height:68%;width:33px;border-left:2px solid var(--about-terracotta);border-bottom:2px solid var(--about-terracotta);pointer-events:none}
+body.about-v3 .about-v3-quote {font-family:var(--type-display-font-family);font-weight:600;font-size:1.5rem!important;color:var(--about-terracotta);line-height:1.24!important}
+body.about-v3 .about-v3-story-link {display:inline-block;font-size:var(--type-support);font-weight:800;color:var(--forest);text-decoration:underline;text-underline-offset:4px;min-height:40px;padding-top:7px}
+body.about-v3 .about-v3-approach {background:var(--about-concrete)}
+body.about-v3 .about-v3-approach .about-v3-grid {grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr)}
+body.about-v3 .about-v3-approach-media img {aspect-ratio:16/10;object-position:center;box-shadow:12px 12px 0 var(--forest)}
+body.about-v3 .about-v3-approach-media figcaption {margin-top:26px}
+body.about-v3 .about-v3-emphasis {font-family:var(--type-display-font-family);font-weight:600!important;font-size:1.6rem!important;line-height:1.26!important;color:var(--about-terracotta)}
+body.about-v3 .about-v3-future-team {padding-top:20px;border-top:1px solid var(--line)}
+body.about-v3 .about-v3-vision {background:var(--forest);color:#e2ede4;overflow:hidden}
+body.about-v3 .about-v3-vision .about-v3-grid {grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+body.about-v3 .about-v3-vision .about-v3-copy {grid-column:2;grid-row:1}
+body.about-v3 .about-v3-vision-media {grid-column:1;grid-row:1}
+body.about-v3 .about-v3-vision h2 {color:#fffaf0}
+body.about-v3 .about-v3-vision .about-v3-chapter {color:#f2bc92}
+body.about-v3 .about-v3-vision .about-v3-copy p,
+body.about-v3 .about-v3-vision .about-v3-lead {color:#e2ede4}
+body.about-v3 .about-v3-vision-media img {aspect-ratio:4/3;box-shadow:-11px 12px 0 rgba(255,255,255,.12)}
+body.about-v3 .about-v3-vision-media figcaption {margin-top:25px;color:#c1d5c7}
+body.about-v3 .about-v3-vision-sign {
+  position:absolute;right:-17px;top:-23px;z-index:1;transform:rotate(6deg);
+  background:#e4d6b7;color:var(--forest);border:2px solid #fcf2dc;
+  padding:9px 13px;font-family:var(--type-label-font-family);
+  font-size:1.35rem;line-height:1.12;text-align:center;box-shadow:3px 4px 0 rgba(0,0,0,.2);
+}
+body.about-v3 .about-v3-vision-sign small {display:block;color:#a44d2e;font-size:.63rem;letter-spacing:.09em;margin-top:3px}
+body.about-v3 .about-v3-outro {background:#f1e6d0;padding:65px 0;border-bottom:1px solid var(--line)}
+body.about-v3 .about-v3-outro-grid {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:26px;align-items:center}
+body.about-v3 .about-v3-outro h2 {font-family:var(--type-display-font-family);font-size:clamp(2.3rem,3.5vw,3.5rem);margin:10px 0 7px;color:var(--forest)}
+body.about-v3 .about-v3-outro p {margin:0;color:#50645a;font-size:var(--type-support)}
+body.about-v3 a:focus-visible {outline:3px solid #a44d2e;outline-offset:4px}
+@media(max-width:920px) {
+  body.about-v3 .about-v3-hero-grid,body.about-v3 .about-v3-grid,body.about-v3 .about-v3-approach .about-v3-grid,body.about-v3 .about-v3-vision .about-v3-grid {grid-template-columns:1fr;gap:36px}
+  body.about-v3 .about-v3-hero-grid {padding-block:50px 65px}
+  body.about-v3 .about-v3-hero-photo {width:min(680px,100%)}
+  body.about-v3 .about-v3-roots-media,body.about-v3 .about-v3-roots .about-v3-copy,body.about-v3 .about-v3-vision-media,body.about-v3 .about-v3-vision .about-v3-copy {grid-column:auto;grid-row:auto}
+  body.about-v3 .about-v3-approach-media,body.about-v3 .about-v3-roots-media,body.about-v3 .about-v3-vision-media {width:min(680px,100%)}
+}
+@media(max-width:650px) {
+  body.about-v3 .about-v3-hero::before {width:5px}
+  body.about-v3 .about-v3-hero-grid {padding-block:32px 55px;gap:34px}
+  body.about-v3 .about-v3-hero h1 {font-size:clamp(2.38rem,10vw,3.2rem);line-height:1.09;letter-spacing:-.02em}
+  body.about-v3 .about-v3-hero .about-v3-lead {font-size:1.06rem}
+  body.about-v3 .about-v3-actions {flex-direction:column;align-items:stretch;gap:12px}
+  body.about-v3 .about-v3-actions .btn {width:100%}
+  body.about-v3 .about-v3-actions .text-link {text-align:center;padding:10px}
+  body.about-v3 .about-v3-hero-photo>img:first-child {height:auto;aspect-ratio:6/5;object-position:50% 57%}
+  body.about-v3 .about-v3-hero-stamp {width:145px;right:3px;top:-24px}
+  body.about-v3 .about-v3-ticket>.wrap {gap:8px 15px;min-height:0;padding-block:15px}
+  body.about-v3 .about-v3-ticket span {font-size:.7rem}
+  body.about-v3 .about-v3-section {padding-block:62px}
+  body.about-v3 .about-v3-section h2 {font-size:clamp(2.18rem,8.6vw,3rem)}
+  body.about-v3 .about-v3-copy p {font-size:1.02rem;line-height:1.77}
+  body.about-v3 .about-v3-copy .about-v3-lead {font-size:1.09rem}
+  body.about-v3 .about-v3-roots-media img {aspect-ratio:4/5}
+  body.about-v3 .about-v3-approach-media img {aspect-ratio:16/11}
+  body.about-v3 .about-v3-vision-sign {font-size:1rem;top:-21px;right:4px;padding:7px 10px}
+  body.about-v3 .about-v3-outro {padding-block:52px}
+  body.about-v3 .about-v3-outro-grid {grid-template-columns:1fr}
+  body.about-v3 .about-v3-outro .btn {width:100%}
+}
+@media(prefers-reduced-motion:reduce) {body.about-v3 {scroll-behavior:auto}}
