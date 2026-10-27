@@ -19,8 +19,8 @@
 .hidden-food .hf-section-head h2 { margin-bottom:12px; }
 .hidden-food .hf-option-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:stretch; }
 .hidden-food .hf-option { min-width:0; display:flex; flex-direction:column; background:var(--paper); border:1px solid var(--hf-line); border-radius:18px; overflow:hidden; }
-.hidden-food .hf-option-image { margin:0; }
-.hidden-food .hf-option-image img { width:100%; aspect-ratio:16/9; object-fit:cover; }
+.hidden-food .hf-option-image { margin:0; min-width:0; overflow:hidden; }
+.hidden-food .hf-option-image img { display:block; width:100%; height:clamp(220px,22vw,310px); object-fit:cover; object-position:center; }
 .hidden-food .hf-option-image figcaption { margin:0; padding:9px 24px 0; }
 .hidden-food .hf-option-inner { display:flex; flex-direction:column; flex:1; padding:22px 26px 28px; }
 .hidden-food .hf-option-number { text-transform:uppercase; color:var(--text-accent); letter-spacing:.12em; font-size:.77rem; font-weight:800; margin:0 0 8px; }
@@ -43,9 +43,10 @@
 .hidden-food .hf-neighborhood figcaption { color:#d4dfd9; }
 .hidden-food .hf-light-link { color:#fff; font-weight:700; text-decoration:underline; text-underline-offset:4px; display:inline-block; margin-top:12px; }
 .hidden-food .hf-moments-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
-.hidden-food .hf-moments-grid figure { margin:0; min-width:0; }
-.hidden-food .hf-moments-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:12px; }
+.hidden-food .hf-moments-grid figure { margin:0; min-width:0; overflow:hidden; }
+.hidden-food .hf-moments-grid img { display:block; width:100%; height:clamp(185px,19vw,245px); object-fit:cover; object-position:center; border-radius:12px; }
 .hidden-food .hf-moments-grid figure:nth-child(2) img { object-position:center 38%; }
+.hidden-food #choose-your-table, .hidden-food #street-food, .hidden-food #seafood-night { scroll-margin-top:100px; }
 .hidden-food .hf-practical { background:#efeadd; }
 .hidden-food .hf-practical-grid { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(270px,.8fr); gap:clamp(24px,5vw,70px); align-items:start; }
 .hidden-food .hf-inline-link { color:var(--text-accent); text-decoration:underline; text-underline-offset:3px; font-weight:700; }
@@ -60,8 +61,12 @@
   .hidden-food .hf-hero { padding-top:38px; padding-bottom:52px; }
   .hidden-food .hf-hero h1 { font-size:clamp(2.4rem,10vw,3.4rem); }
   .hidden-food .hf-hero-photo img { aspect-ratio:4/3; }
-  .hidden-food .hf-option-grid, .hidden-food .hf-moments-grid { grid-template-columns:1fr; }
-  .hidden-food .hf-option-image img { aspect-ratio:4/3; }
+  .hidden-food .hf-option-grid { grid-template-columns:1fr; }
+  .hidden-food .hf-option-image img { height:208px; object-position:center 45%; }
+  .hidden-food .hf-moments-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px; }
+  .hidden-food .hf-moments-grid figure:first-child { grid-column:1 / -1; }
+  .hidden-food .hf-moments-grid img { height:168px; }
+  .hidden-food .hf-moments-grid figure:first-child img { height:214px; }
   .hidden-food .hf-option-inner { padding:20px; }
   .hidden-food .hf-quote { padding:27px 22px; }
   .hidden-food .hf-neighborhood img { height:310px; }
