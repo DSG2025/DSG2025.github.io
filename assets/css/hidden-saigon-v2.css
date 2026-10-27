@@ -1,0 +1,71 @@
+/* Hidden Saigon V2: page-scoped editorial layout. Do not modify shared OG Saigon styles. */
+.hidden-food { --hf-dark:#243a35; --hf-line:rgba(36,58,53,.16); }
+.hidden-food .hf-hero { padding-bottom:76px; }
+.hidden-food .hf-hero-grid { grid-template-columns: minmax(0,1.08fr) minmax(0,.92fr); gap:clamp(24px,4vw,56px); align-items:center; }
+.hidden-food .hf-hero h1 { font-size:clamp(2.65rem,5.4vw,4.65rem); line-height:1.08; max-width:760px; letter-spacing:.005em; }
+.hidden-food .hf-hero-quote { font-family:var(--type-display-font-family); font-size:clamp(1.24rem,2.1vw,1.7rem); font-weight:600; line-height:1.35; color:var(--hf-dark); margin:22px 0 12px; }
+.hidden-food .hf-hero .lead { max-width:630px; }
+.hidden-food .hf-hero-photo { margin:0; min-width:0; }
+.hidden-food .hf-hero-photo img { width:100%; aspect-ratio:4/3; height:auto; border-radius:14px; box-shadow:var(--shadow); object-fit:cover; }
+.hidden-food figcaption { margin-top:9px; font-size:.81rem; line-height:1.5; color:var(--muted); }
+.hidden-food .hf-intro-grid { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr); gap:clamp(24px,5vw,90px); align-items:center; }
+.hidden-food .hf-intro h2 { max-width:700px; }
+.hidden-food .hf-intro p:not(.eyebrow) { max-width:770px; }
+.hidden-food .hf-quote { margin:0; padding:36px 28px; background:#efe9dd; border-left:5px solid var(--cta-bg); border-radius:4px 16px 16px 4px; }
+.hidden-food .hf-quote p { font:600 clamp(1.6rem,2.7vw,2.25rem)/1.24 var(--type-display-font-family); margin:0 0 22px; color:var(--hf-dark); }
+.hidden-food .hf-quote span { font-size:.85rem; color:var(--muted); }
+.hidden-food .hf-choices { background:#efeadd; }
+.hidden-food .hf-section-head { max-width:880px; margin:0 0 35px; }
+.hidden-food .hf-section-head h2 { margin-bottom:12px; }
+.hidden-food .hf-option-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:stretch; }
+.hidden-food .hf-option { min-width:0; display:flex; flex-direction:column; background:var(--paper); border:1px solid var(--hf-line); border-radius:18px; overflow:hidden; }
+.hidden-food .hf-option-image { margin:0; }
+.hidden-food .hf-option-image img { width:100%; aspect-ratio:16/9; object-fit:cover; }
+.hidden-food .hf-option-image figcaption { margin:0; padding:9px 24px 0; }
+.hidden-food .hf-option-inner { display:flex; flex-direction:column; flex:1; padding:22px 26px 28px; }
+.hidden-food .hf-option-number { text-transform:uppercase; color:var(--text-accent); letter-spacing:.12em; font-size:.77rem; font-weight:800; margin:0 0 8px; }
+.hidden-food .hf-option h3 { font-size:clamp(1.6rem,2.4vw,2.15rem); margin-bottom:12px; }
+.hidden-food .hf-option-lead { font-size:1.03rem; line-height:1.68; margin:0 0 20px; }
+.hidden-food .hf-menu-group { border-top:1px solid var(--hf-line); margin-top:14px; padding-top:18px; }
+.hidden-food .hf-menu-group h4 { font-family:var(--type-display-font-family); font-size:1.15rem; font-weight:600; margin:0 0 12px; line-height:1.3; }
+.hidden-food .hf-menu-group ul { padding-left:1.25rem; margin:0; }
+.hidden-food .hf-menu-group li { margin:0 0 9px; padding-left:2px; line-height:1.6; }
+.hidden-food .hf-finish { margin-top:auto; padding:17px 18px; background:#eee9df; border-radius:10px; line-height:1.58; font-size:.95rem; }
+.hidden-food .hf-menu-group + .hf-finish { margin-top:20px; }
+.hidden-food .hf-text-link { display:inline-block; align-self:flex-start; margin-top:20px; color:var(--text-accent); text-decoration:underline; text-underline-offset:4px; font-weight:700; line-height:1.5; }
+.hidden-food .hf-text-link:hover { color:var(--hf-dark); }
+.hidden-food .hf-menu-note { margin:24px 0 0; max-width:940px; font-size:.9rem; line-height:1.7; color:var(--muted); }
+.hidden-food .hf-neighborhood { background:var(--hf-dark); }
+.hidden-food .hf-neighborhood-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:clamp(24px,6vw,85px); align-items:center; }
+.hidden-food .hf-neighborhood p:not(.eyebrow) { color:#e5ece9; }
+.hidden-food .hf-neighborhood figure { margin:0; }
+.hidden-food .hf-neighborhood img { width:100%; height:420px; object-fit:cover; object-position:center 35%; border-radius:14px; }
+.hidden-food .hf-neighborhood figcaption { color:#d4dfd9; }
+.hidden-food .hf-light-link { color:#fff; font-weight:700; text-decoration:underline; text-underline-offset:4px; display:inline-block; margin-top:12px; }
+.hidden-food .hf-moments-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.hidden-food .hf-moments-grid figure { margin:0; min-width:0; }
+.hidden-food .hf-moments-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:12px; }
+.hidden-food .hf-moments-grid figure:nth-child(2) img { object-position:center 38%; }
+.hidden-food .hf-practical { background:#efeadd; }
+.hidden-food .hf-practical-grid { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(270px,.8fr); gap:clamp(24px,5vw,70px); align-items:start; }
+.hidden-food .hf-inline-link { color:var(--text-accent); text-decoration:underline; text-underline-offset:3px; font-weight:700; }
+.hidden-food .hf-cta { background:var(--paper); border:1px solid var(--hf-line); border-radius:18px; padding:28px; }
+.hidden-food .hf-cta h3 { font-size:clamp(1.6rem,2.2vw,2rem); }
+.hidden-food .hf-cta .btn { width:100%; margin:14px 0 20px; text-align:center; }
+@media (max-width:920px) {
+  .hidden-food .hf-hero-grid, .hidden-food .hf-intro-grid, .hidden-food .hf-neighborhood-grid, .hidden-food .hf-practical-grid { grid-template-columns:1fr; }
+  .hidden-food .hf-neighborhood img { height:360px; }
+}
+@media (max-width:700px) {
+  .hidden-food .hf-hero { padding-top:38px; padding-bottom:52px; }
+  .hidden-food .hf-hero h1 { font-size:clamp(2.4rem,10vw,3.4rem); }
+  .hidden-food .hf-hero-photo img { aspect-ratio:4/3; }
+  .hidden-food .hf-option-grid, .hidden-food .hf-moments-grid { grid-template-columns:1fr; }
+  .hidden-food .hf-option-image img { aspect-ratio:4/3; }
+  .hidden-food .hf-option-inner { padding:20px; }
+  .hidden-food .hf-quote { padding:27px 22px; }
+  .hidden-food .hf-neighborhood img { height:310px; }
+  .hidden-food .hf-cta { padding:22px; }
+  .hidden-food .hero-actions .btn { width:100%; }
+}
+@media (prefers-reduced-motion:reduce) { .hidden-food * { scroll-behavior:auto; } }
