@@ -8,11 +8,11 @@
 .hidden-food .hf-hero-photo { margin:0; min-width:0; }
 .hidden-food .hf-hero-photo img { width:100%; aspect-ratio:4/3; height:auto; border-radius:14px; box-shadow:var(--shadow); object-fit:cover; }
 .hidden-food figcaption { margin-top:9px; font-size:.81rem; line-height:1.5; color:var(--muted); }
-.hidden-food .hf-intro-grid { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr); gap:clamp(24px,5vw,90px); align-items:center; }
-.hidden-food .hf-intro h2 { max-width:700px; }
-.hidden-food .hf-intro p:not(.eyebrow) { max-width:770px; }
-.hidden-food .hf-quote { margin:0; padding:36px 28px; background:#efe9dd; border-left:5px solid var(--cta-bg); border-radius:4px 16px 16px 4px; }
-.hidden-food .hf-quote p { font:600 clamp(1.6rem,2.7vw,2.25rem)/1.24 var(--type-display-font-family); margin:0 0 22px; color:var(--hf-dark); }
+.hidden-food .hf-intro { padding-top:36px; padding-bottom:46px; }
+.hidden-food .hf-intro-compact { max-width:890px; }
+.hidden-food .hf-intro-compact .eyebrow { margin:0 0 12px; }
+.hidden-food .hf-quote { margin:0; padding:24px 30px; background:#efe9dd; border-left:5px solid var(--cta-bg); border-radius:4px 14px 14px 4px; }
+.hidden-food .hf-quote p { font:600 clamp(1.5rem,2.6vw,2rem)/1.25 var(--type-display-font-family); margin:0 0 8px; color:var(--hf-dark); }
 .hidden-food .hf-quote span { font-size:.85rem; color:var(--muted); }
 .hidden-food .hf-choices { background:#efeadd; }
 .hidden-food .hf-section-head { max-width:880px; margin:0 0 35px; }
@@ -48,6 +48,16 @@
 .hidden-food .hf-text-link { display:inline-block; align-self:flex-start; margin-top:20px; color:var(--text-accent); text-decoration:underline; text-underline-offset:4px; font-weight:700; line-height:1.5; }
 .hidden-food .hf-text-link:hover { color:var(--hf-dark); }
 .hidden-food .hf-menu-note { margin:24px 0 0; max-width:940px; font-size:.9rem; line-height:1.7; color:var(--muted); }
+.hidden-food .hf-flow { background:var(--paper); }
+.hidden-food .hf-flow-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.hidden-food .hf-flow-card { background:#f3eee4; border:1px solid var(--hf-line); border-radius:16px; padding:26px 28px; min-width:0; }
+.hidden-food .hf-flow-card h3 { font-size:clamp(1.5rem,2.2vw,1.9rem); margin:0 0 23px; }
+.hidden-food .hf-flow-steps { list-style:none; counter-reset:hf-stop; padding:0; margin:0; }
+.hidden-food .hf-flow-steps li { counter-increment:hf-stop; display:grid; grid-template-columns:30px minmax(0,1fr); gap:0 12px; padding:0 0 21px; }
+.hidden-food .hf-flow-steps li:last-child { padding-bottom:0; }
+.hidden-food .hf-flow-steps li::before { content:counter(hf-stop,decimal-leading-zero); grid-row:span 2; display:flex; align-items:center; justify-content:center; width:29px; height:29px; border:1px solid var(--hf-line); border-radius:50%; color:var(--text-accent); font-size:.73rem; font-weight:800; }
+.hidden-food .hf-flow-stop { display:block; font-weight:700; color:var(--hf-dark); line-height:1.5; }
+.hidden-food .hf-flow-steps li span:last-child { display:block; line-height:1.55; color:var(--text); font-size:.95rem; }
 .hidden-food .hf-neighborhood { background:var(--hf-dark); }
 .hidden-food .hf-neighborhood-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:clamp(24px,6vw,85px); align-items:center; }
 .hidden-food .hf-neighborhood p:not(.eyebrow) { color:#e5ece9; }
@@ -67,7 +77,8 @@
 .hidden-food .hf-cta h3 { font-size:clamp(1.6rem,2.2vw,2rem); }
 .hidden-food .hf-cta .btn { width:100%; margin:14px 0 20px; text-align:center; }
 @media (max-width:920px) {
-  .hidden-food .hf-hero-grid, .hidden-food .hf-intro-grid, .hidden-food .hf-neighborhood-grid, .hidden-food .hf-practical-grid { grid-template-columns:1fr; }
+  .hidden-food .hf-hero-grid, .hidden-food .hf-neighborhood-grid, .hidden-food .hf-practical-grid { grid-template-columns:1fr; }
+  .hidden-food .hf-flow-grid { grid-template-columns:1fr; }
   .hidden-food .hf-neighborhood img { height:360px; }
 }
 @media (max-width:700px) {
@@ -83,7 +94,9 @@
   .hidden-food .hf-moments-grid img { height:168px; }
   .hidden-food .hf-moments-grid figure:first-child img, .hidden-food .hf-moments-grid figure:last-child img { height:214px; }
   .hidden-food .hf-option-inner { padding:20px; }
-  .hidden-food .hf-quote { padding:27px 22px; }
+  .hidden-food .hf-intro { padding-top:28px; padding-bottom:36px; }
+  .hidden-food .hf-quote { padding:21px 20px; }
+  .hidden-food .hf-flow-card { padding:23px 20px; }
   .hidden-food .hf-neighborhood img { height:310px; }
   .hidden-food .hf-cta { padding:22px; }
   .hidden-food .hero-actions .btn { width:100%; }
