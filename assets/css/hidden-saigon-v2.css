@@ -119,4 +119,129 @@
   .hidden-food .hf-cta { padding:22px; }
   .hidden-food .hero-actions .btn { width:100%; }
 }
+
+/* Hidden Saigon mobile Hero: approved Homepage photo-first rhythm.
+   Two horizontal OG photos, overlapping poster, then dark editorial body.
+   Scoped to this Experience only; desktop layout remains untouched. */
+@media (max-width:650px) {
+  .hidden-food .hf-hero {
+    padding:0;
+    overflow:hidden;
+    background:#213b34;
+  }
+  .hidden-food .hf-hero::before,
+  .hidden-food .hf-hero::after { display:none; }
+  .hidden-food .hf-hero-wrap { width:100%; max-width:none; }
+  .hidden-food .hf-hero-breadcrumbs {
+    width:100%; margin:0;
+    padding:10px 14px;
+    background:#f5efe5;
+    font-size:.75rem; line-height:1.45;
+  }
+  .hidden-food .hf-hero-grid {
+    display:flex; flex-direction:column; align-items:stretch;
+    gap:0; width:100%;
+  }
+  .hidden-food .hf-hero-collage {
+    order:-1; display:grid;
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:repeat(2,clamp(145px,42vw,174px));
+    width:100%; height:auto; margin:0; padding:0; gap:0;
+    overflow:hidden;
+  }
+  .hidden-food .hf-hero-collage > img:not(.hf-hero-sticker) {
+    width:100%; height:100%; max-width:none;
+    border:0; border-radius:0; box-shadow:none;
+    object-fit:cover;
+  }
+  .hidden-food .hf-hero-collage > .hf-hero-collage-alley {
+    display:block; grid-column:1; grid-row:1;
+    object-position:center 45%;
+  }
+  .hidden-food .hf-hero-collage > .hf-hero-collage-main {
+    display:block; grid-column:1; grid-row:2;
+    object-position:center 49%;
+  }
+  .hidden-food .hf-hero-collage > .hf-hero-collage-food { display:none; }
+  .hidden-food .hf-hero-collage > .hf-hero-sticker {
+    top:9px; right:9px; width:min(116px,31vw);
+  }
+  .hidden-food .hf-hero-copy {
+    position:relative; z-index:2;
+    width:calc(100% - 28px); max-width:650px;
+    margin:-33px auto 0;
+  }
+  .hidden-food .hf-hero-sign {
+    width:100%; max-width:none;
+    padding:14px 17px 15px;
+    border:2px solid rgba(99,76,47,.70);
+    border-radius:2px;
+    background-color:#f0e4ca;
+    box-shadow:5px 7px 0 rgba(41,40,30,.32);
+    transform:rotate(-.35deg);
+  }
+  .hidden-food .hf-sign-eyebrow {
+    margin:0 0 7px;
+    font-size:.76rem; line-height:1.2;
+    letter-spacing:.07em;
+    color:#21433e;
+  }
+  .hidden-food .hf-hero h1 {
+    font-family:var(--type-poster-font-family);
+    font-size:clamp(1.27rem,6.4vw,2rem);
+    font-weight:400; font-synthesis:none;
+    letter-spacing:.012em; line-height:1.10;
+    text-shadow:none;
+    overflow-wrap:normal;
+  }
+  .hidden-food .hf-hero h1 span:last-child { color:#b4532c; }
+  .hidden-food .hf-hero-sign::after {
+    height:3px; width:83%; margin-top:9px;
+  }
+  .hidden-food .hf-hero-body {
+    margin-top:9px;
+    padding:12px 15px 16px;
+    border-left:3px solid rgba(238,206,164,.75);
+    background:rgba(17,43,37,.94);
+    box-shadow:0 12px 26px rgba(9,25,23,.15);
+  }
+  .hidden-food .hf-hero-quote {
+    margin:0 0 7px;
+    font-size:clamp(1.25rem,5.1vw,1.65rem);
+    line-height:1.2; color:#fffaf0;
+  }
+  .hidden-food .hf-hero .lead {
+    margin:0;
+    color:#fffaf0;
+    font-size:.96rem; line-height:1.43;
+  }
+  .hidden-food .hf-hero .hero-actions {
+    margin:12px 0 0;
+  }
+  .hidden-food .hf-hero .hero-actions .btn {
+    width:100%; min-height:44px;
+  }
+  .hidden-food .hf-hero .facts {
+    margin-top:12px; gap:7px;
+  }
+  .hidden-food .hf-hero .fact {
+    padding:7px 10px;
+    background:rgba(255,250,240,.12);
+    color:#fffaf0;
+    border:1px solid rgba(255,250,240,.16);
+    font-size:.76rem;
+  }
+}
+@media (max-width:375px) {
+  .hidden-food .hf-hero-collage {
+    grid-template-rows:repeat(2,140px);
+  }
+  .hidden-food .hf-hero-sign {
+    padding:12px 15px 13px;
+  }
+  .hidden-food .hf-hero h1 {
+    font-size:clamp(1.22rem,6.4vw,1.48rem);
+  }
+}
+
 @media (prefers-reduced-motion:reduce) { .hidden-food * { scroll-behavior:auto; } }
