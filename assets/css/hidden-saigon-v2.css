@@ -2,7 +2,8 @@
 .hidden-food { --hf-dark:#243a35; --hf-line:rgba(36,58,53,.16); }
 .hidden-food .hf-hero { padding-bottom:72px; }
 .hidden-food .hf-hero-grid { grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr); gap:clamp(24px,4vw,56px); align-items:center; }
-.hidden-food .hf-hero h1 { font-size:clamp(2.65rem,5.4vw,4.65rem); line-height:1.08; max-width:760px; letter-spacing:.005em; }
+.hidden-food .hf-hero h1 { font-size:clamp(2.15rem,4.1vw,3.55rem); line-height:1.12; max-width:760px; letter-spacing:.005em; overflow-wrap:normal; }
+.hidden-food .hf-hero-brand { display:block; font-size:.44em; line-height:1.4; letter-spacing:.02em; margin-top:8px; color:var(--muted); }
 .hidden-food .hf-hero-quote { font-family:var(--type-display-font-family); font-size:clamp(1.3rem,2.1vw,1.75rem); font-weight:600; line-height:1.35; color:var(--hf-dark); margin:22px 0 12px; }
 .hidden-food .hf-hero .lead { max-width:620px; }
 .hidden-food .hf-hero-photo { margin:0; min-width:0; }
@@ -72,7 +73,8 @@
 }
 @media (max-width:700px) {
   .hidden-food .hf-hero { padding-top:38px; padding-bottom:50px; }
-  .hidden-food .hf-hero h1 { font-size:clamp(2.4rem,10vw,3.4rem); }
+  .hidden-food .hf-hero h1 { font-size:clamp(2.1rem,8.5vw,3rem); }
+  .hidden-food .hf-hero-brand { font-size:.48em; }
   .hidden-food .hf-intro { padding-top:24px; padding-bottom:34px; }
   .hidden-food .hf-quote { padding:21px 20px; }
   .hidden-food .hf-single-menu { padding:21px 20px; }
