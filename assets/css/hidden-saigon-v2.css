@@ -1,13 +1,29 @@
 /* Hidden Saigon | Good Seafood, Plastic Chairs. Page-scoped only. */
 .hidden-food { --hf-dark:#243a35; --hf-line:rgba(36,58,53,.16); }
-.hidden-food .hf-hero { padding-bottom:72px; }
-.hidden-food .hf-hero-grid { grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr); gap:clamp(24px,4vw,56px); align-items:center; }
-.hidden-food .hf-hero h1 { font-size:clamp(2.15rem,4.1vw,3.55rem); line-height:1.12; max-width:760px; letter-spacing:.005em; overflow-wrap:normal; }
-.hidden-food .hf-hero-brand { display:block; font-size:.44em; line-height:1.4; letter-spacing:.02em; margin-top:8px; color:var(--muted); }
-.hidden-food .hf-hero-quote { font-family:var(--type-display-font-family); font-size:clamp(1.3rem,2.1vw,1.75rem); font-weight:600; line-height:1.35; color:var(--hf-dark); margin:22px 0 12px; }
-.hidden-food .hf-hero .lead { max-width:620px; }
-.hidden-food .hf-hero-photo { margin:0; min-width:0; }
-.hidden-food .hf-hero-photo img { display:block; width:100%; aspect-ratio:4/3; height:auto; border-radius:14px; box-shadow:var(--shadow); object-fit:cover; }
+.hidden-food .hf-hero { position:relative; isolation:isolate; overflow:hidden; background:#f5efe5; padding:34px 0 72px; }
+.hidden-food .hf-hero::before { content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; background:repeating-linear-gradient(0deg,transparent 0 69px,rgba(58,45,31,.017) 70px 71px); }
+.hidden-food .hf-hero::after { content:""; position:absolute; top:0; bottom:0; left:0; width:6px; background:repeating-linear-gradient(to bottom,#b4532c 0 36px,#e6c8a9 36px 70px,#f8f2e6 70px 95px); opacity:.8; }
+.hidden-food .hf-hero-wrap { position:relative; }
+.hidden-food .hf-hero-breadcrumbs { margin:0 0 26px; }
+.hidden-food .hf-hero-grid { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); align-items:center; gap:clamp(28px,4.5vw,66px); }
+.hidden-food .hf-hero-copy { min-width:0; }
+.hidden-food .hf-hero-sign { position:relative; max-width:100%; min-width:0; padding:clamp(20px,2.7vw,34px); border:3px solid #243a35; background-color:#eee0c6; background-image:repeating-linear-gradient(6deg,rgba(75,61,45,.02) 0 1px,transparent 1px 10px); box-shadow:6px 7px 0 rgba(36,58,53,.22); transform:rotate(-.45deg); }
+.hidden-food .hf-hero-sign::after { content:""; display:block; width:82%; height:5px; margin-top:18px; background:repeating-linear-gradient(90deg,#b4532c 0 56px,#d4aa7d 56px 62px,transparent 62px 68px); }
+.hidden-food .hf-sign-eyebrow { margin:0 0 14px; font-family:var(--type-label-font-family); font-size:clamp(.78rem,1.1vw,.93rem); font-weight:800; line-height:1.4; letter-spacing:.13em; text-transform:uppercase; color:var(--text-accent); }
+.hidden-food .hf-hero h1 { margin:0; padding:0; font-family:var(--type-poster-font-family); font-weight:400; font-synthesis:none; font-size:clamp(1.95rem,3.05vw,3.15rem); line-height:1.14; color:#243a35; letter-spacing:.004em; text-transform:uppercase; text-shadow:2px 3px 0 rgba(181,140,93,.48); overflow-wrap:normal; }
+.hidden-food .hf-hero h1 span { display:block; }
+.hidden-food .hf-hero h1 span:last-child { color:#a8401f; }
+.hidden-food .hf-hero-quote { font-family:var(--type-display-font-family); font-size:clamp(1.38rem,2vw,1.85rem); font-weight:600; line-height:1.3; color:var(--hf-dark); margin:30px 0 8px; }
+.hidden-food .hf-hero .lead { max-width:600px; margin:0; font-size:clamp(1rem,1.35vw,1.14rem); line-height:1.65; }
+.hidden-food .hf-hero .hero-actions { margin:20px 0 15px; }
+.hidden-food .hf-hero .hero-actions .btn { min-height:44px; }
+.hidden-food .hf-hero .facts { margin-top:16px; }
+.hidden-food .hf-hero-collage { display:grid; position:relative; min-width:0; height:clamp(345px,38vw,472px); grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:minmax(0,2fr) minmax(0,1fr); gap:10px; padding:7px 10px 10px 0; }
+.hidden-food .hf-hero-collage > img:not(.hf-hero-sticker) { display:block; width:100%; height:100%; min-width:0; min-height:0; max-width:none; object-fit:cover; border-radius:3px; box-shadow:4px 4px 0 rgba(36,58,53,.22); }
+.hidden-food .hf-hero-collage-main { grid-column:1/-1; object-position:center 48%; }
+.hidden-food .hf-hero-collage-food { object-position:center 55%; }
+.hidden-food .hf-hero-collage-alley { object-position:center 49%; }
+.hidden-food .hf-hero-collage > .hf-hero-sticker { position:absolute; z-index:2; top:-15px; right:-7px; width:clamp(110px,10.5vw,148px); height:auto; transform:rotate(7deg); filter:drop-shadow(3px 4px 0 rgba(36,58,53,.23)); pointer-events:none; }
 .hidden-food figcaption { margin-top:9px; font-size:.81rem; line-height:1.5; color:var(--muted); }
 .hidden-food .hf-intro { padding-top:32px; padding-bottom:42px; }
 .hidden-food .hf-intro-compact { max-width:880px; }
@@ -68,13 +84,25 @@
 .hidden-food #the-food, .hidden-food #typical-route { scroll-margin-top:100px; }
 @media (max-width:920px) {
   .hidden-food .hf-hero-grid, .hidden-food .hf-single-grid, .hidden-food .hf-neighborhood-grid, .hidden-food .hf-practical-grid { grid-template-columns:1fr; }
+  .hidden-food .hf-hero-grid { gap:38px; }
+  .hidden-food .hf-hero-collage { width:min(700px,100%); height:clamp(300px,57vw,430px); margin:0 auto; }
+  .hidden-food .hf-hero h1 { font-size:clamp(2rem,4.9vw,3rem); }
   .hidden-food .hf-neighborhood img { height:350px; }
   .hidden-food .hf-flow-steps { gap:21px 25px; }
 }
 @media (max-width:700px) {
-  .hidden-food .hf-hero { padding-top:38px; padding-bottom:50px; }
-  .hidden-food .hf-hero h1 { font-size:clamp(2.1rem,8.5vw,3rem); }
-  .hidden-food .hf-hero-brand { font-size:.48em; }
+  .hidden-food .hf-hero { padding-top:22px; padding-bottom:44px; }
+  .hidden-food .hf-hero-breadcrumbs { margin-bottom:24px; }
+  .hidden-food .hf-hero-grid { gap:25px; }
+  .hidden-food .hf-hero-sign { padding:19px 17px; border-width:2px; box-shadow:4px 5px 0 rgba(36,58,53,.2); transform:none; }
+  .hidden-food .hf-sign-eyebrow { font-size:.76rem; margin-bottom:12px; }
+  .hidden-food .hf-hero h1 { font-size:clamp(1.6rem,6.9vw,2.55rem); letter-spacing:0; line-height:1.13; text-shadow:none; }
+  .hidden-food .hf-hero-sign::after { margin-top:13px; height:4px; }
+  .hidden-food .hf-hero-quote { margin-top:24px; font-size:clamp(1.4rem,5.4vw,1.8rem); }
+  .hidden-food .hf-hero .lead { font-size:1rem; }
+  .hidden-food .hf-hero .hero-actions { margin:18px 0 12px; }
+  .hidden-food .hf-hero-collage { width:100%; height:clamp(255px,69vw,335px); gap:7px; }
+  .hidden-food .hf-hero-collage > .hf-hero-sticker { width:min(112px,29vw); top:-10px; right:0; }
   .hidden-food .hf-intro { padding-top:24px; padding-bottom:34px; }
   .hidden-food .hf-quote { padding:21px 20px; }
   .hidden-food .hf-single-menu { padding:21px 20px; }
