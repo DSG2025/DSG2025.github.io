@@ -154,15 +154,17 @@
     border:0; border-radius:0; box-shadow:none;
     object-fit:cover;
   }
-  .hidden-food .hf-hero-collage > .hf-hero-collage-alley {
+  .hidden-food .hf-hero-collage > img.hf-hero-collage-main {
     display:block; grid-column:1; grid-row:1;
-    object-position:center 45%;
-  }
-  .hidden-food .hf-hero-collage > .hf-hero-collage-main {
-    display:block; grid-column:1; grid-row:2;
     object-position:center 49%;
   }
-  .hidden-food .hf-hero-collage > .hf-hero-collage-food { display:none; }
+  .hidden-food .hf-hero-collage > img.hf-hero-collage-food {
+    display:block; grid-column:1; grid-row:2;
+    object-position:center 55%;
+  }
+  .hidden-food .hf-hero-collage > img.hf-hero-collage-alley {
+    display:none;
+  }
   .hidden-food .hf-hero-collage > .hf-hero-sticker {
     top:9px; right:9px; width:min(116px,31vw);
   }
