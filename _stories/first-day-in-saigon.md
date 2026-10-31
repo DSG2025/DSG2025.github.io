@@ -15,6 +15,10 @@ hero_image: /assets/images/saigon-rainy-night-street-reflections.webp
 hero_alt: Rainy Saigon street at night with motorbikes and reflections
 hero_width: 900
 hero_height: 1200
+card_image: /assets/images/story-posters/first-day-in-saigon-poster.webp
+card_alt: "Vintage style poster for Your First Day in Saigon showing travelers on a motorbike"
+card_width: 1280
+card_height: 800
 index_excerpt: A practical guide to traffic, rain, heat, transport and leaving enough room to enjoy your first day.
 home_excerpt: Traffic, rain, heat, transport and why a little space in your schedule makes the city easier to enjoy.
 home_show_category: false

@@ -15,6 +15,10 @@ hero_image: /assets/images/cu-chi-trapdoor.webp
 hero_alt: Guest trying a concealed entrance at the Cu Chi Tunnels
 hero_width: 1448
 hero_height: 1086
+card_image: /assets/images/story-posters/cu-chi-without-crawling-poster.webp
+card_alt: "Cinematic illustrated poster for Cu Chi Without Crawling"
+card_width: 1280
+card_height: 800
 index_excerpt: What remains above ground, how physical the visit is, and how to decide whether the underground section is
   right for you.
 home_excerpt: What you can still experience at Cu Chi, how physical the visit is and what the tunnel crawl actually adds.

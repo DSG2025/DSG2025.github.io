@@ -319,7 +319,7 @@ layout: null
 {% assign home_stories = site.stories | where: "published", true | where: "homepage", true | sort: "date" | reverse %}
 {% for story in home_stories limit:2 %}
 <article class="story-index-card">
-<a href="{{ story.url }}"><img alt="{{ story.hero_alt | escape }}" decoding="async" height="{{ story.hero_height }}" loading="lazy" src="{{ story.hero_image }}" width="{{ story.hero_width }}"></a>
+<a href="{{ story.url }}"><img alt="{{ story.card_alt | default: story.hero_alt | escape }}" decoding="async" height="{{ story.card_height | default: story.hero_height }}" loading="lazy" src="{{ story.card_image | default: story.hero_image }}" width="{{ story.card_width | default: story.hero_width }}"></a>
 <div class="story-index-card-body">
 <div class="eyebrow">{{ story.category }}</div>
 <h3><a href="{{ story.url }}">{{ story.title }}</a></h3>

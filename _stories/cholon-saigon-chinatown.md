@@ -15,6 +15,10 @@ hero_image: /assets/images/cholon-binh-tay-market-exterior.webp
 hero_alt: Bình Tây Market in Chợ Lớn, Ho Chi Minh City
 hero_width: 1229
 hero_height: 1500
+card_image: /assets/images/story-posters/cholon-beyond-landmarks-poster.webp
+card_alt: "Illustrated poster for Cho Lon Beyond the Landmarks with Binh Tay Market"
+card_width: 1280
+card_height: 800
 hero_class: cholon-hero
 index_excerpt: A first-hand visual guide to Bình Tây Market, temple life, street food and the old neighbourhood texture of
   Saigon’s historic Chinese-Vietnamese quarter.
