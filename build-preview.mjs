@@ -16,7 +16,17 @@ for(const name of await fs.readdir('_stories')){if(!name.endsWith('.md'))continu
 const site={...config,stories,time:new Date()};
 await fs.rm(out,{recursive:true,force:true});await fs.mkdir(out,{recursive:true});
 async function write(rel,s){const dest=path.join(out,rel);await fs.mkdir(path.dirname(dest),{recursive:true});await fs.writeFile(dest,s);}
-function noindex(s){return s.replace(/<meta\s+name=["']robots["'][^>]*>/gi,'').replace('</head>','<meta name="robots" content="noindex, nofollow">\n</head>');}
+function noindex(s) {
+  return s
+    .replace(
+      /<meta\b(?=[^>]*\sname\s*=\s*(?:"robots"|'robots'|robots(?=[\s/>])))[^>]*>/gi,
+      ''
+    )
+    .replace(
+      /<\/head\s*>/i,
+      '<meta name="robots" content="noindex, nofollow">\n</head>'
+    );
+}
 async function walk(dir=''){for(const e of await fs.readdir(path.join(root,dir),{withFileTypes:true})){if(e.name.startsWith('.')||e.name.startsWith('_')||['node_modules','dist'].includes(e.name))continue;const rel=path.join(dir,e.name);if(e.isDirectory()){if(e.name==='assets'){await fs.cp(path.join(root,rel),path.join(out,rel),{recursive:true});}else await walk(rel);}else if(e.name.endsWith('.html')){const f=front(await fs.readFile(path.join(root,rel),'utf8'));await write(rel,noindex(await engine.parseAndRender(f.body,{site,page:f.data})));}else if(/\.(png|ico|webmanifest)$/.test(e.name)){await fs.copyFile(path.join(root,rel),path.join(out,rel));}}}
 await walk();
 const layout=await fs.readFile('_layouts/story.html','utf8');
