@@ -79,7 +79,7 @@
   <section class="page-hero story-article-hero{% if page.hero_class %} {{ page.hero_class }}{% endif %}">
     <div class="wrap page-hero-grid">
       <div>
-        <div class="breadcrumbs"><a href="/">Home</a> / <a href="/stories/">Stories</a> / {{ page.breadcrumb | default: page.category }}</div>
+        <nav class="breadcrumbs og-breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/stories/">Stories</a></li><li aria-current="page">{{ page.breadcrumb | default: page.title | escape }}</li></ol></nav>
         <div class="eyebrow">{{ page.eyebrow | default: page.category }}</div>
         <h1>{{ page.title }}</h1>
         <p class="lead">{{ page.lead | default: page.description }}</p>

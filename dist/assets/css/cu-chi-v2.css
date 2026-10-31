@@ -1,0 +1,164 @@
+/* OG Saigon Cu Chi V2: all visual rules intentionally scoped to .cu-chi-v2. */
+.cu-chi-v2{--deep:var(--canal-green);--muted:#52645e;--soft:#f6f2e9;--radius:18px}
+.cu-chi-v2 *{box-sizing:border-box}
+.cu-chi-v2{scroll-behavior:smooth}
+.cu-chi-v2{margin:0;color:var(--ink);font:var(--type-body)/1.55 var(--type-font-family);background:var(--paper)}
+.cu-chi-v2 a{color:inherit}
+.cu-chi-v2 a:focus-visible, .cu-chi-v2 summary:focus-visible{outline:3px solid #d68361;outline-offset:4px}
+.cu-chi-v2 img{display:block;width:100%;height:100%;object-fit:cover}
+.cu-chi-v2 h1, .cu-chi-v2 h2, .cu-chi-v2 h3, .cu-chi-v2 p{margin-top:0}
+.cu-chi-v2 h1, .cu-chi-v2 h2, .cu-chi-v2 h3{line-height:1.17;letter-spacing:.005em}
+.cu-chi-v2 h1{font-size:clamp(2.3rem,4.5vw,4.1rem)}
+.cu-chi-v2 h2{font-size:clamp(1.85rem,3.3vw,2.8rem)}
+.cu-chi-v2 h3{font-size:1.18rem}
+.cu-chi-v2 p{line-height:1.64}
+.cu-chi-v2 .wrap{width:min(1140px,calc(100% - 36px));margin:auto}
+.cu-chi-v2 .eyebrow{font-size:.76rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:var(--rust)}
+.cu-chi-v2 .preview{background:#fff3ce;color:#533817;text-align:center;padding:11px 16px;font-size:.85rem;font-weight:750;border-bottom:1px solid #f0dd9d}
+.cu-chi-v2 .topbar{background:var(--cream);border-bottom:1px solid var(--line)}
+.cu-chi-v2 .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.cu-chi-v2 .brand{text-decoration:none;font-weight:1000;letter-spacing:-.045em;font-size:1.35rem}
+.cu-chi-v2 .brand small{font-size:.62rem;display:block;letter-spacing:.18em;text-transform:uppercase;font-weight:750}
+.cu-chi-v2 .nav a:last-child{font-size:.84rem;font-weight:750;color:var(--rust)}
+.cu-chi-v2 .hero{padding:58px 0 64px;background:linear-gradient(180deg,#f5efe5,#fffdf8)}
+.cu-chi-v2 .hero-grid{display:grid;grid-template-columns:1fr 1.08fr;align-items:center;gap:45px}
+.cu-chi-v2 .crumb{color:var(--muted);font-size:.78rem;font-weight:650;margin-bottom:22px}
+.cu-chi-v2 .crumb a{text-decoration:underline;text-underline-offset:3px}
+.cu-chi-v2 .lead{font-size:1.16rem;line-height:1.65;color:#4e655b;max-width:530px}
+.cu-chi-v2 .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.cu-chi-v2 .pill{border:1px solid #d8dacf;background:#fff;padding:8px 12px;border-radius:999px;font-weight:800;font-size:.82rem;line-height:1.25}
+.cu-chi-v2 .btn{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;padding:13px 22px;border-radius:100px;background:var(--cta-bg);color:white;font-weight:850;margin-top:14px}
+.cu-chi-v2 .hint{font-size:.78rem;color:var(--muted);margin:10px 0 0}
+.cu-chi-v2 .mosaic{display:grid;grid-template-columns:1.4fr .8fr;grid-template-rows:220px 220px;gap:10px}
+.cu-chi-v2 .mosaic img{border-radius:14px}
+.cu-chi-v2 .mosaic img:first-child{grid-row:1/3}
+.cu-chi-v2 .mosaic img:nth-child(2){object-position:center}
+.cu-chi-v2 .mosaic img:nth-child(3){object-position:center}
+.cu-chi-v2 .gift-note{display:flex;gap:10px;align-items:flex-start;color:#6e4934;padding:13px 16px;margin-top:20px;background:#f9ece0;border-left:3px solid var(--rust);border-radius:0 10px 10px 0;line-height:1.5;font-size:.91rem}
+.cu-chi-v2 .section{padding:76px 0}
+.cu-chi-v2 .section.paper{background:#f8f6f0}
+.cu-chi-v2 .summary{background:#f0f1e9;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cu-chi-v2 .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cu-chi-v2 .summary-item{padding:9px 18px;border-right:1px solid #cfd6cc}
+.cu-chi-v2 .summary-item:last-child{border-right:0}
+.cu-chi-v2 .summary-item strong{font-size:.97rem;display:block;margin-bottom:4px}
+.cu-chi-v2 .summary-item span{font-size:.85rem;display:block;line-height:1.5;color:var(--muted)}
+.cu-chi-v2 .intro-row{display:grid;grid-template-columns:.88fr 1.12fr;gap:40px;align-items:start;margin-bottom:26px}
+.cu-chi-v2 .intro-row p{color:var(--muted);max-width:540px;margin-top:6px}
+.cu-chi-v2 .photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.cu-chi-v2 .photo-card{overflow:hidden;border-radius:16px;border:1px solid var(--line);background:white}
+.cu-chi-v2 .photo{height:250px}
+.cu-chi-v2 .photo.placeholder{background:linear-gradient(145deg,#d5ded4,#ede7d9);display:flex;justify-content:center;align-items:center;color:#476254;padding:20px;text-align:center;font-weight:800}
+.cu-chi-v2 .photo-card .copy{padding:16px 18px 20px}
+.cu-chi-v2 .photo-card h3{margin-bottom:7px}
+.cu-chi-v2 .photo-card p{margin:0;font-size:.9rem;color:var(--muted)}
+.cu-chi-v2 .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:26px}
+.cu-chi-v2 .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.cu-chi-v2 .num{font-weight:900;color:var(--rust);font-size:.86rem;margin-bottom:12px}
+.cu-chi-v2 .step h3{font-size:1.02rem;line-height:1.35;margin-bottom:8px}
+.cu-chi-v2 .step p{font-size:.88rem;color:var(--muted);margin:0}
+.cu-chi-v2 .smallnote{font-size:.9rem;color:var(--muted);margin-top:16px}
+.cu-chi-v2 .benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:27px}
+.cu-chi-v2 .benefit{padding:23px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.cu-chi-v2 .benefit .symbol{color:var(--rust);font-size:1.4rem;margin-bottom:13px}
+.cu-chi-v2 .benefit p{margin:0;color:var(--muted);font-size:.92rem}
+.cu-chi-v2 .split{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px}
+.cu-chi-v2 .terms{border-radius:18px;padding:25px 30px;background:white;border:1px solid var(--line)}
+.cu-chi-v2 .terms h3{font-size:1.25rem}
+.cu-chi-v2 .terms li{margin:11px 0;line-height:1.45;font-size:.96rem}
+.cu-chi-v2 .terms ul{padding-left:20px}
+.cu-chi-v2 .terms p{margin:20px 0 0;font-size:.87rem;color:var(--muted)}
+.cu-chi-v2 .faq{max-width:840px;margin:0 auto}
+.cu-chi-v2 .faq details{border-bottom:1px solid #d5dacf;padding:19px 0}
+.cu-chi-v2 .faq details:first-of-type{border-top:1px solid #d5dacf;margin-top:22px}
+.cu-chi-v2 .faq summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.cu-chi-v2 .faq summary::-webkit-details-marker{display:none}
+.cu-chi-v2 .faq summary:after{content:'+';font-size:1.5rem;font-weight:400;color:var(--rust)}
+.cu-chi-v2 .faq details[open] summary:after{content:'−'}
+.cu-chi-v2 .faq details p{margin:11px 0 3px;color:var(--muted)}
+.cu-chi-v2 .cta{padding:68px 0;background:var(--deep);color:white}
+.cu-chi-v2 .cta-grid{display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:20px}
+.cu-chi-v2 .cta .eyebrow{color:#ffcbb5}
+.cu-chi-v2 .cta h2{max-width:680px}
+.cu-chi-v2 .cta p{color:#c9d6d0;max-width:650px}
+.cu-chi-v2 .cta .btn{background:var(--cta-bg)}
+.cu-chi-v2 .cta aside{font-size:.83rem;color:#c9d6d0;margin-top:10px}
+.cu-chi-v2 .related{padding:25px 0 55px;background:#f8f6f0;text-align:center}
+.cu-chi-v2 .related a{text-decoration:underline;text-underline-offset:3px;color:var(--rust);font-weight:800}
+.cu-chi-v2 .foot{background:#142923;color:#cfdbd4;padding:27px 0;text-align:center;font-size:.84rem}
+@media(max-width:940px){.cu-chi-v2 .hero-grid{grid-template-columns:1fr;gap:26px}
+.cu-chi-v2 .mosaic{grid-template-rows:230px 230px}
+.cu-chi-v2 .summary-grid{grid-template-columns:1fr 1fr}
+.cu-chi-v2 .summary-item:nth-child(2){border-right:0}
+.cu-chi-v2 .summary-item:nth-child(-n+2){border-bottom:1px solid #cfd6cc;padding-bottom:20px}
+.cu-chi-v2 .intro-row{grid-template-columns:1fr;gap:0}
+.cu-chi-v2 .timeline{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:650px){.cu-chi-v2 .wrap{width:calc(100% - 28px)}
+.cu-chi-v2 .hero{padding:34px 0 42px}
+.cu-chi-v2 .mosaic{grid-template-columns:1fr 1fr;grid-template-rows:260px 150px;gap:8px}
+.cu-chi-v2 .mosaic img:first-child{grid-row:auto;grid-column:1/3}
+.cu-chi-v2 .mosaic img{border-radius:11px}
+.cu-chi-v2 .summary{padding:16px 0}
+.cu-chi-v2 .summary-grid{gap:0}
+.cu-chi-v2 .summary-item{padding:16px 10px!important;border-bottom:1px solid #cfd6cc}
+.cu-chi-v2 .summary-item:nth-child(even){border-right:0}
+.cu-chi-v2 .summary-item:nth-child(n+3){border-bottom:0}
+.cu-chi-v2 .section{padding:53px 0}
+.cu-chi-v2 .photo-grid, .cu-chi-v2 .benefits, .cu-chi-v2 .split{grid-template-columns:1fr}
+.cu-chi-v2 .photo-grid{gap:15px}
+.cu-chi-v2 .photo{height:235px}
+.cu-chi-v2 .timeline{grid-template-columns:1fr 1fr;gap:10px}
+.cu-chi-v2 .step{padding:16px}
+.cu-chi-v2 .terms{padding:20px}
+.cu-chi-v2 .cta{padding:50px 0}
+.cu-chi-v2 .cta-grid{grid-template-columns:1fr}
+.cu-chi-v2 .cta .btn{width:100%}
+.cu-chi-v2 .brand{font-size:1.15rem}
+.cu-chi-v2 .nav{min-height:62px}
+}
+.cu-chi-v2 .itinerary-intro{display:grid;grid-template-columns:1fr .85fr;align-items:center;gap:28px}
+.cu-chi-v2 .itinerary-lead{color:var(--muted);max-width:520px}
+.cu-chi-v2 .itinerary-photo, .cu-chi-v2 .optional-photo{margin:0}
+.cu-chi-v2 .itinerary-photo img{height:220px;border-radius:15px;object-fit:cover;object-position:center 53%}
+.cu-chi-v2 .itinerary-photo figcaption, .cu-chi-v2 .optional-photo figcaption{padding-top:7px;font-size:.78rem;color:var(--muted)}
+.cu-chi-v2 .optional-photo{margin-top:20px;border-top:1px solid var(--line);padding-top:18px}
+.cu-chi-v2 .optional-photo img{height:170px;object-fit:cover;object-position:center 54%;border-radius:12px}
+@media(max-width:940px){.cu-chi-v2 .itinerary-intro{grid-template-columns:1fr;gap:13px}
+}
+@media(max-width:650px){.cu-chi-v2 .itinerary-photo img{height:195px}
+.cu-chi-v2 .optional-photo img{height:165px}
+}
+
+/* Mobile readability and related-experience navigation, Cu Chi only. */
+.cu-chi-v2 .related {padding:48px 0 58px;text-align:left}
+.cu-chi-v2 .related h2 {font-size:clamp(1.65rem,3vw,2.25rem);margin:5px 0 22px}
+.cu-chi-v2 .related-links {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.cu-chi-v2 .related-links a {display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:94px;padding:19px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--deep);text-decoration:none;font-weight:800;line-height:1.45}
+.cu-chi-v2 .related-links a span {color:var(--rust);font-size:1.25rem}
+.cu-chi-v2 .related-links a:hover,.cu-chi-v2 .related-links a:focus-visible {border-color:var(--rust)}
+@media(max-width:650px) {
+  .cu-chi-v2 {font-size:17px;line-height:1.62}
+  .cu-chi-v2 .lead {font-size:1.1rem}
+  .cu-chi-v2 .crumb,.cu-chi-v2 .hint,.cu-chi-v2 .eyebrow {font-size:.88rem}
+  .cu-chi-v2 .pill {font-size:.9rem}
+  .cu-chi-v2 .gift-note {font-size:1rem}
+  .cu-chi-v2 .summary-item {padding:17px 12px!important}
+  .cu-chi-v2 .summary-item strong {font-size:1.04rem}
+  .cu-chi-v2 .summary-item span {font-size:1rem;line-height:1.55}
+  .cu-chi-v2 .photo-card p,.cu-chi-v2 .step p,.cu-chi-v2 .benefit p,.cu-chi-v2 .terms li,.cu-chi-v2 .terms p,.cu-chi-v2 .smallnote,.cu-chi-v2 .faq details p {font-size:1rem;line-height:1.65}
+  .cu-chi-v2 .step h3 {font-size:1.12rem}
+  .cu-chi-v2 .num {font-size:.95rem}
+  .cu-chi-v2 .terms {padding:22px}
+  .cu-chi-v2 .related {padding:42px 0 50px}
+  .cu-chi-v2 .related-links {grid-template-columns:1fr;gap:11px}
+  .cu-chi-v2 .related-links a {min-height:66px;padding:16px 18px;font-size:1rem}
+  .cu-chi-v2 .related h2 {font-size:1.85rem}
+  .cu-chi-v2 .itinerary-photo figcaption,.cu-chi-v2 .optional-photo figcaption {font-size:.9rem}
+}
+
+/* Typography Foundation V1: semantic sizes, Cu Chi layout remains page-scoped. */
+.cu-chi-v2 .lead {font-size:var(--type-lead)}
+.cu-chi-v2 .summary-item span,.cu-chi-v2 .photo-card p,.cu-chi-v2 .step p,.cu-chi-v2 .benefit p,.cu-chi-v2 .terms li,.cu-chi-v2 .terms p,.cu-chi-v2 .smallnote,.cu-chi-v2 .faq details p {font-size:var(--type-support)}
+.cu-chi-v2 .itinerary-photo figcaption,.cu-chi-v2 .optional-photo figcaption {font-size:var(--type-caption)}
+.cu-chi-v2 .eyebrow,.cu-chi-v2 .crumb,.cu-chi-v2 .hint,.cu-chi-v2 .pill {font-size:var(--type-label)}

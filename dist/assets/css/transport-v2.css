@@ -1,0 +1,102 @@
+/* OG Saigon Transport V2. Page-scoped layout on top of Typography Foundation V1. */
+.transport-v2{color:var(--ink);font-family:var(--type-font-family)}
+.transport-v2 h1,.transport-v2 h2,.transport-v2 h3{line-height:1.19;letter-spacing:.005em}
+.transport-v2 h1{font-size:clamp(2.4rem,4.4vw,3.75rem)}
+.transport-v2 h2{font-size:clamp(1.85rem,3.2vw,2.6rem)}
+.transport-v2 h3{font-size:clamp(1.17rem,1.8vw,1.38rem)}
+.transport-v2 p,.transport-v2 li{line-height:1.65}
+.transport-v2 a:focus-visible,.transport-v2 summary:focus-visible{outline:3px solid var(--rust);outline-offset:4px}
+.transport-v2 .transport-hero-v2{padding:58px 0 65px;background:linear-gradient(180deg,#f5efe5,#fffdf8)}
+.transport-v2 .transport-breadcrumb{margin-bottom:20px;color:var(--muted);font-size:var(--type-label)}
+.transport-v2 .transport-breadcrumb a{text-decoration:underline;text-underline-offset:3px}
+.transport-v2 .transport-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:42px;align-items:center}
+.transport-v2 .transport-hero-copy{min-width:0}
+.transport-v2 .transport-lead{max-width:650px;margin:16px 0 22px;font-size:var(--type-lead);line-height:1.65;color:var(--muted)}
+.transport-v2 .transport-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin:23px 0 12px}
+.transport-v2 .transport-btn{min-height:48px;padding:13px 22px;text-align:center;font-size:var(--type-support)}
+.transport-v2 .transport-note{margin:8px 0;color:var(--muted);font-size:var(--type-caption)}
+.transport-v2 .transport-pills{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
+.transport-v2 .transport-pills span{padding:9px 12px;border:1px solid var(--line);background:#fff;border-radius:999px;font-size:var(--type-label);font-weight:800;line-height:1.3}
+.transport-v2 .transport-photos{display:grid;grid-template-columns:1.4fr .8fr;gap:10px;height:360px;min-width:0}
+.transport-v2 .transport-photos img{display:block;width:100%;height:100%;object-fit:cover;border-radius:16px}
+.transport-v2 .transport-photos img:first-child{object-position:center}
+.transport-v2 .transport-photos img:last-child{object-position:55% center}
+.transport-v2 .transport-summary{padding:27px 0;background:#f0f1e9;border-block:1px solid var(--line)}
+.transport-v2 .transport-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.transport-v2 .transport-summary-item{padding:9px 19px;border-right:1px solid #cfd6cc}
+.transport-v2 .transport-summary-item:last-child{border:0}
+.transport-v2 .transport-summary-item strong{display:block;font-size:1.04rem;margin-bottom:5px}
+.transport-v2 .transport-summary-item p{margin:0;color:var(--muted);font-size:var(--type-support);line-height:1.55}
+.transport-v2 .transport-section{padding:70px 0}
+.transport-v2 .transport-section.paper{background:#f8f6f0}
+.transport-v2 .transport-section-intro{max-width:780px;margin-bottom:25px}
+.transport-v2 .transport-section-intro h2{margin-bottom:12px}
+.transport-v2 .transport-section-intro p{margin:0;color:var(--muted);font-size:var(--type-support)}
+.transport-v2 .transport-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.transport-v2 .transport-step{border:1px solid var(--line);border-radius:17px;background:#fff;padding:23px;min-width:0}
+.transport-v2 .transport-step-num{display:flex;align-items:center;justify-content:center;width:41px;height:41px;border-radius:50%;background:var(--forest);color:#fff;font-weight:900;margin-bottom:16px}
+.transport-v2 .transport-step h3{font-size:1.16rem;line-height:1.35;margin-bottom:9px}
+.transport-v2 .transport-step p{font-size:var(--type-support);color:var(--muted);margin:0}
+.transport-v2 .transport-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.transport-v2 .transport-panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}
+.transport-v2 .transport-panel h3{font-size:1.33rem;margin:0 0 15px}
+.transport-v2 .transport-panel p{font-size:var(--type-support);color:var(--muted);margin:0 0 12px}
+.transport-v2 .transport-panel ul{padding-left:21px;margin:0}
+.transport-v2 .transport-panel li{font-size:var(--type-support);padding:3px 0}
+.transport-v2 .transport-panel .transport-small{font-size:var(--type-caption);line-height:1.6}
+.transport-v2 .transport-service-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:23px}
+.transport-v2 .transport-service-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:95px;padding:19px;border:1px solid var(--line);border-radius:15px;background:#fff;font-size:var(--type-support);line-height:1.45;font-weight:800;text-decoration:none;color:var(--ink)}
+.transport-v2 .transport-service-links a:hover{border-color:var(--rust)}
+.transport-v2 .transport-service-links a span{color:var(--rust);font-size:1.25rem}
+.transport-v2 .transport-faq{max-width:880px;margin:auto}
+.transport-v2 .transport-faq h2{margin-bottom:23px}
+.transport-v2 .transport-faq details{padding:19px 0;border-bottom:1px solid #d2d9cf}
+.transport-v2 .transport-faq details:first-of-type{border-top:1px solid #d2d9cf}
+.transport-v2 .transport-faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;font-size:var(--type-support);font-weight:800;line-height:1.48}
+.transport-v2 .transport-faq summary::-webkit-details-marker{display:none}
+.transport-v2 .transport-faq summary:after{content:"+";color:var(--rust);font-size:1.45rem;font-weight:400}
+.transport-v2 .transport-faq details[open] summary:after{content:"−"}
+.transport-v2 .transport-faq details p{margin:11px 0 2px;color:var(--muted);font-size:var(--type-support)}
+.transport-v2 .transport-final{background:var(--forest);color:#fff;padding:65px 0}
+.transport-v2 .transport-final-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:center}
+.transport-v2 .transport-final .eyebrow{color:#efb18e}
+.transport-v2 .transport-final h2{color:#fff;margin:0 0 12px}
+.transport-v2 .transport-final p{color:#d3e0da;font-size:var(--type-support);max-width:650px}
+.transport-v2 .transport-final .btn{width:100%;max-width:340px}
+.transport-v2 .transport-related{background:#f8f6f0;padding:42px 0}
+.transport-v2 .transport-related h2{font-size:1.7rem;margin-bottom:20px}
+@media(max-width:960px){
+  .transport-v2 .transport-hero-grid{grid-template-columns:1fr;gap:24px}
+  .transport-v2 .transport-photos{height:340px}
+  .transport-v2 .transport-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .transport-v2 .transport-summary-item:nth-child(2){border-right:0}
+  .transport-v2 .transport-summary-item:nth-child(-n+2){border-bottom:1px solid #cfd6cc;padding-bottom:17px}
+  .transport-v2 .transport-summary-item:nth-child(n+3){padding-top:17px}
+  .transport-v2 .transport-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  .transport-v2 h1{font-size:clamp(2.03rem,8vw,2.35rem);line-height:1.15}
+  .transport-v2 h2{font-size:clamp(1.72rem,7vw,2rem);line-height:1.2}
+  .transport-v2 h3{font-size:1.2rem}
+  .transport-v2 .transport-hero-v2{padding:32px 0 43px}
+  .transport-v2 .transport-breadcrumb{font-size:var(--type-label)}
+  .transport-v2 .transport-lead{font-size:var(--type-lead);margin:15px 0 19px}
+  .transport-v2 .transport-hero-actions .btn{width:100%}
+  .transport-v2 .transport-photos{grid-template-columns:1fr 1fr;height:220px;gap:8px}
+  .transport-v2 .transport-photos img{border-radius:12px}
+  .transport-v2 .transport-summary{padding:14px 0}
+  .transport-v2 .transport-summary-item{padding:17px 12px}
+  .transport-v2 .transport-summary-item strong{font-size:1.01rem}
+  .transport-v2 .transport-summary-item p{font-size:var(--type-support);line-height:1.5}
+  .transport-v2 .transport-section{padding:51px 0}
+  .transport-v2 .transport-steps,.transport-v2 .transport-split,.transport-v2 .transport-service-links{grid-template-columns:1fr;gap:12px}
+  .transport-v2 .transport-step{display:grid;grid-template-columns:40px minmax(0,1fr);gap:0 14px;padding:19px}
+  .transport-v2 .transport-step-num{grid-row:span 2;margin:0}
+  .transport-v2 .transport-step h3{margin-bottom:4px}
+  .transport-v2 .transport-panel{padding:22px}
+  .transport-v2 .transport-service-links a{min-height:66px;padding:16px}
+  .transport-v2 .transport-final{padding:52px 0}
+  .transport-v2 .transport-final-grid{grid-template-columns:1fr;gap:20px}
+  .transport-v2 .transport-final .btn{max-width:none}
+  .transport-v2 .transport-related{padding:39px 0 49px}
+}
