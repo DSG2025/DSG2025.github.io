@@ -813,7 +813,8 @@ body.home-v2 .intent-arrow { color: var(--rust); font-size: 1.5rem; }
 body.home-v2 .experience-card { min-width: 0; background: transparent; border: 0; box-shadow: none; }
 body.home-v2 .experience-card .card-body > p:not(.experience-meta) { color: var(--muted); }
 body.home-v2 .founder-copy .eyebrow,
-body.home-v2 .founder-actions .text-link { color: #efb18e; }
+body.home-v2 .founder-actions .text-link { color: #f96a02; }
+body.home-v2 .founder-actions .text-link { text-decoration: underline; text-underline-offset: 3px; }
 body.home-v2 .founder-copy p { color: #cfddd7; }
 body.home-v2 .founder-principles { margin: 24px 0 14px; }
 body.home-v2 .founder-principles > div { padding: 16px 0; border-top: 1px solid rgba(255,255,255,.18); }
@@ -1404,4 +1405,15 @@ body.home-v2 .story-card-body > .text-link {
   margin-top: auto;
   padding-top: 8px;
   align-self: flex-start;
+}
+
+/* Homepage shares Stories index card CSS, with page-specific grid and h3 scale. */
+body.home-v2 .stories-section .story-index-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+body.home-v2 .stories-section .story-index-card-body h3 {
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;
+  overflow:hidden; margin:0; min-height:0; font-family:var(--type-display-font-family);
+  font-size:clamp(1.45rem,2vw,1.9rem); line-height:1.24; overflow-wrap:anywhere;
+}
+@media(max-width:650px) {
+  body.home-v2 .stories-section .story-index-grid { grid-template-columns:1fr; }
 }
