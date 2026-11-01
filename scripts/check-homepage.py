@@ -104,7 +104,7 @@ assert len(one('meet-duy').all('img'))==1
 assert one('meet-duy').all('img')[0].attrs['src']=='/assets/images/duy-guiding-guests-cu-chi-tunnels.webp'
 assert len(one('traveler-reviews').all('article'))==2
 assert 'Casandra' not in home.text
-assert len(one('traveler-reviews').all(cls='review-platform-proof'))==4
+assert len(one('traveler-reviews').all(cls='review-platform-proof'))==5
 assert len(one('traveler-reviews').all(cls='review-platform-row')[0].all('a'))==5
 trustpilot_url='https://www.trustpilot.com/review/ogsaigon.com'
 trustpilot_links=[a for a in one('traveler-reviews').all('a') if a.attrs.get('href')==trustpilot_url]
