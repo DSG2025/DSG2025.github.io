@@ -104,7 +104,12 @@ assert len(one('meet-duy').all('img'))==1
 assert one('meet-duy').all('img')[0].attrs['src']=='/assets/images/duy-guiding-guests-cu-chi-tunnels.webp'
 assert len(one('traveler-reviews').all('article'))==2
 assert 'Casandra' not in home.text
-assert len(one('traveler-reviews').all(cls='review-platform-proof'))==3
+assert len(one('traveler-reviews').all(cls='review-platform-proof'))==5
+assert len(one('traveler-reviews').all(cls='review-platform-row')[0].all('a'))==5
+trustpilot_url='https://www.trustpilot.com/review/ogsaigon.com'
+trustpilot_links=[a for a in one('traveler-reviews').all('a') if a.attrs.get('href')==trustpilot_url]
+assert len(trustpilot_links)==1 and trustpilot_links[0].text=='Trustpilot' and not trustpilot_links[0].all('img')
+assert trustpilot_links[0].attrs.get('target')=='_blank' and 'noopener' in trustpilot_links[0].attrs.get('rel','')
 maps_url='https://maps.app.goo.gl/WbifDsGKfHmSeFuR7'
 review_maps=[a for a in one('traveler-reviews').all('a') if a.attrs.get('href')==maps_url]
 assert len(review_maps)==1 and review_maps[0].text=='View OG Saigon on Google Maps →'

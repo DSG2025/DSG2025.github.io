@@ -2113,7 +2113,7 @@ footer {
 .footer-perk {
   max-width: 440px;
   margin: 12px 0 0;
-  color: #e6cda9;
+  color: #f96a02;
   font-size: 0.87rem;
   line-height: 1.5;
 }
@@ -2156,7 +2156,7 @@ footer {
   flex: 0 0 18px;
   width: 18px;
   height: 18px;
-  color: #e4b99e;
+  color: #f96a02;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
@@ -2462,7 +2462,7 @@ footer {
     content:"";
     position:absolute;
     top:0;bottom:0;left:-16px;
-    border-left:1px solid rgba(220,149,93,.55);
+    border-left:1px solid rgba(249,106,2,.32);
     pointer-events:none;
   }
 }
@@ -2476,7 +2476,7 @@ footer {
   .site-footer .footer-grid > div + div::before {
     content:"";
     position:absolute;top:-16px;left:0;right:0;
-    border-top:1px solid rgba(220,149,93,.55);
+    border-top:1px solid rgba(249,106,2,.32);
     pointer-events:none;
   }
 }
