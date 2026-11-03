@@ -844,6 +844,11 @@ footer {
   color: #fff;
 }
 
+/* Official Trustpilot green on the dark footer background. */
+.site-footer .footer-grid a.footer-trustpilot-link {
+  color: #00b67a;
+}
+
 .footer-muted {
   color: #9eb1a9;
 }
