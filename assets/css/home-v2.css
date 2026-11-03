@@ -895,7 +895,7 @@ body.home-v2 .reviews-proof h3 {
 }
 
 body.home-v2 .reviews-proof .review-platform-row {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
   margin-top: 16px;
 }
@@ -915,6 +915,11 @@ body.home-v2 .reviews-proof .review-platform-proof {
   color: var(--ink);
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+/* Trustpilot green for legible text on white. */
+body.home-v2 .reviews-proof .review-platform-proof.review-platform-trustpilot {
+  color: #008558;
 }
 
 body.home-v2 .reviews-proof .review-platform-proof:hover {
@@ -938,6 +943,12 @@ body.home-v2 .reviews-proof-note {
   line-height: 1.5;
 }
 
+@media (min-width: 721px) and (max-width: 1050px) {
+  body.home-v2 .reviews-proof .review-platform-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 720px) {
   body.home-v2 .testimonial-quote--featured {
     -webkit-line-clamp: 6;
@@ -954,7 +965,7 @@ body.home-v2 .reviews-proof-note {
   }
 }
 
-/* Reviews trust row: make all four platform links easier to recognize. */
+/* Reviews trust row: make all five platform links easier to recognize. */
 body.home-v2 .reviews-proof .review-platform-proof::after {
   content: "↗";
   margin-left: auto;
