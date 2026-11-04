@@ -14,6 +14,10 @@ hero_image: /assets/images/saigon-rain-food-tour-local-host.webp
 hero_alt: OG Saigon guests and local hosts sheltering from heavy rain during a food tour
 hero_width: 900
 hero_height: 1155
+card_image: /assets/images/story-posters/saigon-rain-poster.webp
+card_alt: "Illustrated cinematic poster for Saigon Doesn't Stop When It Rains"
+card_width: 1280
+card_height: 800
 index_excerpt: Five photographs from a rainy food evening, when shelter, shared drinks and bánh mì became part of the experience.
 breadcrumb: One rainy evening
 side_eyebrow: Explore with a local

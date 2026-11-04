@@ -14,6 +14,10 @@ hero_image: /assets/images/district-4-saigon-alley-local-life.webp
 hero_alt: "A narrow residential alley in old District 4, Saigon, with scooters, homes and hanging decorations"
 hero_width: 1200
 hero_height: 900
+card_image: /assets/images/story-posters/district-4-alleys-poster.webp
+card_alt: "Cinematic poster for Inside Saigon's District 4 Alleys and underworld legends"
+card_width: 1280
+card_height: 800
 index_excerpt: "A fifth-generation District 4 local looks beyond Năm Cam and old underworld legends to the alleys, everyday life and transformation of the neighborhood."
 home_excerpt: "The alleys of old District 4 carry underworld legends, family memories and a very different Saigon today."
 home_show_category: true

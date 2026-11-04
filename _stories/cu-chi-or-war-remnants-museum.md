@@ -15,6 +15,10 @@ hero_image: /assets/images/war-museum.webp
 hero_alt: War Remnants Museum in Ho Chi Minh City
 hero_width: 1280
 hero_height: 990
+card_image: /assets/images/story-posters/cu-chi-or-museum-poster.webp
+card_alt: "Illustrated poster comparing Cu Chi and the War Remnants Museum"
+card_width: 1280
+card_height: 800
 index_excerpt: How a field site and a museum differ, what each adds, and how to combine them without turning the day into
   a race.
 home_excerpt: They tell different parts of the same history. Here’s how the two visits differ and how they can fit together.
