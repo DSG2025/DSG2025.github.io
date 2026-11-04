@@ -10,14 +10,14 @@ modified: "2026-11-04"
 category: "Local Saigon"
 eyebrow: "The neighborhood behind OG Saigon"
 lead: "Before it became a number on a city map, this was a place of waterways, working families, neighborhood markets and lives built around the port. The names, and many of the stories behind them, remain."
-hero_image: /assets/images/og-saigon-district-4-hem-sinh-hoat-hero.webp
-hero_alt: "A woman cycling among neighbors and food stalls in a busy residential alley in District 4, Saigon"
-hero_width: 1108
-hero_height: 1280
-card_image: /assets/images/district-4-saigon-alley-local-life.webp
-card_alt: "A narrow residential alley in old District 4, Saigon"
-card_width: 1200
-card_height: 900
+hero_image: /assets/images/district4-hero-local-street-vendors.webp
+hero_alt: "People and a roadside food stall on a busy street in old District 4, Saigon."
+hero_width: 1100
+hero_height: 825
+card_image: /assets/images/story-posters/district4-neighborhood-behind-stories-poster.webp
+card_alt: "Illustrated OG Saigon cover for District 4, Saigon: The Neighborhood Behind the Stories"
+card_width: 1672
+card_height: 941
 index_excerpt: "A deeper history of Quận Tư: waterways, port workers, Xóm Chiếu, markets, alleys and the everyday life behind OG Saigon's neighborhood stories."
 home_excerpt: "Port history, markets, waterways and the everyday people behind old District 4."
 home_show_category: true
@@ -30,6 +30,8 @@ side_primary_url: /experiences/hidden-saigon/
 side_secondary_label: "Build a Private Saigon Day"
 side_secondary_url: /custom-trip/
 ---
+
+<!-- DISTRICT4_PHOTO_KIT_V4 -->
 
 <div class="article-summary">
   <p><strong>District 4 at a glance:</strong> District 4, known locally as Quận Tư, is a historic riverside area of Saigon, or Ho Chi Minh City. Bordered by the Saigon River, Bến Nghé Creek and Tẻ Canal, it grew around waterways, the port, working families, markets and residential alleys. Today it is known for Xóm Chiếu, seafood culture and a changing waterfront. To explore Saigon with a local is to look beyond landmarks and understand places like this in their everyday context.</p>
@@ -59,6 +61,12 @@ Some of its oldest names tell us how people lived here. Others describe how the 
 
 ## A Neighborhood Shaped by Water
 
+<figure>
+  <img src="/assets/images/district4-waterfront-near-khanh-hoi.webp" width="1100" height="968" alt="The Saigon waterfront seen beneath a bridge, with river and skyline." loading="lazy" decoding="async">
+  <figcaption>The waterfront from beneath a bridge near old District 4, with Saigon’s modern skyline beyond.</figcaption>
+</figure>
+
+
 ### The rivers and canals
 
 Look at a map of old District 4 and its geography becomes clear. The Saigon River runs along its eastern side. Bến Nghé Creek separates it from the old commercial center to the north. Tẻ Canal marks its southern edge.
@@ -71,6 +79,12 @@ The commercial center was close, yet crossing between the two sides once require
 
 ### Bridges changed the relationship with the city
 
+<figure>
+  <img src="/assets/images/district4-cau-mong-historic-bridge.webp" width="1100" height="679" alt="Green steel Cầu Mống bridge with modern towers behind it." loading="lazy" decoding="async">
+  <figcaption>Cầu Mống is a historic crossing near the old District 4 waterfront, distinct from Khánh Hội Bridge.</figcaption>
+</figure>
+
+
 Khánh Hội Bridge helps explain that history. In the early twentieth century, the colonial administration developed a rotating bridge across Bến Nghé Creek. Its movable section let vessels pass while providing a land connection to the port area. Freight transport infrastructure also served the docks.
 
 It is a reminder of the importance of river traffic before modern roads and bridges changed everyday movement. Over time the bridge was replaced and surrounding road connections expanded.
@@ -78,6 +92,12 @@ It is a reminder of the importance of river traffic before modern roads and brid
 Today it takes only a short journey to cross into old District 4. The old transport systems tell the story of a place connected to Saigon through trade before it became so closely integrated by road.
 
 ## When the Port Brought Work and People
+
+<figure>
+  <img src="/assets/images/district4-ben-nha-rong-riverside.webp" width="1100" height="675" alt="Historic Bến Nhà Rồng building with a red tile roof seen across the water." loading="lazy" decoding="async">
+  <figcaption>Bến Nhà Rồng is a surviving landmark of Saigon’s port history.</figcaption>
+</figure>
+
 
 The story of Khánh Hội cannot be separated from the Port of Saigon.
 
@@ -96,6 +116,12 @@ It is one of the area's best-known landmarks. Yet the port's history is larger t
 It also belongs to generations of workers whose names rarely appear in guidebooks. People who carried cargo, repaired equipment, sold meals and raised families near the docks were part of that history.
 
 ## Xóm Chiếu, Khánh Hội, and the Names That Stayed
+
+<figure>
+  <img src="/assets/images/district4-xom-chieu-market-exterior.webp" width="1100" height="825" alt="Xóm Chiếu Market exterior, sidewalk stalls and motorcycles." loading="lazy" decoding="async">
+  <figcaption>Xóm Chiếu Market remains a neighborhood landmark, surrounded by stalls and moving traffic.</figcaption>
+</figure>
+
 
 ### Xóm Chiếu and the old mat-weaving trade
 
@@ -119,6 +145,17 @@ The older names have outlasted the modern district. For those with family roots 
 
 ## Markets, Temples, Churches, and Everyday Belonging
 
+<figure>
+  <img src="/assets/images/district4-xom-chieu-market-stalls.webp" width="1100" height="825" alt="Roadside market stalls and motorbikes along a Saigon market street." loading="lazy" decoding="async">
+  <figcaption>Trading continues beyond the market’s main building and into the surrounding streets.</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/images/district4-xom-chieu-shops-and-towers.webp" width="825" height="1100" alt="Small storefronts near Xóm Chiếu Market with an apartment tower behind them." loading="lazy" decoding="async">
+  <figcaption>Small shops, street cables and towers share a changing streetscape.</figcaption>
+</figure>
+
+
 History is not kept only in museums. Some of it lives in the places people still use.
 
 Xóm Chiếu Market is one of those places. The market and surrounding streets connect small traders, households, food sellers and customers. Fresh produce, seafood, prepared food and daily necessities create changing rhythms of activity.
@@ -126,8 +163,8 @@ Xóm Chiếu Market is one of those places. The market and surrounding streets c
 A market is not simply a collection of things to buy. It is also a place of repeated encounters, familiar routines and local livelihoods.
 
 <figure>
-  <img src="/assets/images/og-saigon-about-street-lottery-nails.webp" width="1280" height="960" alt="Lottery tickets displayed beside a sidewalk nail-care service in Saigon" loading="lazy" decoding="async">
-  <figcaption>Everyday street work takes many forms, from informal services to small sidewalk businesses. Photo: OG Saigon.</figcaption>
+  <img src="/assets/images/district4-lottery-tickets-sidewalk-nail-care.webp" width="1100" height="825" alt="Lottery ticket seller beside a sidewalk nail-care service in Saigon." loading="lazy" decoding="async">
+  <figcaption>Lottery tickets and a sidewalk nail-care service share a patch of pavement.</figcaption>
 </figure>
 
 Religious and communal buildings preserve other histories. Đình Khánh Hội and Đình Vĩnh Hội are recognized historical sites connected with traditions of village worship and community life.
@@ -149,8 +186,8 @@ This does not make every alley romantic or comfortable. Narrow spaces can bring 
 At the same time, the hẻm helps explain how a neighborhood functions beyond its main roads. Businesses and homes exist alongside one another. The same street can serve several purposes in a day.
 
 <figure>
-  <img src="/assets/images/district-4-alley-night-local-life.webp" width="1200" height="900" alt="People gathering in a narrow residential alley in District 4, Saigon" loading="lazy" decoding="async">
-  <figcaption>Residential alleys are living spaces, not attractions arranged for visitors. Photo: OG Saigon.</figcaption>
+  <img src="/assets/images/district4-residential-alley-bicycle.webp" width="952" height="1100" alt="A woman riding a bicycle through a busy residential alley with neighbors and food sellers." loading="lazy" decoding="async">
+  <figcaption>A narrow residential alley is also a place for bicycles, food sellers and everyday neighborhood routines.</figcaption>
 </figure>
 
 A visitor may see only a narrow passage. Someone who lives there may see a network of homes, relationships and routines.
@@ -158,6 +195,17 @@ A visitor may see only a narrow passage. Someone who lives there may see a netwo
 OG Saigon explores the alleys' complicated reputation in a separate story, [Inside Saigon's District 4 Alleys](/stories/district-4-saigon-alleys/). This broader history is about the people who live in and around those alleys.
 
 ## How District 4 Eats
+
+<figure>
+  <img src="/assets/images/district4-street-dining-rainy-night.webp" width="1100" height="825" alt="Sidewalk dining tables, food customers and colorful reflections on a wet street at night." loading="lazy" decoding="async">
+  <figcaption>People share an evening meal on low stools as streetlights reflect off rain-wet pavement.</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/images/district4-dessert-plastic-stools.webp" width="825" height="1100" alt="Bowls of Vietnamese dessert on blue plastic stools at a narrow street-side shop." loading="lazy" decoding="async">
+  <figcaption>A neighborhood dessert stop with blue plastic stools and small tables.</figcaption>
+</figure>
+
 
 Food tells another part of the neighborhood's history.
 
@@ -193,6 +241,12 @@ Our [District 4 Alleys story](/stories/district-4-saigon-alleys/) explores that 
 
 ## From Dockside Streets to a Changing City
 
+<figure>
+  <img src="/assets/images/district4-xom-chieu-market-street.webp" width="1100" height="825" alt="Long market frontage with motorcycle traffic and apartment towers in the background." loading="lazy" decoding="async">
+  <figcaption>An older market building and distant apartment towers show different generations of development.</figcaption>
+</figure>
+
+
 The District 4 visible today is not the place previous generations knew.
 
 Bridges, roads, apartment buildings, public spaces and drainage improvements have changed the built environment. Bến Vân Đồn, once associated with the canal-side neighborhood, is now also recognized for its residential towers.
@@ -206,6 +260,12 @@ New buildings and land uses can alter familiar routes, businesses, housing and g
 The port changed the waterfront. Bridges changed access. New housing changed the skyline. The everyday life between those larger changes continues to evolve.
 
 ## What Does It Mean to Belong to Quận Tư Today?
+
+<figure>
+  <img src="/assets/images/district4-neighbors-playing-chinese-chess.webp" width="827" height="1100" alt="Three older men playing Chinese chess around a small table outdoors." loading="lazy" decoding="async">
+  <figcaption>A game of cờ tướng brings people together around a shared outdoor table.</figcaption>
+</figure>
+
 
 There is no single answer.
 
@@ -232,8 +292,8 @@ Famous landmarks can tell visitors about architecture and major events. A neighb
 If you explore Ho Chi Minh City with a local guide who knows a neighborhood, the conversation can move beyond street names. Why does this alley meet that market? What stood here before the apartment towers? Why do people still say Quận Tư? How did the port shape the community?
 
 <figure>
-  <img src="/assets/images/og-meet-travelers-locals-quan-tu.webp" width="900" height="952" alt="Visitors and older local residents posing together in a residential alley in Saigon" loading="lazy" decoding="async">
-  <figcaption>A moment between visitors and neighborhood residents. Photo: OG Saigon. Public-use permission to be confirmed before production release.</figcaption>
+  <img src="/assets/images/district4-visitors-neighborhood-residents.webp" width="1040" height="1100" alt="Travelers and older local residents posing together in a narrow residential alley." loading="lazy" decoding="async">
+  <figcaption>Visitors and longtime residents share a moment in a residential alley.</figcaption>
 </figure>
 
 For OG Saigon, a local experience is not about claiming access to a secret version of the city. It is about sharing context, listening to questions and noticing ordinary details that might otherwise be overlooked.
