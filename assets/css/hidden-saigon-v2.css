@@ -213,15 +213,15 @@
     margin:0 0 13px;
     gap:7px;
   }
-  .hidden-food .hf-hero .lead {
+  .hidden-food .hf-hero .hero-actions {
     order:2;
+    margin:0 0 13px;
+  }
+  .hidden-food .hf-hero .lead {
+    order:3;
     margin:0;
     color:#fffaf0;
     font-size:.96rem; line-height:1.43;
-  }
-  .hidden-food .hf-hero .hero-actions {
-    order:3;
-    margin:15px 0 0;
   }
   .hidden-food .hf-hero .hero-actions .btn {
     width:100%; min-height:44px;
