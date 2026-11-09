@@ -2169,6 +2169,17 @@ footer {
   overflow-wrap: anywhere;
 }
 
+.site-footer .footer-contact-row .footer-instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-footer .footer-contact-row .footer-instagram-link:hover,
+.site-footer .footer-contact-row .footer-instagram-link:focus-visible {
+  color: #f96a02;
+}
+
 .site-footer .footer-contact-row.footer-muted > span {
   color: inherit;
 }
