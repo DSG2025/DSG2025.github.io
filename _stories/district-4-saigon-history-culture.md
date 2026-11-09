@@ -1,0 +1,410 @@
+---
+layout: story
+published: true
+homepage: false
+title: "District 4, Saigon: The Neighborhood Behind the Stories"
+seo_title: "District 4 Saigon: History, Culture & Local Life | OG Saigon"
+description: "Discover District 4 in Saigon through its port history, Xóm Chiếu market, alleys, food and everyday culture. Explore Ho Chi Minh City through local eyes."
+date: 2026-11-09T09:00:00+07:00
+modified: "2026-11-09"
+og_published_time: "2026-11-09T09:00:00+07:00"
+og_modified_time: "2026-11-09T09:00:00+07:00"
+og_image: /assets/images/story-posters/district4-story-og-1200x630.jpg
+og_alt: "OG Saigon illustrated poster for District 4, Saigon: The Neighborhood Behind the Stories"
+og_width: 1200
+og_height: 630
+category: "Local Saigon"
+eyebrow: "The neighborhood behind OG Saigon"
+lead: "Before it became a number on a city map, this was a place of waterways, working families, neighborhood markets and lives built around the port. The names, and many of the stories behind them, remain."
+hero_image: /assets/images/district4-hero-local-street-vendors.webp
+hero_alt: "People and a roadside food stall on a busy street in old District 4, Saigon."
+hero_width: 1100
+hero_height: 825
+card_image: /assets/images/story-posters/district4-neighborhood-behind-stories-poster.webp
+card_alt: "Illustrated OG Saigon cover for District 4, Saigon: The Neighborhood Behind the Stories"
+card_width: 1672
+card_height: 941
+index_excerpt: "A deeper history of Quận Tư: waterways, port workers, Xóm Chiếu, markets, alleys and the everyday life behind OG Saigon's neighborhood stories."
+home_excerpt: "Port history, markets, waterways and the everyday people behind old District 4."
+home_show_category: true
+breadcrumb: "District 4: The Neighborhood"
+side_eyebrow: "See Saigon through local eyes"
+side_title: "Curious about the streets behind the story?"
+side_text: "Explore the neighborhoods, food and everyday history of Saigon with local context and a pace that feels personal."
+side_primary_label: "Explore Hidden Saigon"
+side_primary_url: /experiences/hidden-saigon/
+side_secondary_label: "Build a Private Saigon Day"
+side_secondary_url: /custom-trip/
+---
+
+<div class="article-summary">
+  <p><strong>District 4 at a glance:</strong> District 4, known locally as Quận Tư, is a historic riverside area of Saigon, or Ho Chi Minh City. Bordered by the Saigon River, Bến Nghé Creek and Tẻ Canal, it grew around waterways, the port, working families, markets and residential alleys. Today it is known for Xóm Chiếu Market, local food, residential alleys and a changing waterfront. Although the district-level administrative unit ended in 2025, Quận 4 remains a familiar name for the area.</p>
+</div>
+
+<p class="muted"><small>Researched and written by <a href="/meet-duy/">OG Saigon's local founder</a>, a fifth-generation Saigonese with roots in District 4. Published <time datetime="2026-11-09">November 9, 2026</time>. Historical sources are linked throughout this story.</small></p>
+
+There is a short distance between central Saigon and old District 4. Cross a bridge over Bến Nghé Creek and you are already there.
+
+But a short distance on a map does not always tell you much about a place.
+
+On one side, Saigon's commercial center. On the other, a neighborhood shaped by water, the port, the work that came with it, and generations of families who made their lives here.
+
+Today, the waterfront has apartment towers. Roads and bridges connect the area to the rest of the city. Seafood restaurants draw people from across Saigon. Beyond the main roads, everyday neighborhood life continues.
+
+To understand District 4, it helps to begin long before the towers, restaurants or even the name District 4.
+
+## History of District 4, Saigon: Before It Had a Number
+
+People from Saigon still know this part of the city as *Quận Tư*, or *Quận 4*, the Vietnamese names for District 4.
+
+The name survives even though the administrative map has changed. On July 1, 2025, Vietnam's two-tier local government model took effect, ending district-level administration nationally. The former District 4 area was organized into three wards: Xóm Chiếu, Khánh Hội and Vĩnh Hội. This happened as an enlarged Ho Chi Minh City was formed with the former Bình Dương and Bà Rịa–Vũng Tàu provinces. These older neighborhood names have a much longer history than the numbered district itself, as documented in [Resolution 1685/NQ-UBTVQH15](https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1685-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-ho-chi-minh-nam-2025-119250616211341304.htm).
+
+Historical accounts of the old Khánh Hội area identify settlements including Khánh Hội, Vĩnh Hội, Cây Bàng, Xóm Chiếu and the Nguyễn Kiệu islet. Their story reaches back toward the early development of Gia Định, long before today's streets and boundaries. The [National Archives Center II holds a 1925 Khánh Hội planning map](https://www.nac2.gov.vn/csdl/bando/28.html) that records streets around Xóm Chiếu and illustrates how the neighborhood was being reshaped.
+
+There was no single moment when this neighborhood suddenly appeared. It developed through settlement, trade, changes in the waterways and the gradual expansion of Saigon.
+
+Some of its oldest names tell us how people lived here. Others describe how the land was divided and understood over time. They are more than addresses. They are pieces of the neighborhood's memory.
+
+## District 4 Geography: A Neighborhood Shaped by Water
+
+<figure>
+  <img src="/assets/images/district4-waterfront-near-khanh-hoi.webp" width="1100" height="968" alt="The Saigon waterfront seen beneath a bridge, with river and skyline." loading="lazy" decoding="async">
+  <figcaption>The waterfront from beneath a bridge near old District 4, with Saigon’s modern skyline beyond.</figcaption>
+</figure>
+
+
+### The rivers and canals
+
+Look at a map of old District 4 and its geography becomes clear. The Saigon River runs along its eastern side. Bến Nghé Creek separates it from the old commercial center to the north. Tẻ Canal marks its southern edge.
+
+Before road connections became as convenient as they are today, rivers and canals were essential ways to move goods and people. Saigon grew around waterborne commerce, and the waterways near Khánh Hội connected the city to wider trading networks.
+
+The banks were places for boats, cargo, warehouses, work and settlement. Geography could create opportunity, but also separation.
+
+The commercial center was close, yet crossing between the two sides once required a different kind of journey.
+
+### Bridges changed the relationship with the city
+
+<figure>
+  <img src="/assets/images/district4-cau-mong-historic-bridge.webp" width="1100" height="679" alt="Green steel Cầu Mống bridge with modern towers behind it." loading="lazy" decoding="async">
+  <figcaption>Cầu Mống is a historic crossing near the old District 4 waterfront, distinct from Khánh Hội Bridge.</figcaption>
+</figure>
+
+
+The bridge in the photograph is **Cầu Mống**, not Khánh Hội Bridge. Built in 1893–1894, this curved steel bridge crosses Bến Nghé Creek between central Saigon and the former District 4. It is an early reminder of the area's relationship with the waterfront, as documented in [this history of Saigon's bridges](https://scov.gov.vn/dat-nuoc-con-nguoi/nhung-cay-cau-gan-voi-lich-su-cua-sai-gon.html).
+
+**Khánh Hội Bridge has a different history.** Its first rotating version, built in 1904, could open to let vessels pass while providing a land connection to the port area. A rail freight connection also served the docks, as documented in [VnExpress’s history of the bridge](https://vnexpress.net/khanh-hoi-cau-quay-doc-nhat-cua-sai-gon-3308650-p2.html).
+
+It is a reminder of the importance of river traffic before modern roads and bridges changed everyday movement. Over time the bridge was replaced and surrounding road connections expanded.
+
+Today it takes only a short journey to cross into old District 4. The old transport systems tell the story of a place connected to Saigon through trade before it became so closely integrated by road.
+
+## When the Port Brought Work and People
+
+<figure>
+  <img src="/assets/images/district4-ben-nha-rong-riverside.webp" width="1100" height="675" alt="Historic Bến Nhà Rồng building with a red tile roof seen across the water." loading="lazy" decoding="async">
+  <figcaption>Bến Nhà Rồng is a surviving landmark of Saigon’s port history.</figcaption>
+</figure>
+
+
+The story of Khánh Hội cannot be separated from the Port of Saigon.
+
+Saigon Port traces the official beginning of its commercial operations under French administration to **1863**. During the colonial period, port facilities expanded along the Khánh Hội waterfront, with wharves, warehouses, shipping operations and transport infrastructure occupying sections of the riverbank. The [port's official history](https://saigonport.vn/overview/) and [its account of the Nhà Rồng–Khánh Hội area](https://saigonport.vn/nha-rong-khanh-hoi-giu-mach-nguon-thuong-cang-sai-gon/) document that commercial growth.
+
+These developments changed more than the skyline. They created work.
+
+Cargo had to be loaded and unloaded. Ships required workers and maintenance. Goods moved between boats, warehouses, markets and the city. The port drew people seeking a living, including workers from elsewhere in southern Vietnam.
+
+For many families the waterfront was not a scenic place to visit. It was where household income came from.
+
+The port also connects this area with major events in Vietnamese history. Bến Nhà Rồng, originally associated with a French maritime company, stands along the waterfront. On June 5, 1911, Nguyễn Tất Thành, later known as Hồ Chí Minh, departed Saigon aboard a French vessel. The site now houses a branch of the Ho Chi Minh Museum.
+
+It is one of the area's best-known landmarks. Yet the port's history is larger than one building or one departure.
+
+It also belongs to generations of workers whose names rarely appear in guidebooks. People who carried cargo, repaired equipment, sold meals and raised families near the docks were part of that history.
+
+## Xóm Chiếu, Khánh Hội, and the Names That Stayed
+
+<figure>
+  <img src="/assets/images/district4-xom-chieu-market-exterior.webp" width="1100" height="825" alt="Xóm Chiếu Market exterior, sidewalk stalls and motorcycles." loading="lazy" decoding="async">
+  <figcaption>Xóm Chiếu Market remains a neighborhood landmark, surrounded by stalls and moving traffic.</figcaption>
+</figure>
+
+
+### Xóm Chiếu and the old mat-weaving trade
+
+Some place names preserve occupations that have largely disappeared from everyday life.
+
+*Xóm* means a small settlement or neighborhood. *Chiếu* means a woven sleeping mat.
+
+Historical accounts link Xóm Chiếu to wetland plants used for mat weaving. People settled around this work and the name came to remember the trade. [Tuổi Trẻ's reporting on the old settlement](https://tuoitre.vn/nhung-dia-danh-than-thuong-sai-gon-tp-hcm-ky-6-ve-xom-chieu-tim-dau-xua-20250410110852031.htm) records this history, while residents' recollections add a personal perspective rather than a history shared by every household.
+
+Not a grand monument or a name chosen for tourism, but one rooted in how people once earned their living.
+
+Local histories also describe generations of changing work, from mat weaving to employment around the expanding port. The craft no longer defines the neighborhood, but its name remains at the market, parish and on the map.
+
+### Older names, newer boundaries
+
+Khánh Hội and Vĩnh Hội also belong to the area's older geography. Their names survived changes in government, land use and urban planning.
+
+The 2025 administrative reorganization is a striking example. The numbered district ended as an administrative unit, while Xóm Chiếu, Khánh Hội and Vĩnh Hội became ward names.
+
+The older names have outlasted the modern district. For those with family roots here, the map can change faster than the language people use to describe home.
+
+## Markets, Temples, Churches, and Everyday Belonging
+
+<figure>
+  <img src="/assets/images/district4-xom-chieu-market-stalls.webp" width="1100" height="825" alt="Roadside market stalls and motorbikes along a Saigon market street." loading="lazy" decoding="async">
+  <figcaption>Trading continues beyond the market’s main building and into the surrounding streets.</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/images/district4-xom-chieu-shops-and-towers.webp" width="825" height="1100" alt="Small storefronts near Xóm Chiếu Market with an apartment tower behind them." loading="lazy" decoding="async">
+  <figcaption>Small shops, street cables and towers share a changing streetscape.</figcaption>
+</figure>
+
+
+History is not kept only in museums. Some of it lives in the places people still use.
+
+Xóm Chiếu Market is one of those places. The market and surrounding streets connect small traders, households, food sellers and customers. Fresh produce, seafood, prepared food and daily necessities create changing rhythms of activity.
+
+A market is not simply a collection of things to buy. It is also a place of repeated encounters, familiar routines and local livelihoods.
+
+<figure>
+  <img src="/assets/images/district4-lottery-tickets-sidewalk-nail-care.webp" width="1100" height="825" alt="Lottery ticket seller beside a sidewalk nail-care service in Saigon." loading="lazy" decoding="async">
+  <figcaption>Lottery tickets and a sidewalk nail-care service share a patch of pavement.</figcaption>
+</figure>
+
+Religious and communal buildings preserve other histories. Đình Khánh Hội and Đình Vĩnh Hội are recognized historical sites connected with traditions of village worship and community life.
+
+Xóm Chiếu Parish has nineteenth-century roots. Its history also intersects with the growth of the port. During the colonial period, land near the waterfront was needed for port development, and the parish eventually moved to its present area.
+
+These places represent different traditions and communities. They should not be flattened into a single vague idea of neighborhood spirituality.
+
+Taken together, they show that old District 4 was never defined by just one occupation or reputation. People worked, worshipped, traded, studied and raised families here.
+
+## The Hẻm: Where Private and Public Life Meet
+
+In Saigon, a *hẻm* is an alley, though the English word does not quite capture all that happens inside one.
+
+An alley may be a route home, a delivery lane, a small business address or an extension of the space outside someone's front door. It is where private and shared life meet.
+
+This does not make every alley romantic or comfortable. Narrow spaces can bring drainage difficulties, traffic conflicts and less privacy. Motorbikes, pedestrians, deliveries and household needs must fit into limited room.
+
+At the same time, the hẻm helps explain how a neighborhood functions beyond its main roads. Businesses and homes exist alongside one another. The same street can serve several purposes in a day.
+
+<figure>
+  <img src="/assets/images/district4-residential-alley-bicycle.webp" width="952" height="1100" alt="A woman riding a bicycle through a busy residential alley with neighbors and food sellers." loading="lazy" decoding="async">
+  <figcaption>A narrow residential alley is also a place for bicycles, food sellers and everyday neighborhood routines.</figcaption>
+</figure>
+
+A visitor may see only a narrow passage. Someone who lives there may see a network of homes, relationships and routines.
+
+OG Saigon explores the alleys' complicated reputation in a separate story, [Inside Saigon's District 4 Alleys](/stories/district-4-saigon-alleys/). This broader history is about the people who live in and around those alleys.
+
+## How District 4 Eats
+
+<figure>
+  <img src="/assets/images/district4-street-dining-rainy-night.webp" width="1100" height="825" alt="Sidewalk dining tables, food customers and colorful reflections on a wet street at night." loading="lazy" decoding="async">
+  <figcaption>People share an evening meal on low stools as streetlights reflect off rain-wet pavement.</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/images/district4-dessert-plastic-stools.webp" width="825" height="1100" alt="Bowls of Vietnamese dessert on blue plastic stools at a narrow street-side shop." loading="lazy" decoding="async">
+  <figcaption>A neighborhood dessert stop with blue plastic stools and small tables.</figcaption>
+</figure>
+
+
+Food tells another part of the neighborhood's history.
+
+District 4 is known for seafood, particularly the casual culture of eating *ốc*, a broad Vietnamese dining category that includes snails and other shellfish. Vĩnh Khánh Street drew people to seafood restaurants before it was officially launched as a food street on **March 30, 2018**, as reported by [Tuổi Trẻ](https://tuoitre.vn/khai-truong-pho-am-thuc-vinh-khanh-2018033020240361.htm).
+
+The attraction is not only what is on the plate. There is the process of choosing dishes, sharing a table, ordering another drink and staying to talk.
+
+A seafood meal in Saigon can be as much a social occasion as a way to eat dinner.
+
+But District 4's food culture is bigger than Vĩnh Khánh. Markets and smaller businesses around Xóm Chiếu feed people heading to work, returning home or meeting friends.
+
+Not every busy food street represents the same kind of neighborhood experience. Not every good meal comes from the most famous address.
+
+Food is most interesting when it helps explain how the city lives. Who eats here? When do they come? Is this an everyday meal or a night out? How does a small food business fit into its street?
+
+Those questions may tell us as much as a list of dishes.
+
+## The Reputation Was Never the Whole Story
+
+District 4 carries a difficult chapter of history.
+
+During the late twentieth century, parts of the area became associated with organized crime, illegal gambling and criminal networks. The Năm Cam case was a prominent chapter in Saigon's criminal history.
+
+That history is real. So is the harm associated with it.
+
+But the existence of criminal networks did not make every resident part of that world. For working families the neighborhood was also a place of school, employment, religious life, food and ordinary responsibilities.
+
+A reputation built from sensational stories travels much farther than the quieter lives happening alongside it.
+
+Treating old District 4 as a gangster attraction would be inaccurate and unfair. The history deserves discussion, not glorification.
+
+Our [District 4 Alleys story](/stories/district-4-saigon-alleys/) explores that chapter in greater depth. Here, it is one part of a much longer neighborhood story.
+
+## From Dockside Streets to a Changing City
+
+<figure>
+  <img src="/assets/images/district4-xom-chieu-market-street.webp" width="1100" height="825" alt="Long market frontage with motorcycle traffic and apartment towers in the background." loading="lazy" decoding="async">
+  <figcaption>An older market building and distant apartment towers show different generations of development.</figcaption>
+</figure>
+
+
+The District 4 visible today is not the place previous generations knew.
+
+Bridges, roads, apartment buildings, public spaces and drainage improvements have changed the built environment. Bến Vân Đồn, once associated with the canal-side neighborhood, is now also recognized for its residential towers.
+
+For residents, those changes can matter. Streets can become easier to use, floods may be less disruptive in improved areas, and better connections can reduce isolation from the city center.
+
+Development is not automatically a loss. But it is not simply a story of everything becoming better.
+
+New buildings and land uses can alter familiar routes, businesses, housing and gathering places. A photograph of an old street may preserve its appearance, but cannot explain what happened to people who once lived or worked there.
+
+The port changed the waterfront. Bridges changed access. New housing changed the skyline. The everyday life between those larger changes continues to evolve.
+
+## What Does It Mean to Belong to Quận Tư Today?
+
+<figure>
+  <img src="/assets/images/district4-neighbors-playing-chinese-chess.webp" width="827" height="1100" alt="Three older men playing Chinese chess around a small table outdoors." loading="lazy" decoding="async">
+  <figcaption>A game of cờ tướng brings people together around a shared outdoor table.</figcaption>
+</figure>
+
+
+There is no single answer.
+
+Some families have lived here for generations. Others arrived more recently. Some people remember older port work or street life. Younger residents may know a neighborhood of apartments, universities, cafés and new businesses.
+
+Their experiences are not interchangeable.
+
+Pride in a neighborhood does not mean believing the past was perfect. Welcoming development does not have to mean forgetting what came before.
+
+This question is personal to the people behind OG Saigon. Our founder's family roots in District 4 go back five generations. You can read more about that perspective on [Meet the OG](/meet-duy/) or [About OG Saigon](/about/). It is one reason we believe neighborhoods should be understood through people, history and daily routines, not just attractions.
+
+Still, one family's experience cannot speak for an entire community. The neighborhood belongs to those who live and work here now as well as those whose lives have been connected to it over time.
+
+Their voices matter more than any romantic picture of old Saigon.
+
+## Seeing Saigon Through Local Eyes
+
+Travelers often ask how to explore Saigon with a local rather than follow a standard sightseeing itinerary.
+
+There is no single right way. But understanding a neighborhood like District 4 is a useful starting point.
+
+Famous landmarks can tell visitors about architecture and major events. A neighborhood can help explain how people lived between those events, how work shaped their routines and how the city changed around them.
+
+If you explore Ho Chi Minh City with a local guide who knows a neighborhood, the conversation can move beyond street names. Why does this alley meet that market? What stood here before the apartment towers? Why do people still say Quận Tư? How did the port shape the community?
+
+<figure>
+  <img src="/assets/images/district4-visitors-neighborhood-residents.webp" width="1040" height="1100" alt="Travelers and older local residents posing together in a narrow residential alley." loading="lazy" decoding="async">
+  <figcaption>Visitors and longtime residents share a moment in a residential alley.</figcaption>
+</figure>
+
+For OG Saigon, a local experience is not about claiming access to a secret version of the city. It is about sharing context, listening to questions and noticing ordinary details that might otherwise be overlooked.
+
+It is one way to discover Saigon beyond the tourist attractions while remembering that the neighborhood is a real home.
+
+## Exploring District 4: Things to Do, Food, and Getting There
+
+District 4 sits just across Bến Nghé Creek from central District 1. That proximity makes it practical to explore without treating the neighborhood as an all-day sightseeing checklist.
+
+| What you want to do | A useful starting point |
+| --- | --- |
+| Get here from District 1 | Cross by the Khánh Hội, Calmette or Ông Lãnh road connections, or take a taxi or ride-hailing service to your chosen stop. Cầu Mống is a pedestrian crossing. Allow for changing traffic conditions rather than relying on a fixed journey time. |
+| See market life | Explore the streets around Xóm Chiếu Market earlier in the day. This is a working market, so let traders and customers go about their business. |
+| Understand the waterfront | Look toward Bến Nhà Rồng and the former port area. **Museum entry should not be assumed:** an official [renovation notice](https://bennharong.vn/thong-bao-dong-cua-trung-tu-bao-tang) announced a temporary closure from May 7, 2026. Check its website for a confirmed reopening before planning an interior visit. |
+| Explore old streets | Walk residential lanes respectfully, without photographing private spaces or blocking doors. |
+| Eat in the evening | Try a shared seafood or shellfish meal on or around Vĩnh Khánh, or smaller places near Xóm Chiếu. Individual opening hours and menus vary. |
+
+**What should you eat in District 4?** The area is associated with *ốc* (snails and shellfish), seafood prepared for sharing, and a wide range of neighborhood dishes and desserts. For a local food-focused outing, [Hidden Saigon](/experiences/hidden-saigon/) covers food and everyday streets rather than a generic attraction circuit.
+
+You can [explore our other Saigon Stories](/stories/) for context, or [plan a private local day](/custom-trip/) around your interests. This is not a fixed route or a promise that every venue will be open.
+
+## How to Experience the Neighborhood Respectfully
+
+If you come to old District 4, begin with curiosity instead of a checklist.
+
+Look at the river, bridges and roads. Notice how quickly the built environment changes when you leave a major street. Spend time at a market without treating workers as a performance. Try a local meal because you want to understand daily food culture, not collect dishes.
+
+Remember that an alley is someone's home. A doorway, family altar, religious ceremony or private moment is not automatically an invitation to photograph it.
+
+And leave room for the neighborhood to keep changing.
+
+You do not have to agree that every new building is good, or that every old building should remain. You can pay attention to what changed, who benefits and what people still value enough to remember.
+
+That is a more rewarding way to encounter Saigon: not as a city frozen in the past, but as a place where history and everyday life are happening together.
+
+**District 4 is not just the neighborhood behind OG Saigon's stories. It is one of the places that taught us why the stories matter.**
+
+## Questions About District 4 and Local Saigon
+
+### What is District 4 in Saigon known for?
+
+Old District 4 is known for its riverside geography, connection to Saigon Port, Xóm Chiếu Market, residential alleys and seafood culture. Older neighborhood streets now exist alongside modern waterfront development.
+
+### How far is District 4 from District 1?
+
+They are neighboring areas separated in part by Bến Nghé Creek. Bridges such as Khánh Hội, Calmette and Ông Lãnh provide road connections, while Cầu Mống is a pedestrian bridge. Travel time depends on your starting point and traffic.
+
+### What are the best things to do in District 4, Saigon?
+
+Explore the streets around Xóm Chiếu Market, learn about the former port waterfront, walk local alleys respectfully and enjoy a casual meal. This is a living neighborhood, so the best visit leaves room for ordinary life rather than a long attraction checklist.
+
+### What should I eat in District 4?
+
+Seafood, snails and shellfish (*ốc*) are particularly associated with Vĩnh Khánh. Markets and smaller neighborhood eateries offer other local dishes, snacks and desserts. Choose based on your interests and check individual stalls' schedules.
+
+### Why is District 4 historically important?
+
+Its location beside the Saigon River and Bến Nghé Creek made it important to the port and trading history of the city. Commercial docks, workers and local communities helped shape its development.
+
+### Is District 4 still an official district of Ho Chi Minh City?
+
+No. Since July 1, 2025, district-level administration has ended in Vietnam. The former District 4 area is now within Xóm Chiếu, Khánh Hội and Vĩnh Hội wards. The names District 4, Quận 4 and Quận Tư remain familiar in everyday conversation.
+
+### What does Quận Tư mean?
+
+*Quận Tư* is a local spoken way to say District 4. *Quận 4* is the corresponding numbered Vietnamese form. Both commonly describe the former district even after the 2025 administrative changes.
+
+### What does Xóm Chiếu mean?
+
+Xóm Chiếu roughly means "mat-weaving settlement." Historical accounts connect the name with woven sleeping mats made from plants available in the area's earlier wetland environment.
+
+### Was District 4 really a gangster area?
+
+Parts of District 4 were associated with criminal networks and illegal gambling, including the Năm Cam case. That history did not define every family or every alley. Our separate [District 4 Alleys story](/stories/district-4-saigon-alleys/) explores this difficult chapter without romanticizing violence.
+
+### Is District 4 safe for visitors?
+
+Generally, visitors can explore its busy market streets and food areas during the day and evening while taking normal city precautions. Pay particular attention to traffic, secure your belongings and avoid displaying valuables carelessly. This is practical guidance, not a neighborhood-wide safety guarantee.
+
+### Can I explore Ho Chi Minh City with a local guide?
+
+Yes. A knowledgeable local guide or host can put historic streets, food and everyday routines into context. [OG Saigon](/about/) offers personalized experiences rooted in the city, including neighborhood-focused exploration.
+
+### What should visitors know before exploring District 4's alleys?
+
+The alleys are shared living spaces. Do not block entrances, assume a private doorway is open to the public or photograph residents without permission. Respectful observation matters more than collecting images.
+
+## Explore More of Local Saigon
+
+- [Inside Saigon's District 4 Alleys](/stories/district-4-saigon-alleys/) explores the neighborhood's reputation and transformation.
+- [Hidden Saigon: Street Food, Seafood and Ex-Mafia Alley](/experiences/hidden-saigon/) brings local food, conversation and neighborhood streets together.
+- [Plan a private Saigon day with OG Saigon](/custom-trip/) if you would like to shape your experience around your interests.
+
+## Historical Sources and Further Reading
+
+Historical statements in this story are supported by the documents linked above and below. The editorial perspective belongs to OG Saigon. Photos document real streets and places; no new resident interviews are claimed in this article. **Editorial review:** November 9, 2026. Check official attraction websites for current access information.
+
+- [Tim Doling, A Short History of Saigon Port](https://www.historicvietnam.com/short-history-saigon-port/)
+- [National Archives Center II, 1925 Khánh Hội Planning Map](https://www.nac2.gov.vn/csdl/bando/28.html)
+- [Tuổi Trẻ, historical research on Xóm Chiếu](https://tuoitre.vn/nhung-dia-danh-than-thuong-sai-gon-tp-hcm-ky-6-ve-xom-chieu-tim-dau-xua-20250410110852031.htm)
+- [Ho Chi Minh City Department of Culture and Sports, Listed Heritage Sites](https://svhtt.hochiminhcity.gov.vn/vi/web/guest/tin-chi-tiet/-/chi-tiet/danh-sach-cac-cong-trinh-%C4%91ia-%C4%91iem-%C4%91a-%C4%91uoc-quyet-%C4%91inh-xep-hang-di-tich-tren-%C4%91ia-ban-thanh-pho-ho-chi-minh-%C4%91en-thang-6-2016--19761-201.html)
+- [Ho Chi Minh Museum, The Historic Journey of June 5, 1911](https://baotanghochiminh.vn/chuyen-di-lich-su.htm)
+- [Tuổi Trẻ, Vĩnh Khánh Food Street in 2018](https://tuoitre.vn/khai-truong-pho-am-thuc-vinh-khanh-2018033020240361.htm)
+- [Sài Gòn Giải Phóng, District 4 Urban Improvements](https://www.sggp.org.vn/quan-4-thay-dien-mao-giup-dan-thoat-ngheo-post564188.html)
+- [Vietnam Government, Resolution 1685 on the 2025 Administrative Reorganization](https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1685-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-ho-chi-minh-nam-2025-119250616211341304.htm)
