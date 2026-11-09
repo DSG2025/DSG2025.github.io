@@ -201,6 +201,8 @@
     height:3px; width:83%; margin-top:9px;
   }
   .hidden-food .hf-hero-body {
+    display:flex;
+    flex-direction:column;
     margin-top:9px;
     padding:12px 15px 16px;
     border-left:3px solid rgba(238,206,164,.75);
@@ -208,23 +210,26 @@
     box-shadow:0 12px 26px rgba(9,25,23,.15);
   }
   .hidden-food .hf-hero-quote {
-    margin:0 0 7px;
+    order:1;
+    margin:19px 0 7px;
     font-size:clamp(1.25rem,5.1vw,1.65rem);
     line-height:1.2; color:#fffaf0;
   }
   .hidden-food .hf-hero .lead {
+    order:1;
     margin:0;
     color:#fffaf0;
     font-size:.96rem; line-height:1.43;
   }
   .hidden-food .hf-hero .hero-actions {
-    margin:12px 0 0;
+    margin:0;
   }
   .hidden-food .hf-hero .hero-actions .btn {
     width:100%; min-height:44px;
   }
   .hidden-food .hf-hero .facts {
-    margin-top:12px; gap:7px;
+    order:-1;
+    margin:0 0 12px; gap:7px;
   }
   .hidden-food .hf-hero .fact {
     padding:7px 10px;
