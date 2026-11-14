@@ -90,6 +90,33 @@
     }
   }
 
+  // Real-journey and tailoring CTA links prepare a relevant idea without
+  // replacing anything the visitor already typed. This does not send a message.
+  document.querySelectorAll('[data-trip-inspiration]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const ideaField = form.elements.tripIdea;
+      const suggested = link.getAttribute('data-trip-inspiration') || '';
+      if (ideaField && suggested && !ideaField.value.trim()) {
+        ideaField.value = suggested;
+      }
+      const focus = link.getAttribute('data-trip-focus');
+      if (focus) tickAll('interest', [focus]);
+      if (prefillNote) {
+        prefillNote.textContent = 'Inspired by a real OG Saigon journey. Change anything below to fit your own trip.';
+        prefillNote.hidden = false;
+      }
+      // Keep form changes and WhatsApp fallback in sync, including repeat visits.
+      form.dispatchEvent(new Event('input', { bubbles: true }));
+    });
+  });
+
+  // External experience links can prefill destinations hidden in the optional
+  // disclosure. Reveal only when there is an actual selected destination.
+  const destinationDisclosure = form.querySelector('.destination-disclosure');
+  if (destinationDisclosure && [...form.querySelectorAll('input[name="destination"]')].some((input) => input.checked)) {
+    destinationDisclosure.open = true;
+  }
+
   const valuesFor = (name) =>
     [...form.querySelectorAll(`input[name="${name}"]:checked`)].map((input) => input.value);
 
