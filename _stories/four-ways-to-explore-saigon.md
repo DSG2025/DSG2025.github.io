@@ -82,7 +82,7 @@ The following day was for the Mekong Delta: boats, canals, fruit, local food and
 
 <p class="four-journeys-insight"><strong>How should you spend three days in Ho Chi Minh City?</strong> This journey offers one possible answer: a day for Củ Chi and evening food, a day in the Mekong Delta, and a day for Saigon's history and neighborhoods. It worked for this family; others may prefer to stay in the city longer.</p>
 
-### 3. A Polish couple: mountain air, Cao Đài and a local lunch
+### 3. A beautiful Polish couple: mountain air, Cao Đài and a local lunch
 
 An early departure made sense for this full-day trip to Tây Ninh. Coffee and bánh mì were ready for the road, and there was a local coffee stop along the way. From there the day opened out onto Bà Đen Mountain, with its cable car and wide views across the landscape.
 
