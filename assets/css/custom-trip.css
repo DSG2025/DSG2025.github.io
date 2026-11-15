@@ -93,3 +93,22 @@ body.custom-trip-page .form-fallback-actions .btn {flex:1 1 150px;min-width:0;wh
 }
 @media(max-width:920px){body.custom-trip-page.form-message-ready .wa-float{display:none}}
 @media(prefers-reduced-motion:reduce){body.custom-trip-page *{scroll-behavior:auto}}
+
+/* Custom Trips photo-first galleries: native scroll-snap and Flexbox. */
+body.custom-trip-page .custom-story--featured{border-color:var(--rust)}
+body.custom-trip-page .custom-story-media{display:flex;flex:0 0 45%;flex-direction:column;min-width:0;min-height:315px;background:#e5e5dd}
+body.custom-trip-page .custom-story--featured .custom-story-media{flex-basis:51%;min-height:370px}
+body.custom-trip-page .custom-carousel-track{position:relative;display:flex;flex:1;gap:10px;min-height:0;overflow-x:auto;overflow-y:hidden;padding:0 10% 0 0;scroll-snap-type:x mandatory;scroll-padding-inline:0 10px;scrollbar-width:none;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch}
+body.custom-trip-page .custom-carousel-track::-webkit-scrollbar{display:none}
+body.custom-trip-page .custom-carousel-slide{flex:0 0 92%;min-width:0;margin:0;aspect-ratio:5/4;overflow:hidden;scroll-snap-align:start;background:#cfd3c9}
+body.custom-trip-page .custom-carousel-slide img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center}
+body.custom-trip-page .custom-carousel-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:56px;padding:6px 16px;background:var(--cream)}
+body.custom-trip-page .custom-carousel-source{font-size:.72rem;line-height:1.35;color:var(--muted)}
+body.custom-trip-page .custom-carousel-controls{display:flex;align-items:center;gap:7px;white-space:nowrap}
+body.custom-trip-page .custom-carousel-controls button{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:inherit;cursor:pointer;font:inherit;font-size:1.6rem;line-height:1}
+body.custom-trip-page .custom-carousel-controls button:disabled{opacity:.35;cursor:default}
+body.custom-trip-page .custom-carousel-controls button:focus-visible,body.custom-trip-page .custom-carousel-track:focus-visible{outline:3px solid var(--rust);outline-offset:2px}
+body.custom-trip-page .custom-carousel-count{min-width:38px;text-align:center;font-size:.78rem;font-weight:800;font-variant-numeric:tabular-nums}
+@media(max-width:900px){body.custom-trip-page .custom-story-media{flex-basis:44%}body.custom-trip-page .custom-story--featured .custom-story-media{flex-basis:49%}}
+@media(max-width:650px){body.custom-trip-page .custom-story-media,body.custom-trip-page .custom-story--featured .custom-story-media{width:100%;flex:auto;min-height:0}body.custom-trip-page .custom-carousel-slide{aspect-ratio:6/5;flex-basis:90%}body.custom-trip-page .custom-carousel-bottom{min-height:45px;padding:3px 13px}body.custom-trip-page .custom-carousel-controls button{display:none}body.custom-trip-page .custom-carousel-count{font-size:.82rem}body.custom-trip-page .custom-carousel-source{font-size:.7rem}body.custom-trip-page .custom-story-content{padding-top:21px}}
+@media(prefers-reduced-motion:reduce){body.custom-trip-page .custom-carousel-track{scroll-behavior:auto}}

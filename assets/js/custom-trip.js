@@ -80,3 +80,47 @@
     });
   }
 })();
+
+// Native swipe galleries with optional desktop and keyboard controls. No autoplay.
+(() => {
+  document.querySelectorAll('[data-custom-carousel]').forEach(gallery => {
+    const track = gallery.querySelector('.custom-carousel-track');
+    const slides = [...gallery.querySelectorAll('.custom-carousel-slide')];
+    const prev = gallery.querySelector('.custom-carousel-prev');
+    const next = gallery.querySelector('.custom-carousel-next');
+    const count = gallery.querySelector('.custom-carousel-count');
+    if (!track || slides.length < 2 || !prev || !next || !count) return;
+    let active = 0;
+    let frame = 0;
+    const left = index => slides[index].offsetLeft - slides[0].offsetLeft;
+    const refresh = () => {
+      frame = 0;
+      const x = track.scrollLeft;
+      let closest = 0;
+      slides.forEach((slide, i) => { if (Math.abs(left(i) - x) < Math.abs(left(closest) - x)) closest = i; });
+      active = closest;
+      count.textContent = (active + 1) + ' / ' + slides.length;
+      prev.disabled = active === 0;
+      next.disabled = active === slides.length - 1;
+    };
+    const move = delta => {
+      refresh();
+      const destination = Math.max(0, Math.min(slides.length - 1, active + delta));
+      const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      track.scrollTo({left: left(destination), behavior: reduceMotion ? 'auto' : 'smooth'});
+    };
+    prev.addEventListener('click', () => move(-1));
+    next.addEventListener('click', () => move(1));
+    track.addEventListener('keydown', event => {
+      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+        event.preventDefault();
+        move(event.key === 'ArrowRight' ? 1 : -1);
+      }
+    });
+    track.addEventListener('scroll', () => {
+      if (!frame) frame = window.requestAnimationFrame(refresh);
+    }, {passive:true});
+    window.addEventListener('resize', refresh, {passive:true});
+    refresh();
+  });
+})();
