@@ -304,3 +304,58 @@
 .story-index-card-body > .text-link { align-self: flex-start; margin-top: auto; padding-top: 8px; }
 .story-article h2, .story-article h3, .story-side-card h3 { font-family: var(--type-display-font-family); line-height: 1.23; }
 @media(max-width:650px){ .story-index-hero h1, .story-article-hero h1 { font-size: clamp(2.15rem,8vw,2.9rem); } }
+
+
+/* Four real journeys: editorial image pairs retain the photographs' natural
+   proportions on every viewport, including Story's default square mobile crop. */
+.story-article .four-journeys-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+  margin: 34px 0 42px;
+}
+.story-article .four-journeys-gallery figure {
+  min-width: 0;
+  margin: 0;
+}
+.story-article .four-journeys-gallery figure > img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 18px;
+}
+.story-article .four-journeys-gallery figcaption {
+  margin-top: 10px;
+  line-height: 1.55;
+}
+.story-article .four-journeys-insight {
+  margin: 20px 0 44px;
+  padding-left: 18px;
+  border-left: 2px solid var(--rust);
+}
+.four-journeys-hero .page-hero-grid > img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+@media (max-width: 650px) {
+  .story-article .four-journeys-gallery {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    margin: 28px 0 34px;
+  }
+  .story-article .four-journeys-gallery figure > img,
+  .four-journeys-hero .page-hero-grid > img {
+    height: auto;
+    max-height: none;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+}
