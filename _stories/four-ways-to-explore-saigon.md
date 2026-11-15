@@ -12,6 +12,10 @@ og_modified_time: "2026-11-15T20:00:00+07:00"
 category: "Travel inspiration"
 eyebrow: "Four journeys, one Saigon"
 lead: "Real private journeys, local discoveries and ideas for making the most of your time in Ho Chi Minh City."
+card_image: /assets/images/story-posters/one-saigon-four-ways-to-explore-it-poster.webp
+card_alt: "Cinematic adventure poster for One Saigon. Four Ways to Explore It."
+card_width: 720
+card_height: 450
 hero_image: /assets/images/custom-trip/v5/dad-son/01-son-with-og-guide.webp
 hero_alt: "An American father and son with their OG Saigon guide during a private journey"
 hero_width: 1440
