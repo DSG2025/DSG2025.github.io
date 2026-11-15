@@ -112,3 +112,10 @@ body.custom-trip-page .custom-carousel-count{min-width:38px;text-align:center;fo
 @media(max-width:900px){body.custom-trip-page .custom-story-media{flex-basis:44%}body.custom-trip-page .custom-story--featured .custom-story-media{flex-basis:49%}}
 @media(max-width:650px){body.custom-trip-page .custom-story-media,body.custom-trip-page .custom-story--featured .custom-story-media{width:100%;flex:auto;min-height:0}body.custom-trip-page .custom-carousel-slide{aspect-ratio:6/5;flex-basis:90%}body.custom-trip-page .custom-carousel-bottom{min-height:45px;padding:3px 13px}body.custom-trip-page .custom-carousel-controls button{display:none}body.custom-trip-page .custom-carousel-count{font-size:.82rem}body.custom-trip-page .custom-carousel-source{font-size:.7rem}body.custom-trip-page .custom-story-content{padding-top:21px}}
 @media(prefers-reduced-motion:reduce){body.custom-trip-page .custom-carousel-track{scroll-behavior:auto}}
+
+/* Custom Trips V4: documentary tailoring photo from Marek and Ewa's visit. */
+body.custom-trip-page .custom-tailoring-photo{position:relative;display:block;margin:0;padding:0;min-height:380px;background:#243a35}
+body.custom-trip-page .custom-tailoring-photo img{display:block;width:100%;height:100%;min-height:380px;object-fit:cover;object-position:center}
+body.custom-trip-page .custom-tailoring-photo-caption{position:absolute;bottom:0;left:0;right:0;padding:28px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-size:.86rem;line-height:1.45}
+@media(max-width:900px){body.custom-trip-page .custom-tailoring-photo{width:100%;min-height:0}body.custom-trip-page .custom-tailoring-photo img{height:380px;min-height:0;object-position:center 38%}}
+@media(max-width:650px){body.custom-trip-page .custom-tailoring-photo img{height:290px;object-position:center 37%}}
