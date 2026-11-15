@@ -30,7 +30,7 @@ side_primary_label: "Build My Own Day"
 side_primary_url: /custom-trip/
 ---
 
-<p class="muted"><small>Field notes from OG Saigon's local founder, whose family has roots in District 4. These are real guest journeys, not fixed tour packages.</small></p>
+<p class="muted"><small>Field notes from <a class="text-link" href="/meet-duy/">OG Saigon's local founder</a>, whose family has roots in District 4. These are real guest journeys, not fixed tour packages.</small></p>
 
 Four groups of visitors. Four quite different ideas of what a good day should feel like.
 
@@ -160,12 +160,3 @@ Perhaps you have one day and want to spend it on foot. Perhaps you are traveling
 
 You do not need to arrive with a finished itinerary. Start with what you enjoy, how much time you have and a few places that caught your eye. A good route can grow from there.
 
-<div class="story-related">
-  <div class="eyebrow">Make it your own</div>
-  <h2>Build your own Saigon day</h2>
-  <p>Tell us the dates, number of travelers and the parts of Saigon you are curious about. We can discuss what fits, what needs a separate day and where a local introduction might help.</p>
-  <div class="story-related-links">
-    <a class="btn primary" href="/custom-trip/">Build My Own Day</a>
-    <a class="text-link" href="/stories/">Read more local Saigon stories →</a>
-  </div>
-</div>
