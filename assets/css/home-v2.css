@@ -917,7 +917,7 @@ body.home-v2 .reviews-proof .review-platform-proof {
   font-weight: 700;
 }
 
-/* Trustpilot green for legible text on white. */
+/* Trustpilot green, darkened for readable text on the white review card. */
 body.home-v2 .reviews-proof .review-platform-proof.review-platform-trustpilot {
   color: #008558;
 }
