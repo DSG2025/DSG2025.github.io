@@ -14,8 +14,8 @@ eyebrow: "Four journeys, one Saigon"
 lead: "Real private journeys, local discoveries and ideas for making the most of your time in Ho Chi Minh City."
 card_image: /assets/images/story-posters/one-saigon-four-ways-to-explore-it-poster.webp
 card_alt: "Cinematic illustration featuring travelers and a Saigon adventure guide in a wide composition"
-card_width: 960
-card_height: 600
+card_width: 1280
+card_height: 800
 hero_image: /assets/images/custom-trip/v5/dad-son/01-son-with-og-guide.webp
 hero_alt: "An American father and son with their OG Saigon guide during a private journey"
 hero_width: 1440
