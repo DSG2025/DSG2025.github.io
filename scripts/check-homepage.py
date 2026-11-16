@@ -101,7 +101,7 @@ assert len(one('featured-experiences').all('article'))==2
 assert not one('featured-experiences').all(cls='card')
 assert len(one('meet-duy').all(cls='founder-principles')[0].children)==3
 assert len(one('meet-duy').all('img'))==1
-assert one('meet-duy').all('img')[0].attrs['src']=='/assets/images/duy-guiding-guests-cu-chi-tunnels.webp'
+assert one('meet-duy').all('img')[0].attrs['src']=='/assets/images/og-saigon-ben-duoc-founder.webp'
 assert len(one('traveler-reviews').all('article'))==2
 assert 'Casandra' not in home.text
 assert len(one('traveler-reviews').all(cls='review-platform-proof'))==5
@@ -141,7 +141,7 @@ assert len(docs[OUT/'stories/index.html'].all(cls='story-index-card'))==6
 assert not list((ROOT/'stories').glob('*/index.html'))
 # Contract frozen by the user: compare against the reviewed CTA/form baseline.
 # The Cu Chi clarity, shared footer perk and scoped styles below are newly approved edits.
-approved_cu_chi_update={'_includes/site-footer.html','assets/css/style.css','assets/css/stories.css','assets/css/custom-trip.css','experiences/cu-chi-tunnels/index.html','custom-trip/index.html','transport/index.html','sitemap.xml'}
+approved_cu_chi_update={'_includes/site-footer.html','_includes/site-header.html','assets/css/style.css','assets/css/stories.css','assets/css/custom-trip.css','experiences/cu-chi-tunnels/index.html','experiences/cu-chi-war-museum/index.html','experiences/index.html','custom-trip/index.html','transport/index.html','sitemap.xml'}
 base='9cca0cd841a176dad81fd6aa1006380f5f0cbe74'
 protected=['_includes/site-header.html','_includes/site-footer.html','_layouts/story.html','assets/css/style.css','assets/css/custom-trip.css','assets/css/stories.css','assets/js/main.js','assets/js/site-data.js','assets/js/custom-trip.js','custom-trip/index.html','experiences/index.html','experiences/cu-chi-tunnels/index.html','experiences/cu-chi-war-museum/index.html','experiences/hidden-saigon/index.html','transport/index.html','sitemap.xml','robots.txt']
 baseline_available=subprocess.run(['git','cat-file','-e',base],cwd=ROOT,capture_output=True).returncode==0
@@ -182,15 +182,17 @@ assert 'var(--type-support)' in transport_css and 'var(--type-lead)' in transpor
 cu_chi=docs[OUT/'experiences/cu-chi-tunnels/index.html']
 cu_main=cu_chi.all(id='main-content')[0]
 assert 'cu-chi-v2' in cu_main.attrs.get('class','').split()
-assert len(cu_chi.all('h1'))==1 and cu_chi.all('h1')[0].text=='Cu Chi Tunnels Tour from Ho Chi Minh City'
+assert len(cu_chi.all('h1'))==1 and cu_chi.all('h1')[0].text=='Private Ben Duoc Cu Chi Tunnels Tour from Saigon'
 assert len(cu_main.all('img'))==8
 assert len(cu_main.all(cls='summary-item'))==4
-assert len(cu_main.all('details'))==5
-assert '6 to 7 hours' in cu_main.text.lower()
+assert len(cu_main.all('details'))==8
+assert '6.5 to 7 hours' in cu_main.text.lower()
 assert 'Cu Chi Tunnels entrance tickets' in cu_main.text
 assert 'Private vehicle for the round trip' in cu_main.text
 assert 'Hotel pickup and drop-off in central Saigon' in cu_main.text
-assert 'Ben Dinh' in cu_main.text and 'Ben Duoc' in cu_main.text
+assert 'Ben Duoc is our standard Cu Chi site for new bookings' in cu_main.text
+assert 'Standard route: Ben Dinh' not in cu_main.text and 'Ben Duoc can be arranged on request' not in cu_main.text
+assert 'craft workshop' in cu_main.text.lower() and 'Memorial Temple' in cu_main.text
 assert 'Optional shooting-range ammunition' in cu_main.text
 assert 'complimentary Saigon coffee gift' in cu_main.text
 assert len([a for a in cu_main.all('a') if 'data-whatsapp-link' in a.attrs and a.text=='Check My Cu Chi Date'])==2
@@ -198,7 +200,7 @@ assert cu_chi.all('meta') and any(x.attrs.get('name')=='robots' and x.attrs.get(
 assert any(x.attrs.get('href')=='/assets/css/cu-chi-v2.css' for x in cu_chi.all('link'))
 for target in ['/experiences/cu-chi-war-museum/','/stories/cu-chi-without-crawling/','/custom-trip/?from=cu-chi-tunnels#trip-builder']:
     assert any(x.attrs.get('href')==target for x in cu_main.all('a')),target
-assert '<lastmod>2026-10-16</lastmod>' in (ROOT/'sitemap.xml').read_text(), 'Cu Chi sitemap lastmod not updated'
+assert '<loc>https://ogsaigon.com/experiences/cu-chi-tunnels/</loc><lastmod>2026-11-16</lastmod>' in (ROOT/'sitemap.xml').read_text(), 'Cu Chi sitemap lastmod not updated'
 custom=docs[OUT/'custom-trip/index.html']
 assert len(custom.all(cls='direct-booking-note'))==1
 for doc in docs.values():

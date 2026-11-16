@@ -6,7 +6,7 @@ seo_title: Cu Chi or War Remnants Museum First? | OG Saigon Guide
 description: 'Compare the Cu Chi Tunnels and War Remnants Museum in Ho Chi Minh City: what each visit shows, how they differ
   and whether to combine them in one day.'
 date: 2026-09-26T00:00:00+07:00
-modified: '2026-09-27'
+modified: '2026-11-16'
 category: War history
 eyebrow: OG Saigon local guide
 lead: 'Compare the Cu Chi Tunnels and War Remnants Museum in Ho Chi Minh City: what each visit shows, how they differ and
@@ -40,6 +40,7 @@ side_secondary_whatsapp: true
 <h2>The simplest difference</h2>
 <div class="story-table-wrap"><table class="story-table"><thead><tr><th></th><th>Cu Chi Tunnels</th><th>War Remnants Museum</th></tr></thead><tbody><tr><th>Experience</th><td>Outdoor historical site</td><td>Indoor museum exhibitions</td></tr><tr><th>Physical level</th><td>Walking, heat, optional tunnel crawl</td><td>Mostly walking through galleries</td></tr><tr><th>Location</th><td>Outside central Saigon</td><td>Central Ho Chi Minh City</td></tr><tr><th>Best for</th><td>Understanding terrain, infrastructure and daily survival</td><td>Photographs, artifacts and documented perspectives on the war</td></tr></tbody></table></div>
 <h2>What Cu Chi gives you</h2>
+<p>For new bookings, OG Saigon's standard Cu Chi site is Ben Duoc, generally a less touristy alternative to Ben Dinh. A private Ben Duoc-only tour takes approximately 6.5 to 7 hours round trip; combining it with the War Remnants Museum takes around 8 to 8.5 hours. The craft workshop remains a standard stop, while Ben Duoc Memorial Temple is flexible according to the day's conditions.</p>
 <p>At Cu Chi, the environment is part of the lesson. You can see how concealed entrances, bunkers and underground spaces related to the landscape around them. A guide can connect those physical details to questions about logistics, food, communication and daily survival.</p>
 <p>The experience is more active than a museum. It is hot, mostly outdoors and requires travel from the city. The tunnel crawl itself is optional.</p>
 <figure><img alt="Visitor moving through an underground section at the Cu Chi Tunnels" decoding="async" height="1600" loading="lazy" src="/assets/images/cu-chi-tunnel.webp" width="1470"/><figcaption>The physical setting at Cu Chi answers a different set of questions from a museum gallery.</figcaption></figure>
@@ -58,7 +59,8 @@ side_secondary_whatsapp: true
 <div class="eyebrow">Keep planning</div>
 <h2>Related OG Saigon pages</h2>
 <div class="story-related-links">
-<a class="text-link" href="/experiences/cu-chi-tunnels/">Private Cu Chi experience →</a>
+<a class="text-link" href="/experiences/cu-chi-tunnels/">Private Ben Duoc Cu Chi tour →</a>
+<a class="text-link" href="/experiences/cu-chi-war-museum/">Ben Duoc + War Remnants Museum →</a>
 <a class="text-link" href="/custom-trip/">Build a private Saigon day →</a>
 <a class="text-link" href="/transport/">Airport pickup &amp; private transport →</a>
 </div>

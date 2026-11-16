@@ -4,10 +4,10 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ogsaigon.com/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://ogsaigon.com/experiences/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://ogsaigon.com/experiences/cu-chi-tunnels/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://ogsaigon.com/experiences/cu-chi-war-museum/</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://ogsaigon.com/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://ogsaigon.com/experiences/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://ogsaigon.com/experiences/cu-chi-tunnels/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://ogsaigon.com/experiences/cu-chi-war-museum/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://ogsaigon.com/experiences/hidden-saigon/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://ogsaigon.com/custom-trip/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://ogsaigon.com/transport/</loc><lastmod>2026-10-17</lastmod></url>
