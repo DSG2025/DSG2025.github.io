@@ -182,7 +182,7 @@ assert 'var(--type-support)' in transport_css and 'var(--type-lead)' in transpor
 cu_chi=docs[OUT/'experiences/cu-chi-tunnels/index.html']
 cu_main=cu_chi.all(id='main-content')[0]
 assert 'cu-chi-v2' in cu_main.attrs.get('class','').split()
-assert len(cu_chi.all('h1'))==1 and cu_chi.all('h1')[0].text=='Private Ben Duoc Cu Chi Tunnels Tour from Saigon'
+assert len(cu_chi.all('h1'))==1 and cu_chi.all('h1')[0].text=='Cu Chi Tunnels Tour from Ho Chi Minh City'
 assert len(cu_main.all('img'))==8
 assert len(cu_main.all(cls='summary-item'))==4
 assert len(cu_main.all('details'))==8
@@ -190,9 +190,11 @@ assert '6.5 to 7 hours' in cu_main.text.lower()
 assert 'Cu Chi Tunnels entrance tickets' in cu_main.text
 assert 'Private vehicle for the round trip' in cu_main.text
 assert 'Hotel pickup and drop-off in central Saigon' in cu_main.text
-assert 'Ben Duoc is our standard Cu Chi site for new bookings' in cu_main.text
+assert 'Ben Duoc Tunnels is our standard Cu Chi Tunnels site for new bookings' in cu_main.text
 assert 'Standard route: Ben Dinh' not in cu_main.text and 'Ben Duoc can be arranged on request' not in cu_main.text
 assert 'craft workshop' in cu_main.text.lower() and 'Memorial Temple' in cu_main.text
+assert 'Banh mi and cold drinks' in cu_main.text
+assert 'The Memorial Temple is not a mandatory stop.' in cu_main.text
 assert 'Optional shooting-range ammunition' in cu_main.text
 assert 'complimentary Saigon coffee gift' in cu_main.text
 assert len([a for a in cu_main.all('a') if 'data-whatsapp-link' in a.attrs and a.text=='Check My Cu Chi Date'])==2
@@ -200,7 +202,7 @@ assert cu_chi.all('meta') and any(x.attrs.get('name')=='robots' and x.attrs.get(
 assert any(x.attrs.get('href')=='/assets/css/cu-chi-v2.css' for x in cu_chi.all('link'))
 for target in ['/experiences/cu-chi-war-museum/','/stories/cu-chi-without-crawling/','/custom-trip/?from=cu-chi-tunnels#trip-builder']:
     assert any(x.attrs.get('href')==target for x in cu_main.all('a')),target
-assert '<loc>https://ogsaigon.com/experiences/cu-chi-tunnels/</loc><lastmod>2026-11-16</lastmod>' in (ROOT/'sitemap.xml').read_text(), 'Cu Chi sitemap lastmod not updated'
+assert '<loc>https://ogsaigon.com/experiences/cu-chi-tunnels/</loc><lastmod>2026-11-19</lastmod>' in (ROOT/'sitemap.xml').read_text(), 'Cu Chi sitemap lastmod not updated'
 custom=docs[OUT/'custom-trip/index.html']
 assert len(custom.all(cls='direct-booking-note'))==1
 for doc in docs.values():
