@@ -6,7 +6,7 @@ seo_title: 'Cu Chi Without Crawling: Is It Still Worth Visiting? | OG Saigon'
 description: Yes. The Cu Chi Tunnels can still be worthwhile without crawling underground. See what remains above ground,
   how physical the visit is and what to expect.
 date: 2026-09-26T00:00:00+07:00
-modified: '2026-11-16'
+modified: '2026-11-19'
 category: Cu Chi
 eyebrow: OG Saigon local guide
 lead: Yes. The Cu Chi Tunnels can still be worthwhile without crawling underground. See what remains above ground, how physical
@@ -53,7 +53,7 @@ side_secondary_whatsapp: true
 <h2>How long should you allow?</h2>
 <p>Cu Chi is outside central Ho Chi Minh City, so travel time matters as much as time at the site. Rather than packing the same day with too many unrelated stops, think about what you want from the visit. If war history is a major interest, combining Cu Chi with the War Remnants Museum can create a stronger narrative. If you prefer a lighter day, Cu Chi on its own leaves more space for questions, breaks and the drive back to Saigon.</p>
 <h2>The OG Saigon approach</h2>
-<p>OG Saigon's standard Cu Chi site for new private bookings is Ben Duoc, with around 6.5 to 7 hours including travel. A craft workshop is a standard stop; the Memorial Temple is optional depending on conditions. The tunnel crawl remains completely optional.</p>
+<p>OG Saigon's standard Cu Chi Tunnels site for new private bookings is Ben Duoc Tunnels, with around 6.5 to 7 hours including travel. The route includes a lacquer craft workshop staffed by artisans with disabilities. The Memorial Temple is not a mandatory stop, and the tunnel crawl remains completely optional.</p>
 <p>On a private Cu Chi tour, we treat the crawl as optional from the beginning. The goal is to help you understand the place, not pressure you into doing something uncomfortable. Tell us about mobility, heat tolerance or any concerns when you enquire, and we can plan the pacing accordingly.</p>
 <div class="story-related">
 <div class="eyebrow">Keep planning</div>
