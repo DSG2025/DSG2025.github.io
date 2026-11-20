@@ -9,10 +9,10 @@ modified: "2026-11-20"
 category: First time in Saigon
 eyebrow: OG Saigon local guide
 lead: "From Tan Son Nhat Airport to your first meal, here is how to handle arrival, traffic and a realistic first day without rushing Saigon."
-hero_image: /assets/images/saigon-rainy-night-street-reflections.webp
-hero_alt: Rainy Saigon street at night with motorbikes and reflections
-hero_width: 900
-hero_height: 1200
+hero_image: /assets/images/custom-trip/v5/couple-city/01-central-post-office.webp
+hero_alt: OG Saigon local guide with two visitors outside Saigon Central Post Office on a sunny day
+hero_width: 1080
+hero_height: 1440
 card_image: /assets/images/story-posters/first-day-in-saigon-poster.webp
 card_alt: "Vintage style poster for Your First Day in Saigon showing travelers on a motorbike"
 card_width: 1280
@@ -57,7 +57,7 @@ side_secondary_whatsapp: true
 <h2>Traffic, walking and crossing the road</h2>
 <p>Motorbikes, turning vehicles and changing pavement conditions require attention. Use pedestrian crossings and traffic signals where available, but still watch for vehicles turning or ignoring them. Put your phone away before crossing. If a junction feels unsafe, wait, take a different crossing or use a short vehicle trip. There is no street-crossing trick that guarantees safety, and you should not blindly copy what another pedestrian does.</p>
 <p>A place that looks close on a map can take longer than expected because of lights, congestion, heat, rain or the need to walk around a difficult junction. For a first day, plan one area at a time, with time for breaks rather than a tight minute-by-minute route.</p>
-<figure><img alt="Motorbikes travelling through a rainy Saigon street at night" decoding="async" height="1200" loading="lazy" src="/assets/images/saigon-rain-motorbikes-night.webp" width="900"/><figcaption>Rain and traffic can change a short journey. Keep your first-day plans flexible.</figcaption></figure>
+<figure><img alt="Motorbikes and street vendors along a sunny District 4 road in Saigon" decoding="async" height="825" loading="lazy" src="/assets/images/district4-hero-local-street-vendors.webp" width="1100"/><figcaption>A lively Saigon street in daylight. Take your time and watch traffic around market stalls and junctions.</figcaption></figure>
 
 <h2>Cash, cards, SIM cards and eSIMs</h2>
 <p>Cards work at many hotels, established restaurants and larger businesses. Carry some Vietnamese dong in small denominations for markets, small cafés and street-food stalls. Ask the price before ordering when it is not displayed, and check the currency and amount before approving a payment.</p>
