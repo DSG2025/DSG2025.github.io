@@ -100,3 +100,39 @@
   .transport-v2 .transport-final .btn{max-width:none}
   .transport-v2 .transport-related{padding:39px 0 49px}
 }
+
+
+/* Standard airport assistance, and contextual travel links. */
+.transport-v2 #fast-track{scroll-margin-top:90px}
+.transport-v2 .transport-fast-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.transport-v2 .transport-fast-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:27px;min-width:0}
+.transport-v2 .transport-fast-kicker{color:var(--rust);font-size:var(--type-label);font-weight:800;margin-bottom:10px;letter-spacing:.025em}
+.transport-v2 .transport-fast-card h3{margin:0 0 14px}
+.transport-v2 .transport-fast-card ol{padding-left:21px;margin:0}
+.transport-v2 .transport-fast-card li{padding:4px 0;color:var(--muted);font-size:var(--type-support)}
+.transport-v2 .transport-fast-card strong{color:var(--ink)}
+.transport-v2 .transport-fast-foot{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(245px,.8fr);gap:22px;align-items:center;margin-top:20px}
+.transport-v2 .transport-fast-meeting{border-left:4px solid var(--rust);padding:13px 18px;background:#f0f1e9}
+.transport-v2 .transport-fast-meeting strong{font-size:1.04rem}
+.transport-v2 .transport-fast-meeting p{font-size:var(--type-support);color:var(--muted);margin:8px 0 0}
+.transport-v2 .transport-fast-meeting .transport-small{font-size:var(--type-caption)}
+.transport-v2 .transport-fast-action .btn{width:100%}
+.transport-v2 .transport-final-grid>div:last-child{display:grid;gap:12px}
+.transport-v2 .transport-final .btn{max-width:360px}
+.transport-v2 .transport-final .btn.outline{border-color:#e6e7df;color:#fff;background:transparent}
+.transport-v2 .transport-final .btn.outline:hover{background:#fff;color:var(--forest)}
+.transport-v2 .transport-related-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.transport-v2 .transport-related-links a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font-weight:700;text-decoration:none;font-size:var(--type-support);line-height:1.4}
+.transport-v2 .transport-related-links a:hover{border-color:var(--rust)}
+.transport-v2 .transport-related-links a span{color:var(--rust);font-size:1.1rem}
+@media(max-width:960px){
+  .transport-v2 .transport-fast-foot{grid-template-columns:1fr}
+  .transport-v2 .transport-related-links{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  .transport-v2 .transport-fast-grid,.transport-v2 .transport-related-links{grid-template-columns:1fr}
+  .transport-v2 .transport-fast-card{padding:21px}
+  .transport-v2 .transport-fast-meeting{padding:13px}
+  .transport-v2 .transport-hero-actions .btn{width:100%}
+  .transport-v2 .transport-final .btn{max-width:none}
+}
